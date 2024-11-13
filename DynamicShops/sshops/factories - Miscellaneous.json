@@ -1,13 +1,13 @@
 [
 	{
 		"conditions": {
-			"tag": "planet_name_twycross",
+			"tag": "planet_name_twycross"
 		},
 		"items": "itemCollection_major_ClanDiamondShark"
 	},
 	{
 		"conditions": {
-			"tag": "planet_name_merchantsrest",
+			"tag": "planet_name_merchantsrest"
 		},
 		"items": "itemCollection_major_ClanDiamondShark"
 	},

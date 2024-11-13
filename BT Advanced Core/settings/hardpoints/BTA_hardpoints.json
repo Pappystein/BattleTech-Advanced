@@ -43,6 +43,15 @@
 			"AllowOmni": true,
 			"Description": "BattleMechs are the kings of the battlefield and even though artillery is most often seen on combat vehicles, some dedicated BattleMechs can also mount such behemoth weapons. The artillery hardpoint is for such weapons.",
 			"TooltipCaption": "Artillery Hardpoints"
+		},
+		{
+			"ID": "Superweapon",
+			"Visible": true,
+			"AllowOnWeapon": true,
+			"OverrideColor": false,
+			"AllowOmni": false,
+			"Description": "BattleMechs can mount many kinds of weapons but one class stands out from the rest: the superweapons. These are highly variable as a class, sharing only their large size, heavy weight, and incredible raw power. The superweapon hardpoint is for these unique death-dealers.",
+			"TooltipCaption": "Superweapon Hardpoints"
 		}
 	]
 }

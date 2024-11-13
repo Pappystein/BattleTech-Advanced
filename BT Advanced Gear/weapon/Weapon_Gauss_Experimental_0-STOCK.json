@@ -43,7 +43,7 @@
 		390,
 		390
 	],
-	"AmmoCategory": "HGAUSS",
+	"AmmoCategory": "SUGAUSS",
 	"StartingAmmoCapacity": 0,
 	"HeatGenerated": 30,
 	"Damage": 150,
@@ -75,7 +75,7 @@
 		"Id": "Weapon_Gauss_Experimental_0-STOCK",
 		"Name": "Experimental Assault Gauss",
 		"Details": "Designed as a siege weapon, the Experimental Assault Gauss Rifle was intended for battlefield work to destroy heavy fortifications. However, due to the power draw and the mounting restrictions, the weapon was ultimately abandoned by Defiance Industries in favor of the Heavy Gauss Rifle. However, Vining Engineering and Salvage Team (VEST) managed to get ahold of the plans and made use of them on an experiemental build of their upcoming Great Turtle arena design where the weapon's downsides had less relevance. \n\n <b><color=#ffcc00>Uses Heavy Gauss Ammo.</color></b> \n\n <b><color=#099ff2>VOLATILE!</color></b>",
-		"Icon": "FerroMag"
+		"Icon": "death-star"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

@@ -1796,13 +1796,13 @@
 			"ID": 6128,
 			"Name": "Mercy",
 			"FriendlyName": "Mercy",
-			"IsBallistic": true,
+			"IsBallistic": false,
 			"IsMissile": false,
 			"IsEnergy": false,
-			"IsSupport": false,
+			"IsSupport": true,
 			"UsesInternalAmmo": false,
-			"UIColorRef": "Ballistic",
-			"FallbackUIColor": null,
+			"UIColorRef": "WolfGrey",
+			"FallbackUIColor": "WolfGrey",
 			"Icon": "BallisticHardpointIcon",
 			"OutOfAmmoAudioVOEvent": "AmmoDepleted_AC10"
 		},
@@ -1832,6 +1832,20 @@
 			"UIColorRef": "Small",
 			"FallbackUIColor": null,
 			"Icon": "SmallHardpointIcon",
+			"OutOfAmmoAudioVOEvent": "AmmoDepleted_MG"
+		},
+		{
+			"ID": 6131,
+			"Name": "SUGAUSS",
+			"FriendlyName": "SUGAUSS",
+			"IsBallistic": true,
+			"IsMissile": false,
+			"IsEnergy": false,
+			"IsSupport": false,
+			"UsesInternalAmmo": false,
+			"UIColorRef": "WolfGrey",
+			"FallbackUIColor": "WolfGrey",
+			"Icon": "BallisticHardpointIcon",
 			"OutOfAmmoAudioVOEvent": "AmmoDepleted_MG"
 		}
 	]

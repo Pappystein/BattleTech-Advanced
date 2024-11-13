@@ -251,7 +251,7 @@
 		},
 		{
 			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -262,7 +262,7 @@
 		},
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -273,7 +273,7 @@
 		},
 		{
 			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,

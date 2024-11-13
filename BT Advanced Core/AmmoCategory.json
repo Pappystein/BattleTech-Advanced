@@ -1796,13 +1796,13 @@
 			"ID": 6128,
 			"Name": "Mercy",
 			"FriendlyName": "Mercy",
-			"IsBallistic": false,
+			"IsBallistic": true,
 			"IsMissile": false,
 			"IsEnergy": false,
-			"IsSupport": true,
+			"IsSupport": false,
 			"UsesInternalAmmo": false,
-			"UIColorRef": "WolfGrey",
-			"FallbackUIColor": "WolfGrey",
+			"UIColorRef": "WolfGray",
+			"FallbackUIColor": "WolfGray",
 			"Icon": "BallisticHardpointIcon",
 			"OutOfAmmoAudioVOEvent": "AmmoDepleted_AC10"
 		},
@@ -1843,8 +1843,8 @@
 			"IsEnergy": false,
 			"IsSupport": false,
 			"UsesInternalAmmo": false,
-			"UIColorRef": "WolfGrey",
-			"FallbackUIColor": "WolfGrey",
+			"UIColorRef": "WolfGray",
+			"FallbackUIColor": "WolfGray",
 			"Icon": "BallisticHardpointIcon",
 			"OutOfAmmoAudioVOEvent": "AmmoDepleted_MG"
 		}

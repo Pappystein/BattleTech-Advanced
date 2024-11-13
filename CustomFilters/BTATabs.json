@@ -205,12 +205,14 @@
 			},
 			{
 				"Icon": "uixSvgIcon_weapon_Support",
-				"Tooltip": "Show Physical Support Weapons",
+				"Tooltip": "Show Physical Support and AMS Weapons",
 				"Filter": {
 					"ComponentTypes": [
 						"Weapon"
 					],
 					"Categories": [
+						"w/s/a/ams",
+						"w/s/a/lams",
 						"w/s/m/melee",
 						"w/a/g/magshot",
 						"w/a/o/mg",
@@ -253,15 +255,14 @@
 				}
 			},
 			{
-				"Icon": "uixSvgIcon_equipment_TTS",
-				"Tooltip": "Show AMS systems",
+				"Icon": "death-star",
+				"Tooltip": "Show Superweapons",
 				"Filter": {
 					"ComponentTypes": [
 						"Weapon"
 					],
 					"Categories": [
-						"w/s/a/ams",
-						"w/s/a/lams"
+						"w/s/su/superweapon"
 					],
 					"NotCategories": [
 						"notused"
@@ -477,6 +478,21 @@
 						"a/e/p/aflamer",
 						"a/e/p/fluidgun",
 						"a/a/o/industrial"
+					],
+					"NotCategories": [
+						"notused"
+					]
+				}
+			},
+			{
+				"Icon": "death-star",
+				"Tooltip": "Show Superweapons ammo",
+				"Filter": {
+					"ComponentTypes": [
+						"AmmunitionBox"
+					],
+					"Categories": [
+						"a/s/su/superweapon"
 					],
 					"NotCategories": [
 						"notused"

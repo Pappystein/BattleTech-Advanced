@@ -136,7 +136,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Missile",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				},
 				{

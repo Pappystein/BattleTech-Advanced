@@ -16,7 +16,7 @@
 				"WeaponAttachmentCompatible: Plasma FCS"
 			]
 	},
-	"Category": "Energy",
+	"weaponCategoryID": "Superweapon",
 	"Type": "Flamer",
 	"WeaponSubType": "Flamer",
 	"MinRange": 0,

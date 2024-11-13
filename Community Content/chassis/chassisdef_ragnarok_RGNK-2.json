@@ -78,7 +78,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Energy",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				},
 				{
@@ -221,17 +221,6 @@
 			"ComponentDefID": "Gear_Svalinn_Energy_Shield",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": "",
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "Weapon_Lava_Gun_0-STOCK",
-			"SimGameUID": "",
-			"ComponentDefType": "Weapon",
 			"HardpointSlot": -1,
 			"GUID": null,
 			"DamageLevel": "Functional",

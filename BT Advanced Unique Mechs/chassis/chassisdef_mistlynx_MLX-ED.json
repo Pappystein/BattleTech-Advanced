@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -262,11 +256,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -281,8 +275,8 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 45,
-			"MaxRearArmor": 15,
+			"MaxArmor": 35,
+			"MaxRearArmor": 25,
 			"InternalStructure": 30
 		},
 		{
@@ -290,37 +284,37 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 15,
-			"MaxArmor": 60,
-			"MaxRearArmor": 20,
+			"MaxArmor": 50,
+			"MaxRearArmor": 30,
 			"InternalStructure": 40
 		},
 		{
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 45,
-			"MaxRearArmor": 15,
+			"MaxArmor": 35,
+			"MaxRearArmor": 25,
 			"InternalStructure": 30
 		},
 		{
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -398,7 +392,8 @@
 		"items": [
 			"ClanMech",
 			"OmniMech",
-			"HeroMech"
+			"HeroMech",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},

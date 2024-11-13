@@ -8,15 +8,14 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WpnRecoil: 2",
 				"WeaponJAMFlat: 10",
 				"NoFireInMelee",
 				"AreaOfEffect: 60",
-				"AreaOfEffectDmg: 25"
+				"AreaOfEffectDmg: 25",
+				"WeaponAttachmentCompatible: Autocannon FCS"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -51,7 +50,7 @@
 	"AOEDamage": 25,
 	"WeaponEffectID": "WeaponEffect-Weapon_AC5",
 	"Description": {
-		"Cost": 100000,
+		"Cost": 140000,
 		"Rarity": 0,
 		"Purchasable": true,
 		"Manufacturer": "GM",
@@ -79,7 +78,9 @@
 		"items": [
 			"OmniRestriction.{location}",
 			"component_type_stock",
-			"range_very-long"
+			"range_very-long",
+			"AutocannonFCSSupported-Standard",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

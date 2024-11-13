@@ -18,8 +18,8 @@
       "MoveClamp": 0.5
     },
     "MoveCostModPerBiome": {
-      "DesignMaskBiomeMartianVacuum": 2,
-      "DesignMaskBiomeLunarVacuum": 3
+      "DesignMaskBiomeMartianVacuum": 5,
+      "DesignMaskBiomeLunarVacuum": 7
     },
     "NullifyBodyMesh": true,
     "TieToGroundOnDeath": "true"
@@ -30,7 +30,7 @@
     "Purchasable": false,
     "UIName": "Kirov Attack Zeppelin",
     "Id": "vehiclechassisdef_KIROV",
-    "Name": "Kirov Attack Zeppelin",
+    "Name": "Kirov",
     "Details": "It's a zeppelin. With guns. It's a battle zeppelin. The cyrillic on the side says something about an Omnissiah? No one's really sure who that is but here we go. Well, on its own merits the Kirov Attack Zeppelin has proven oddly adept in combat operations on Periphery worlds, leading to the Kirov seeing deployment with various Periphery powers as an inexpensive force multiplier. They're semi-fragile though, as befits a large bag of flammable gas, but the Kirov packs a punch. The stock Kirov, if there can be such a thing, carries an assortment of Heavy Rifles, Medium Cannons, and Bomb Bays for maximum target saturation.",
     "Icon": "Kirov"
   },
@@ -95,23 +95,23 @@
       "Location": "Front",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         }
       ],
@@ -124,19 +124,19 @@
       "Location": "Left",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         }
       ],
@@ -149,19 +149,19 @@
       "Location": "Right",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         }
       ],

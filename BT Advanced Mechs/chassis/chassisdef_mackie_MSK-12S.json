@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Mackie",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -14,14 +15,14 @@
 		"UIName": "Mackie",
 		"Id": "chassisdef_mackie_MSK-12S",
 		"Name": "Mackie",
-		"Details": "A sort of fork of the Mackie-10J and -9F, the -12S turns to an older but proven weapon system to provide long range fire support on an ancient but stable and proven platform: the Sniper Artillery. Armed with the massive artillery piece, the -12S is capable of laying down supporting fire at virtually any range. For mid-range defense, the -12S uses a pair of Large Pulse Lasers while the eponymous Mediums keep close-ranges clear. The Sniper is fed by 4 tons of ammunition and kept cold by 15 double heat sinks. The -12S found widespread acceptance among militia forces that really needed mobile artillery.",
+		"Details": "A sort of fork of the Mackie-10J and -9F, the -12S turns to an older but proven weapon system to provide long range fire support on an ancient but stable and proven platform: the Sniper Artillery. Armed with the massive artillery piece, the -12S is capable of laying down supporting fire at virtually any range. For mid-range defense, the -12S uses a pair of Large Pulse Lasers while the ubiquitous Mediums keep close-ranges clear. The Sniper is fed by 4 tons of ammunition and kept cold by 15 double heat sinks. The -12S found widespread acceptance among militia forces that really needed mobile artillery.",
 		"Icon": "uixTxrIcon_mackie"
 	},
 	"MovementCapDefID": "movedef_mackie-9H",
 	"PathingCapDefID": "pathingdef_assault",
-	"HardpointDataDefID": "hardpointdatadef_mackie",
-	"PrefabIdentifier": "chrprfmech_mackiebase-001",
-	"PrefabBase": "mackie",
+	"HardpointDataDefID": "hardpointdatadef_ltmackie",
+	"PrefabIdentifier": "chrprfmech_ltmackiebase-001",
+	"PrefabBase": "ltmackie",
 	"Tonnage": 100,
 	"InitialTonnage": 10,
 	"weightClass": "ASSAULT",
@@ -66,11 +67,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -84,11 +85,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -102,11 +103,11 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -120,16 +121,16 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
-			"InventorySlots": 12,
+			"InventorySlots": 13,
 			"MaxArmor": 210,
 			"MaxRearArmor": 105,
 			"InternalStructure": 105
@@ -138,11 +139,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
-					"Omni": false
-				},
-				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Artillery",
 					"Omni": false
 				}
 			],
@@ -217,11 +214,15 @@
 	],
 	"VariantName": "MSK-12S",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitLowerLeft",
+			"AssaultMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "The First Battlemech",
-	"YangsThoughts": "A sort of fork of the Mackie-10J and -9F, the -12S turns to an older but proven weapon system to provide long range fire support on an ancient but stable and proven platform: the Sniper Artillery. Armed with the massive artillery piece, the -12S is capable of laying down supporting fire at virtually any range. For mid-range defense, the -12S uses a pair of Large Pulse Lasers while the eponymous Mediums keep close-ranges clear. The Sniper is fed by 4 tons of ammunition and kept cold by 15 double heat sinks. The -12S found widespread acceptance among militia forces that really needed mobile artillery.",
+	"YangsThoughts": "A sort of fork of the Mackie-10J and -9F, the -12S turns to an older but proven weapon system to provide long range fire support on an ancient but stable and proven platform: the Sniper Artillery. Armed with the massive artillery piece, the -12S is capable of laying down supporting fire at virtually any range. For mid-range defense, the -12S uses a pair of Large Pulse Lasers while the ubiquitous Mediums keep close-ranges clear. The Sniper is fed by 4 tons of ammunition and kept cold by 15 double heat sinks. The -12S found widespread acceptance among militia forces that really needed mobile artillery.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "Head",
@@ -237,6 +238,15 @@
 		{
 			"MountedLocation": "CenterTorso",
 			"ComponentDefID": "emod_structureslots_standard",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": "",
+			"hasPrefabName": true
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Gear_Quirk_Searchlight_Mackie",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional",

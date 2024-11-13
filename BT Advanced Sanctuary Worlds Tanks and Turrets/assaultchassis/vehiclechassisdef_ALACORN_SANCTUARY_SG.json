@@ -15,7 +15,7 @@
 		"Purchasable": false,
 		"UIName": "Alacorn Mk.IV-SG",
 		"Id": "vehiclechassisdef_ALACORN_SANCTUARY_SG",
-		"Name": "Alacorn Mk.IV-SG",
+		"Name": "Alacorn",
 		"Details": "It's a Tank Boss",
 		"Icon": "Alacorn"
 	},
@@ -28,7 +28,7 @@
 	"PrefabBase": "iralacorn",
 	"Tonnage": 95,
 	"weightClass": "ASSAULT",
-	"BattleValue": 993,
+	"BattleValue": 6000000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"SpotterDistanceMultiplier": 1,
@@ -112,15 +112,15 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],

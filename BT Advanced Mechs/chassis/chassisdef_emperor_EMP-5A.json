@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"RightLimit": "Lower",
-			"LeftLimit": "Lower"
-		}
-	},
 	"Description": {
 		"Cost": 14000000,
 		"Rarity": 4,
@@ -57,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -71,16 +65,16 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
-			"InventorySlots": 12,
+			"InventorySlots": 13,
 			"MaxArmor": 150,
 			"MaxRearArmor": -1,
 			"InternalStructure": 75
@@ -89,11 +83,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -116,11 +114,15 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -134,16 +136,16 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
-			"InventorySlots": 12,
+			"InventorySlots": 13,
 			"MaxArmor": 150,
 			"MaxRearArmor": -1,
 			"InternalStructure": 75
@@ -213,7 +215,11 @@
 	],
 	"VariantName": "EMP-5A",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft",
+			"AssaultMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "All Around Assault",
@@ -240,6 +246,26 @@
 			"DamageLevel": "Functional",
 			"prefabName": "",
 			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "Gear_Attachment_Quirk_Emperor_CoolingJacket",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": "",
+			"hasPrefabName": true,
+			"TargetComponentGUID":"target_Laser_1"
+		},
+		{
+			"MountedLocation": "RightArm",
+			"ComponentDefID": "Gear_Attachment_Quirk_Emperor_CoolingJacket",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": "",
+			"hasPrefabName": true,
+			"TargetComponentGUID":"target_Laser_2"
 		}
 	],
 	"CustomParts": {

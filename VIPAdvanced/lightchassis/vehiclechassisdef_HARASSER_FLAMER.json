@@ -9,7 +9,7 @@
 		"Name": "Harasser",
 		"Details": "",
 		"Icon": "Harasser",
-		"Cost": 564,
+		"Cost": 250000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -20,7 +20,7 @@
 	"PrefabBase": "bandit",
 	"Tonnage": 25,
 	"weightClass": "LIGHT",
-	"BattleValue": 564,
+	"BattleValue": 500000,
 	"TopSpeed": 195,
 	"TurnRadius": 130,
 	"movementType": "Wheeled",
@@ -105,35 +105,35 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],

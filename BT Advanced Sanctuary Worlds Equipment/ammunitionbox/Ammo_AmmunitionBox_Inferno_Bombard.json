@@ -5,28 +5,25 @@
 				"CategoryID": "a/a/o/bombard"
 			}
 		],
-		"Flags": {
-            "flags": [
-                "not_broken"
-            ]
-        },
+		"Flags": [
+			"not_broken"
+		],
         "ComponentExplosion": {
             "ExplosionDamagePerAmmo": 4,
             "StabilityDamagePerAmmo": 1
         },
-        "BonusDescriptions": {
-            "Bonuses": [
+        "BonusDescriptions": [
 				"ProjectilesPerShot: 2",
 				"AreaOfEffect: 60",
 				"AreaOfEffectDmg: 1",
-				"AreaOfEffectHeatDmg: 1",
+				"AreaOfEffectHeatDmg: 0",
+				"AlwaysStartsFireAnywhere",
 				"WeaponDamage: -1",
-				"HeatDamage: 0",
-				"OHDamage: 50%",
+				"HeatDamage: 1",
+				"OHDamage: 25%",
 				"CostPerShot: 300",
 				"AmmoCount: 60"
-            ]
-        },
+            ],
 		"AmmoCost": {
 			"PerUnitCost": 300
 		}
@@ -43,7 +40,7 @@
         "Id": "Ammo_AmmunitionBox_Inferno_Bombard",
         "Name": "Bombard Inferno Ammo",
         "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of SHIELD.",
-        "Icon": "Art-illery"
+        "Icon": "mor-tar-ammo"
     },
     "BonusValueA": "",
     "BonusValueB": "",

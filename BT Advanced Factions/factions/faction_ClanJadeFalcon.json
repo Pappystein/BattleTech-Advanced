@@ -4,13 +4,19 @@
 	"ShortName": "Jade Falcon",
 	"Demonym": "Jade Falcon",
 	"Government": "Clan",
-	"Allies": [],
+	"Allies": [
+		"ClanNovaCat",
+		"ClanSnowRaven",
+		"Locals"
+	],
 	"Enemies": [
 		"Steiner",
 		"Marik",
 		"Kurita",
 		"Davion",
 		"Liao",
+		"Cameron",
+		"331stDivision",
 		"DarkCaste",
 		"AuriganRestoration",
 		"ComStar",
@@ -36,10 +42,8 @@
 		"ClanGoliathScorpion",
 		"ClanHellsHorses",
 		"ClanIceHellion",
-		"ClanNovaCat",
 		"ClansGeneric",
 		"ClanSmokeJaguar",
-		"ClanSnowRaven",
 		"ClanStarAdder",
 		"ClanSteelViper",
 		"ClanWolf",
@@ -55,7 +59,8 @@
 		"AuriganPirates",
 		"WordOfBlake",
 		"Mercenaries",
-		"Rim"
+		"Rim",
+		"RimWorldsRepublic"
 	],
 	"Presence": 0.1,
 	"DefaultCombatLeaderCastDefId": "castDef_LocalsDefault",

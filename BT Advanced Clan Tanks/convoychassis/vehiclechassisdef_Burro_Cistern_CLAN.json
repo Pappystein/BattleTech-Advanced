@@ -4,7 +4,7 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_Burro_Cistern_CLAN",
-		"Name": "Burro Cistern",
+		"Name": "Burro",
 		"Details": "",
 		"Icon": "J27",
 		"Cost": 993,
@@ -71,7 +71,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

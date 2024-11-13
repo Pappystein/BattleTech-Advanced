@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Upper"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -218,11 +212,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -236,7 +230,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -251,23 +245,23 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 15,
-			"MaxArmor": 120,
-			"MaxRearArmor": 40,
+			"MaxArmor": 125,
+			"MaxRearArmor": 35,
 			"InternalStructure": 80
 		},
 		{
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -281,7 +275,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				}
 			],
@@ -358,7 +352,10 @@
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
-			"ClanMech"
+			"ClanMech",
+			"ArmLimitLowerLeft",
+			"ArmLimitUpperRight",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},

@@ -4,19 +4,29 @@
 	"ShortName": "Dark Caste",
 	"Demonym": "Dark Caste",
 	"Government": "Bands",
-	"Allies": [],
+	"Allies": [
+		"331stDivision",
+		"Mercenaries",
+		"Locals"
+	],
 	"Enemies": [
+		"Kurita",
+		"Outworld",
 		"Chainelane",
 		"ClanDiamondShark",
 		"ClanGhostBear",
 		"ClanJadeFalcon",
 		"ClanNovaCat",
 		"ClanWolf",
+		"ClanSnowRaven",
+		"ClanGoliathScorpion",
 		"Delphi",
 		"Hanse",
+		"Castile",
 		"JarnFolk",
 		"Mercenaries",
-		"Locals"
+		"Locals",
+		"RimWorldsRepublic"
 	],
 	"Presence": 0.1,
 	"DefaultCombatLeaderCastDefId": "castDef_PirateDefaultCommander",

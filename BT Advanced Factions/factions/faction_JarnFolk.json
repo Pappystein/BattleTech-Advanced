@@ -1,16 +1,25 @@
 {
 	"ID": "faction_JarnFolk",
-	"Name": "JarnFolk",
+	"Name": "the JarnFolk",
 	"ShortName": "JarnFolk",
 	"Demonym": "JarnFolk",
 	"Government": "Janfolk",
-	"Allies": [],
+	"Allies": [
+		"Chainelane",
+		"RimWorldsRepublic",
+		"Delphi",
+		"Mercenaries",
+		"Locals"
+	],
 	"Enemies": [
 		"Kurita",
 		"Hanse",
+		"Castile",
+		"331stDivision",
 		"DarkCaste",
 		"AuriganPirates",
 		"Mercenaries",
+		"ClanGoliathScorpion",
 		"Locals"
 	],
 	"Presence": 0.1,

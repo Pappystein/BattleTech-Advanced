@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"RightLimit": "Hand",
-			"LeftLimit": "Lower"
-		}
-	},
 	"Description": {
 		"Cost": 1755936,
 		"Rarity": 3,
@@ -66,7 +60,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "MeleeWeapon",
 					"Omni": false
 				}
 			],
@@ -80,11 +74,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -107,11 +105,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -125,7 +123,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "MeleeWeapon",
 					"Omni": false
 				}
 			],
@@ -201,7 +199,8 @@
 	"VariantName": "RCL-1X",
 	"ChassisTags": {
 		"items": [
-			"IndustrialMech"
+			"IndustrialMech",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -287,7 +286,7 @@
 		},
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_FuelCell",
+			"ComponentDefID": "emod_engineslots_fuelcell_center",
 			"SimGameUID": null,
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

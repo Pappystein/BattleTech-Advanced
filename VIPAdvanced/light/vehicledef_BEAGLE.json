@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-0.85",
 			"unit_vehicle",
 			"unit_light",
@@ -27,6 +27,10 @@
 			"2ndArmyVMu",
 			"11thArmyVEta",
 			"7thArmyVIota",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
+			"IVCorps",
 			"WordOfBlake",
 			"40thShadowDivision",
 			"9thDivisionWoB",

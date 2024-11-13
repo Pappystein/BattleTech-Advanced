@@ -108,15 +108,6 @@
 	],
 	"inventory": [
 		{
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_armorslots_standard",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"DamageLevel": "Functional",
-			"prefabName": "",
-			"hasPrefabName": true
-		},
-		{
 			"MountedLocation": "Head",
 			"ComponentDefID": "Gear_Cockpit_Generic_Standard",
 			"SimGameUID": null,
@@ -239,7 +230,7 @@
 		},
 		{
 			"MountedLocation": "LeftArm",
-			"ComponentDefID": "emod_arm_omni_lower",
+			"ComponentDefID": "emod_arm_part_lower",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": 0,
@@ -272,7 +263,7 @@
 		},
 		{
 			"MountedLocation": "RightArm",
-			"ComponentDefID": "emod_arm_omni_lower",
+			"ComponentDefID": "emod_arm_part_lower",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": 0,

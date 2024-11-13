@@ -5,23 +5,21 @@
 				"CategoryID": "a/a/o/artillery"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 100,
 			"StabilityDamagePerAmmo": 25
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"NoAreaOfEffect",
-				"SniperDamage: +150%",
-				"CostPerShot: 1200",
-				"AmmoCount: 5"
-			]
-		},
+		"BonusDescriptions": [
+			"AreaOfEffect: 140",
+			"AreaOfEffectDmg: 90",
+			"AreaOfEffectHeatDmg: 40",
+			"AreaOfEffectSTABDmg: 135",
+			"CostPerShot: 1200",
+			"AmmoCount: 5"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 1200
 		}
@@ -34,11 +32,11 @@
 		"Purchasable": true,
 		"Manufacturer": "Generic",
 		"Model": "Sniper",
-		"UIName": "Ammo Sniper Shaped Charge",
+		"UIName": "Ammo Sniper Seismic Charge",
 		"Id": "Ammo_AmmunitionBox_Shaped_Sniper",
-		"Name": "Shaped Charge Sniper Ammo",
-		"Details": "A concentrated Shaped Charge is used to penetrate the Armor on Hard Targets, but it has a reduced blast radius compared to other explosives. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 5 shots.",
-		"Icon": "Art-illery"
+		"Name": "Seismic Charge Sniper Ammo",
+		"Details": "A concentrated Seismic Charge is used to destabilize hardened targets in a large radius. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 5 shots.",
+		"Icon": "Art-illery-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

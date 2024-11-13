@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
-	},
 	"Description": {
 		"Cost": 5048000,
 		"Rarity": 1,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Primitive Griffin",
 		"Id": "chassisdef_griffin_GRF-1A",
-		"Name": "Griffin Primitive",
+		"Name": "Primitive Griffin",
 		"Details": "The original Griffin produced by Maxwell Manufacturing, Inc. weighed sixty tons (thus technically falling into the Heavy category of BattleMechs) and used primitive components. It could reach a top speed of 64 km/h and cover ninety meters with three Jump Jets. It also carried a Prototype PPC and a single LRM-5 with a ton of ammunition. It was protected by fourteen and a half tons of Primitive Armor and equipped with eleven single heat sinks. A Primitive Cockpit was provided for the pilot.",
 		"Icon": "uixTxrIcon_griffin"
 	},
@@ -93,7 +87,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -107,7 +101,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -183,7 +177,9 @@
 	"VariantName": "GRF-1A",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"mr-resize-1.05-1.05-1.05",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -192,7 +188,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

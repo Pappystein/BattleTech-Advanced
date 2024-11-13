@@ -1,14 +1,15 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Cephalus",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_structureslots_Composite",
+			"ComponentDefID": "emod_structureslots_composite",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional",
@@ -249,15 +250,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
-					"Omni": false
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
-					"Omni": false
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -271,7 +272,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -285,15 +286,15 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
-					"Omni": false
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
-					"Omni": false
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -379,7 +380,10 @@
 	"ChassisTags": {
 		"items": [
 			"ClanMech",
-			"OmniMech"
+			"OmniMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},

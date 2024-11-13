@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
-	},
 	"Description": {
 		"Cost": 7800000,
 		"Rarity": 4,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Royal Thug",
 		"Id": "chassisdef_thug_THG-11Eb",
-		"Name": "Thug Royal",
+		"Name": "Royal Thug",
 		"Details": "The Thug was designed by Maltex Corporation as a direct competitor to the popular Warhammer. First seeing production in 2572, the Thug sought to directly address some of the challenges which faced the Warhammer, chief of which was to increase armor protection without sacrificing firepower. The armament on the Thug is a very simple, yet effective, combination. It carries one ER PPC in each arm. Backing up the ER PPCs are two SRM launchers, one mounted in each side torso with one ton of CASE-protected reloads. Eighteen double heat sinks gives the Thug a far superior heat dissipation compared to the Warhammer while a ten-ton heavier Endo Steel frame allows it to carry fifteen and a half tons of armor.",
 		"Icon": "uixTxrIcon_thug"
 	},
@@ -66,15 +60,19 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -88,11 +86,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -115,11 +113,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -133,15 +131,19 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -217,7 +219,8 @@
 	"VariantName": "THG-11Eb",
 	"ChassisTags": {
 		"items": [
-			"RoyalMech"
+			"RoyalMech",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},

@@ -3,8 +3,7 @@
 		"Category": {
 			"CategoryID": "w/m/s/mrm"
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"vMRM",
 				"vMRMBase",
 				"vMRMDmg",
@@ -12,7 +11,6 @@
 				"vMRMHeat",
 				"MissileHealth: 1"
 			]
-		}
 	},
 	"Category": "Missile",
 	"Type": "LRM",
@@ -101,7 +99,8 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"WebbTCSupported-vMRM"
 		],
 		"tagSetSourceFile": ""
 	}

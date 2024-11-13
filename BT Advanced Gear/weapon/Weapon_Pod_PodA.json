@@ -2,7 +2,7 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/a/o/mg"
+				"CategoryID": "w/a/o/pod"
 			}
 		],
 		"ComponentExplosion": {
@@ -12,15 +12,14 @@
 		"InternalAmmoTonnage": {
             "InternalAmmoTons": 0.05
         },
-		"BonusDescriptions": {
-			"Bonuses": [
-				"APod",
-				"PodRadius: 30",
-				"PodDamage: 35",
-				"PipsIgnored: 10",
-				"InternalAmmo: 1"
-			]
-		}
+		"BonusDescriptions": [
+			"APod",
+			"PodRadius: 30",
+			"PodDamage: 35",
+			"PipsIgnored: 10",
+			"WpnAccuracy: +2",
+			"InternalAmmo: 1"
+		]
 	},
 	"Category": "AntiPersonnel",
 	"Type": "Autocannon",
@@ -81,7 +80,8 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_close"
+			"range_close",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

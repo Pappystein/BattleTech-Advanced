@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Upper"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -144,7 +138,7 @@
 	"PrefabIdentifier": "chrprfmech_kitfoxbase-001",
 	"PrefabBase": "kitfox",
 	"Tonnage": 30,
-	"InitialTonnage": 3.5,
+	"InitialTonnage": 3,
 	"weightClass": "LIGHT",
 	"BattleValue": 4642000,
 	"Heatsinks": 0,
@@ -187,7 +181,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				}
 			],
@@ -195,25 +189,25 @@
 			"InventorySlots": 12,
 			"MaxArmor": 50,
 			"MaxRearArmor": -1,
-			"InternalStructure": 30
+			"InternalStructure": 25
 		},
 		{
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 55,
-			"MaxRearArmor": 15,
-			"InternalStructure": 40
+			"MaxArmor": 50,
+			"MaxRearArmor": 20,
+			"InternalStructure": 35
 		},
 		{
 			"Location": "CenterTorso",
@@ -222,31 +216,31 @@
 			"InventorySlots": 15,
 			"MaxArmor": 75,
 			"MaxRearArmor": 25,
-			"InternalStructure": 55
+			"InternalStructure": 50
 		},
 		{
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 55,
-			"MaxRearArmor": 15,
-			"InternalStructure": 40
+			"MaxArmor": 50,
+			"MaxRearArmor": 20,
+			"InternalStructure": 35
 		},
 		{
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -254,7 +248,7 @@
 			"InventorySlots": 12,
 			"MaxArmor": 50,
 			"MaxRearArmor": -1,
-			"InternalStructure": 30
+			"InternalStructure": 25
 		},
 		{
 			"Location": "LeftLeg",
@@ -263,7 +257,7 @@
 			"InventorySlots": 6,
 			"MaxArmor": 70,
 			"MaxRearArmor": -1,
-			"InternalStructure": 40
+			"InternalStructure": 35
 		},
 		{
 			"Location": "RightLeg",
@@ -272,7 +266,7 @@
 			"InventorySlots": 6,
 			"MaxArmor": 70,
 			"MaxRearArmor": -1,
-			"InternalStructure": 40
+			"InternalStructure": 35
 		}
 	],
 	"LOSSourcePositions": [
@@ -324,7 +318,9 @@
 		"items": [
 			"ClanMech",
 			"OmniMech",
-			"HeroMech"
+			"HeroMech",
+			"ArmLimitUpperRight",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},

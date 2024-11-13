@@ -21,7 +21,7 @@
 		"UIName": "Raven RVN-4LX",
 		"Id": "mechdef_raven_RVN-4LX",
 		"Name": "Raven",
-		"Details": "Developed as an experimental fork of the production variant Raven-4L, the Raven-4LX was an attept by Hellespont to develop a portable missile shield. While the Anti-Missile ECM had excellent battlefield performance it also proved prone to maintenance problems and remained experimental. The rest of the Raven-4LX's kit includes twin MML-5s for flexibility and a pair of equally experimental Rotary ER Medium Lasers. Endo-Steel construction and an XL Engine provide the weight while Stealth Armor keeps the mech evasive.",
+		"Details": "Developed as an experimental fork of the production variant Raven-4L, the Raven-4LX was an attempt by Hellespont to develop a portable missile shield. While the Anti-Missile ECM had excellent battlefield performance it also proved prone to maintenance problems and remained experimental. The rest of the Raven-4LX's kit includes twin MML-5s for flexibility and a pair of equally experimental Rotary ER Medium Lasers. Endo-Steel construction and an XL Engine provide the weight while Stealth Armor keeps the mech evasive.",
 		"Icon": "uixTxrIcon_raven"
 	},
 	"simGameMechPartCost": 200000,
@@ -102,8 +102,17 @@
 	],
 	"inventory": [
 		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_ARTEMISIV",
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "emod_armorslots_stealth",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": "",
+			"hasPrefabName": true
+		},
+		{
+			"MountedLocation": "LeftLeg",
+			"ComponentDefID": "Gear_Stealth_Linked",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
@@ -113,13 +122,59 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_armorslots_stealth",
+			"MountedLocation": "LeftTorso",
+			"ComponentDefID": "Gear_Stealth_Linked",
+			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
+			"GUID": null,
 			"DamageLevel": "Functional",
-			"prefabName": "",
-			"hasPrefabName": true
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "Gear_Stealth_Linked",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightArm",
+			"ComponentDefID": "Gear_Stealth_Linked",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Gear_Stealth_Linked",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightLeg",
+			"ComponentDefID": "Gear_Stealth_Linked",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
 		},
 		{
 			"MountedLocation": "CenterTorso",
@@ -350,7 +405,7 @@
 		},
 		{
 			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -361,7 +416,7 @@
 		},
 		{
 			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_SRM",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SRM",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,

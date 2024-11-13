@@ -15,7 +15,6 @@
 		"DBMShopDef"
 	],
 	"Settings": {
-		"LogLevel": "Debug",
 		"ReplaceSystemShop": true,
 		"ReplaceFactionShop": true,
 		"ReplaceBlackMarket": true,
@@ -32,6 +31,7 @@
 					"Liao",
 					"Marik",
 					"Steiner",
+					"Cameron",
 					"ComStar",
 					"Word of Blake",
 					"St. Ives",
@@ -41,13 +41,18 @@
 			{
 				"Name": "Periphery",
 				"Members": [
-					"the Hegemony",
+					"the Marian Hegemony",
 					"the Magistracy",
 					"the Taurian",
 					"the Coalition",
+					"the Directorate",
+					"the Locals",
 					"Outworlds",
 					"Lothia",
-					"Illyria"
+					"Illyria",
+					"FroncReaches",
+					"CalderonProtectorate",
+					"RWR"
 				]
 			},
 			{
@@ -59,6 +64,7 @@
 					"Rim",
 					"New Delphi",
 					"JarnFolk",
+					"the pirates",
 					"Tortuga"
 				]
 			},
@@ -69,7 +75,11 @@
 					"Ghost Bear",
 					"Jade Falcon",
 					"Nova Cat",
+					"Snow Raven",
+					"Goliath Scorpion",
 					"Diamond Shark",
+					"Scorpion Empire",
+					"Fire Mandrill",
 					"Dark Caste",
 					"Clans"
 				]

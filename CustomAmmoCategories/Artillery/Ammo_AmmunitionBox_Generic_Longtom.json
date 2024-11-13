@@ -5,25 +5,21 @@
 				"CategoryID": "a/a/o/artillery"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 100,
 			"StabilityDamagePerAmmo": 25
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"AreaOfEffect: 200",
-				"AreaOfEffectDmg: 135",
-				"AreaOfEffectHeatDmg: 20",
-				"AreaOfEffectSTABDmg: 20",
-				"CostPerShot: 3000",
-				"AmmoCount: 3"
-			]
-		},
+		"BonusDescriptions": [
+			"AreaOfEffect: 200",
+			"AreaOfEffectDmg: 300",
+			"AreaOfEffectHeatDmg: 60",
+			"AreaOfEffectSTABDmg: 60",
+			"CostPerShot: 3000",
+			"AmmoCount: 3"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 4500
 		}
@@ -40,7 +36,7 @@
 		"Id": "Ammo_AmmunitionBox_Generic_Longtom",
 		"Name": "LongTom Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 3 shots.",
-		"Icon": "Art-illery"
+		"Icon": "Art-illery-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

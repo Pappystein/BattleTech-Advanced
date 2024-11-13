@@ -1,9 +1,5 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
-		},
 		"AssemblyVariant": {
 			"PrefabID": "Flea",
 			"Exclude": false,
@@ -19,7 +15,7 @@
 		"UIName": "Flea",
 		"Id": "chassisdef_flea_FLE-19",
 		"Name": "Flea",
-		"Details": "The newly-developed COIL system required a few testbed mechs so the designers dragged a few Fleas out of mothballs and built this, the Flea-19. Armed with only a single COIL and a backup Small Laser, the Flea looks lightly armed at first but those who faced it in trials and simulations quickly realized the incredible damage potential of the COIL. Capable of devastating mechs in a single salvo from the COIL, the Flea-19 is devastating to anything it can catch, with the only downside being the shutdown time from the prodigious generated heat.",
+		"Details": "The newly-developed COIL system required a few testbed mechs so the designers dragged a few Fleas out of mothballs and built this, the Flea-23. Armed with only a single COIL and a backup Small Laser, the Flea looks lightly armed at first but those who faced it in trials and simulations quickly realized the incredible damage potential of the COIL. Capable of devastating mechs in a single salvo from the COIL, the Flea-23 is devastating to anything it can catch, with the only downside being the shutdown time from the prodigious generated heat.",
 		"Icon": "uixTxrIcon_flea"
 	},
 	"MovementCapDefID": "movedef_flea_FLE-15",
@@ -71,11 +67,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -89,7 +85,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -103,7 +99,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -117,7 +113,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				}
 			],
@@ -131,11 +127,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -208,13 +204,17 @@
 			"z": 0
 		}
 	],
-	"VariantName": "FLE-19",
+	"VariantName": "FLE-23",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"LightMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Recon and Backstabber",
-	"YangsThoughts": "The newly-developed COIL system required a few testbed mechs so the designers dragged a few Fleas out of mothballs and built this, the Flea-19. Armed with only a single COIL and a backup Small Laser, the Flea looks lightly armed at first but those who faced it in trials and simulations quickly realized the incredible damage potential of the COIL. Capable of devastating mechs in a single salvo from the COIL, the Flea-19 is devastating to anything it can catch, with the only downside being the shutdown time from the prodigious generated heat.",
+	"YangsThoughts": "The newly-developed COIL system required a few testbed mechs so the designers dragged a few Fleas out of mothballs and built this, the Flea-23. Armed with only a single COIL and a backup Small Laser, the Flea looks lightly armed at first but those who faced it in trials and simulations quickly realized the incredible damage potential of the COIL. Capable of devastating mechs in a single salvo from the COIL, the Flea-23 is devastating to anything it can catch, with the only downside being the shutdown time from the prodigious generated heat.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",

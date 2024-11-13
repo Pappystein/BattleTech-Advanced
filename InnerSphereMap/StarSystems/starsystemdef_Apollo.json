@@ -28,9 +28,12 @@
 			"planet_industry_aquaculture",
 			"planet_industry_research",
 			"planet_industry_manufacturing",
+			"planet_other_blackmarket",
 			"planet_other_starleague",
 			"planet_other_ruins",
-			"planet_faction_clanjadefalcon"
+			"planet_other_capital",
+			"planet_factory_restricted",
+			"planet_faction_rimworldsrepublic"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -54,7 +57,7 @@
 	},
 	"FuelingStation": true,
 	"JumpDistance": 9,
-	"ownerID": "ClanJadeFalcon",
+	"ownerID": "RimWorldsRepublic",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
 	"ShopMaxSpecials": 9,
@@ -140,13 +143,15 @@
 	"UseMaxContractOverride": false,
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
-		"itemCollection_major_ClanWorlds"
+		"itemCollection_major_RimWorldsRepublic"
 	],
-	"factionShopOwnerID": "ClanJadeFalcon",
+	"factionShopOwnerID": "RimWorldsRepublic",
 	"FactionShopItems": [
-		"itemCollection_faction_ClanWorlds"
+		"itemCollection_faction_RimWorldsRepublic"
 	],
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"BTA_List_BlackMarket"
+	],
 	"CoreSystemID": "starsystemdef_Apollo",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -157,16 +162,17 @@
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
-		"Steiner",
-		"Marik",
-		"Kurita",
-		"Davion",
-		"Liao",
-		"WordOfBlake",
-		"ComStar",
-		"Rasalhague"
+		"RimWorldsRepublic",
+		"Locals"
 	],
 	"contractTargetIDs": [
-		"ClanJadeFalcon"
+		"Hanse",
+		"DarkCaste",
+		"AuriganPirates",
+		"Steiner",
+		"ClanWolf",
+		"ClanJadeFalcon",
+		"Mercenaries",
+		"Locals"
 	]
 }

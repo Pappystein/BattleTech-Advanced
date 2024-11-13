@@ -5,17 +5,14 @@
 				"CategoryID": "w/m/s/srm"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"MissileHealth: 2"
-			]
-		},
-		"Flags": {
-			"flags": [
-				"not_broken",
-				"no_salvage"
-			]
-		}
+			],
+		"Flags": [
+			"not_broken",
+			"no_salvage",
+			"default"
+		]
 	},
 	"Category": "Missile",
 	"Type": "SRM",

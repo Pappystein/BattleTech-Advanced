@@ -17,6 +17,10 @@
 			"2ndArmyVMu",
 			"11thArmyVEta",
 			"7thArmyVIota",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
+			"IVCorps",
 			"WordOfBlake",
 			"40thShadowDivision",
 			"9thDivisionWoB",
@@ -53,7 +57,10 @@
 			"SnordsIrregulars",
 			"NorthwindHighlanders",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"DismalDisinherited",
+			"MacksMercs",
 			"SolarisVIIMercLeague",
 			"EridaniLightHorse",
 			"GrayDeathLegion",
@@ -93,6 +100,11 @@
 			"JacobsJuggernauts",
 			"LindonsBattalion",
 			"GrimDetermination",
+			"FightingUrukhai",
+			"RaymondsRedcoats",
+			"12thStarGuards",
+			"RedfieldRenegades",
+			"LexingtonCombatGroup",
 			"ToothOfYmir",
 			"KnightsOfCaerbannog",
 			"HostileMercenaries",
@@ -117,13 +129,20 @@
 			"IrukjandiCompany",
 			"AntianLanciarii",
 			"BlackCaravel",
+			"BlackSharks",
+			"SarnaSupremacy",
+			"SaiphTriumvirate",
+			"TerracapConfederation",
+			"StykCommonality",
 			"Moderbjorn",
 			"LocalsBrockwayRefugees",
 			"EdCorbu",
-			"MagistracyOfCanopus",
+			"FroncReaches",
+			"MagistracyofCanopus",
 			"RaventhirsIronHand",
 			"2ndCanopianFusiliers",
 			"MagistracyCavaliers",
+			"CalderonProtectorate",
 			"TaurianConcordat",
 			"TaurianGuard",
 			"PleiadesHussars",
@@ -133,6 +152,7 @@
 			"VLegioRipariensis",
 			"CohorsMorituri",
 			"Hanse",
+			"Castile",
 			"Rim",
 			"Outworld",
 			"1stAllianceAirWing",
@@ -182,6 +202,8 @@
 			"HouseKhulan",
 			"Wolfs_Dragoons",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"KnightsOfCaerbannog",
 			"GraysGhosts",
 			"BroadswordLegion",
@@ -248,21 +270,24 @@
 			"ComponentDefID": "Weapon_LRM_LRM20_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 0,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_LRM_1"
 		},
 		{
 			"MountedLocation": "Turret",
 			"ComponentDefID": "Weapon_LRM_LRM20_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 0,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_LRM_2"
 		},
 		{
 			"MountedLocation": "Turret",
 			"ComponentDefID": "Weapon_LRM_LRM20_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 0,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_LRM_3"
 		},
 		{
 			"MountedLocation": "Front",
@@ -294,38 +319,55 @@
 		},
 		{
 			"MountedLocation": "Left",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"
 		},
 		{
 			"MountedLocation": "Left",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"
 		},
 		{
 			"MountedLocation": "Right",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"
 		},
 		{
 			"MountedLocation": "Right",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_LRM",
+			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"
 		},
 		{
-			"MountedLocation": "Front",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_ARTEMISIV",
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_LRM_1"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_LRM_2"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_LRM_3"
 		},
 		{
 			"MountedLocation": "Front",

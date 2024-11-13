@@ -5,23 +5,21 @@
 				"CategoryID": "a/a/o/artillery"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 65,
 			"StabilityDamagePerAmmo": 25
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"NoAreaOfEffect",
-				"ThumperDamage: +150%",
-				"CostPerShot: 850",
-				"AmmoCount: 8"
-			]
-		},
+		"BonusDescriptions": [
+			"AreaOfEffect: 100",
+			"AreaOfEffectDmg: 60",
+			"AreaOfEffectHeatDmg: 20",
+			"AreaOfEffectSTABDmg: 90",
+			"CostPerShot: 850",
+			"AmmoCount: 8"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 850
 		}
@@ -34,11 +32,11 @@
 		"Purchasable": true,
 		"Manufacturer": "Generic",
 		"Model": "Thumper",
-		"UIName": "Ammo Thumper Shaped Charge",
+		"UIName": "Ammo Thumper Seismic Charge",
 		"Id": "Ammo_AmmunitionBox_Shaped_Thumper",
-		"Name": "Thumper Ammo",
-		"Details": "A concentrated Shaped Charge is used to penetrate the Armor on Hard Targets, but it has a reduced blast radius compared to other explosives. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 8 shots.",
-		"Icon": "Art-illery"
+		"Name": "Seismic ChargeThumper Ammo",
+		"Details": "A concentrated Seismic Charge is used to destabilize hardened targets in a large radius. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 8 shots.",
+		"Icon": "Art-illery-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

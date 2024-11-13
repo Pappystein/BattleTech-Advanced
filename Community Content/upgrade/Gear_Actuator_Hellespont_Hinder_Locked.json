@@ -8,21 +8,18 @@
 				"CategoryID": "NonQuad"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"ChargeSelfDamage: 10%",
 				"ChargeSelfStab: 10%"
-			]
-		},
+			],
 		"ArmActuator": {
 			"Type": "PartUpper"
 		},
-		"Flags": {
-			"flags": [
-				"ignore_damage",
+		"Flags": [
+			"ignore_damage",
+			"no_salvage",
 				"no_salvage"
-			]
-		}
+		]
 	},
 	"StatName": null,
 	"RelativeModifier": 0,
@@ -33,7 +30,7 @@
 		"Purchasable": true,
 		"Manufacturer": "Hellespont",
 		"Model": "Hinder",
-		"UIName": "Upper Arm Hinder +",
+		"UIName": "Upper Arm Hinder Trickster",
 		"Id": "Gear_Actuator_Hellespont_Hinder_Locked",
 		"Name": "Trickster Hinder Arm Mod",
 		"Details": "Actuators control a 'Mech's limbs and are used to perform Melee attacks at close quarters. All 'Mechs come equipped with stock Actuators, which can be upgraded for improved performance.\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",

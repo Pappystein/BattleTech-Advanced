@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
+		"AssemblyVariant": {
+			"PrefabID": "PhoenixHawk",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -13,7 +14,7 @@
 		"Model": "",
 		"UIName": "Royal Phoenix Hawk",
 		"Id": "chassisdef_phoenixhawk_PXH-1b",
-		"Name": "Phoenix Hawk Royal",
+		"Name": "Royal Phoenix Hawk",
 		"Details": "Referred to as the Phoenix Hawk Special, the 1b was introduced in 2760 for the Star League's Royal units. It utilized an XL Engine as well as Endo Steel for its chassis, which allowed the designers to upgrade its weaponry. The pistol-like laser was upgraded to an ER PPC, while a swivel-mounted ER Large Laser found its way onto the right torso. A Guardian ECM Suite in the center torso improved the 1b's defense.",
 		"Icon": "uixTxrIcon_phoenixhawk"
 	},
@@ -66,15 +67,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -106,7 +107,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -120,15 +121,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -204,7 +205,8 @@
 	"VariantName": "PXH-1b",
 	"ChassisTags": {
 		"items": [
-			"RoyalMech"
+			"RoyalMech",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},

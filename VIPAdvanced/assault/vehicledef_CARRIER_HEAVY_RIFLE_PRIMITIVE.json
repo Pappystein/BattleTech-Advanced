@@ -16,6 +16,7 @@
 			"Rim",
 			"Locals",
 			"Hanse",
+			"Castile",
 			"JarnFolk",
 			"Chainelane",
 			"Delphi",
@@ -35,7 +36,10 @@
 			"SnordsIrregulars",
 			"NorthwindHighlanders",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"DismalDisinherited",
+			"MacksMercs",
 			"SolarisVIIMercLeague",
 			"EridaniLightHorse",
 			"GrayDeathLegion",
@@ -77,6 +81,11 @@
 			"JacobsJuggernauts",
 			"LindonsBattalion",
 			"GrimDetermination",
+			"FightingUrukhai",
+			"RaymondsRedcoats",
+			"12thStarGuards",
+			"RedfieldRenegades",
+			"LexingtonCombatGroup",
 			"ToothOfYmir",
 			"KnightsOfCaerbannog",
 			"HostileMercenaries",
@@ -101,6 +110,11 @@
 			"IrukjandiCompany",
 			"AntianLanciarii",
 			"BlackCaravel",
+			"BlackSharks",
+			"SarnaSupremacy",
+			"SaiphTriumvirate",
+			"TerracapConfederation",
+			"StykCommonality",
 			"Moderbjorn",
 			"LocalsBrockwayRefugees",
 			"EdCorbu",
@@ -211,6 +225,62 @@
 			"DamageLevel": "Functional"
 		},
 		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_LRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_LRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_MRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_MRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
 			"MountedLocation": "Front",
 			"ComponentDefID": "Gear_Vehicle_Munitions",
 			"ComponentDefType": "Upgrade",
@@ -301,7 +371,7 @@
 		},
 		{
 			"MountedLocation": "Rear",
-			"ComponentDefID": "emod_engineslots_FuelCell",
+			"ComponentDefID": "emod_engineslots_fuelcell_center",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"

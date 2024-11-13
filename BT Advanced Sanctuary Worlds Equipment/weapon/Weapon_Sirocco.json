@@ -8,20 +8,20 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"IsArtillery",
-				"NoFireInMelee",
-				"AMSImmune",
-				"WpnRecoil: 2",
-				"ScatterRadius: 20, 40"
-			]
-		}
+		"BonusDescriptions": [
+			"IsArtillery",
+			"ArtilleryAttack",
+			"ArtilleryDetails",
+			"NonArtilleryWeapons",
+			"NoFireInMelee",
+			"AMSImmune",
+			"WeaponAttachmentCompatible: Artillery FCS"
+		]
 	},
-	"Category": "Missile",
+	"weaponCategoryID": "Artillery",
 	"Type": "LRM",
 	"WeaponSubType": "LRM20",
-	"MinRange": 180,
+	"MinRange": 90,
 	"MaxRange": 1750,
 	"RangeSplit": [
 		460,
@@ -31,22 +31,19 @@
 	"AmmoCategory": "SIROCCO",
 	"StartingAmmoCapacity": 0,
 	"HeatGenerated": 30,
-	"Damage": 15,
+	"Damage": 60,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 0,
-	"HeatDamage": 0,
+	"HeatDamage": 10,
 	"AccuracyModifier": 0,
 	"CriticalChanceMultiplier": 1,
-	"IndirectFireCapable": true,
 	"RefireModifier": 2,
 	"ShotsWhenFired": 4,
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 1,
-	"Instability": 5,
+	"Instability": 20,
 	"AMSImmune": true,
-	"MinMissRadius": 20,
-	"MaxMissRadius": 40,
 	"ColorsTable": [
 		{
 		  "C": "#2986cc",
@@ -56,6 +53,12 @@
 	"ImprovedBallistic": true,
 	"ColorSpeedChange": 1,
 	"ColorChangeRule": "Linear",
+	"AlwaysIndirectVisuals": true,
+	"IndirectFireCapable": true,
+	"IsArtillery": true,
+	"ArtilleryReticleColor": { "C":"#FF0000", "I": 1.5 },
+	"ArtilleryReticleRadius" : 90,
+	"ArtilleryReticleText": "Sirocco",
 	"WeaponEffectID": "WeaponEffect-Weapon_LRM20",
 	"Description": {
 		"Cost": 1420000,
@@ -84,7 +87,8 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"ArtilleryFCSSupported-Sirocco"
 		],
 		"tagSetSourceFile": ""
 	}

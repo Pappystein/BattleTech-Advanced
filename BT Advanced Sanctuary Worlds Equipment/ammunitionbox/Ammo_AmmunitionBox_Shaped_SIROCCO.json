@@ -5,23 +5,21 @@
 				"CategoryID": "a/m/t/sirocco"
 			}
 		],
-		"Flags": {
-            "flags": [
-                "not_broken"
-            ]
-        },
+		"Flags": [
+			"not_broken"
+		],
         "ComponentExplosion": {
             "ExplosionDamagePerAmmo": 2,
             "StabilityDamagePerAmmo": 1
         },
-        "BonusDescriptions": {
-            "Bonuses": [
-				"NoAreaOfEffect",
-				"WeaponDamage: +15",
-				"CostPerShot: 150",
-				"AmmoCount: 10"
-            ]
-        },
+        "BonusDescriptions": [
+			"AreaOfEffect: 90",
+			"AreaOfEffectDmg: 30",
+			"AreaOfEffectHeatDmg: 10",
+			"AreaOfEffectSTABDmg: 45",
+			"CostPerShot: 150",
+			"AmmoCount: 10"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 150
 		}
@@ -34,11 +32,11 @@
         "Purchasable": true,
         "Manufacturer": "Generic",
         "Model": "Sirocco",
-        "UIName": "Ammo Sirocco Shaped",
+        "UIName": "Ammo Sirocco Seismic Charge",
         "Id": "Ammo_AmmunitionBox_Shaped_SIROCCO",
-        "Name": "Sirocco Ammo",
+        "Name": "Sirocco Seismic Charge Ammo",
         "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of SHIELD.",
-        "Icon": "Art-illery"
+        "Icon": "Art-illery-ammo"
     },
     "BonusValueA": "",
     "BonusValueB": "",

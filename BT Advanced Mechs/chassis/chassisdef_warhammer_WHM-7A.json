@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Lower"
+		"AssemblyVariant": {
+			"PrefabID": "Warhammer",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -13,15 +14,15 @@
 		"Model": "",
 		"UIName": "Royal Warhammer",
 		"Id": "chassisdef_warhammer_WHM-7A",
-		"Name": "Warhammer Royal",
+		"Name": "Royal Warhammer",
 		"Details": "The Warhammer-6Rb was the first Royal Warhammer but the -7A takes the mech to its logical conclusion. With advanced weapons and construction materials, combined with double heat sinks, the Warhammer-7A is a walking death machine for mechs and vehicles alike.",
 		"Icon": "uixTxrIcon_warhammer"
 	},
 	"MovementCapDefID": "movedef_warhammer_WHM-6R",
 	"PathingCapDefID": "pathingdef_heavy",
-	"HardpointDataDefID": "hardpointdatadef_warhammer",
-	"PrefabIdentifier": "chrPrfMech_warhammerBase-001",
-	"PrefabBase": "warhammer",
+	"HardpointDataDefID": "hardpointdatadef_tomahawk",
+	"PrefabIdentifier": "chrprfmech_tomahawkbase-001",
+	"PrefabBase": "tomahawk",
 	"Tonnage": 70,
 	"InitialTonnage": 7,
 	"weightClass": "HEAVY",
@@ -66,11 +67,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -84,19 +85,19 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -119,23 +120,23 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -149,11 +150,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -229,7 +230,10 @@
 	"VariantName": "WHM-7A",
 	"ChassisTags": {
 		"items": [
-			"RoyalMech"
+			"RoyalMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},

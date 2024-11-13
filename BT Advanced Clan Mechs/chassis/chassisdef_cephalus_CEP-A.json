@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Cephalus",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"FixedEquipment": [
@@ -238,11 +239,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -256,7 +257,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -270,11 +271,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -360,7 +361,10 @@
 	"ChassisTags": {
 		"items": [
 			"ClanMech",
-			"OmniMech"
+			"OmniMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},

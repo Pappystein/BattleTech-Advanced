@@ -5,17 +5,17 @@
 				"CategoryID": "w/e/l/vspl"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"VSPL",
+				"VariableShortMax: 120",
+				"VariableMedMin: 120",
+				"VariableMedMax: 240",
+				"VariableLongMin: 240",
+				"VariableLongMax: 450",
 				"PipsIgnored: 1",
-				"VSPLShortMax: 120",
-				"VSPLMedMin: 120",
-				"VSPLMedMax: 240",
-				"VSPLLongMin: 240",
-				"VSPLLongMax: 450"
+				"WeaponAttachmentCompatible: Laser Insulator",
+				"WeaponAttachmentCompatible: Laser FCS"
 			]
-		}
 	},
 	"Category": "Energy",
 	"Type": "Laser",
@@ -107,7 +107,11 @@
 		"items": [
 			"component_type_stock",
 			"component_type_lostech",
-			"range_long"
+			"range_long",
+			"LaserInsulatorAttachable.{location}",
+			"LaserInsulatorSupported-VSPL",
+			"LaserFCSSupported-VSPL",
+			"WebbTCSupported-VSPL"
 		],
 		"tagSetSourceFile": ""
 	}

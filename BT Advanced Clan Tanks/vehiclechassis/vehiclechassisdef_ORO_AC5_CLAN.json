@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_ORO_AC5_CLAN",
-		"Name": "Oro Heavy Tank",
+		"Name": "Oro",
 		"Details": "",
 		"Icon": "Oro",
-		"Cost": 564,
+		"Cost": 1000000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -18,7 +18,7 @@
 	"PrefabBase": "oro",
 	"Tonnage": 60,
 	"weightClass": "HEAVY",
-	"BattleValue": 1492,
+	"BattleValue": 7500000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"movementType": "Tracked",
@@ -103,15 +103,15 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],

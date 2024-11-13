@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_BURKE",
-		"Name": "Burke Defence Tank",
+		"Name": "Burke",
 		"Details": "",
 		"Icon": "Burke",
-		"Cost": 993,
+		"Cost": 750000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -18,7 +18,7 @@
 	"PrefabBase": "burke",
 	"Tonnage": 75,
 	"weightClass": "HEAVY",
-	"BattleValue": 993,
+	"BattleValue": 4000000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"movementType": "Tracked",
@@ -103,11 +103,11 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],

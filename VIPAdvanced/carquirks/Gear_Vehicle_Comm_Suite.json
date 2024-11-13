@@ -1,18 +1,14 @@
 {
 	"Custom": {
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"IndividualResolve: +2"
-			]
-		},
-		"Flags": {
-			"flags": [
-				"not_broken",
+			],
+		"Flags": [
+			"not_broken",
 				"no_salvage",
 				"autorepair",
 				"ignore_damage"
-			]
-		},
+		],
 		"Category": [
 		  {
 			"CategoryID": "TankStuff"
@@ -61,7 +57,7 @@
 			"Description": {
 				"Id": "Vehicle_Comm_Suite",
 				"Name": "Improved Communications",
-				"Details": "Provides a +1 bonus to actions that generate Morale.",
+				"Details": "Provides a +2 bonus to actions that generate Morale.",
 				"Icon": "uixSvgIcon_equipment_Rangefinder"
 			},
 			"nature": "Buff",

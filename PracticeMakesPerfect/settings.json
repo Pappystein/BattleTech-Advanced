@@ -60,6 +60,9 @@
 		"ClanJadeFalcon",
 		"ClanWolf",
 		"ClanNovaCat",
+		"ClanSnowRaven",
+		"ClanFireMandrill",
+		"DarkCaste",
 		"Delphi",
 		"Hanse",
 		"JarnFolk",
@@ -76,7 +79,13 @@
 		"SanctuaryAlliance",
 		"MallardRepublic",
 		"JacobsonHaven",
-		"DaneSacellum"
+		"DaneSacellum",
+		"FroncReaches",
+		"CalderonProtectorate",
+		"ClanGoliathScorpion",
+		"ScorpionEmpire",
+		"RimWorldsRepublic",
+		"Cameron"
 	],
 	"WhiteListMissions": [
 		"SimpleBattle",
@@ -169,12 +178,13 @@
 			"applyToFaction": [
 				"Liao"
 			],
-			"description": "Nobody likes Capellans. Gain reputation with the other four Great Houses when taking contracts against the Capellan Confederation.",
+			"description": "Nobody likes Capellans. Gain reputation with the other five Great Houses when taking contracts against the Capellan Confederation.",
 			"repMod": {
 				"Kurita": 2,
 				"Davion": 2,
 				"Steiner": 2,
-				"Marik": 2
+				"Marik": 2,
+				"Cameron": 2
 			},
 			"effectDataJO": []
 		},
@@ -186,7 +196,7 @@
 			"applyToFaction": [
 				"ComStar"
 			],
-			"description": "Nobody likes paying their HPG bills. Gain reputation with all five Great Houses when taking contracts against ComStar.",
+			"description": "Nobody likes paying their HPG bills. Gain reputation with all non-Cameron Great Houses when taking contracts against ComStar.",
 			"repMod": {
 				"Kurita": 2,
 				"Davion": 2,
@@ -219,9 +229,10 @@
 			"killsRequired": 12,
 			"factionID": "TaurianConcordat",
 			"applyToFaction": [
-				"TaurianConcordat"
+				"TaurianConcordat",
+				"CalderonProtectorate"
 			],
-			"description": "This pilot has made some connections with factions that are sick of hearing Taurians harp on about 'freedom'. Get a ¢10000 cash bounty for every Taurian unit the company destroys.",
+			"description": "This pilot has made some connections with factions that are sick of hearing Taurians harp on about 'freedom'. Get a ¢10000 cash bounty for every Taurian or Calderon unit the company destroys.",
 			"killBounty": {
 				"{EMPLOYER}": 10000
 			},
@@ -289,16 +300,19 @@
 			"effectDataJO": []
 		},
 		{
-			"OpForSpecID": "AD_TyrantBreaker",
-			"OpForSpecName": "Aurigan Directorate: Tyrant Breaker",
+			"OpForSpecID": "AD_SicSemperTyrannis",
+			"OpForSpecName": "Aurigan Directorate: Sic Semper Tyrannis",
 			"killsRequired": 12,
 			"factionID": "AuriganDirectorate",
 			"applyToFaction": [
 				"AuriganDirectorate"
 			],
-			"description": "Kamea is a beacon of hope for the oppressed peoples of the Reach. Gain bonus reputation with the Restoration when taking contracts against the Directorate.",
+			"description": "Kamea is a beacon of hope for the oppressed peoples of the Reach. Gain bonus reputation with the Restoration when taking contracts against the Directorate and bonus cash for kills against them.",
 			"repMod": {
 				"AuriganRestoration": 4
+			},
+			"killBounty": {
+				"{EMPLOYER}": 2500
 			},
 			"effectDataJO": []
 		},
@@ -406,7 +420,7 @@
 			],
 			"description": "The awful thing about the Chainelane Isles is the constant chaos and infighting. The great thing about the Chainelane Isles is the constant chaos and infighting. Get 10% better prices when buying and selling in the Chainelane Isles. Also get bonus reputation from the Chainelane Isles when fighting the Chainelane Isles.",
 			"repMod": {
-				"Chainelane": 2,
+				"Chainelane": 4,
 				"{TARGET}": 2
 			},
 			"storeDiscount": {
@@ -440,7 +454,11 @@
 				"ClanWolf",
 				"ClanJadeFalcon",
 				"ClanGhostBear",
-				"ClanNovaCat"
+				"ClanNovaCat",
+				"ClanSnowRaven",
+				"ClanFireMandrill",
+				"ClanGoliathScorpion",
+				"ScorpionEmpire"
 			],
 			"description": "This pilot is an expert at fighting Clan Wolf, and does 5% increased damage to all Clan forces.",
 			"effectDataJO": [
@@ -510,7 +528,11 @@
 				"ClanWolf",
 				"ClanJadeFalcon",
 				"ClanGhostBear",
-				"ClanNovaCat"
+				"ClanNovaCat",
+				"ClanSnowRaven",
+				"ClanFireMandrill",
+				"ClanGoliathScorpion",
+				"ScorpionEmpire"
 			],
 			"description": "This pilot is an expert at fighting Clan Jade Falcon, and does 5% increased damage to all Clan forces.",
 			"effectDataJO": [
@@ -580,7 +602,11 @@
 				"ClanWolf",
 				"ClanJadeFalcon",
 				"ClanGhostBear",
-				"ClanNovaCat"
+				"ClanNovaCat",
+				"ClanSnowRaven",
+				"ClanFireMandrill",
+				"ClanGoliathScorpion",
+				"ScorpionEmpire"
 			],
 			"description": "This pilot is an expert at fighting Clan Ghost Bear, and does 5% increased damage to all Clan forces.",
 			"effectDataJO": [
@@ -650,7 +676,11 @@
 				"ClanWolf",
 				"ClanJadeFalcon",
 				"ClanGhostBear",
-				"ClanNovaCat"
+				"ClanNovaCat",
+				"ClanSnowRaven",
+				"ClanFireMandrill",
+				"ClanGoliathScorpion",
+				"ScorpionEmpire"
 			],
 			"description": "This pilot is an expert at fighting Clan Nova Cat, and does 5% increased damage to all Clan forces.",
 			"effectDataJO": [
@@ -664,7 +694,7 @@
 					"effectType": "StatisticEffect",
 					"Description": {
 						"Id": "CNC_BadTripDmgPassive",
-						"Name": "Loaded For Bear",
+						"Name": "Bad Trip",
 						"Details": "This pilot is an expert at fighting Clan Nova Cat, and does 5% increased damage to all Clan forces.",
 						"Icon": "allied-star"
 					},
@@ -690,9 +720,305 @@
 					},
 					"effectType": "StatisticEffect",
 					"Description": {
-						"Id": "CNC_BadTripBearDmg",
-						"Name": "Loaded For Bear Damage",
+						"Id": "CNC_BadTripNovaCatDmg",
+						"Name": "Bad Trip Damage",
 						"Details": "This pilot is an expert at fighting Clan Nova Cat, and does 5% increased damage to all Clan forces.",
+						"Icon": "allied-star"
+					},
+					"nature": "Buff",
+					"statisticData": {
+						"statName": "DamagePerShot",
+						"operation": "Float_Multiply",
+						"modValue": "1.05",
+						"modType": "System.Single",
+						"additionalRules": "NotSet",
+						"targetCollection": "Weapon",
+						"targetWeaponCategory": "NotSet",
+						"targetWeaponType": "NotSet",
+						"targetAmmoCategory": "NotSet",
+						"targetWeaponSubType": "NotSet"
+					}
+				}
+			]
+		},
+		{
+			"OpForSpecID": "CSR_Unkindness",
+			"OpForSpecName": "Clan Snow Raven: Unkindness of Ravens",
+			"killsRequired": 12,
+			"factionID": "ClanSnowRaven",
+			"applyToFaction": [
+				"ClanWolf",
+				"ClanJadeFalcon",
+				"ClanGhostBear",
+				"ClanNovaCat",
+				"ClanSnowRaven",
+				"ClanFireMandrill",
+				"ClanGoliathScorpion",
+				"ScorpionEmpire"
+			],
+			"description": "This pilot is an expert at fighting Clan Snow Raven, and does 5% increased damage to all Clan forces.",
+			"effectDataJO": [
+				{
+					"durationData": {},
+					"targetingData": {
+						"effectTriggerType": "Passive",
+						"effectTargetType": "Creator",
+						"showInStatusPanel": true
+					},
+					"effectType": "StatisticEffect",
+					"Description": {
+						"Id": "CNC_UnkindnessDmgPassive",
+						"Name": "Unkindness of Ravens",
+						"Details": "This pilot is an expert at fighting Clan Snow Raven, and does 5% increased damage to all Clan forces.",
+						"Icon": "allied-star"
+					},
+					"nature": "Buff",
+					"statisticData": {
+						"statName": "dummyOpForStat",
+						"operation": "Set",
+						"modValue": "true",
+						"modType": "System.Boolean"
+					}
+				},
+				{
+					"durationData": {
+						"duration": 1,
+						"ticksOnEndOfRound": true,
+						"useActivationsOfTarget": true,
+						"stackLimit": 1
+					},
+					"targetingData": {
+						"effectTriggerType": "OnWeaponFire",
+						"effectTargetType": "Creator",
+						"showInStatusPanel": false
+					},
+					"effectType": "StatisticEffect",
+					"Description": {
+						"Id": "CNC_UnkindnessDmg",
+						"Name": "Unkindness of Ravens",
+						"Details": "This pilot is an expert at fighting Clan Snow Raven, and does 5% increased damage to all Clan forces.",
+						"Icon": "allied-star"
+					},
+					"nature": "Buff",
+					"statisticData": {
+						"statName": "DamagePerShot",
+						"operation": "Float_Multiply",
+						"modValue": "1.05",
+						"modType": "System.Single",
+						"additionalRules": "NotSet",
+						"targetCollection": "Weapon",
+						"targetWeaponCategory": "NotSet",
+						"targetWeaponType": "NotSet",
+						"targetAmmoCategory": "NotSet",
+						"targetWeaponSubType": "NotSet"
+					}
+				}
+			]
+		},
+		{
+			"OpForSpecID": "CGS_ScorpionsSting",
+			"OpForSpecName": "Clan Goliath Scorpion: Scorpion's Sting",
+			"killsRequired": 12,
+			"factionID": "ClanGoliathScorpion",
+			"applyToFaction": [
+				"ClanWolf",
+				"ClanJadeFalcon",
+				"ClanGhostBear",
+				"ClanNovaCat",
+				"ClanSnowRaven",
+				"ClanFireMandrill",
+				"ClanGoliathScorpion",
+				"ScorpionEmpire"
+			],
+			"description": "This pilot is an expert at fighting Clan Goliath Scorpion, and does 5% increased damage to all Clan forces.",
+			"effectDataJO": [
+				{
+					"durationData": {},
+					"targetingData": {
+						"effectTriggerType": "Passive",
+						"effectTargetType": "Creator",
+						"showInStatusPanel": true
+					},
+					"effectType": "StatisticEffect",
+					"Description": {
+						"Id": "CGS_ScorpionStingDmgPassive",
+						"Name": "Scorpion's Sting",
+						"Details": "This pilot is an expert at fighting Clan Goliath Scorpion, and does 5% increased damage to all Clan forces.",
+						"Icon": "allied-star"
+					},
+					"nature": "Buff",
+					"statisticData": {
+						"statName": "dummyOpForStat",
+						"operation": "Set",
+						"modValue": "true",
+						"modType": "System.Boolean"
+					}
+				},
+				{
+					"durationData": {
+						"duration": 1,
+						"ticksOnEndOfRound": true,
+						"useActivationsOfTarget": true,
+						"stackLimit": 1
+					},
+					"targetingData": {
+						"effectTriggerType": "OnWeaponFire",
+						"effectTargetType": "Creator",
+						"showInStatusPanel": false
+					},
+					"effectType": "StatisticEffect",
+					"Description": {
+						"Id": "CGS_ScorpionStingDmg",
+						"Name": "Scorpion's Sting",
+						"Details": "This pilot is an expert at fighting Clan Goliath Scorpion, and does 5% increased damage to all Clan forces.",
+						"Icon": "allied-star"
+					},
+					"nature": "Buff",
+					"statisticData": {
+						"statName": "DamagePerShot",
+						"operation": "Float_Multiply",
+						"modValue": "1.05",
+						"modType": "System.Single",
+						"additionalRules": "NotSet",
+						"targetCollection": "Weapon",
+						"targetWeaponCategory": "NotSet",
+						"targetWeaponType": "NotSet",
+						"targetAmmoCategory": "NotSet",
+						"targetWeaponSubType": "NotSet"
+					}
+				}
+			]
+		},
+		{
+			"OpForSpecID": "SE_ScorpionsSting",
+			"OpForSpecName": "Scorpion Empire: Scorpion's Sting",
+			"killsRequired": 12,
+			"factionID": "ScorpionEmpire",
+			"applyToFaction": [
+				"ClanWolf",
+				"ClanJadeFalcon",
+				"ClanGhostBear",
+				"ClanNovaCat",
+				"ClanSnowRaven",
+				"ClanFireMandrill",
+				"ClanGoliathScorpion",
+				"ScorpionEmpire"
+			],
+			"description": "This pilot is an expert at fighting the Scorpion Empire, and does 5% increased damage to all Clan forces.",
+			"effectDataJO": [
+				{
+					"durationData": {},
+					"targetingData": {
+						"effectTriggerType": "Passive",
+						"effectTargetType": "Creator",
+						"showInStatusPanel": true
+					},
+					"effectType": "StatisticEffect",
+					"Description": {
+						"Id": "SE_ScorpionStingDmgPassive",
+						"Name": "Scorpion's Sting",
+						"Details": "This pilot is an expert at fighting the Scorpion Empire, and does 5% increased damage to all Clan forces.",
+						"Icon": "allied-star"
+					},
+					"nature": "Buff",
+					"statisticData": {
+						"statName": "dummyOpForStat",
+						"operation": "Set",
+						"modValue": "true",
+						"modType": "System.Boolean"
+					}
+				},
+				{
+					"durationData": {
+						"duration": 1,
+						"ticksOnEndOfRound": true,
+						"useActivationsOfTarget": true,
+						"stackLimit": 1
+					},
+					"targetingData": {
+						"effectTriggerType": "OnWeaponFire",
+						"effectTargetType": "Creator",
+						"showInStatusPanel": false
+					},
+					"effectType": "StatisticEffect",
+					"Description": {
+						"Id": "SE_ScorpionStingDmg",
+						"Name": "Scorpion's Sting",
+						"Details": "This pilot is an expert at fighting the Scorpion Empire, and does 5% increased damage to all Clan forces.",
+						"Icon": "allied-star"
+					},
+					"nature": "Buff",
+					"statisticData": {
+						"statName": "DamagePerShot",
+						"operation": "Float_Multiply",
+						"modValue": "1.05",
+						"modType": "System.Single",
+						"additionalRules": "NotSet",
+						"targetCollection": "Weapon",
+						"targetWeaponCategory": "NotSet",
+						"targetWeaponType": "NotSet",
+						"targetAmmoCategory": "NotSet",
+						"targetWeaponSubType": "NotSet"
+					}
+				}
+			]
+		},
+		{
+			"OpForSpecID": "CFM_KindraaKrusher",
+			"OpForSpecName": "Clan Fire Mandrill: Kindraa Krusher",
+			"killsRequired": 12,
+			"factionID": "ClanFireMandrill",
+			"applyToFaction": [
+				"ClanWolf",
+				"ClanJadeFalcon",
+				"ClanGhostBear",
+				"ClanNovaCat",
+				"ClanSnowRaven",
+				"ClanFireMandrill",
+				"ClanGoliathScorpion",
+				"ScorpionEmpire"
+			],
+			"description": "This pilot is an expert at fighting Clan Fire Mandrill, and does 5% increased damage to all Clan forces.",
+			"effectDataJO": [
+				{
+					"durationData": {},
+					"targetingData": {
+						"effectTriggerType": "Passive",
+						"effectTargetType": "Creator",
+						"showInStatusPanel": true
+					},
+					"effectType": "StatisticEffect",
+					"Description": {
+						"Id": "CFM_KindraaKrusherDmgPassive",
+						"Name": "Kindraa Krusher",
+						"Details": "This pilot is an expert at fighting Clan Fire Mandrill, and does 5% increased damage to all Clan forces.",
+						"Icon": "allied-star"
+					},
+					"nature": "Buff",
+					"statisticData": {
+						"statName": "dummyOpForStat",
+						"operation": "Set",
+						"modValue": "true",
+						"modType": "System.Boolean"
+					}
+				},
+				{
+					"durationData": {
+						"duration": 1,
+						"ticksOnEndOfRound": true,
+						"useActivationsOfTarget": true,
+						"stackLimit": 1
+					},
+					"targetingData": {
+						"effectTriggerType": "OnWeaponFire",
+						"effectTargetType": "Creator",
+						"showInStatusPanel": false
+					},
+					"effectType": "StatisticEffect",
+					"Description": {
+						"Id": "CFM_KindraaKrusherDmg",
+						"Name": "Kindraa Krusher",
+						"Details": "This pilot is an expert at fighting Clan Fire Mandrill, and does 5% increased damage to all Clan forces.",
 						"Icon": "allied-star"
 					},
 					"nature": "Buff",
@@ -717,10 +1043,6 @@
 			"killsRequired": 12,
 			"factionID": "DarkCaste",
 			"applyToFaction": [
-				"ClanWolf",
-				"ClanJadeFalcon",
-				"ClanGhostBear",
-				"ClanNovaCat",
 				"DarkCaste"
 			],
 			"description": "This pilot is an expert at fighting the Dark Caste and even though they're Clanners, they're also pirates. Gain 15% bonus cash from your employer when fighting the Dark Caste as well as a 1500 cash bounty per kill.",
@@ -757,12 +1079,14 @@
 			"applyToFaction": [
 				"WordOfBlake"
 			],
-			"description": "The Word of Blake is weird and worships toasters, screw those guys. Gain reputation with four of the Great Houses when taking contracts against The Word of Blake (House Marik likes them).",
+			"description": "The Word of Blake is weird and worships toasters, screw those guys. Gain reputation with five of the Great Houses as well as ComStar when taking contracts against The Word of Blake (House Marik likes them).",
 			"repMod": {
 				"Kurita": 2,
 				"Davion": 2,
 				"Steiner": 2,
-				"Liao": 2
+				"Liao": 2,
+				"Cameron": 2,
+				"ComStar": 2
 			},
 			"effectDataJO": []
 		},
@@ -801,6 +1125,21 @@
 			"effectDataJO": []
 		},
 		{
+			"OpForSpecID": "FR_GiveUsOurWorldsBack",
+			"OpForSpecName": "Fronc Reaches: Give Us Our Worlds Back",
+			"killsRequired": 12,
+			"factionID": "FroncReaches",
+			"applyToFaction": [
+				"FroncReaches"
+			],
+			"description": "The Fronc Reaches might not be hurting anyone but that doesn't mean the Taurians and Canopians aren't mad about losing their colonies in the region. Gain bonus reputation with the Taurian Concordat and the Magistracy of Canopus for each successful contract against the Fronc Reaches.",
+			"repMod": {
+				"TaurianConcordat": 5,
+				"MagistracyOfCanopus": 5
+			},
+			"effectDataJO": []
+		},
+		{
 			"OpForSpecID": "Merc_ItsNotPersonal",
 			"OpForSpecName": "Mercenaries: It's Not Personal, It's Just Business",
 			"killsRequired": 12,
@@ -810,9 +1149,9 @@
 			],
 			"description": "Nothin' personal, kid, it's just business. Gain bonus reputation with the Mercenary Review Board for your professionalism when fighting Mercenaries as well as 10% bonus cash from your employer.",
 			"cashMult": {
-				"{EMPLOYER}": 0.10
+				"{EMPLOYER}": 0.1
 			},
-			"repMod": { 
+			"repMod": {
 				"MercenaryReviewBoard": 20
 			},
 			"effectDataJO": []
@@ -825,11 +1164,11 @@
 			"applyToFaction": [
 				"SanctuaryAlliance"
 			],
-			"description": "Who are they? Where do they come from? Literally no one knows. However, we do know that the Taurians hate them and pay a healthy bounty for killing them. Gain bonus reputation with the Taurian Concordat when fighting the Sanctuary Alliance as well as a ¢50000 bonus per kill.",
+			"description": "Who are they? Where do they come from? Literally no one knows. However, we do know that the Taurians hate them and pay a healthy bounty for killing them. Gain bonus reputation with the Taurian Concordat when fighting the Sanctuary Alliance as well as a ¢5000 bonus per kill.",
 			"killBounty": {
 				"{EMPLOYER}": 5000
 			},
-			"repMod": { 
+			"repMod": {
 				"TaurianConcordat": 2
 			},
 			"effectDataJO": []
@@ -843,7 +1182,7 @@
 				"DaneSacellum"
 			],
 			"description": "The Daners claim their religion descends from ancient Rome so let's show them what happened to ancient Rome. Gain bonus reputation with the Mallard Republic and the Jacobson Haven when fighting the Dane Sacellum.",
-			"repMod": { 
+			"repMod": {
 				"JacobsonHaven": 5,
 				"MallardRepublic": 5
 			},
@@ -872,9 +1211,44 @@
 				"MallardRepublic"
 			],
 			"description": "The Mallard Republic is mired in paperwork to a ridiculous degree and literally everyone hates dealing with them because of it. Gain bonus reputation with their enemies, the Dane Sacellum and the Jacobson Haven, when fighting the Mallard Republic thanks to making them suffer with more paperwork.",
-			"repMod": { 
+			"repMod": {
 				"JacobsonHaven": 5,
 				"DaneSacellum": 5
+			},
+			"effectDataJO": []
+		},
+		{
+			"OpForSpecID": "RWR_FuckFreedom",
+			"OpForSpecName": "Rim Worlds Republic: Fuck Your Freedom",
+			"killsRequired": 12,
+			"factionID": "RimWorldsRepublic",
+			"applyToFaction": [
+				"RimWorldsRepublic"
+			],
+			"description": "The Rim Worlds Republic has dreams of freedom, it's time to crush those dreams. Gain bonus reputation with the Lyran Commonwealth and bonus cash from RWR kills as a thank you for crushing their pathetic dreams.",
+			"repMod": {
+				"Steiner": 4
+			},
+			"killBounty": {
+				"Steiner": 1500
+			},
+			"effectDataJO": []
+		},
+		{
+			"OpForSpecID": "TH_BackToTheGrave",
+			"OpForSpecName": "Terran Hegemony: Everyone Disliked That",
+			"killsRequired": 12,
+			"factionID": "Cameron",
+			"applyToFaction": [
+				"Cameron"
+			],
+			"description": "The Terran Hegemony is back and Everyone Disliked That. Gain bonus reputation with the other five Great Houses for bullying their ancient, reborn, rival.",
+			"repMod": {
+				"Kurita": 2,
+				"Davion": 2,
+				"Steiner": 2,
+				"Marik": 2,
+				"Liao": 2
 			},
 			"effectDataJO": []
 		}
@@ -1456,7 +1830,9 @@
 			"description": "This pilot is an expert at escorting other units and keeping them out of harm's way. Allies take 15% less damage.",
 			"effectDataJO": [
 				{
-					"durationData": {},
+					"durationData": {
+						"stackLimit": 1
+					},
 					"targetingData": {
 						"effectTriggerType": "Passive",
 						"effectTargetType": "AllAllies",
@@ -1967,7 +2343,7 @@
 		{
 			"StratComID": "StrategicAccuracy",
 			"StratComName": "Strategic Accuracy",
-			"description": "The commander is sitting this contract out, providing strategic command over the battle. Lance accuracy is increased.",
+			"description": "The commander is sitting this contract out, providing strategic command over the battle. Lance accuracy is increased by +1.",
 			"effectDataJO": [
 				{
 					"durationData": {
@@ -1983,7 +2359,7 @@
 					"Description": {
 						"Id": "StatusEffect-OfficerTrainee",
 						"Name": "Accuracy Increased",
-						"Details": "The commander is sitting this contract out, providing strategic command over the battle. Lance accuracy is increased.",
+						"Details": "The commander is sitting this contract out, providing strategic command over the battle. Lance accuracy is increased by +1.",
 						"Icon": "officer-trainee"
 					},
 					"nature": "Buff",
@@ -2012,5 +2388,173 @@
 	"argoUpgradeToReset": "argo_trainingModule2",
 	"dummyOpForStat": "dummyOpForStat",
 	"removeDeprecated": true,
-	"DebugCleaning": false
+	"DebugCleaning": false,
+	"OpforSubfactionsMap": {
+		"ClanWolf": [
+			"CWEpsilonGalaxy"
+		],
+		"ClanNovaCat": [
+			"CNCOmicronGalaxy"
+		],
+		"ClanJadeFalcon": [
+			"CJFIotaGalaxy"
+		],
+		"ClanGhostBear": [
+			"CGBThetaGalaxy"
+		],
+		"ClanSnowRaven": [
+			"CSRDeltaGalaxy"
+		],
+		"ClanFireMandrill": [
+			"KindraaMickKreese",
+			"KindraSainze",
+			"KindraaFaradayTanaga"
+		],
+		"WordOfBlake": [
+			"40thShadowDivision",
+			"9thDivisionWoB",
+			"WoBProtectorateMilitia"
+		],
+		"Liao": [
+			"DeathCommandos",
+			"1stMcCarronsArmoredCavalry",
+			"WarriorHouseImarra",
+			"6thConfederationReserveCavalry"
+		],
+		"Kurita": [
+			"1stSwordOfLight",
+			"3rdNightStalkers",
+			"2ndLegionOfVega"
+		],
+		"Davion": [
+			"DavionAssaultGuards",
+			"2ndCrucisLancers",
+			"1stKitteryBorderers",
+			"10thLyranGuards",
+			"FederatedFreemen"
+		],
+		"Steiner": [
+			"6thLyranGuards",
+			"5thDonegalGuards",
+			"15thLyranRegulars",
+			"11thAvalonHussars"
+		],
+		"Marik": [
+			"1stKnightsOfTheInnerSphere",
+			"2ndFreeWorldsGuards",
+			"30thMarikMilitia"
+		],
+		"Cameron": [
+			"StarGuardCorps",
+			"ICorps",
+			"IVCorps"
+		],
+		"ComStar": [
+			"2ndArmyVMu",
+			"11thArmyVEta",
+			"7thArmyVIota"
+		],
+		"Rasalhague": [
+			"1stTyr",
+			"2ndFreemen",
+			"4thKavalleri"
+		],
+		"RimWorldsRepublic": [
+			"1stHeliusLegionnaires",
+			"8thHeliusFusiliers",
+			"RepublicanGuard"
+		],
+		"TaurianConcordat": [
+			"TaurianGuard",
+			"PleiadesHussars",
+			"3rdTaurianLancers"
+		],
+		"MagistracyOfCanopus": [
+			"RaventhirsIronHand",
+			"2ndCanopianFusiliers",
+			"MagistracyCavaliers"
+		],
+		"Outworld": [
+			"1stAllianceAirWing",
+			"3rdAllianceAirWing",
+			"4thAllianceAirWing"
+		],
+		"Marian": [
+			"ILegioMartiaVictrix",
+			"VLegioRipariensis",
+			"CohorsMorituri"
+		],
+		"Mercenaries": [
+			"BroadswordLegion",
+			"BurrsBlackCobras",
+			"51stDarkPanzerJaegers",
+			"FistOfMokal",
+			"HsienHotheads",
+			"SimonsonsCutthroats",
+			"AlwaysFaithful",
+			"LangendorfLancers",
+			"LethalInjection",
+			"OlsonsRangers",
+			"TheArcadians",
+			"BlueStarIrregulars",
+			"12thVeganRangers",
+			"Dioscuri",
+			"HarlocksWarriors",
+			"ScreamingEagles",
+			"SmithsonsChineseBandits",
+			"VanguardLegion",
+			"AvantisAngels",
+			"KellHounds",
+			"KnightsOfStCameron",
+			"MobileFire",
+			"SnordsIrregulars",
+			"CamachosCaballeros",
+			"GreenburgsGodzillas",
+			"NarhalsRaiders",
+			"NorthwindHighlanders",
+			"Wolfs_Dragoons",
+			"BarrettsFusiliers",
+			"Blackhearts",
+			"TheKrushers",
+			"RomanovsCrusaders",
+			"BannockburnsBandits",
+			"CleanKill",
+			"LoneStarRegiment",
+			"LongwoodsBluecoats",
+			"CaesarsCohorts",
+			"CanopianHighlanders",
+			"DismalDisinherited",
+			"Dragonslayers",
+			"HarcourtsDestructors",
+			"RamiliesRaiders",
+			"ThermoPolice",
+			"BronsonsHorde",
+			"BullardsArmoredCavalry",
+			"QuintsOlympianGroundpounders",
+			"GraysGhosts",
+			"BlackOutlaws",
+			"21stCentauriLancers",
+			"RubinskysLightHorse",
+			"KhorsakovsCossacks",
+			"EridaniLightHorse",
+			"IrukjandiCompany",
+			"AntianLanciarii",
+			"BlackCaravel",
+			"KnightsOfCaerbannog",
+			"WinfieldsRegiment",
+			"ToothOfYmir",
+			"JacobsJuggernauts",
+			"LindonsBattalion",
+			"GrimDetermination",
+			"SolarisVIIMercLeague"
+		],
+		"AuriganPirates": [
+			"BandOfTheDamned",
+			"DeathsConsorts",
+			"MorrisonsExtractors",
+			"NewBeltPirates",
+			"TortugaFusiliers",
+			"ShenSeTian"
+		]
+	}
 }

@@ -11,13 +11,13 @@
 		"Scope": "Company",
 		"RequirementTags": {
 			"tagSetSourceFile": "Tags/CompanyTags",
-			"items": [
-				"timeline_3063_12_01"
-			]
+			"items": []
 		},
 		"ExclusionTags": {
 			"tagSetSourceFile": "",
-			"items": []
+			"items": [
+				"had_xpulsmas"
+			]
 		},
 		"RequirementComparisons": []
 	},
@@ -63,7 +63,9 @@
 							"Requirements": null,
 							"AddedTags": {
 								"tagSetSourceFile": "",
-								"items": []
+								"items": [
+									"had_xpulsmas"
+								]
 							},
 							"RemovedTags": {
 								"tagSetSourceFile": "",

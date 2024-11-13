@@ -5,21 +5,17 @@
 				"CategoryID": "a/m/l/lrm"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 4,
 			"StabilityDamagePerAmmo": 1
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"CostPerShot: 100",
-				"AmmoCount: 120"
-			]
-		},
+		"BonusDescriptions": [
+			"CostPerShot: 100",
+			"AmmoCount: 120"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 100
 		}
@@ -36,7 +32,7 @@
 		"Id": "Ammo_AmmunitionBox_Streak_LRM",
 		"Name": "Streak LRM Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 120 shots.",
-		"Icon": "MRM"
+		"Icon": "MRM-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

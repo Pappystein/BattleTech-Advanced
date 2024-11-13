@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
-		}
-	},
 	"Description": {
 		"Cost": 2123540,
 		"Rarity": 5,
@@ -14,7 +8,7 @@
 		"UIName": "Raven",
 		"Id": "chassisdef_raven_RVN-4LX",
 		"Name": "Raven",
-		"Details": "Developed as an experimental fork of the production variant Raven-4L, the Raven-4LX was an attept by Hellespont to develop a portable missile shield. While the Anti-Missile ECM had excellent battlefield performance it also proved prone to maintenance problems and remained experimental. The rest of the Raven-4LX's kit includes twin MML-5s for flexibility and a pair of equally experimental Rotary ER Medium Lasers. Endo-Steel construction and an XL Engine provide the weight while Stealth Armor keeps the mech evasive.",
+		"Details": "Developed as an experimental fork of the production variant Raven-4L, the Raven-4LX was an attempt by Hellespont to develop a portable missile shield. While the Anti-Missile ECM had excellent battlefield performance it also proved prone to maintenance problems and remained experimental. The rest of the Raven-4LX's kit includes twin MML-5s for flexibility and a pair of equally experimental Rotary ER Medium Lasers. Endo-Steel construction and an XL Engine provide the weight while Stealth Armor keeps the mech evasive.",
 		"Icon": "uixTxrIcon_raven"
 	},
 	"MovementCapDefID": "movedef_raven_RVN-1X",
@@ -66,15 +60,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -88,11 +82,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -115,11 +109,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -133,19 +127,19 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -253,11 +247,15 @@
 	],
 	"VariantName": "RVN-4LX",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"LightMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Experimental Stealth",
-	"YangsThoughts": "Developed as an experimental fork of the production variant Raven-4L, the Raven-4LX was an attept by Hellespont to develop a portable missile shield. While the Anti-Missile ECM had excellent battlefield performance it also proved prone to maintenance problems and remained experimental. The rest of the Raven-4LX's kit includes twin MML-5s for flexibility and a pair of equally experimental Rotary ER Medium Lasers. Endo-Steel construction and an XL Engine provide the weight while Stealth Armor keeps the mech evasive.",
+	"YangsThoughts": "Developed as an experimental fork of the production variant Raven-4L, the Raven-4LX was an attempt by Hellespont to develop a portable missile shield. While the Anti-Missile ECM had excellent battlefield performance it also proved prone to maintenance problems and remained experimental. The rest of the Raven-4LX's kit includes twin MML-5s for flexibility and a pair of equally experimental Rotary ER Medium Lasers. Endo-Steel construction and an XL Engine provide the weight while Stealth Armor keeps the mech evasive.",
 	"CustomParts": {
 		"CustomParts": []
 	}

@@ -8,24 +8,16 @@
 				"CategoryID": "Quirk"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"MultiTrac",
 				"FCS"
-			]
-		},
-		"InventorySorter": {
-			"SortKey": "00201"
-		},
-		"Flags": {
-			"flags": [
+			],
+		"Flags": [
 				"default",
 				"not_broken",
 				"no_salvage",
-				"autorepair",
-				"ignore_damage"
-			]
-		}
+				"autorepair"
+		]
 	},
 	"StatName": null,
 	"RelativeModifier": 0,

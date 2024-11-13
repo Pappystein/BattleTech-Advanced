@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_J37_Cistern",
-		"Name": "J-37 Cistern",
+		"Name": "J-37 Transport",
 		"Details": "",
 		"Icon": "J27",
-		"Cost": 993,
+		"Cost": 50000,
 		"Rarity": 2,
 		"Purchasable": false
 	},
@@ -71,7 +71,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],

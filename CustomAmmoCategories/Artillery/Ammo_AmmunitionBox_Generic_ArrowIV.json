@@ -5,25 +5,21 @@
 				"CategoryID": "a/m/t/arrowiv"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 150,
 			"StabilityDamagePerAmmo": 40
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"AreaOfEffect: 120",
-				"AreaOfEffectDmg: 75",
-				"AreaOfEffectHeatDmg: 10",
-				"AreaOfEffectSTABDmg: 10",
-				"CostPerShot: 600",
-				"AmmoCount: 5"
-			]
-		},
+		"BonusDescriptions": [
+			"AreaOfEffect: 120",
+			"AreaOfEffectDmg: 175",
+			"AreaOfEffectHeatDmg: 35",
+			"AreaOfEffectSTABDmg: 35",
+			"CostPerShot: 600",
+			"AmmoCount: 5"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 600
 		}
@@ -40,7 +36,7 @@
 		"Id": "Ammo_AmmunitionBox_Generic_ArrowIV",
 		"Name": "ArrowIV Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 5 shots.",
-		"Icon": "Art-illery"
+		"Icon": "Art-illery-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

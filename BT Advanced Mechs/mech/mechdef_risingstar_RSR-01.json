@@ -8,6 +8,9 @@
 			"unit_jumpOK",
 			"unit_lance_support",
 			"unit_role_brawler",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
 			"ComStar",
 			"2ndArmyVMu",
 			"11thArmyVEta",
@@ -377,7 +380,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_AC10_1"
 		},
 		{
 			"MountedLocation": "LeftTorso",
@@ -432,7 +436,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_AC10_2"
 		},
 		{
 			"MountedLocation": "RightTorso",

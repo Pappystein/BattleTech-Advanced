@@ -1,17 +1,25 @@
 {
 	"ID": "faction_Ives",
-	"Name": "St. Ives Compact",
+	"Name": "the St. Ives Compact",
 	"ShortName": "St. Ives",
 	"Demonym": "St. Ives",
 	"Government": "Compact",
-	"Allies": [],
-	"Enemies": [
+	"Allies": [
+		"RubinskysLightHorse",
+		"KhorsakovsCossacks",
 		"Davion",
+		"Cameron",
+		"ComStar",
+		"Locals",
+		"Mercenaries"
+	],
+	"Enemies": [
 		"Liao",
 		"WordOfBlake",
 		"AuriganRestoration",
 		"Locals",
 		"Mercenaries",
+		"SarnaSupremacy",
 		"AuriganPirates"
 	],
 	"Presence": 0.1,

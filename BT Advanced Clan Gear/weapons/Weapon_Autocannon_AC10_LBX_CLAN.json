@@ -5,11 +5,10 @@
 				"CategoryID": "w/a/a/lbx"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"WpnRecoil: 4"
+		"BonusDescriptions": [
+				"WpnRecoil: 4",
+				"WeaponAttachmentCompatible: Autocannon FCS"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -61,7 +60,7 @@
 	"BonusValueB": "",
 	"ComponentType": "Weapon",
 	"ComponentSubType": "Weapon",
-	"PrefabIdentifier": "AC10",
+	"PrefabIdentifier": "lbx10",
 	"BattleValue": 0,
 	"InventorySize": 5,
 	"Tonnage": 10,
@@ -74,7 +73,9 @@
 			"OmniRestriction.{location}",
 			"component_type_stock",
 			"component_type_lostech",
-			"range_long"
+			"range_long",
+			"AutocannonFCSSupported-Standard",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

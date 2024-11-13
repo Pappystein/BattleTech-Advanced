@@ -8,14 +8,13 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"WpnRecoil: 1",
-				"WeaponJAMFlat: 5",
-				"NoFireInMelee",
-				"VariableBurstCount: 2"
-			]
-		}
+		"BonusDescriptions": [
+			"WpnRecoil: 1",
+			"WeaponJAMFlat: 5",
+			"NoFireInMelee",
+			"VariableBurstCount: 2",
+			"WeaponAttachmentCompatible: Autocannon FCS"
+		]
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -92,7 +91,9 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"AutocannonFCSSupported-Ultra",
+			"WebbTCSupported-Ultra"
 		],
 		"tagSetSourceFile": ""
 	}

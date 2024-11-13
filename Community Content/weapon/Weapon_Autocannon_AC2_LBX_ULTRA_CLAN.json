@@ -8,14 +8,12 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WpnRecoil: 2",
 				"VariableBurstCount: 2",
 				"WeaponJAMFlat: 15",
 				"NoFireInMelee"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -97,7 +95,8 @@
 			"OmniRestriction.{location}",
 			"component_type_stock",
 			"component_type_lostech",
-			"range_extreme"
+			"range_extreme",
+			"WebbTCSupported-Ultra"
 		],
 		"tagSetSourceFile": ""
 	}

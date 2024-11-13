@@ -11,10 +11,17 @@
 			"unit_generic",
 			"unit_bracket_low",
 			"unit_jumpOK",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""

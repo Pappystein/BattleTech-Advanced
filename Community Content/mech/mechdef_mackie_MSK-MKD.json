@@ -9,6 +9,8 @@
 			"unit_role_brawler",
 			"unit_indirectFire",
 			"Hanse",
+			"Castile",
+			"MacksMercs",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""
@@ -324,18 +326,7 @@
 		},
 		{
 			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_Cockpit_Generic_Standard",
-			"SimGameUID": null,
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_I3F3",
+			"ComponentDefID": "Gear_Cockpit_Ceres_Metals_Hardened",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
@@ -389,11 +380,11 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "RightTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_Inferno_Sniper",
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "Gear_HeatSink_Generic_Double",
 			"SimGameUID": null,
-			"ComponentDefType": "AmmunitionBox",
-			"HardpointSlot": -1,
+			"ComponentDefType": "HeatSink",
+			"HardpointSlot": 0,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
@@ -412,7 +403,7 @@
 		},
 		{
 			"MountedLocation": "RightTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_Shaped_Sniper",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_Sniper",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,

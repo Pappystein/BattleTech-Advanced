@@ -21,8 +21,11 @@
 			"unit_bracket_high",
 			"unit_rarity_3",
 			"unit_vtol",
+			"NoBiome_lunarVacuum",
+			"NoBiome_martianVacuum",
 			"JarnFolk",
 			"Hanse",
+			"Castile",
 			"Delphi",
 			"Chainelane",
 			"Tortuga",
@@ -87,6 +90,48 @@
 			"ComponentDefType": "Weapon",
 			"MountedLocation": "Front",
 			"HardpointSlot": 2,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Front",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Front",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Front",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Front",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Front",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"MountedLocation": "Front",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
 			"DamageLevel": "Functional"
 		},
 		{

@@ -4,7 +4,7 @@
 		"Id": "vehicledef_KNISPEL_MODAL",
 		"Name": "Knispel Laser Tank",
 		"Details": "",
-		"Icon": "Knispel Laser Tank",
+		"Icon": "Manticore",
 		"Cost": 993,
 		"Rarity": 0,
 		"Purchasable": false
@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.50",
 			"unit_vehicle",
 			"unit_heavy",

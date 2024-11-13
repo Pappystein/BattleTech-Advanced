@@ -1,12 +1,15 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"RightLimit": "Hand",
-			"LeftLimit": "Hand"
+		"AssemblyVariant": {
+			"PrefabID": "Hatchetman",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"MediumMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"DFADamage": 50,
@@ -147,7 +150,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"InternalStructure": 16,
@@ -161,11 +168,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"InternalStructure": 35,
@@ -179,11 +190,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"InternalStructure": 55,
@@ -206,11 +221,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"InternalStructure": 55,

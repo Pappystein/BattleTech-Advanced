@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
-	},
 	"Description": {
 		"Cost": 8600000,
 		"Rarity": 5,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Royal Crab",
 		"Id": "chassisdef_crab_CRB-27b",
-		"Name": "Crab Royal",
+		"Name": "Royal Crab",
 		"Details": "The Crab-27b is the Star League's Royal regiment variant of the venerable Crab. It carries a similar weapon loadout as the Crab-20 and -27 but, where they use single heat sinks, the -27b uses doubles which let it run far colder and pump out damage far more consistently.",
 		"Icon": "uixTxrIcon_crab"
 	},
@@ -57,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -71,15 +65,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -102,11 +96,11 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -129,15 +123,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -235,7 +229,8 @@
 	"VariantName": "CRB-27b",
 	"ChassisTags": {
 		"items": [
-			"RoyalMech"
+			"RoyalMech",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},

@@ -24,7 +24,7 @@
 		"UIName": "Kit Fox KFX-Prime",
 		"Id": "mechdef_kitfox_KFX-BW",
 		"Name": "Kit Fox",
-		"Details": "A personalized Kit Fox design used by a mechwarrior named Aether, this Kit Fox is configured for close-range knife-fighting. Armed with a quartet of Heavy Small Lasers, it can tear apart anything up close. Its only concession to ranged combat is a sole ATM-9, with three tons of ammo. A bevy of cDHS keeps it cold while a Clan ECM suite provides additional security.",
+		"Details": "A personalized Kit Fox design used by a mechwarrior named Aether, this Kit Fox is configured for close-range knife-fighting. Armed with a quintet of Heavy Small Lasers, it can tear apart anything up close. Its only concession to ranged combat is a sole ATM-9, with three tons of ammo. A bevy of cDHS keeps it cold while a Clan ECM suite provides additional security.",
 		"Icon": "uixTxrIcon_kitfox"
 	},
 	"simGameMechPartCost": 200000,
@@ -44,7 +44,7 @@
 			"Location": "CenterTorso",
 			"CurrentArmor": 75,
 			"CurrentRearArmor": 25,
-			"CurrentInternalStructure": 55,
+			"CurrentInternalStructure": 50,
 			"AssignedArmor": 75,
 			"AssignedRearArmor": 25
 		},
@@ -52,26 +52,26 @@
 			"DamageLevel": "Functional",
 			"Location": "LeftTorso",
 			"CurrentArmor": 55,
-			"CurrentRearArmor": 15,
-			"CurrentInternalStructure": 40,
+			"CurrentRearArmor": 16,
+			"CurrentInternalStructure": 35,
 			"AssignedArmor": 55,
-			"AssignedRearArmor": 15
+			"AssignedRearArmor": 16
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightTorso",
 			"CurrentArmor": 55,
-			"CurrentRearArmor": 15,
-			"CurrentInternalStructure": 40,
+			"CurrentRearArmor": 16,
+			"CurrentInternalStructure": 35,
 			"AssignedArmor": 55,
-			"AssignedRearArmor": 15
+			"AssignedRearArmor": 16
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftArm",
 			"CurrentArmor": 50,
 			"CurrentRearArmor": 0,
-			"CurrentInternalStructure": 30,
+			"CurrentInternalStructure": 25,
 			"AssignedArmor": 50,
 			"AssignedRearArmor": 0
 		},
@@ -80,7 +80,7 @@
 			"Location": "RightArm",
 			"CurrentArmor": 50,
 			"CurrentRearArmor": 0,
-			"CurrentInternalStructure": 30,
+			"CurrentInternalStructure": 25,
 			"AssignedArmor": 50,
 			"AssignedRearArmor": 0
 		},
@@ -89,7 +89,7 @@
 			"Location": "LeftLeg",
 			"CurrentArmor": 70,
 			"CurrentRearArmor": 0,
-			"CurrentInternalStructure": 40,
+			"CurrentInternalStructure": 35,
 			"AssignedArmor": 70,
 			"AssignedRearArmor": 0
 		},
@@ -98,7 +98,7 @@
 			"Location": "RightLeg",
 			"CurrentArmor": 70,
 			"CurrentRearArmor": 0,
-			"CurrentInternalStructure": 40,
+			"CurrentInternalStructure": 35,
 			"AssignedArmor": 70,
 			"AssignedRearArmor": 0
 		}
@@ -146,7 +146,7 @@
 		},
 		{
 			"MountedLocation": "LeftArm",
-			"ComponentDefID": "emod_arm_omni_lower",
+			"ComponentDefID": "emod_arm_part_lower",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": 0,
@@ -316,6 +316,15 @@
 			"SimGameUID": "",
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Weapon_Laser_HeavySmallLaser_CLAN",
+			"SimGameUID": "",
+			"ComponentDefType": "Weapon",
+			"HardpointSlot": 1,
 			"DamageLevel": "Functional",
 			"hasPrefabName": false
 		},

@@ -74,7 +74,10 @@
 	"DFAInstability": 15,
 	"ChassisTags": {
 		"items": [
-			"OmniMech"
+			"OmniMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -151,11 +154,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -178,11 +185,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,

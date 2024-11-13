@@ -5,18 +5,14 @@
 				"CategoryID": "a/s/a/magshot"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"Flags": [
+			"not_broken"
+		],
+		"BonusDescriptions": [
 				"CostPerShot: 150",
 				"AmmoCount: 50",
 				"GaussNoBoom"
-			]
-		},
+			],
 		"AmmoCost": {
 			"PerUnitCost": 150
 		}
@@ -33,7 +29,7 @@
 		"Id": "Ammo_AmmunitionBox_Generic_MAGSHOT",
 		"Name": "Magshot Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. <b><color=#099ff2>Does not explode.</color></b> Has 50 shots.",
-		"Icon": "FerroMag"
+		"Icon": "FerroMag-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

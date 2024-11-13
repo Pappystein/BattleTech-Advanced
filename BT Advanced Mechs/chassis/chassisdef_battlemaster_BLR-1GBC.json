@@ -1,4 +1,11 @@
 {
+	"Custom": {
+		"AssemblyVariant": {
+			"PrefabID": "BattleMaster",
+			"Exclude": false,
+			"Include": true
+		}
+	},
 	"Description": {
 		"Cost": 14600000,
 		"Rarity": 5,
@@ -7,15 +14,15 @@
 		"Model": "",
 		"UIName": "Royal BattleMaster",
 		"Id": "chassisdef_battlemaster_BLR-1GBC",
-		"Name": "BattleMaster Royal",
+		"Name": "Royal BattleMaster",
 		"Details": "The BattleMaster-1GB dates to the Star League's Royal regiments and is just like a normal Battlemaster-1G except better in every respect. Between its mighty ER PPCs and the many double heat sinks that keep it cold, the -1GB is a fearsome opponent. The BLR-1GBC swaps three heat sinks from the -1GB in exchange for a Command Console, making it an excellent command mech.",
 		"Icon": "uixTxrIcon_battlemaster"
 	},
 	"MovementCapDefID": "movedef_battlemaster_BLR-1GB",
 	"PathingCapDefID": "pathingdef_assault",
-	"HardpointDataDefID": "hardpointdatadef_battlemaster",
-	"PrefabIdentifier": "chrPrfMech_battlemasterBase-001",
-	"PrefabBase": "battlemaster",
+	"HardpointDataDefID": "hardpointdatadef_bigfoot",
+	"PrefabIdentifier": "chrprfmech_bigfootbase-001",
+	"PrefabBase": "bigfoot",
 	"Tonnage": 85,
 	"InitialTonnage": 8.5,
 	"weightClass": "ASSAULT",
@@ -60,11 +67,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -78,15 +85,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -100,7 +107,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -114,11 +121,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -132,11 +139,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -236,7 +243,8 @@
 	"VariantName": "BLR-1GBC",
 	"ChassisTags": {
 		"items": [
-			"RoyalMech"
+			"RoyalMech",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},

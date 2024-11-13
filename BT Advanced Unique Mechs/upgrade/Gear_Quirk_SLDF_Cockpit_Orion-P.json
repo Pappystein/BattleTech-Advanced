@@ -17,8 +17,7 @@
 				"CBillCost": "[[Chassis.Tonnage]] * 1.1"
 			}
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"Sensors: +10%",
 				"Sight: +10%",
 				"LanceResolve: +1",
@@ -27,13 +26,13 @@
 				"NoBleedout",
 				"IsLifeSupportB",
 				"IsSensorsB"
-			]
-		},
-		"Flags": {
-			"Flags": [
-				"not_broken"
-			]
-		}
+			],
+		"Flags": [
+				"default",
+				"not_broken",
+				"no_salvage",
+				"autorepair"
+		]
 	},
 	"StatName": null,
 	"RelativeModifier": 0,
@@ -137,7 +136,8 @@
 				"statName": "BonusHealth",
 				"operation": "Int_Add",
 				"modValue": "1",
-				"modType": "System.Int32"
+				"modType": "System.Int32",
+				"targetCollection": "Pilot"
 			}
 		},
 		{

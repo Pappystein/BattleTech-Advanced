@@ -6,17 +6,17 @@
 		"QuarterLength": 30,
 		"MonthLength": 30,
 		"BurndownDayLength": 30,
-		"MechCostPerQuarter": 30000,
-		"MechTechCostPerQuarter": 20000,
-		"MedTechCostPerQuarter": 8500,
+		"MechCostPerQuarter": 15000,
+		"MechTechCostPerQuarter": 11000,
+		"MedTechCostPerQuarter": 4500,
 		"SpartanCostModifier": 0.6,
 		"RestrictedCostModifier": 0.8,
 		"GenerousCostModifier": 1.6,
-		"ExtravagantCostModifier": 1.9,
+		"ExtravagantCostModifier": 2.0,
 		"JumpShipCost": 45000,
-		"MechWarriorBaseCostPerPoint": 1100.0,
-		"MechWarriorBonusCostPerPoint": 850.0,
-		"MechWarriorHiringCostPerPoint": 2000.0,
+		"MechWarriorBaseCostPerPoint": 1900.0,
+		"MechWarriorBonusCostPerPoint": 1000.0,
+		"MechWarriorHiringCostPerPoint": 2800.0,
 		"DefaultShopRefreshRate": 14,
 		"DefaultShopMaxInventory": 50,
 		"DefaultShopMaxSpecials": 2,
@@ -36,7 +36,7 @@
 		"MechLabRefundModifier": 0.9,
 		"RecoveredChassisShopModifier": 0.9,
 		"LeopardBaseMaintenanceCost": 70000,
-		"ArgoBaseMaintenanceCost": 350000,
+		"ArgoBaseMaintenanceCost": 150000,
 		"QuartersYouCanAffordWithoutTriggeringWarning": 1,
 		"ContractBaseRepDifficultyMultiplier": 1.5,
 		"ContractBaseReputationAddition": 0,
@@ -44,7 +44,7 @@
 		"ContractNegotiableReputationAddition": 5
 	},
 	"Story": {
-		"CampaignStartDate": "3062-01-01T05:00:00Z",
+		"CampaignStartDate": "3061-01-01T05:00:00Z",
 		"MaxMechWarriorsPerPod": 12,
 		"FriendlyMaxContractDifficulty": 6,
 		"HonoredMaxContractDifficulty": 6,
@@ -64,14 +64,15 @@
 		"GreaterThanThisTotalWeightIsHeavyLance": 240
 	},
 	"CareerMode": {
-		"CampaignStartDate": "3062-01-01T05:00:00Z",
+		"CampaignStartDate": "3061-01-01T05:00:00Z",
 		"FlashpointStartRange": [
 			14,
 			21
 		],
 		"HonoredMaxContractDifficulty": 14,
 		"MaxMechWarriorsPerPod": 12,
-		"StartWithRandomMechs": true
+		"StartWithRandomMechs": true,
+		"GameLength" : 2525
 	},
 	"Pilot": {
 		"IncapacitatedDamageCost": 180,
@@ -114,6 +115,8 @@
 				"AbilityDefG8a",
 				"AbilityDefG8b",
 				"AbilityDefG8c",
+				"AbilityDefG8d",
+				"AbilityDefG8e",
 				"AbilityDefG8T"
 			],
 			[
@@ -182,8 +185,7 @@
 			[
 				"AbilityDefGu5",
 				"AbilityDefGu5a",
-				"AbilityDefGu5T",
-				"TraitDefDoublePunch"
+				"AbilityDefGu5T"
 			],
 			[
 				"TraitDefOverheatAddFifteen"
@@ -239,6 +241,8 @@
 				"TraitDefMinRangeReduce90",
 				"AbilityDefT8A",
 				"AbilityDefT8Aa",
+				"AbilityDefT8Ab",
+				"AbilityDefT8Ac",
 				"AbilityDefT8T"
 			],
 			[

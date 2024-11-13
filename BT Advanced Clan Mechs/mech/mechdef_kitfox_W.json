@@ -2,15 +2,20 @@
 	"MechTags": {
 		"items": [
 			"unit_mech",
-			"ai_melee_low",
-			"ai_dfa_low",
 			"unit_release",
 			"unit_rarity_7",
 			"unit_light",
 			"unit_lance_support",
 			"unit_role_scout",
 			"unit_advanced",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"ClanWolf",
+			"ClanGoliathScorpion",
+			"ScorpionEmpire",
+			"ClanSnowRaven",
 			"ClanJadeFalcon",
 			"ClanGhostBear",
 			"ClanNovaCat",
@@ -40,10 +45,10 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "Head",
-			"CurrentArmor": 40,
+			"CurrentArmor": 45,
 			"CurrentRearArmor": 0,
 			"CurrentInternalStructure": 16,
-			"AssignedArmor": 40,
+			"AssignedArmor": 45,
 			"AssignedRearArmor": 0
 		},
 		{
@@ -51,7 +56,7 @@
 			"Location": "CenterTorso",
 			"CurrentArmor": 45,
 			"CurrentRearArmor": 20,
-			"CurrentInternalStructure": 55,
+			"CurrentInternalStructure": 50,
 			"AssignedArmor": 45,
 			"AssignedRearArmor": 20
 		},
@@ -59,26 +64,26 @@
 			"DamageLevel": "Functional",
 			"Location": "LeftTorso",
 			"CurrentArmor": 40,
-			"CurrentRearArmor": 15,
-			"CurrentInternalStructure": 40,
+			"CurrentRearArmor": 20,
+			"CurrentInternalStructure": 35,
 			"AssignedArmor": 40,
-			"AssignedRearArmor": 15
+			"AssignedRearArmor": 20
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightTorso",
 			"CurrentArmor": 40,
-			"CurrentRearArmor": 15,
-			"CurrentInternalStructure": 40,
+			"CurrentRearArmor": 20,
+			"CurrentInternalStructure": 35,
 			"AssignedArmor": 40,
-			"AssignedRearArmor": 15
+			"AssignedRearArmor": 20
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftArm",
 			"CurrentArmor": 35,
 			"CurrentRearArmor": 0,
-			"CurrentInternalStructure": 30,
+			"CurrentInternalStructure": 25,
 			"AssignedArmor": 35,
 			"AssignedRearArmor": 0
 		},
@@ -87,26 +92,26 @@
 			"Location": "RightArm",
 			"CurrentArmor": 35,
 			"CurrentRearArmor": 0,
-			"CurrentInternalStructure": 30,
+			"CurrentInternalStructure": 25,
 			"AssignedArmor": 35,
 			"AssignedRearArmor": 0
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftLeg",
-			"CurrentArmor": 35,
+			"CurrentArmor": 40,
 			"CurrentRearArmor": 0,
-			"CurrentInternalStructure": 40,
-			"AssignedArmor": 35,
+			"CurrentInternalStructure": 35,
+			"AssignedArmor": 40,
 			"AssignedRearArmor": 0
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightLeg",
-			"CurrentArmor": 35,
+			"CurrentArmor": 40,
 			"CurrentRearArmor": 0,
-			"CurrentInternalStructure": 40,
-			"AssignedArmor": 35,
+			"CurrentInternalStructure": 35,
+			"AssignedArmor": 40,
 			"AssignedRearArmor": 0
 		}
 	],
@@ -144,7 +149,7 @@
 		},
 		{
 			"MountedLocation": "LeftArm",
-			"ComponentDefID": "emod_arm_omni_lower",
+			"ComponentDefID": "emod_arm_part_lower",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": 0,
@@ -155,7 +160,7 @@
 		},
 		{
 			"MountedLocation": "LeftArm",
-			"ComponentDefID": "emod_arm_omni_hand",
+			"ComponentDefID": "emod_arm_part_hand",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": 0,

@@ -2,7 +2,7 @@
 	"Name": "StrategicOperations",
 	"DLL": "StrategicOperations.dll",
 	"Hidden": true,
-	"Version": "3.0.6.6",
+	"Version": "3.1.2.5",
 	"Description": "",
 	"Author": "T-Bone",
 	"Website": "https://github.com/ajkroeg/StrategicOperations",
@@ -23,6 +23,10 @@
 		"strafeEndsActivation": true,
 		"spawnTurretEndsActivation": true,
 		"deployProtection": 8,
+		"InternalBAAffectsOverallDropTonnage": true,
+		"ExternalBAAffectsOverallDropTonnage": true,
+		"InternalBAAffectsSlotDropTonnage": false,
+		"ExternalBAAffectsSlotDropTonnage": true,
 		"strafeTargetsFriendliesChance": 0.5,
 		"strafeNeutralBuildingsChance": 0.0,
 		"strafeSensorFactor": 5.0,
@@ -76,11 +80,13 @@
 			"Item.UpgradeDef.Gear_Contract_Mech_Emperor_Ives",
 			"Item.UpgradeDef.Gear_Contract_Mech_Goliath_Marian",
 			"Item.UpgradeDef.Gear_Contract_Mech_Gunslinger_FRR",
+			"Item.UpgradeDef.Gear_Contract_Mech_Atlas_Steiner",
 			"Item.UpgradeDef.Gear_Contract_Mech_Hauptmann_Steiner",
 			"Item.UpgradeDef.Gear_Contract_Mech_Hazard_Circinian",
 			"Item.UpgradeDef.Gear_Contract_Mech_KingCrab_ComStar",
 			"Item.UpgradeDef.Gear_Contract_Mech_Kintaro_Aurigan",
 			"Item.UpgradeDef.Gear_Contract_Mech_Mackie_Hanse",
+			"Item.UpgradeDef.Gear_Contract_Mech_MackieII_Cameron",
 			"Item.UpgradeDef.Gear_Contract_Mech_Merlin_Outworlds",
 			"Item.UpgradeDef.Gear_Contract_Mech_NovaCat_CNC",
 			"Item.UpgradeDef.Gear_Contract_Mech_Permanent_Blackjack_Generic",
@@ -118,7 +124,6 @@
 			"Item.UpgradeDef.Gear_Contract_Tank_Tokugawa_Kurita",
 			"Item.UpgradeDef.Gear_Contract_Turret_Heavy_HVAC",
 			"Item.UpgradeDef.Gear_Contract_Turret_Heavy_Laser",
-			"Item.UpgradeDef.Gear_Contract_Turret_Heavy_HVAC",
 			"Item.UpgradeDef.Gear_Contract_Turret_Heavy_LRM",
 			"Item.UpgradeDef.Gear_Contract_Turret_Heavy_Shredder",
 			"Item.UpgradeDef.Gear_Contract_Turret_Heavy_Sniper",
@@ -139,6 +144,7 @@
 			"Item.UpgradeDef.Gear_Contract_Turret_Stormbreaker",
 			"Item.UpgradeDef.Gear_Contract_Turret_Heavy_ArrowIV",
 			"Item.UpgradeDef.Gear_Contract_Turret_Heavy_ScattershotRailgun",
+			"Item.UpgradeDef.Gear_Contract_Turret_TAG_Hardened",
 			"Item.UpgradeDef.Gear_Contract_Aerospace_Permanent_Mechbuster",
 			"Item.UpgradeDef.Gear_Contract_Aerospace_Permanent_Mechbuster_Mary",
 			"Item.UpgradeDef.Gear_Contract_Aerospace_Permanent_Avar",
@@ -150,6 +156,10 @@
 		"strafeWaves": 2,
 		"commandAbilities_AI": [
 			{
+				"ContractBlacklist": [
+					"DuoDuel",
+					"SoloDuel"
+				],
 				"AbilityDefID": "AbilityDefCMD_Strafe_AI",
 				"FactionIDs": [
 					"ClanGhostBear",
@@ -187,30 +197,30 @@
 		],
 		"DeswarmConfigs": {
 			"AbilityDefDeSwarmerRoll": {
-				"BaseSuccessChance": 0.5,
-				"MaxSuccessChance": 0.9,
+				"BaseSuccessChance": 0.6,
+				"MaxSuccessChance": 0.95,
 				"PilotingSuccessFactor": 0.05,
-				"TotalDamage": 150,
+				"TotalDamage": 200,
 				"Clusters": 6,
 				"InitPenalty": 2
 			},
 			"AbilityDefDeSwarmerSwat": {
-				"BaseSuccessChance": 0.33,
-				"MaxSuccessChance": 0.9,
+				"BaseSuccessChance": 0.5,
+				"MaxSuccessChance": 0.95,
 				"PilotingSuccessFactor": 0.05,
-				"TotalDamage": 75,
+				"TotalDamage": 100,
 				"Clusters": 3,
 				"InitPenalty": 1
 			}
 		},
 		"DeswarmMovementConfig": {
 			"AbilityDefID": "AbilityDefDeSwarmerMovement",
-			"BaseSuccessChance": 0.35,
+			"BaseSuccessChance": 0.45,
 			"MaxSuccessChance": 0.95,
 			"EvasivePipsFactor": 0.1,
 			"JumpMovementModifier": 1.2,
 			"UseDFADamage": false,
-			"LocationDamageOverride": 100,
+			"LocationDamageOverride": 150,
 			"PilotingDamageReductionFactor": 0.1
 		},
 		"BPodComponentIDs": [
@@ -265,7 +275,7 @@
 						"statisticData": {
 							"statName": "CalledShotBonusMultiplier",
 							"operation": "Float_Multiply",
-							"modValue": "9001.0",
+							"modValue": "2.5",
 							"modType": "System.Single"
 						}
 					},
@@ -290,7 +300,7 @@
 						"statisticData": {
 							"statName": "ClusteringModifier",
 							"operation": "Float_Add",
-							"modValue": "9001",
+							"modValue": "10",
 							"modType": "System.Single",
 							"targetCollection": "Weapon"
 						},
@@ -351,7 +361,7 @@
 						"statisticData": {
 							"statName": "AccuracyModifier",
 							"operation": "Float_Add",
-							"modValue": "6",
+							"modValue": "12",
 							"modType": "System.Single"
 						}
 					}
@@ -441,58 +451,6 @@
 						}
 					}
 				]
-			},
-			{
-				"ID": "BA_CarrierSlowdown",
-				"TargetEffectType": "MOUNTTARGET",
-				"Name": "Battle Armor - Carrier Unit Slowdown",
-				"Description": "Vehicles carrying BA are significantly slower due to BA's weight slowing them down.",
-				"effectDataJO": [
-					{
-						"durationData": {},
-						"targetingData": {
-							"effectTriggerType": "Passive",
-							"effectTargetType": "Creator",
-							"showInStatusPanel": true
-						},
-						"effectType": "StatisticEffect",
-						"Description": {
-							"Id": "BA_CarrierCruise",
-							"Name": "Carrier Slowdown",
-							"Details": "This vehicle is 20% slower thanks to the BA it is carrying being heavy.",
-							"Icon": "cargo-crate"
-						},
-						"nature": "Buff",
-						"statisticData": {
-							"statName": "CruiseSpeed",
-							"operation": "Float_Multiply",
-							"modValue": "0.8",
-							"modType": "System.Single"
-						}
-					},
-					{
-						"durationData": {},
-						"targetingData": {
-							"effectTriggerType": "Passive",
-							"effectTargetType": "Creator",
-							"showInStatusPanel": false
-						},
-						"effectType": "StatisticEffect",
-						"Description": {
-							"Id": "BA_CarrierFlank",
-							"Name": "harder to hit",
-							"Details": "garrisoned are harder to hit becuase reasons",
-							"Icon": "allied-star"
-						},
-						"nature": "Buff",
-						"statisticData": {
-							"statName": "FlankSpeed",
-							"operation": "Float_Multiply",
-							"modValue": "0.8",
-							"modType": "System.Single"
-						}
-					}
-				]
 			}
 		],
 		"AirliftTargetEffects": [
@@ -569,21 +527,47 @@
 					"ClanDiamondShark",
 					"ClanJadeFalcon",
 					"ClanNovaCat",
-					"ClanWolf"
+					"ClanWolf",
+					"ClanGoliathScorpion",
+					"ScorpionEmpire",
+					"ClanFireMandrill",
+					"KindraaSainze",
+					"KindraaMickKreese",
+					"KindraaFaradayTanaga"
 				],
 				"SpawnChanceBase": 0.3,
 				"SpawnChanceDiffMod": 0.05,
 				"MaxSquadsPerContract": 3,
 				"InternalBattleArmorWeight": {
-					"mechdef_ba_elemental": 6,
+					"mechdef_ba_elemental": 5,
 					"mechdef_ba_salamander": 3,
-					"BA_EMPTY": 2
+					"BA_EMPTY": 3
 				},
 				"MountedBattleArmorWeight": {
 					"mechdef_ba_elemental": 6,
 					"mechdef_ba_salamander": 4,
 					"mechdef_ba_gnome": 3,
 					"mechdef_ba_golem": 2
+				},
+				"HandsyBattleArmorWeight": {
+					"BA_EMPTY": 1
+				}
+			},
+			{
+				"FactionIDs": [
+					"Wolfs_Dragoons",
+					"BlackWidowCompany"
+				],
+				"SpawnChanceBase": 0.3,
+				"SpawnChanceDiffMod": 0.05,
+				"MaxSquadsPerContract": 3,
+				"InternalBattleArmorWeight": {
+					"mechdef_ba_dragoon": 6,
+					"BA_EMPTY": 3
+				},
+				"MountedBattleArmorWeight": {
+					"mechdef_ba_dragoon": 6,
+					"BA_EMPTY": 3
 				},
 				"HandsyBattleArmorWeight": {
 					"BA_EMPTY": 1
@@ -596,11 +580,20 @@
 			"SoloDuel"
 		],
 		"AI_BattleArmorExcludedContractIDs": [],
-		"BeaconExcludedContractTypes": [
-			"DuoDuel",
-			"SoloDuel"
-		],
-		"BeaconExcludedContractIDs": [],
+		"BeaconExclusionConfig": {
+			"DuoDuel": {
+				"ExcludedPlayerSpawn": true,
+				"ExcludedPlayerStrafe": true,
+				"ExcludedAISpawn": true,
+				"ExcludedAIStrafe": true
+			},
+			"SoloDuel": {
+				"ExcludedPlayerSpawn": true,
+				"ExcludedPlayerStrafe": true,
+				"ExcludedAISpawn": true,
+				"ExcludedAIStrafe": true
+			}
+		},
 		"DisableGarrisons": false,
 		"GarrisonBuildingArmorFactor": 0.5,
 		"UsingMechAffinityForSwarmBreach": true,
@@ -661,7 +654,51 @@
 		"PlayerControlSpawnAbilitiesBlacklist": [
 			"AbilityDefCMD_VTOLDrop"
 		],
-		"DisableAISwarmTag": "AI_DISABLE_SWARM"
+		"DisableAISwarmTag": "AI_DISABLE_SWARM",
+		"crewOrCockpitCustomID": [
+			"CrewCompartment",
+			"Cockpit"
+		],
+		"BAMountPairColors": [
+			{
+				"r": 255,
+				"g": 0,
+				"b": 0
+			},
+			{
+				"r": 255,
+				"g": 0,
+				"b": 255
+			},
+			{
+				"r": 0,
+				"g": 0,
+				"b": 255
+			},
+			{
+				"r": 0,
+				"g": 255,
+				"b": 255
+			},
+			{
+				"r": 0,
+				"g": 255,
+				"b": 0
+			},
+			{
+				"r": 255,
+				"g": 255,
+				"b": 0
+			},
+			{
+				"r": 255,
+				"g": 255,
+				"b": 255
+			}
+		],
+		"BAMountReminderText": "Shift-click unit in drop slot to set carrier",
+		"MeleeOnSwarmAttacks": true,
+		"SimBattleArmorMountError": "The selected squad cannot be transported by this unit."
 	},
 	"Manifest": [
 		{

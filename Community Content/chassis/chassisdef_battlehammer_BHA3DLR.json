@@ -1,6 +1,13 @@
 {
-  "Description": {
-    "Cost": 31174810,
+	"Custom": {
+		"AssemblyVariant": {
+			"PrefabID": "BattleHammer",
+			"Exclude": false,
+			"Include": true
+		}
+	},
+	"Description": {
+    "Cost": 11174810,
     "Rarity": 1,
     "Purchasable": true,
     "Manufacturer": "",
@@ -8,14 +15,14 @@
     "UIName": "BattleHammer",
     "Id": "chassisdef_battlehammer_BHA3DLR",
     "Name": "BattleHammer",
-    "Details": "Pafftek Industries, trying to reduce the cost of the exceptional Battlehammer, made an All innersphere tech version of the Battlehammer.  Looking to upgrade the BHA-2D with more advanced technology, the Engineers at Pafftek Industries sort of met a fork in the road.  That the new mech would utilized twin Ultra 10 Class autocannons was not in doubt. Rather, how it was protected was.  The two new production variants are the BHA-3D-ERA with Explosive Reactive armor, and the BHA-3D-LR with Laser Reflective armor.\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
+    "Details": "Pafftek Industries, trying to reduce the cost of the exceptional BattleHammer, made an inner sphere tech version of the BattleHammer.  Looking to upgrade the BHA-2D with more advanced technology, the Engineers at Pafftek Industries met a fork in the road.  That the new mech would utilize twin Ultra 10 Class autocannons was not in doubt. Rather, how it was protected was.  The two new production variants are the BHA-3D-ERA with Explosive Reactive armor and the BHA-3D-LR with Laser Reflective armor.\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
     "Icon": "uixTxrIcon_battlemaster"
   },
 	"MovementCapDefID": "movedef_templar-TLR1-O",
 	"PathingCapDefID": "pathingdef_assault",
-	"HardpointDataDefID": "hardpointdatadef_templar",
-	"PrefabIdentifier": "chrprfmech_templarbase-001",
-	"PrefabBase": "templar",
+	"HardpointDataDefID": "hardpointdatadef_battlehammer",
+	"PrefabIdentifier": "chrprfmech_battlehammerbase-001",
+	"PrefabBase": "battlehammer",
   "Tonnage": 85,
   "InitialTonnage": 8.5,
   "weightClass": "ASSAULT",
@@ -51,7 +58,7 @@
       "Location": "Head",
       "Hardpoints": [
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }	  
 	  ],
@@ -65,11 +72,11 @@
       "Location": "LeftArm",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },	  
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         }
       ],
@@ -83,15 +90,15 @@
       "Location": "LeftTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -105,7 +112,7 @@
       "Location": "CenterTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }		
 		
@@ -120,15 +127,15 @@
       "Location": "RightTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -142,11 +149,11 @@
       "Location": "RightArm",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },	  
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         }
       ],
@@ -222,15 +229,18 @@
   "VariantName": "BHA-3D LR",
   "ChassisTags": {
     "items": [
-	],
+			"AssaultMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft"
+  	],
     "tagSetSourceFile": ""
   },
   "StockRole": "Brawler & Sniper",
-  "YangsThoughts": "An Advanced production mech, derived from a Frankenmech prototype.  Intersting that they use Laser Reflective Armor.  I saw another version of this with a different type of Armor reacently too!",
+  "YangsThoughts": "An Advanced production mech, derived from a frankenmech prototype.  Interesting that they use Laser Reflective Armor.  I saw another version of this with a different type of Armor recently, too!",
   "FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_Reflective_Coating",
+			"ComponentDefID": "emod_armorslots_reflective",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional",

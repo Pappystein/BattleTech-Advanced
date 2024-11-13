@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Shayu",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -19,9 +20,9 @@
 	},
 	"MovementCapDefID": "movedef_cicada_CDA-2A",
 	"PathingCapDefID": "pathingdef_medium",
-	"HardpointDataDefID": "hardpointdatadef_shayu",
-	"PrefabIdentifier": "chrprfmech_shayubase-001",
-	"PrefabBase": "shayu",
+	"HardpointDataDefID": "hardpointdatadef_shayuredux",
+	"PrefabIdentifier": "chrprfmech_shayureduxbase-001",
+	"PrefabBase": "shayuredux",
 	"Tonnage": 40,
 	"InitialTonnage": 4,
 	"weightClass": "MEDIUM",
@@ -57,7 +58,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -71,7 +72,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -85,7 +90,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -99,7 +108,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -113,7 +122,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -127,7 +140,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -202,7 +219,11 @@
 	],
 	"VariantName": "SYU-2B",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"MediumMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Scout & Harasser",

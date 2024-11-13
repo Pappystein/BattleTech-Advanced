@@ -1,9 +1,5 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Lower"
-		},
 		"AssemblyVariant": {
 			"PrefabID": "Orion",
 			"Exclude": false,
@@ -18,7 +14,7 @@
 		"Model": "",
 		"UIName": "Primitive Orion",
 		"Id": "chassisdef_orion_ON1-C",
-		"Name": "Orion Primitive",
+		"Name": "Primitive Orion",
 		"Details": "The original primitive Orion 'Mech as it was first commissioned lacked an LRM launcher and used an Autocannon/5 in place of the AC/10. A massive engine allowed the 'Mech to obtain a maximum speed of nearly 64.8 km/h, however there was not enough saved weight to mount additional weaponry besides two Medium Lasers, one in each arm. In addition it only mounted 14.5 tons of armor, and ultimately would be dismissed as a candidate for production.",
 		"Icon": "uixTxrIcon_orion"
 	},
@@ -71,7 +67,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -103,7 +99,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -117,7 +113,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -193,7 +189,10 @@
 	"VariantName": "ON1-C",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -202,7 +201,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

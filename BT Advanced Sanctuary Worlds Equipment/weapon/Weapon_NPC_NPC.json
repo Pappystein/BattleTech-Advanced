@@ -5,14 +5,12 @@
 				"CategoryID": "w/e/p/npc"
 			}
 		],
-        "BonusDescriptions": {
-            "Bonuses": [
+        "BonusDescriptions": [
 				"WpnCrits: +25%",
 				"NPCDEBUFF: -1, 2",
 				"WpnAccuracy: +1",
 				"PipsIgnored: 1"
             ]
-        }
     },
     "Category" : "Energy",
     "Type" : "Laser",
@@ -53,6 +51,7 @@
 	"ColorSpeedChange": 1,
 	"ColorChangeRule": "Linear",
 	"FireDelayMultiplier": 0.01,
+	"ProjectileSpeedMultiplier": 0.25,
     "WeaponEffectID" : "WeaponEffect-Weapon_Laser_Large",
     "Description" : {
         "Cost" : 350000,
@@ -114,7 +113,8 @@
     "ComponentTags" : {
         "items" : [
             "component_type_stock",
-            "range_very-long"
+            "range_very-long",
+			"WebbTCSupported-SingleShot"
         ],
         "tagSetSourceFile" : ""
     }

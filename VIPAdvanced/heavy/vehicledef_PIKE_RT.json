@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.19",
 			"unit_vehicle",
 			"unit_assault",
@@ -35,10 +35,12 @@
 			"11thAvalonHussars",
 			"FederatedFreemen",
 			"1stKitteryBorderers",
-			"MagistracyOfCanopus",
+			"FroncReaches",
+			"MagistracyofCanopus",
 			"RaventhirsIronHand",
 			"2ndCanopianFusiliers",
 			"MagistracyCavaliers",
+			"CalderonProtectorate",
 			"TaurianConcordat",
 			"TaurianGuard",
 			"PleiadesHussars",

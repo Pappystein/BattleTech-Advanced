@@ -1,19 +1,13 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
-	},
 	"Description": {
 		"Cost": 1600000,
 		"Rarity": 0,
 		"Purchasable": true,
 		"Manufacturer": "",
 		"Model": "",
-		"UIName": "Devil",
+		"UIName": "Howler",
 		"Id": "chassisdef_howler_HOW-3",
-		"Name": "Devil",
+		"Name": "Howler",
 		"Details": "The original Howler was a Fire Mandrill mech but proliferated out into the other Clans fairly quickly given Fire Mandrill's fractious nature. Among the Clans to acquire the Howler was Clan Steel Viper, who redesigned the mech before their ejection from the Inner Sphere by Clan Jade Falcon. Jade Falcon then salvaged the Howler 2 and spread it through the other Inner Sphere Clans. The Howler 3 is a Snow Raven refit of the Howler 2 that was renamed the Devil by the Ravens. It swaps the ATM battery of the HOW-2 for an ER PPC and Targeting Computer.",
 		"Icon": "uixTxrIcon_howler"
 	},
@@ -85,7 +79,7 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 15,
-			"MaxArmor": 45,
+			"MaxArmor": 50,
 			"MaxRearArmor": 15,
 			"InternalStructure": 30
 		},
@@ -93,15 +87,15 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -115,7 +109,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -130,7 +128,7 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 6,
-			"MaxArmor": 35,
+			"MaxArmor": 40,
 			"MaxRearArmor": -1,
 			"InternalStructure": 20
 		},
@@ -139,7 +137,7 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 6,
-			"MaxArmor": 35,
+			"MaxArmor": 40,
 			"MaxRearArmor": -1,
 			"InternalStructure": 20
 		}
@@ -191,7 +189,8 @@
 	"VariantName": "HOW-3",
 	"ChassisTags": {
 		"items": [
-			"ClanMech"
+			"ClanMech",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},

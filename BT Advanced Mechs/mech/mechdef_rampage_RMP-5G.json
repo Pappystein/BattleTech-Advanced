@@ -10,7 +10,9 @@
 			"unit_role_brawler",
 			"unit_rarity_5",
 			"unit_indirectFire",
-			"Rim",
+			"RimWorldsRepublic",
+			"1stHeliusLegionnaires",
+			"8thHeliusFusiliers",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""
@@ -26,7 +28,7 @@
 		"UIName": "Rampage RMP-5G",
 		"Id": "mechdef_rampage_RMP-5G",
 		"Name": "Rampage",
-		"Details": "The Rampage was a BattleMech produced by the Rim Worlds Republic and later recovered by the Rim Collection. The 'Mech was originally built and used as a standard line unit, but it was upgraded to a fast assault 'Mech in 2767, following Stefan Amaris' successful coup that installed him as ruler of the Star League. The RMP-5G was upgraded to celebrate his great victory and uses a LB-10X Autocannon, LRM-10 with Artemis VI, triple Streak SRM-2s, twin Medium lasers, and a Flamer to cow his enemies into submission.",
+		"Details": "The Rampage was a BattleMech produced by the Rim Worlds Republic for its military, the Rim Worlds Army. The 'Mech was originally built and used as a standard line unit, but it was upgraded to a fast assault 'Mech in 2767, following Stefan Amaris' successful coup that installed him as ruler of the Star League. The RMP-5G was upgraded to celebrate his great victory and uses a LB-10X Autocannon, LRM-10 with Artemis VI, triple Streak SRM-2s, twin Medium lasers, and a Flamer to cow his enemies into submission. Despite the frame's rather severe publicity issues, it was successful enough to remain in service for centuries after Amaris's fall and the rise of House Helius.",
 		"Icon": "uixTxrIcon_rampage"
 	},
 	"simGameMechPartCost": 1130000,
@@ -53,10 +55,10 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftTorso",
-			"CurrentArmor": 130,
+			"CurrentArmor": 150,
 			"CurrentRearArmor": 65,
 			"CurrentInternalStructure": 90,
-			"AssignedArmor": 130,
+			"AssignedArmor": 150,
 			"AssignedRearArmor": 65
 		},
 		{
@@ -71,10 +73,10 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightTorso",
-			"CurrentArmor": 130,
+			"CurrentArmor": 150,
 			"CurrentRearArmor": 65,
 			"CurrentInternalStructure": 90,
-			"AssignedArmor": 130,
+			"AssignedArmor": 150,
 			"AssignedRearArmor": 65
 		},
 		{
@@ -186,17 +188,6 @@
 			"ComponentDefID": "emod_engineslots_size3",
 			"SimGameUID": null,
 			"ComponentDefType": "HeatSink",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_ARTEMISIV",
-			"SimGameUID": null,
-			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"GUID": null,
 			"DamageLevel": "Functional",
@@ -377,7 +368,20 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_LRM_1"
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false,
+			"TargetComponentGUID":"target_LRM_1"
 		},
 		{
 			"MountedLocation": "LeftTorso",
@@ -481,17 +485,6 @@
 		{
 			"MountedLocation": "RightTorso",
 			"ComponentDefID": "Ammo_AmmunitionBox_LBX_SLUG_AC10",
-			"SimGameUID": null,
-			"ComponentDefType": "AmmunitionBox",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "RightTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_LBX_CLUSTER_AC10",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,

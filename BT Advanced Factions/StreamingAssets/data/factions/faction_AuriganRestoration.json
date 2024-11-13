@@ -4,15 +4,26 @@
 	"ShortName": "the Coalition",
 	"Demonym": "Coalition",
 	"Government": "Coalition",
-	"Allies": [],
+	"Allies": [
+		"Cameron",
+		"ComStar",
+		"MagistracyOfCanopus",
+		"IrukjandiCompany",
+		"AntianLanciarii",
+		"BlackCaravel",
+		"KnightsOfCaerbannog",
+		"Locals"
+	],
 	"Enemies": [
 		"AuriganPirates",
 		"Liao",
-		"TaurianConcordat",
 		"Davion",
+		"Tortuga",
+		"TaurianConcordat",
 		"Mercenaries",
 		"Locals",
-		"SanctuaryAlliance"
+		"SanctuaryAlliance",
+		"AuriganDirectorate"
 	],
 	"Presence": 2,
 	"factionID": "AuriganRestoration",

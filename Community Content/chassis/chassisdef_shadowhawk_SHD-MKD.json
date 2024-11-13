@@ -1,9 +1,5 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		},
 		"AssemblyVariant": {
 			"PrefabID": "Shadowhawk",
 			"Exclude": false,
@@ -19,7 +15,7 @@
 		"UIName": "Shadow Hawk",
 		"Id": "chassisdef_shadowhawk_SHD-MKD",
 		"Name": "Shadow Hawk",
-		"Details": "Designed to make use of a battery of unusual weaponry, the SHD-MKD uses piercing weaponry as well as an experimental Shock Cannon to disrupt enemies from range. Thanks to the Shock Cannon knocking enemies around the initiative order, the SHD-MKD has ample time to deploy its Piercing SRM-3s and its LAC/5 with piercing ammo for maximum effect. The SHD-MKD saw limited production.\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
+		"Details": "Designed to make use of a battery of unusual weaponry, the SHD-MKD uses piercing weaponry as well as an experimental Shock Cannon to disrupt enemies from range. Thanks to the Shock Cannon knocking enemies around the initiative order, the SHD-MKD has ample time to deploy its Precision SRM-3s and its LAC/5 with piercing ammo for maximum effect. The SHD-MKD saw limited production.\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
 		"Icon": "uixTxrIcon_shadowhawk"
 	},
 	"MovementCapDefID": "movedef_shadowhawk_SHD-2H",
@@ -62,11 +58,11 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -80,11 +76,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -98,15 +94,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -129,15 +125,15 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -151,15 +147,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -234,11 +230,13 @@
 	],
 	"VariantName": "SHD-MKD",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"MediumMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Skirmisher & Cavalry",
-	"YangsThoughts": "Designed to make use of a battery of unusual weaponry, the SHD-MKD uses piercing weaponry as well as an experimental Shock Cannon to disrupt enemies from range. Thanks to the Shock Cannon knocking enemies around the initiative order, the SHD-MKD has ample time to deploy its Piercing SRM-3s and its LAC/5 with piercing ammo for maximum effect. The SHD-MKD saw limited production.",
+	"YangsThoughts": "Designed to make use of a battery of unusual weaponry, the SHD-MKD uses piercing weaponry as well as an experimental Shock Cannon to disrupt enemies from range. Thanks to the Shock Cannon knocking enemies around the initiative order, the SHD-MKD has ample time to deploy its Precision SRM-3s and its LAC/5 with piercing ammo for maximum effect. The SHD-MKD saw limited production.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "Head",

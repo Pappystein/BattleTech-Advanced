@@ -156,10 +156,11 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 8,
+	"DefaultDifficulty": 5,
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
+		"AuriganPirates",
 		"TaurianConcordat",
 		"Locals"
 	],

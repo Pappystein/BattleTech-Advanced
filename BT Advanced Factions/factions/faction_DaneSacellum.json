@@ -1,15 +1,18 @@
 {
 	"ID": "faction_DaneSacellum",
-	"Name": "Dane Sacellum",
+	"Name": "the Dane Sacellum",
 	"ShortName": "DaneSacellum",
 	"Demonym": "Daner",
 	"Government": "Sacellum",
-	"Allies": [],
+	"Allies": [
+		"SanctuaryAlliance"
+	],
 	"Enemies": [
 		"SanctuaryAlliance",
 		"MallardRepublic",
 		"JacobsonHaven",
-		"TaurianConcordat"
+		"TaurianConcordat",
+		"RimWorldsRepublic"
 	],
 	"Presence": 0.1,
 	"factionID": "DaneSacellum",

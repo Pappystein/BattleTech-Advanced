@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Upper"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -249,11 +243,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -269,18 +263,18 @@
 			"Tonnage": 0,
 			"InventorySlots": 15,
 			"MaxArmor": 105,
-			"MaxRearArmor": 35,
+			"MaxRearArmor": 45,
 			"InternalStructure": 70
 		},
 		{
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -294,11 +288,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -375,7 +369,9 @@
 	"ChassisTags": {
 		"items": [
 			"ClanMech",
-			"OmniMech"
+			"OmniMech",
+			"ArmLimitUpperRight",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},

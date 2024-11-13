@@ -8,7 +8,7 @@
 		"UIName": "Commando",
 		"Id": "chassisdef_commando_COM-7X",
 		"Name": "Commando",
-		"Details": "Originally developed by a luckless mercenary unit named Team Venom, the COM-7X is a simple and efficient refit of the traditional Commando COM-2D. The -7X removes the -2D's SRM-4 and replaces it with an additional Medium Laser in each arm. While this increases the 'Mech's heat burden, the firepower boost is well worth it. The COM-7X is in service to many Periphery powerss and mercenary commands and serves with distinction.",
+		"Details": "Originally developed by a luckless mercenary unit named Team Venom, the COM-7X is a simple and efficient refit of the traditional Commando COM-2D. The -7X removes the -2D's SRM-4 and replaces it with an additional Medium Laser in each arm. While this increases the 'Mech's heat burden, the firepower boost is well worth it. The COM-7X is in service to many Periphery Powers and mercenary commands and serves with distinction.",
 		"Icon": "uixTxrIcon_commando"
 	},
 	"MovementCapDefID": "movedef_commando_COM-2D",
@@ -60,15 +60,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
-					"Omni": false
-				},
-				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -91,19 +87,24 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
-			"InventorySlots": 15,
+			"InventorySlots": 16,
 			"MaxArmor": 80,
 			"MaxRearArmor": 40,
 			"InternalStructure": 40
 		},
 		{
 			"Location": "RightTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "Energy",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 60,
@@ -114,11 +115,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},			
+				{
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -193,11 +198,13 @@
 	],
 	"VariantName": "COM-7X",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"LightMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Light Striker & Scout",
-	"YangsThoughts": "Originally developed by a luckless mercenary unit named Team Venom, the COM-7X is a simple and efficient refit of the traditional Commando COM-2D. The -7X removes the -2D's SRM-4 and replaces it with an additional Medium Laser in each arm. While this increases the 'Mech's heat burden, the firepower boost is well worth it. The COM-7X is in service to many Periphery powerss and mercenary commands and serves with distinction.",
+	"YangsThoughts": "Originally developed by a luckless mercenary unit named Team Venom, the COM-7X is a simple and efficient refit of the traditional Commando COM-2D. The -7X removes the -2D's SRM-4 and replaces it with an additional Medium Laser in each arm. While this increases the 'Mech's heat burden, the firepower boost is well worth it. The COM-7X is in service to many Periphery Powers and mercenary commands and serves with distinction.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",

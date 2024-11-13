@@ -7,7 +7,7 @@
 		"Name": "K-27 Transport",
 		"Details": "",
 		"Icon": "J27",
-		"Cost": 993,
+		"Cost": 50000,
 		"Rarity": 2,
 		"Purchasable": false
 	},
@@ -71,11 +71,11 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

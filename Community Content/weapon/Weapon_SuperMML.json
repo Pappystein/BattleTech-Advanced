@@ -2,18 +2,16 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/m/t/arrowiv"
+				"CategoryID": "w/m/l/lrm"
 			},
 			{
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"FiresEverything",
-				"NoFireInMelee"
-			]
-		}
+		"BonusDescriptions": [
+			"FiresEverything",
+			"NoFireInMelee"
+		]
 	},
 	"Category": "Missile",
 	"Type": "LRM",
@@ -46,7 +44,7 @@
 	"FireTerrainChance": 0,
 	"WeaponEffectID": "WeaponEffect-Weapon_LRM20",
 	"Description": {
-		"Cost": 6152000,
+		"Cost": 2150000,
 		"Rarity": 14,
 		"Purchasable": true,
 		"Manufacturer": "Jimbo's Crabshack",
@@ -55,7 +53,7 @@
 		"Id": "Weapon_SuperMML",
 		"Name": "Super MML",
 		"Details": "The Super MML is a joke weapon, made by a bored weapons merchant who had more free stock than he knew what to do with. The Super MML is capable of firing LRM, SRM, Streak SRM, MRM, ATM, Thunderbolt, and ArrowIV munitions. \n\n <b><color=#ffcc00>Uses every missile ammo.</color></b>\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
-		"Icon": "uixSvgIcon_weapon_Missile"
+		"Icon": "MRM"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",
@@ -88,6 +86,7 @@
 			"ShortRange": -120.0,
 			"MediumRange": -240.0,
 			"LongRange": -360.0,
+			"StatusEffectsPerHit": true,
 			"AmmoCategory": "SRM",
 			"WeaponEffectID": "WeaponEffect-Weapon_SRM2",
 			"Instability": 3,
@@ -183,7 +182,8 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"WebbTCSupported-SuperMML"
 		],
 		"tagSetSourceFile": ""
 	}

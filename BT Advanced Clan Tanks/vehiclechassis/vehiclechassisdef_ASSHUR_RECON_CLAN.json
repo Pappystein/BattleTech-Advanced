@@ -5,10 +5,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_ASSHUR_RECON_CLAN",
-		"Name": "Asshur Scout Vehicle",
+		"Name": "Asshur",
 		"Details": "",
 		"Icon": "Asshur",
-		"Cost": 564,
+		"Cost": 1000000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -19,7 +19,7 @@
 	"PrefabBase": "savannah",
 	"Tonnage": 20,
 	"weightClass": "LIGHT",
-	"BattleValue": 564,
+	"BattleValue": 7500000,
 	"TopSpeed": 125,
 	"TurnRadius": 90,
 	"movementType": "Wheeled",
@@ -104,19 +104,19 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],

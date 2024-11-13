@@ -4,12 +4,16 @@
 	"ShortName": "Chainelane",
 	"Demonym": "Chainelanian",
 	"Government": "Anarchy",
-	"Allies": [],
+	"Allies": [
+		"Chainelane",
+		"Mercenaries",
+		"Locals"
+	],
 	"Enemies": [
 		"Hanse",
 		"JarnFolk",
+		"331stDivision",
 		"DarkCaste",
-		"AuriganPirates",
 		"Chainelane",
 		"ClanGhostBear",
 		"ClanJadeFalcon",

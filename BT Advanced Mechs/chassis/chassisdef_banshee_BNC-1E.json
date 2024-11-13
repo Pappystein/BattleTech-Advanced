@@ -7,7 +7,7 @@
 		"Model": "",
 		"UIName": "Primitive Banshee",
 		"Id": "chassisdef_banshee_BNC-1E",
-		"Name": "Banshee Primitive",
+		"Name": "Primitive Banshee",
 		"Details": "The original design first produced in 2445, this Banshee variant carries the PPC, Autocannon/5, and Small Laser of the later 3E, as well as a pair of Medium Lasers.",
 		"Icon": "uixTxrIcon_banshee"
 	},
@@ -51,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -65,7 +65,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -79,7 +79,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -102,7 +102,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -116,7 +116,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -192,7 +192,8 @@
 	"VariantName": "BNC-1E",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -201,7 +202,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Upper"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -236,7 +230,8 @@
 		"items": [
 			"ClanMech",
 			"OmniMech",
-			"unit_mechtool"
+			"ArmLimitUpperRight",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -304,15 +299,15 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -344,7 +339,7 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -358,11 +353,11 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,

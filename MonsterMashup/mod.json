@@ -2,7 +2,7 @@
 	"Name": "MonsterMashup",
 	"Enabled": true,
 	"Hidden": true,
-	"Version": "0.3.0",
+	"Version": "3.0.0",
 	"Description": "Builds monster units by mashing bases and turrets",
 	"Author": "FrostRaptor",
 	"Website": "https://github.com/IceRaptor/MonsterMashup/",
@@ -17,16 +17,6 @@
 	"OptionallyDependsOn": [],
 	"ConflictsWith": [],
 	"Manifest": [
-		{
-			"Type": "TurretChassisDef",
-			"Path": "turretChassis",
-			"AddToDB": true
-		},
-		{
-			"Type": "TurretDef",
-			"Path": "turret",
-			"AddToDB": true
-		},
 		{
 			"Type": "UpgradeDef",
 			"Path": "upgrade",
@@ -45,6 +35,10 @@
 		{
 			"Type": "ContractOverride",
 			"Path": "contract_override"
+		},
+		{
+			"Type": "MovementCapabilitiesDef",
+			"Path": "movedef"
 		}
 	],
 	"Settings": {

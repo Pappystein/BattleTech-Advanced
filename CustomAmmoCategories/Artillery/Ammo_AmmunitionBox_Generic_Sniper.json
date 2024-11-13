@@ -5,25 +5,21 @@
 				"CategoryID": "a/a/o/artillery"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 100,
 			"StabilityDamagePerAmmo": 25
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"AreaOfEffect: 140",
-				"AreaOfEffectDmg: 90",
-				"AreaOfEffectHeatDmg: 15",
-				"AreaOfEffectSTABDmg: 15",
-				"CostPerShot: 1000",
-				"AmmoCount: 5"
-			]
-		},
+		"BonusDescriptions": [
+			"AreaOfEffect: 140",
+			"AreaOfEffectDmg: 180",
+			"AreaOfEffectHeatDmg: 40",
+			"AreaOfEffectSTABDmg: 40",
+			"CostPerShot: 1000",
+			"AmmoCount: 5"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 1000
 		}
@@ -40,7 +36,7 @@
 		"Id": "Ammo_AmmunitionBox_Generic_Sniper",
 		"Name": "Sniper Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 5 shots.",
-		"Icon": "Art-illery"
+		"Icon": "Art-illery-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

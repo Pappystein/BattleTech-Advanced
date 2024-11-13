@@ -5,23 +5,21 @@
 				"CategoryID": "a/a/o/artillery"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 100,
 			"StabilityDamagePerAmmo": 25
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"NoAreaOfEffect",
-				"LongTomDamage: +150%",
-				"CostPerShot: 4000",
-				"AmmoCount: 3"
-			]
-		},
+		"BonusDescriptions": [
+			"AreaOfEffect: 200",
+			"AreaOfEffectDmg: 150",
+			"AreaOfEffectHeatDmg: 60",
+			"AreaOfEffectSTABDmg: 225",
+			"CostPerShot: 4000",
+			"AmmoCount: 3"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 4000
 		}
@@ -34,11 +32,11 @@
 		"Purchasable": true,
 		"Manufacturer": "Generic",
 		"Model": "LongTom",
-		"UIName": "Ammo LongTom Shaped Charge",
+		"UIName": "Ammo LongTom Seismic Charge",
 		"Id": "Ammo_AmmunitionBox_Shaped_Longtom",
-		"Name": "Shaped Charge LongTom Ammo",
-		"Details": "A concentrated Shaped Charge is used to penetrate the Armor on Hard Targets, but it has a reduced blast radius compared to other explosives. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 3 shots.",
-		"Icon": "Art-illery"
+		"Name": "Seismic Charge LongTom Ammo",
+		"Details": "A concentrated Seismic Charge is used to destabilize hardened targets in a large radius. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 3 shots.",
+		"Icon": "Art-illery-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

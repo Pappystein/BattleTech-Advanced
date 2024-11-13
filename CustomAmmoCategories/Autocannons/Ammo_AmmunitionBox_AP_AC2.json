@@ -6,28 +6,25 @@
 			}
 		],
 		"Tag": "AP",
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 25,
 			"StabilityDamagePerAmmo": 6
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"StructureDmgMod: +50%",
-				"CostPerShot: 200",
-				"AmmoCount: 23"
-			]
-		},
+		"BonusDescriptions": [
+			"ArmorDmgMod: -25%",
+			"StructureDmgMod: +75%",
+			"CostPerShot: 200",
+			"AmmoCount: 45"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 200
 		}
 	},
 	"AmmoID": "Ammunition_AC2_AP",
-	"Capacity": 23,
+	"Capacity": 45,
 	"Description": {
 		"Cost": 20000,
 		"Rarity": 5,

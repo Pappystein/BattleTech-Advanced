@@ -14,21 +14,16 @@
 				"CBillCost": "[[Chassis.Tonnage]] * 1.15"
 			}
 		},
-		"Flags": {
-			"flags": [
-				"default",
-				"not_broken",
-				"no_salvage",
-				"autorepair",
-				"ignore_damage"
-			]
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"Flags": [
+			"default",
+			"not_broken",
+			"no_salvage",
+			"autorepair"
+		],
+		"BonusDescriptions": [
 				"NoBleedout",
 				"MechCowl: 15"
 			]
-		}
 	},
 	"StatName": null,
 	"RelativeModifier": 0,

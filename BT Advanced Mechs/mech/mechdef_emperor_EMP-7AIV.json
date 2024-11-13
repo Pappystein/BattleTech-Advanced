@@ -8,6 +8,9 @@
 			"unit_role_brawler",
 			"unit_release",
 			"unit_rarity_3",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
 			"ComStar",
 			"2ndArmyVMu",
 			"WordOfBlake",
@@ -392,7 +395,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_Laser_1"
 		},
 		{
 			"MountedLocation": "LeftArm",
@@ -480,7 +484,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_Laser_2"
 		},
 		{
 			"MountedLocation": "RightArm",

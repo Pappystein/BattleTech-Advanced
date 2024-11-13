@@ -149,7 +149,7 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 3,
+	"DefaultDifficulty": 6,
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
@@ -162,7 +162,7 @@
 		"Steiner",
 		"Marik",
 		"Marian",
-		"Rim",
+		"RimWorldsRepublic",
 		"AuriganPirates",
 		"Mercenaries",
 		"Illyrian",

@@ -14,21 +14,17 @@
 		"ArmActuator": {
 			"Type": "PartHand"
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"IsPhysWeap",
 				"PhysWeapUnsteady",
 				"PhysWeapDamage: 1",
 				"PhysWeapStab: 1.5",
 				"PhysWeapAccuracy: +1"
-			]
-		},
-		"Flags": {
-			"flags": [
+			],
+		"Flags": [
 				"no_salvage",
 				"not_broken"
-			]
-		}
+		]
 	},
 	"StatName": null,
 	"RelativeModifier": 0,
@@ -160,7 +156,7 @@
 			"Description": {
 				"Id": "StatusEffect-VibrobladeBaseDamage",
 				"Name": "Vibroblade Base Damage",
-				"Details": "Vibroblades do 5 damage per 5 tons of the mech.",
+				"Details": "Vibroblades do 5 damage per 5 tons of the mech, 15 stab damage per 10 tons of the mech, and have a +1 accuracy on their attacks.",
 				"Icon": "UixSvgIcon_specialEquip_Melee"
 			},
 			"nature": "Buff",
@@ -186,7 +182,7 @@
 				"forcePathRebuild": false,
 				"forceVisRebuild": false,
 				"showInTargetPreview": false,
-				"showInStatusPanel": true
+				"showInStatusPanel": false
 			},
 			"effectType": "StatisticEffect",
 			"Description": {
@@ -218,7 +214,7 @@
 				"forcePathRebuild": false,
 				"forceVisRebuild": false,
 				"showInTargetPreview": false,
-				"showInStatusPanel": true
+				"showInStatusPanel": false
 			},
 			"effectType": "StatisticEffect",
 			"Description": {

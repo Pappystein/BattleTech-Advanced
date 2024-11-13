@@ -96,7 +96,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -173,7 +173,8 @@
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
-			"BLACKLISTED"
+			"BLACKLISTED",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},

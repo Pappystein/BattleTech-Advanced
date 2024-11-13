@@ -143,12 +143,12 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 4,
+	"DefaultDifficulty": 5,
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
-		"Tortuga",
 		"AuriganPirates",
+		"Tortuga",
 		"Locals"
 	],
 	"contractTargetIDs": [

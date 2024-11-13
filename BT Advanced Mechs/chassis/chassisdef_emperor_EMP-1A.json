@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"RightLimit": "Lower",
-			"LeftLimit": "Lower"
-		}
-	},
 	"Description": {
 		"Cost": 14000000,
 		"Rarity": 4,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Primitive Emperor",
 		"Id": "chassisdef_emperor_EMP-1A",
-		"Name": "Emperor Primitive",
+		"Name": "Primitive Emperor",
 		"Details": "The original Emperor produced by Quarry Arms used primitive components. Introduced in 2442 and produced until 2472, this first version of the Emperor devoted much more of its tonnage to its primitive engine. It was protected by twenty-two tons of Primitive Armor. The bulk of these primitive systems and Primitive Cockpit meant that the Emperor could only carry three Medium Lasers and an Autocannon/5 in each arm. Each autocannon was given two tons of ammunition. Ten single heat sinks were fitted. The later production runs of this version were used in support roles, but were never very popular. Some of these units were upgraded to the EMP-5A standard.",
 		"Icon": "uixTxrIcon_emperor"
 	},
@@ -57,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -71,7 +65,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -85,7 +79,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -108,7 +102,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -122,7 +116,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -198,7 +192,10 @@
 	"VariantName": "EMP-1A",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -207,7 +204,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

@@ -14,25 +14,20 @@
 				"CBillCost": "[[Chassis.Tonnage]] * 1.15"
 			}
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"Initiative: +1",
-				"LanceIndirectAcc: +1",
-				"LanceDirectAcc: +1",
-				"Health: 2",
-				"NoBleedout",
-				"IsCockpit"
-			]
-		},
-		"Flags": {
-			"flags": [
-				"default",
-				"not_broken",
-				"no_salvage",
-				"autorepair",
-				"ignore_damage"
-			]
-		}
+		"BonusDescriptions": [
+			"Initiative: +1",
+			"LanceIndirectAcc: +1",
+			"LanceDirectAcc: +1",
+			"Health: 2",
+			"NoBleedout",
+			"IsCockpit"
+		],
+		"Flags": [
+			"default",
+			"not_broken",
+			"no_salvage",
+			"autorepair"
+		]
 	},
 	"StatName": null,
 	"RelativeModifier": 0,
@@ -109,7 +104,8 @@
 				"statName": "BonusHealth",
 				"operation": "Int_Add",
 				"modValue": "2",
-				"modType": "System.Int32"
+				"modType": "System.Int32",
+				"targetCollection": "Pilot"
 			}
 		},
 		{
@@ -153,7 +149,7 @@
 			"Description": {
 				"Id": "StatusEffect-LOSConsole-DirectAcc",
 				"Name": "Man Machine Interface",
-				"Details": "Active DNI Grants Melee Accuray and Damage resistance.",
+				"Details": "Active DNI Grants Melee Accuracy and Damage resistance.",
 				"Icon": "uixSvgIcon_equipment_TTS"
 			},
 			"nature": "Buff",

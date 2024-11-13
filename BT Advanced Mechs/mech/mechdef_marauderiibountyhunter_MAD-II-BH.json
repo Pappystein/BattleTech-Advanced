@@ -19,7 +19,7 @@
 		"UIName": "Marauder II Bounty Hunter MAD-II-BH",
 		"Id": "mechdef_marauderiibountyhunter_MAD-II-BH",
 		"Name": "Marauder II Bounty Hunter",
-		"Details": "<color=#53ff1a><b>Arm Actuator Limit</b>: <b>lower</b> on left and <b>lower</b> on right</color>\r\nThe MAD-5B carries the same weaponry as the standard Marauder II, but replaces the LB 10-X autocannon with a Gauss Rifle. To make room for this weapon, the MAD-5B only carries sixteen double heat sinks.",
+		"Details": "The MAD-5B carries the same weaponry as the standard Marauder II, but replaces the LB 10-X autocannon with a Gauss Rifle. To make room for this weapon, the MAD-5B only carries sixteen double heat sinks.",
 		"Icon": "uixTxrIcon_marauderii"
 	},
 	"RequiredToSpawnCompanyTags": {
@@ -340,39 +340,6 @@
 			"ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_Cockpit_LifeSupportA_Standard",
-			"SimGameUID": "",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_Cockpit_SensorsB_Standard",
-			"SimGameUID": "",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_Cockpit_LifeSupportB_Standard",
-			"SimGameUID": "",
-			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"GUID": null,
 			"DamageLevel": "Functional",

@@ -21,7 +21,7 @@
       "Landmines": "true"
     }
   },
-  "MovementCapDefID": "movedef_DEMOLISHER",
+  "MovementCapDefID": "movedef_IMMOBILE_TURRET",
   "PathingCapDefID": "pathingdef_light_wheeled",
   "HardpointDataDefID": "hardpointdatadef_cudropshipballturret",
   "PrefabIdentifier": "chrprfmech_dropship_ball_turret",
@@ -148,15 +148,15 @@
       "Location": "Turret",
       "Hardpoints": [
 	          {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         }		
 	  ],

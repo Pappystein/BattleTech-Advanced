@@ -9,10 +9,22 @@
 			"unit_release",
 			"unit_rarity_6",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"DarkCaste",
+			"331stDivision",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
+			"IVCorps",
 			"ComStar",
 			"2ndArmyVMu",
 			"11thArmyVEta",
@@ -25,6 +37,7 @@
 			"2ndCrucisLancers",
 			"11thAvalonHussars",
 			"FederatedFreemen",
+			"Hanse",
 			"Steiner",
 			"6thLyranGuards",
 			"5thDonegalGuards",
@@ -424,7 +437,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_Laser_1"
 		},
 		{
 			"MountedLocation": "LeftTorso",
@@ -512,7 +526,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_Laser_2"
 		},
 		{
 			"MountedLocation": "RightTorso",

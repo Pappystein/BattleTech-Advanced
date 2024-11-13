@@ -2,21 +2,17 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "a/a/g/gauss"
+				"CategoryID": "a/a/g/railgun"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"Flags": [
+			"not_broken"
+		],
+		"BonusDescriptions": [
 				"CostPerShot: 5000",
 				"AmmoCount: 2",
 				"GaussNoBoom"
-			]
-		},
+			],
 		"AmmoCost": {
 			"PerUnitCost": 5000
 		}
@@ -33,7 +29,7 @@
 		"Id": "Ammo_AmmunitionBox_Generic_RAILGUN",
 		"Name": "Rail Gun Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. <b><color=#099ff2>Does not explode.</color></b>\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
-		"Icon": "FerroMag"
+		"Icon": "FerroMag-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

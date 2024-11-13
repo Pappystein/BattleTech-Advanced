@@ -8,14 +8,13 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"MissileHealth: 1",
-				"NoFireInMelee",
-				"ProjectileBurst: 5",
-				"VariableBurstCount: 6"
-			]
-		}
+		"BonusDescriptions": [
+			"MissileHealth: 1",
+			"NoFireInMelee",
+			"WeaponJAMFlat: 30%",
+			"ProjectileBurst: 5",
+			"VariableBurstCount: 6"
+		]
 	},
 	"Category": "Missile",
 	"Type": "LRM",
@@ -123,7 +122,8 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"WebbTCSupported-RotaryAC"
 		],
 		"tagSetSourceFile": ""
 	}

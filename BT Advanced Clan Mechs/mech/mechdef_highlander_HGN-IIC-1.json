@@ -3,8 +3,6 @@
 		"items": [
 			"unit_indirectFire",
 			"unit_mech",
-			"ai_melee_low",
-			"ai_dfa_low",
 			"unit_assault",
 			"unit_lance_tank",
 			"unit_advanced",
@@ -14,10 +12,17 @@
 			"unit_release",
 			"unit_rarity_5",
 			"unit_bracket_high",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
 			"Wolfs_Dragoons",
 			"BlackWidowCompany",
 			"BountyHunterAssociates",
@@ -98,26 +103,26 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftLeg",
-			"CurrentArmor": 165,
+			"CurrentArmor": 190,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 95,
-			"AssignedArmor": 165,
+			"AssignedArmor": 190,
 			"AssignedRearArmor": -1
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightLeg",
-			"CurrentArmor": 165,
+			"CurrentArmor": 190,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 95,
-			"AssignedArmor": 165,
+			"AssignedArmor": 190,
 			"AssignedRearArmor": -1
 		}
 	],
 	"inventory": [
 		{
 			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_ARTEMISIV",
+			"ComponentDefID": "Gear_Cockpit_Generic_Standard",
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
@@ -356,17 +361,6 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "emod_clancase2",
-			"SimGameUID": "",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
 			"MountedLocation": "LeftArm",
 			"ComponentDefID": "Weapon_SRM_SRM6_STREAK_CLAN",
 			"SimGameUID": "",
@@ -518,7 +512,20 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_LRM_1"
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false,
+			"TargetComponentGUID":"target_LRM_1"
 		},
 		{
 			"MountedLocation": "RightTorso",

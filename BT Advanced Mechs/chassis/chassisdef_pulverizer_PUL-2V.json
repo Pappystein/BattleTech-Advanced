@@ -1,4 +1,11 @@
 {
+	"Custom": {
+		"AssemblyVariant": {
+			"PrefabID": "Pulverizer",
+			"Exclude": false,
+			"Include": true
+		}
+	},
 	"Description": {
 		"Cost": 10200000,
 		"Rarity": 4,
@@ -49,7 +56,9 @@
 	"DFASelfDamage": 115,
 	"DFAInstability": 115,
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"AssaultMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"Locations": [
@@ -66,11 +75,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -84,7 +93,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -107,16 +120,20 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
-			"InventorySlots": 12,
+			"InventorySlots": 13,
 			"MaxArmor": 190,
 			"MaxRearArmor": 95,
 			"InternalStructure": 95
@@ -125,11 +142,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -233,6 +250,16 @@
 			"DamageLevel": "Functional",
 			"prefabName": "",
 			"hasPrefabName": true
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Gear_Attachment_Quirk_Pulverizer_AccurateWeapon",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": "",
+			"hasPrefabName": true,
+			"TargetComponentGUID":"target_PPC_1"
 		}
 	],
 	"CustomParts": {

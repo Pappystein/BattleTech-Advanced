@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"ComponentDefID": "Gear_Gyro_Omnimech",
@@ -138,9 +132,9 @@
 	},
 	"MovementCapDefID": "movedef_gargoyle",
 	"PathingCapDefID": "pathingdef_assault",
-	"HardpointDataDefID": "hardpointdatadef_naga",
-	"PrefabIdentifier": "chrprfmech_nagabase-001",
-	"PrefabBase": "naga",
+	"HardpointDataDefID": "hardpointdatadef_ionnaga",
+	"PrefabIdentifier": "chrprfmech_ionnagabase-001",
+	"PrefabBase": "ionnaga",
 	"Tonnage": 80,
 	"InitialTonnage": 8,
 	"weightClass": "ASSAULT",
@@ -185,7 +179,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Artillery",
 					"Omni": false
 				}
 			],
@@ -199,11 +193,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -217,11 +211,11 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -235,11 +229,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -253,7 +247,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Artillery",
 					"Omni": false
 				}
 			],
@@ -330,7 +324,10 @@
 	"ChassisTags": {
 		"items": [
 			"ClanMech",
-			"OmniMech"
+			"OmniMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},

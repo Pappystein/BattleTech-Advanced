@@ -1,16 +1,13 @@
 {
 	"Custom": {
-		"Flags": {
-			"flags": [
+		"Flags": [
 				"ignore_damage",
 				"no_salvage"
-			]
-		},
+			],
 		"Category": {
 			"CategoryID": "Misc"
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"Activatable",
 				"FailChance: 10%",
 				"FailChanceTurn: 25%",
@@ -20,8 +17,7 @@
 				"ActiveHeatPerTurn: +40%",
 				"ActivateHeatLevel: 60",
 				"DeActivateHeatLevel: 59"
-			]
-		},
+			],
 		"ActivatableComponent": {
 			"ButtonName": "Activate The Alpha Strike",
 			"AutoActivateOnHeat": 60,

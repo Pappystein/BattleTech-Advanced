@@ -5,12 +5,12 @@
 				"CategoryID": "w/e/l/twinlinked"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WpnAccuracy: +1",
-				"PipsIgnored: 1"
+				"PipsIgnored: 1",
+				"WeaponAttachmentCompatible: Laser Insulator",
+				"WeaponAttachmentCompatible: Laser FCS"
 			]
-		}
 	},
     "Category" : "Energy",
     "Type" : "Laser",
@@ -50,6 +50,7 @@
 	"ColorSpeedChange": 1,
 	"ColorChangeRule": "Linear",
 	"FireDelayMultiplier": 0.01,
+	"ProjectileSpeedMultiplier": 0.5,
     "WeaponEffectID" : "WeaponEffect-Weapon_Laser_Small",
     "Description" : {
         "Cost" : 75000,
@@ -78,7 +79,11 @@
     "ComponentTags" : {
         "items" : [
             "component_type_stock",
-            "range_standard"
+            "range_standard",
+			"LaserInsulatorAttachable.{location}",
+			"LaserInsulatorSupported-SingleShot",
+			"LaserFCSSupported-SingleShot",
+			"WebbTCSupported-SingleShot"
         ],
         "tagSetSourceFile" : ""
     }

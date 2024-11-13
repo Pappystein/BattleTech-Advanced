@@ -5,9 +5,9 @@
 		"Purchasable": true,
 		"Manufacturer": "",
 		"Model": "",
-		"UIName": "Crusader",
+		"UIName": "Royal Crusader",
 		"Id": "chassisdef_crusader_CRD-2R",
-		"Name": "Crusader",
+		"Name": "Royal Crusader",
 		"Details": "This lostech variant was used by the SLDF's Royal units. It upgraded the heat sinks to double heat sinks and utilized an Endo Steel internal structure to save mass. This enabled the addition of Artemis IV Fire Control Systems to the LRM launchers. The SRMs were replaced with four Hawk Streak SRM-2s. All of the ammunition was moved to the side torsos and protected by CASE.",
 		"Icon": "uixTxrIcon_crusader"
 	},
@@ -60,15 +60,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -109,15 +109,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -131,11 +131,11 @@
 			"Location": "LeftLeg",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -149,11 +149,11 @@
 			"Location": "RightLeg",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -213,7 +213,8 @@
 		"items": [
 			"OmniMech",
 			"mr-resize-0.8",
-			"RoyalMech"
+			"RoyalMech",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},

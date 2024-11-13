@@ -1,7 +1,7 @@
 {
 	"Name": "BT Advanced Core",
 	"Enabled": true,
-	"Version": "15.3",
+	"Version": "18.0.3",
 	"Description": "For files that have nowhere else to live and are fundamental to the modpack's functionality.",
 	"DataAddendumEntries": [
 		{
@@ -19,7 +19,7 @@
 	],
 	"CustomResourceTypes": [
 		"MEBonusDescriptions",
-		"MECriticalEffects",
+		"MEStatusEffects",
 		"CCCategories",
 		"CCDefaults",
 		"CCTagRestrictions",
@@ -28,7 +28,6 @@
 	"DependsOn": [
 		"Merc Emblems",
 		"BattletechPerformanceFix",
-		"bd weapon rebalance",
 		"BTA Contracts",
 		"BTA Difficulty Settings",
 		"BT Advanced Factions",
@@ -48,6 +47,7 @@
 		"CustomLocalization",
 		"CustomSalvage",
 		"CustomUnits",
+		"CustomUnitDecorator",
 		"CustomVoices",
 		"CustomShops",
 		"DynamicShops",
@@ -58,12 +58,10 @@
 		"LogoReplacement",
 		"LostInSpace",
 		"MechEngineer",
-		"MechEngineerGear",
 		"IRBTModUtils",
 		"FieldRepairs",
 		"NavigationComputer",
 		"NewSaveFolder",
-		"OnePointArmorStep",
 		"PanicSystem",
 		"PilotHealthPopup",
 		"QuietDarius",
@@ -73,13 +71,12 @@
 		"VIPadvanced",
 		"Mission Control",
 		"BiggerDrops",
-		"BattlefieldCSMessage",
 		"Timeline",
 		"BTA Events",
 		"BT Advanced Starters",
 		"ConcreteJungle",
 		"Loan Sharks",
-		"Map Randomizer",
+		"MapRandomizer",
 		"SystemRenamer",
 		"PracticeMakesPerfect",
 		"ResultOrientedItems",
@@ -87,11 +84,15 @@
 		"EnvironmentalDesignMasks",
 		"Abilifier",
 		"CAB-Misc",
-		"CAB-Clan Mech",
-		"CAB-IS Mech",
 		"CAB-Tanks",
 		"CAB-3025",
-		"AbilityRealizer",
+		"CAB-Clan-GoldenCentury",
+		"CAB-Clan-Modern",
+		"CAB-IS-CivilWar",
+		"CAB-IS-ClanInvasion",
+		"CAB-IS-Customs",
+		"CAB-IS-DarkAge",
+		"CAB-IS-StarLeague",
 		"SizeMatters",
 		"MechAffinity",
 		"LootMagnet",
@@ -104,7 +105,9 @@
 		"ScalingAIDifficulty",
 		"WarTechIIC",
 		"MechSprayPaint",
-		"SearchAndRescue"
+		"SearchAndRescue",
+		"JwNetOverride",
+		"VMMWSGC"
 	],
 	"OptionallyDependsOn": [
 		"FlashpointEnabler"
@@ -198,7 +201,7 @@
 			"ShouldMergeJSON": false
 		},
 		{
-			"Type": "MECriticalEffects",
+			"Type": "MEStatusEffects",
 			"Path": "settings/criticalEffects/",
 			"ShouldMergeJSON": false
 		},
@@ -221,6 +224,15 @@
 		{
 			"Type": "PilotDef",
 			"Path": "pilot"
-		}
+		},
+        {
+            "Type": "CCHardpoints",
+            "Path": "settings/hardpoints"
+        },
+        {
+            "Type": "CCUnitTypes",
+            "Path": "settings/unitTypes",
+            "ShouldMergeJSON": false
+        }
 	]
 }

@@ -5,14 +5,12 @@
 				"CategoryID": "BAWeapon"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"PPCDEBUFF: 1",
 				"PipsIgnored: 1"
 			]
-		}
 	},
-	"Category": "Energy",
+	"weaponCategoryID": "BattleArmor",
 	"Type": "PPC",
 	"WeaponSubType": "PPC",
 	"MinRange": 0,
@@ -24,8 +22,8 @@
 	],
 	"AmmoCategory": "NotSet",
 	"StartingAmmoCapacity": 0,
-	"HeatGenerated": 0,
-	"Damage": 15,
+	"HeatGenerated": 6,
+	"Damage": 11,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 1,
@@ -59,7 +57,7 @@
 	"ComponentSubType": "Weapon",
 	"PrefabIdentifier": "PPC",
 	"BattleValue": 0,
-	"InventorySize": 2,
+	"InventorySize": 1,
 	"Tonnage": 0.3,
 	"AllowedLocations": "All",
 	"DisallowedLocations": "All",
@@ -72,7 +70,7 @@
 				"useActivationsOfTarget": true,
 				"ticksOnEndOfRound": false,
 				"ticksOnMovements": false,
-				"stackLimit": 2,
+				"stackLimit": 1,
 				"clearedWhenAttacked": false
 			},
 			"targetingData": {

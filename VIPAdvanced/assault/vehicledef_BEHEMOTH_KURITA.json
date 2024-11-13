@@ -16,6 +16,10 @@
 			"2ndArmyVMu",
 			"11thArmyVEta",
 			"7thArmyVIota",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
+			"IVCorps",
 			"WordOfBlake",
 			"40thShadowDivision",
 			"9thDivisionWoB",
@@ -52,7 +56,10 @@
 			"SnordsIrregulars",
 			"NorthwindHighlanders",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"DismalDisinherited",
+			"MacksMercs",
 			"SolarisVIIMercLeague",
 			"EridaniLightHorse",
 			"GrayDeathLegion",
@@ -92,6 +99,11 @@
 			"JacobsJuggernauts",
 			"LindonsBattalion",
 			"GrimDetermination",
+			"FightingUrukhai",
+			"RaymondsRedcoats",
+			"12thStarGuards",
+			"RedfieldRenegades",
+			"LexingtonCombatGroup",
 			"ToothOfYmir",
 			"KnightsOfCaerbannog",
 			"HostileMercenaries",
@@ -116,6 +128,11 @@
 			"IrukjandiCompany",
 			"AntianLanciarii",
 			"BlackCaravel",
+			"BlackSharks",
+			"SarnaSupremacy",
+			"SaiphTriumvirate",
+			"TerracapConfederation",
+			"StykCommonality",
 			"Moderbjorn",
 			"LocalsBrockwayRefugees",
 			"EdCorbu",
@@ -135,6 +152,8 @@
 			"HouseKhulan",
 			"Wolfs_Dragoons",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"KnightsOfCaerbannog",
 			"GraysGhosts",
 			"BroadswordLegion",
@@ -201,14 +220,32 @@
 			"ComponentDefID": "Weapon_LRM_LRM5_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 0,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_LRM_1"
+		},
+		{
+			"MountedLocation": "Front",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_LRM_1"
 		},
 		{
 			"MountedLocation": "Front",
 			"ComponentDefID": "Weapon_LRM_LRM5_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 0,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_LRM_2"
+		},
+		{
+			"MountedLocation": "Front",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_LRM_2"
 		},
 		{
 			"MountedLocation": "Turret",
@@ -229,39 +266,68 @@
 			"ComponentDefID": "Weapon_MRM_MRM10_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 4,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_MRM_1"
 		},
 		{
 			"MountedLocation": "Turret",
 			"ComponentDefID": "Weapon_MRM_MRM10_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 4,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_MRM_2"
+		},
+		{
+			"ComponentDefID": "Gear_Attachment_Apollo",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Turret",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_MRM_1"
+		},
+		{
+			"ComponentDefID": "Gear_Attachment_Apollo",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Turret",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_MRM_2"
 		},
 		{
 			"MountedLocation": "Turret",
 			"ComponentDefID": "Weapon_SRM_SRM6_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 2,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_SRM_1"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_SRM_1"
 		},
 		{
 			"MountedLocation": "Turret",
 			"ComponentDefID": "Weapon_SRM_SRM6_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 2,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_SRM_2"
+		},
+		{
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_SRM_2"
 		},
 		{
 			"MountedLocation": "Front",
 			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
-			"ComponentDefType": "AmmunitionBox",
-			"HardpointSlot": -1,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "Front",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_MRM",
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"
@@ -305,13 +371,6 @@
 			"MountedLocation": "Rear",
 			"ComponentDefID": "Ammo_AmmunitionBox_Ultra_AC10",
 			"ComponentDefType": "AmmunitionBox",
-			"HardpointSlot": -1,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "Front",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_Apollo",
-			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"
 		},

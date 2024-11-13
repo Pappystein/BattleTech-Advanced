@@ -12,18 +12,17 @@
 			"ExplosionDamage": 250,
 			"StabilityDamage": 60
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"MassDriver",
-				"NoFireInMelee",
-				"Knockdown",
-				"KnockdownChance: 115%",
-				"WpnAccuracy: +2",
-				"WpnRecoil: 3",
-				"WpnCooldown: 1",
-				"WeaponBoom: 250"
-			]
-		}
+		"BonusDescriptions": [
+			"MassDriver",
+			"NoFireInMelee",
+			"Knockdown",
+			"KnockdownChance: 115%",
+			"WpnAccuracy: +2",
+			"WpnRecoil: 3",
+			"WpnCooldown: 1",
+			"WeaponBoom: 250",
+			"LocationRestricted: Torsos Only"
+		]
 	},
 	"Category": "Ballistic",
 	"Type": "Gauss",
@@ -111,7 +110,8 @@
 		"items": [
 			"component_type_stock",
 			"component_type_lostech",
-			"range_extreme"
+			"range_extreme",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

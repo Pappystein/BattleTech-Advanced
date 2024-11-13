@@ -8,8 +8,7 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"NoFireInMelee",
 				"IsArtillery",
 				"WpnCrits: +50%",
@@ -17,25 +16,22 @@
 				"WpnRecoil: 2",
 				"ScatterRadius: 5, 15",
 				"AMSImmune",
-				"AreaOfEffect: 45",
+				"AreaOfEffect: 60",
 				"AreaOfEffectDmg: 20",
-				"InternalAmmo: 4",
+				"InternalAmmo: 5",
 				"CostPerShot: 200"
-			]
-		},
+			],
 		"InternalAmmoTonnage": {
             "InternalAmmoTons": 1.0
         },
 		"AmmoCost": {
 			"PerUnitCost": 200
 		},
-		"Flags": {
-			"flags": [
-				"no_salvage"
-			]
-		}
+		"Flags": [
+			"no_salvage"
+		]
 	},
-	"Category": "Ballistic",
+	"weaponCategoryID": "BattleArmor",
 	"Type": "Autocannon",
 	"WeaponSubType": "AC10",
 	"MinRange": 100,
@@ -46,9 +42,9 @@
 		600
 	],
 	"AmmoCategory": "Flamer",
-	"StartingAmmoCapacity": 4,
-	"HeatGenerated": 5,
-	"Damage": 20,
+	"StartingAmmoCapacity": 5,
+	"HeatGenerated": 6,
+	"Damage": 16,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 0,
@@ -67,7 +63,7 @@
 	"AlwaysIndirectVisuals": true,
 	"IndirectFireCapable": true,
 	"AOECapable": true,
-	"AOERange": 45,
+	"AOERange": 60,
 	"AOEDamage": 20,
 	"WeaponEffectID": "WeaponEffect-Weapon_AC5",
 	"Description": {

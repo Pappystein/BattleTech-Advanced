@@ -3,23 +3,23 @@
 		"Category": [
 			{
 				"CategoryID": "a/m/s/mrm"
+			},
+			{
+				"CategoryID": "NoApollo"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 4,
 			"StabilityDamagePerAmmo": 1
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
+				"Clustering: 10%",
 				"CostPerShot: 25",
 				"AmmoCount: 100"
-			]
-		},
+			],
 		"AmmoCost": {
 			"PerUnitCost": 25
 		}
@@ -36,7 +36,7 @@
 		"Id": "Ammo_AmmunitionBox_Generic_MRM_half",
 		"Name": "MRM Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type.Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 100 shots.",
-		"Icon": "MRM"
+		"Icon": "MRM-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

@@ -1,0 +1,333 @@
+{
+	"Version": 1,
+	"Description": {
+		"Id": "vehicledef_RATTLERSL_FORTRESS",
+		"Name": "Rattler SLDF Mobile Fortress Mk I",
+		"Details": "",
+		"Icon": "",
+		"Cost": 564,
+		"Rarity": 0,
+		"Purchasable": false
+	},
+	"ChassisID": "vehiclechassisdef_RATTLERSL_FORTRESS",
+	"VehicleTags": {
+		"items": [		
+			"mmash_no_ground_align",
+			"unit_noncontrollableTank",
+			"NOSALVAGE",	
+			"unit_vehicle",
+			"unit_assault",
+			"unit_tracks"
+		],
+		"tagSetSourceFile": ""
+	},
+	"Locations": [
+		{
+			"Location": "Front",
+			"CurrentArmor": 2000,
+			"CurrentInternalStructure": 850,
+			"AssignedArmor": 2000,
+			"DamageLevel": "Functional"
+		},
+		{
+			"Location": "Left",
+			"CurrentArmor": 2000,
+			"CurrentInternalStructure": 850,
+			"AssignedArmor": 2000,
+			"DamageLevel": "Functional"
+		},
+		{
+			"Location": "Right",
+			"CurrentArmor": 2000,
+			"CurrentInternalStructure": 850,
+			"AssignedArmor": 2000,
+			"DamageLevel": "Functional"
+		},
+		{
+			"Location": "Rear",
+			"CurrentArmor": 2000,
+			"CurrentInternalStructure": 850,
+			"AssignedArmor": 2000,
+			"DamageLevel": "Functional"
+		},
+		{
+			"Location": "Turret",
+			"CurrentArmor": 2000,
+			"CurrentInternalStructure": 850,
+			"AssignedArmor": 2000,
+			"DamageLevel": "Functional"
+		}
+	],
+	"inventory": [
+		{
+			"ComponentDefID": "Gear_RattlerSL_Track_Left_Front",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Left",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"ComponentDefID": "Gear_RattlerSL_Chassis_Left",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Turret",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},	
+		{
+			"ComponentDefID": "Gear_RattlerSL_Track_Left_Rear",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Left",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"ComponentDefID": "Gear_RattlerSL_Track_Right_Front",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Right",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"ComponentDefID": "Gear_RattlerSL_Chassis_Right",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Turret",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},		
+		{
+			"ComponentDefID": "Gear_RattlerSL_Track_Right_Rear",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Right",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"ComponentDefID": "Gear_RattlerSL_Tower",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Turret",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		{
+			"ComponentDefID": "Gear_RattlerSL_Chassis_Rear",
+			"ComponentDefType": "Upgrade",
+			"MountedLocation": "Turret",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional"
+		},
+		
+		{
+		  "ComponentDefID": "Weapon_Gauss_Gauss_Twin_0-STOCK",
+		  "ComponentDefType": "Weapon",
+		  "MountedLocation": "Front",		  
+		  "HardpointSlot": 1,
+		  "DamageLevel" : "Functional"
+		},		
+		{
+		  "ComponentDefID": "Weapon_Laser_LargeLaserER_Twin_0-STOCK",
+		  "ComponentDefType": "Weapon",
+		  "MountedLocation": "Front",		  
+		  "HardpointSlot": 2,
+		  "DamageLevel" : "Functional"
+		},				
+		{
+		  "ComponentDefID": "Weapon_Laser_LargeLaserER_Twin_0-STOCK",
+		  "ComponentDefType": "Weapon",
+		  "MountedLocation": "Front",		  
+		  "HardpointSlot": 3,
+		  "DamageLevel" : "Functional"
+		},	
+		{
+		  "ComponentDefID": "Weapon_AMS",
+		  "ComponentDefType": "Weapon",
+		  "MountedLocation": "Front",		  
+		  "HardpointSlot": 4,
+		  "DamageLevel" : "Functional"
+		},		
+		{
+		  "ComponentDefID": "Weapon_AMS",
+		  "ComponentDefType": "Weapon",
+		  "MountedLocation": "Front",		  
+		  "HardpointSlot": 5,
+		  "DamageLevel" : "Functional"
+		},	
+		
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_Generic_GAUSS",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_AntiMissile",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_AntiMissile",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_AntiMissile",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_AntiMissile",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_AntiMissile",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Ammo_AmmunitionBox_AntiMissile",
+		  "SimGameUID": null,
+		  "ComponentDefType": "AmmunitionBox",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Gear_TargetingTrackingSystem_Rattler",
+		  "SimGameUID": null,
+		  "ComponentDefType": "Upgrade",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		},
+		{
+		  "MountedLocation": "Front",
+		  "ComponentDefID": "Gear_Rattler_Resistances",
+		  "SimGameUID": null,
+		  "ComponentDefType": "Upgrade",
+		  "HardpointSlot": -1,
+		  "GUID": null,
+		  "DamageLevel": "Functional",
+		  "prefabName": null,
+		  "hasPrefabName": false
+		}
+	]
+}

@@ -6,37 +6,35 @@
 			},
 			{
 				"CategoryID": "CombatShield"
+			},
+			{
+				"CategoryID": "MeleeWeaponHandRequired"
 			}
 		],
-		"ArmorStructureChanges": {
-			"ArmorFactor": 1.4
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"ArmorProtection: x1.4"
-			]
-		},
-		"Flags": {
-			"flags": [
-				"default",
-				"not_broken",
-				"autorepair",
-				"no_salvage"
-			]
-		}
+		"BonusDescriptions": [
+			"ModularArmor: +125",
+			"ArmAccuracy: -1",
+			"WordsWords: Leave This Weapon Disabled!!"
+		],
+		"Flags": [
+			"default",
+			"not_broken",
+			"autorepair",
+			"no_salvage"
+		]
 	},
-	"Category": "AntiPersonnel",
+	"weaponCategoryID": "MeleeWeapon",
 	"Type": "MachineGun",
 	"WeaponSubType": "MachineGun",
 	"MinRange": 0,
-	"MaxRange": 0,
+	"MaxRange": 30,
 	"RangeSplit": [
 		0,
 		0,
 		0
 	],
-	"AmmoCategory": "NotSet",
-	"StartingAmmoCapacity": 0,
+	"AmmoCategory": "Flamer",
+	"StartingAmmoCapacity": 1,
 	"HeatGenerated": 0,
 	"Damage": 0,
 	"OverheatedDamageMultiplier": 0,
@@ -78,7 +76,62 @@
 	"AllowedLocations": "LeftArm",
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
-	"statusEffects": [],
+	"statusEffects": [
+		{
+			"durationData": {
+				"duration": -1,
+				"stackLimit": -1
+			},
+			"targetingData": {
+				"effectTriggerType": "Passive",
+				"effectTargetType": "Creator",
+				"showInTargetPreview": false,
+				"showInStatusPanel": true
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "StatusEffect-Shield_Large-{location}",
+				"Name": "Bonus Arm Armor",
+				"Details": "The BattleMech Shield is providing extra armor to the equipped arm at the cost of impairing that arm's accuracy with weaponry.",
+				"Icon": "shield-reflect"
+			},
+			"nature": "Buff",
+			"statisticData": {
+				"statName": "{location}.Armor",
+				"operation": "Float_Add",
+				"modValue": "125",
+				"modType": "System.Single"
+			}
+		},
+		{
+			"durationData": {
+				"duration": -1,
+				"stackLimit": 1
+			},
+			"targetingData": {
+				"effectTriggerType": "Passive",
+				"effectTargetType": "Creator",
+				"showInTargetPreview": false,
+				"showInStatusPanel": false
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "StatusEffect-Shield_AccuracyPenalty-{location}",
+				"Name": "Shield Acc Penalty",
+				"Details": "Reduced Arm Weapon Accuracy.",
+				"Icon": "uixSvgIcon_equipment_ActuatorArm"
+			},
+			"nature": "Buff",
+			"statisticData": {
+				"appliesEachTick": false,
+				"effectsPersistAfterDestruction": false,
+				"statName": "{location}.Accuracy",
+				"operation": "Float_Add",
+				"modValue": "1",
+				"modType": "System.Single"
+			}
+		}
+	],
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",

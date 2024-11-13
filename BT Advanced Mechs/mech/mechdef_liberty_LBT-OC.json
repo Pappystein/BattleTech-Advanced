@@ -8,6 +8,8 @@
 			"unit_role_brawler",
 			"unit_release",
 			"unit_rarity_4",
+			"FroncReaches",
+			"CalderonProtectorate",
 			"TaurianConcordat",
 			"TaurianGuard",
 			"unit_legal"
@@ -115,15 +117,6 @@
 			"DamageLevel": "Functional",
 			"prefabName": null,
 			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_armorslots_standard",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"DamageLevel": "Functional",
-			"prefabName": "",
-			"hasPrefabName": true
 		},
 		{
 			"MountedLocation": "LeftLeg",
@@ -373,6 +366,28 @@
 			"SimGameUID": null,
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 0,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightArm",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"SimGameUID": "",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightArm",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HRIFLE",
+			"SimGameUID": "",
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,

@@ -8,24 +8,14 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"ComponentExplosion": {
-			"ExplosionDamagePerAmmo": 45,
-			"StabilityDamagePerAmmo": 5
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"WpnRecoil: 3",
-				"InternalAmmo: 18",
-				"CostPerShot: 100",
-				"IsRifle"
-			]
-		},
-		"InternalAmmoTonnage": {
-            "InternalAmmoTons": 2.0
-        },
-		"AmmoCost": {
-			"PerUnitCost": 100
-		}
+		"BonusDescriptions": [
+			"WpnRecoil: 3",
+			"WpnAccuracy: -1",
+			"NoFireInMelee",
+			"IsRifle",
+			"WeaponAttachmentCompatible: Periphery FCS",
+			"WeaponAttachmentCompatible: Rifle Revolver"
+		]
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -37,16 +27,16 @@
 		300,
 		450
 	],
-	"AmmoCategory": "Flamer",
-	"StartingAmmoCapacity": 18,
-	"HeatGenerated": 6,
-	"Damage": 45,
+	"AmmoCategory": "RifleMedium",
+	"StartingAmmoCapacity": 0,
+	"HeatGenerated": 12,
+	"Damage": 36,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 0,
 	"DamageVariance": 0,
 	"HeatDamage": 0,
-	"AccuracyModifier": 0,
+	"AccuracyModifier": 1,
 	"CriticalChanceMultiplier": 1,
 	"AOECapable": false,
 	"IndirectFireCapable": false,
@@ -54,7 +44,7 @@
 	"ShotsWhenFired": 1,
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 3,
-	"Instability": 27,
+	"Instability": 20,
 	"WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
 	"Description": {
 		"Cost": 100000,
@@ -65,7 +55,7 @@
 		"UIName": "Medium Rifle",
 		"Id": "Weapon_Autocannon_AC10_MRIFLE",
 		"Name": "Medium Rifle",
-		"Details": "The Medium Rifle is the middleweight of the 'Rifle' family. The precursor to the modern Autocannon, the Rifle was based on the main guns used by tanks on pre-spaceflight Terra. The Medium Rifle carries 1 ton of ammo with 18 rounds. <b><color=#099ff2>VOLATILE!</color></b>",
+		"Details": "The Medium Rifle is the middleweight of the 'Rifle' family. The precursor to the modern Autocannon, the Rifle was based on the main guns used by tanks on pre-spaceflight Terra.",
 		"Icon": "uixSvgIcon_weapon_Ballistic"
 	},
 	"BonusValueA": "",
@@ -74,8 +64,8 @@
 	"ComponentSubType": "Weapon",
 	"PrefabIdentifier": "AC10",
 	"BattleValue": 0,
-	"InventorySize": 3,
-	"Tonnage": 7,
+	"InventorySize": 2,
+	"Tonnage": 5,
 	"AllowedLocations": "All",
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
@@ -83,7 +73,10 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_long"
+			"range_long",
+			"PeripheryFCSSupported",
+			"RevolverRifleSupported-Medium",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

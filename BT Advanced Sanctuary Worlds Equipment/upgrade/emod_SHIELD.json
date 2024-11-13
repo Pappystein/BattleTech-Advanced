@@ -6,18 +6,19 @@
 		"Category" : { 
 			"CategoryID" : "CASE" 
 		},
-		"Flags": {
-			"flags": [
-				"ignore_damage",
-				"autorepair",
-				"not_broken"
-			]
+		"WorkOrderCosts": {
+			"Install": {
+				"CBillCost": "2000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50"
+			}
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"SHIELD: 3"
-			]
-		}
+		"Flags": [
+			"ignore_damage",
+			"autorepair",
+			"not_broken"
+		],
+		"BonusDescriptions": [
+			"SHIELD: 3"
+		]
 	},
     "Description" : {
         "Cost" : 100000,

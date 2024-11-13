@@ -17,25 +17,21 @@
 				"CategoryID": "EnginePart"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"engine_part",
-				"vital",
-				"not_broken"
-			]
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"Flags": [
+			"vital",
+			"engine_part",
+			"no_salvage"
+		],
+		"BonusDescriptions": [
 				"WalkSpeed: +15%",
 				"EngineWeight: +25%",
 				"EndMoveHeat: -4",
 				"Dissipation: 5"
 			]
-		}
 	},
 	"DissipationCapacity" : 5,
 	"Description": {
-		"Cost": 1000000,
+		"Cost": 750000,
 		"Rarity": 5,
 		"Purchasable": true,
 		"Manufacturer": "Sanctuary Manufacturing",
@@ -149,8 +145,8 @@
 	],
 	"ComponentTags": {
 		"items": [
-			"component_type_stock",
-			"BLACKLISTED"
+			"EnginePart.{location}",
+			"component_type_stock"
 		],
 		"tagSetSourceFile": ""
 	}

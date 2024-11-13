@@ -10,11 +10,12 @@
 			"unit_jumpOK",
 			"Liao",
 			"DeathCommandos",
-			"1stMcCarronsArmoredCavalry",
+	 		"1stMcCarronsArmoredCavalry",
 			"Davion",
 			"DavionAssaultGuards",
 			"Marik",
 			"1stKnightsOfTheInnerSphere",
+			"MacksMercs",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""
@@ -112,7 +113,7 @@
 	"inventory": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_armorslots_Hardened",
+			"ComponentDefID": "emod_armorslots_hardened",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional",

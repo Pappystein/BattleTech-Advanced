@@ -64,7 +64,7 @@
 	"ChassisTags": {
 		"items": [
 			"ClanMech",
-			"unit_mechtool"
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -129,7 +129,12 @@
 		},
 		{
 			"Location": "LeftArm",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 80,
@@ -141,11 +146,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,
@@ -159,11 +164,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -177,11 +182,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,
@@ -192,7 +197,12 @@
 		},
 		{
 			"Location": "RightArm",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 80,

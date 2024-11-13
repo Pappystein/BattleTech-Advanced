@@ -8,21 +8,17 @@
 				"CategoryID": "BAGear"
 			},
 			{
-				"CategoryID": "ECM"
+				"CategoryID": "StealthCompatible"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"Defense: +1",
-				"ECMRadius: 30"
-			]
-		},
-		"Flags": {
-			"flags": [
-				"no_salvage",
-				"not_broken"
-			]
-		}
+		"BonusDescriptions": [
+			"Defense: +1",
+			"ECMRadius: 30"
+		],
+		"Flags": [
+			"no_salvage",
+			"not_broken"
+		]
 	},
 	"StatName": null,
 	"RelativeModifier": 0,

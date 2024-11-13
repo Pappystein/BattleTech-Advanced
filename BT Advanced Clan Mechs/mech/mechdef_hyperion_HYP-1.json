@@ -9,12 +9,14 @@
 			"unit_rarity_1",
 			"unit_lance_support",
 			"unit_role_sniper",
-			"ClanWolf",
-			"ClanJadeFalcon",
-			"ClanGhostBear",
-			"ClanNovaCat",
+			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
+			"CJFIotaGalaxy",
+			"CNCOmicronGalaxy",
+			"CWEpsilonGalaxy",
 			"ClanDiamondShark",
 			"unit_superheavy",
+			"Ignore_SelfKnockdown",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""

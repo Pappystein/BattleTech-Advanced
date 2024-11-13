@@ -31,7 +31,7 @@
     "Purchasable": false,
     "UIName": "Cobra Heavy VTOL",
     "Id": "vehiclechassisdef_COBRA_VTOL",
-    "Name": "Cobra Heavy VTOL",
+    "Name": "Cobra",
     "Details": "It's a VTOL, Boss",
     "Icon": "Karnov"
   },
@@ -44,7 +44,7 @@
   "PrefabBase": "cukarr",
   "Tonnage": 40,
   "weightClass": "MEDIUM",
-  "BattleValue": 564,
+  "BattleValue": 2000000,
   "TopSpeed": 85,
   "TurnRadius": 90,
   "SpotterDistanceMultiplier": 1,
@@ -104,7 +104,7 @@
       "Location": "Left",
       "Hardpoints": [
 		{
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         }
 	  ],
@@ -117,7 +117,7 @@
       "Location": "Right",
       "Hardpoints": [
 		{
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         }
 	  ],

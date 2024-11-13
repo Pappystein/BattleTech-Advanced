@@ -1,14 +1,23 @@
 {
 	"ID": "faction_Outworld",
-	"Name": "Outworld Alliance",
+	"Name": "the Outworld Alliance",
 	"ShortName": "Outworlds",
 	"Demonym": "Outworld",
 	"Government": "Alliance",
-	"Allies": [],
+	"Allies": [
+		"ThermoPolice",
+		"ClanSnowRaven",
+		"TaurianConcordat",
+		"Mercenaries",
+		"Locals"
+	],
 	"Enemies": [
 		"Kurita",
 		"Davion",
 		"Tortuga",
+		"ComStar",
+		"WordOfBlake",
+		"331stDivision",
 		"AuriganPirates",
 		"Mercenaries",
 		"Locals"

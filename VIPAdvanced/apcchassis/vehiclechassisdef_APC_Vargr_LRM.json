@@ -10,7 +10,7 @@
 		"UIName": "Vargr APC",
 		"Details": "",
 		"Icon": "Vargr",
-		"Cost": 564,
+		"Cost": 340000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -106,19 +106,19 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

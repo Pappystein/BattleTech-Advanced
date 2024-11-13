@@ -11,9 +11,12 @@
 			"unit_generic",
 			"DarkCaste",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""
@@ -109,15 +112,6 @@
 		}
 	],
 	"inventory": [
-		{
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_armorslots_standard",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"DamageLevel": "Functional",
-			"prefabName": "",
-			"hasPrefabName": true
-		},
 		{
 			"MountedLocation": "CenterTorso",
 			"ComponentDefID": "emod_engine_270",

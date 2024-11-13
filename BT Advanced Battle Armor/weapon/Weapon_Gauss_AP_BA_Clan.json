@@ -9,16 +9,14 @@
 			"ExplosionDamage": 10,
 			"StabilityDamage": 5
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WpnRecoil: 1",
 				"IsGauss",
 				"PipsIgnored: 3",
 				"WeaponBoom: 10",
 				"InternalAmmo: 8",
 				"CostPerShot: 15"
-			]
-		},
+			],
 		"InternalAmmoTonnage": {
             "InternalAmmoTons": 0.25
         },
@@ -26,7 +24,7 @@
 			"PerUnitCost": 15
 		}
 	},
-	"Category": "AntiPersonnel",
+	"weaponCategoryID": "BattleArmor",
 	"Type": "Gauss",
 	"WeaponSubType": "Gauss",
 	"MinRange": 0,
@@ -38,8 +36,8 @@
 	],
 	"AmmoCategory": "Flamer",
 	"StartingAmmoCapacity": 12,
-	"HeatGenerated": 5,
-	"Damage": 8,
+	"HeatGenerated": 1,
+	"Damage": 6,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 3,

@@ -13,7 +13,10 @@
 				"default",
 				"not_broken"
 			]
-		}
+		},
+		"BonusDescriptions": [
+				"DEPRECATED"
+		]
 	},
 	"Description": {
 		"Cost": 30000,
@@ -21,10 +24,10 @@
 		"Purchasable": true,
 		"Manufacturer": "Generic",
 		"Model": "Standard",
-		"UIName": "Front Lower Leg",
+		"UIName": "DEPRECATED",
 		"Id": "Quad_Front_leg_lower",
-		"Name": "Lower Leg Actuator",
-		"Details": "An Actuator is a component within a BattleMech's limbs, composed of the joint, myomer bundles, and motor control units.",
+		"Name": "DEPRECATED",
+		"Details": "<b><color=#e51717>THIS GEAR IS DEPRECATED AND NO LONGER FUNCTIONS, REPLACE IT AS SOON AS YOU CAN</color></b>\n\nAn Actuator is a component within a BattleMech's limbs, composed of the joint, myomer bundles, and motor control units.",
 		"Icon": "uixSvgIcon_equipment_ActuatorLeg"
 	},
 	"BonusValueA": "",
@@ -68,7 +71,8 @@
 	],
 	"ComponentTags": {
 		"items": [
-			"component_type_stock"
+			"component_type_stock",
+			"BLACKLISTED"
 		],
 		"tagSetSourceFile": ""
 	}

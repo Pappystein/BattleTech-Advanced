@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"unit_vehicle",
 			"unit_medium",
 			"unit_tracks",
@@ -24,15 +24,24 @@
 			"unit_bracket_low",
 			"unit_noncombatant",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
 			"DarkCaste",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"ClanWolf",
+			"ClanGoliathScorpion",
 			"ClanJadeFalcon",
 			"ClanGhostBear",
 			"ClanNovaCat",
 			"ClanDiamondShark",
+			"ClanSnowRaven",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""

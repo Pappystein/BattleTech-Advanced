@@ -7,7 +7,7 @@
 		"Name": "Ignis",
 		"Details": "",
 		"Icon": "Ignis",
-		"Cost": 564,
+		"Cost": 250000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -18,7 +18,7 @@
 	"PrefabBase": "bradley",
 	"Tonnage": 30,
 	"weightClass": "LIGHT",
-	"BattleValue": 564,
+	"BattleValue": 500000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"movementType": "Tracked",
@@ -79,11 +79,11 @@
 			"Location": "Left",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -96,11 +96,11 @@
 			"Location": "Right",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -121,7 +121,7 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],

@@ -152,7 +152,8 @@
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
-			"HeroMech"
+			"HeroMech",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -220,11 +221,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,
@@ -238,11 +239,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -265,11 +266,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -283,11 +284,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,

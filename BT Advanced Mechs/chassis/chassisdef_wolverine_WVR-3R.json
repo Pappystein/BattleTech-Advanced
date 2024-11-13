@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
-	},
 	"Description": {
 		"Cost": 4034230,
 		"Rarity": 2,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Primitive Wolverine",
 		"Id": "chassisdef_wolverine_WVR-3R",
-		"Name": "Wolverine Primitive",
+		"Name": "Primitive Wolverine",
 		"Details": "Developed by the Federated Suns during the Age of War, the original primitive Wolverine was introduced in 2471. Designed to supplement the slower Mackie and Battleaxe, the Wolverine proved a generally adept and maneuverable support design. It would go on to become a mainstay of the AFFS for centuries to come. The WVR-3R mounted an Autocannon/5 with 1 ton of ammunition in the right arm as well as a SRM-6 in the left torso and a Medium Laser in the head to provide coverage in the weak zone sixty-meters inside the main gun's reach.",
 		"Icon": "uixTxrIcon_wolverine"
 	},
@@ -57,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -80,7 +74,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -112,7 +106,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -188,7 +182,8 @@
 	"VariantName": "WVR-3R",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -197,7 +192,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

@@ -4,10 +4,11 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_GOBLIN",
-		"Name": "Goblin",
-		"Details": "",
+		"UIName": "Goblin Medium Tank",
+		"Name": "Goblin Medium Tank",
+		"Details": "The Goblin Medium Tank's defining feature is its infantry bay, large enough to carry one squad of troopers. The tank's origins are unclear, though it was a common sight in Star League mechanized infantry regiments. Today, the Goblin can be found in almost any military throughout the Inner Sphere and Periphery, largely thanks to its simple weapon loadout and rugged design.\n\n <b><color=#ffcc00>Tracked: High traction, agile turning.\n\n <b><color=#ffcc00>Movement: 4/6 Hex: 120/180 Meters.</color></b>\n\n \n\n <b><color=#ffcc00>Movement: 4/6 Hex: 120/180 Meters.</color></b>\n\n<b>Armor:</b> Armor\n<b>Structure:</b> Structure\n<b>Values       A        S  </b>\n<b>Front</b>       150     25\n<b>Left</b>         120     25\n<b>Right</b>       120     25\n<b>Rear</b>         100     25\n<b>Turret</b>       150     25\n\n<b>Total</b>      640     125\n",
 		"Icon": "Goblin",
-		"Cost": 993,
+		"Cost": 450000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -18,7 +19,7 @@
 	"PrefabBase": "goblin",
 	"Tonnage": 45,
 	"weightClass": "MEDIUM",
-	"BattleValue": 993,
+	"BattleValue": 2000000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"movementType": "Tracked",
@@ -71,7 +72,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -108,7 +109,7 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],

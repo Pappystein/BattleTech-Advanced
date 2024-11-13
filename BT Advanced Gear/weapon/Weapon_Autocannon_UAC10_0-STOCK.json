@@ -5,13 +5,12 @@
 				"CategoryID": "w/a/a/uac"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WpnRecoil: 3",
 				"WeaponJAMFlat: 5",
-				"VariableBurstCount: 2"
+				"VariableBurstCount: 2",
+				"WeaponAttachmentCompatible: Autocannon FCS"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -41,7 +40,7 @@
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 2,
 	"Instability": 20,
-	"WeaponEffectID": "WeaponEffect-Weapon_AC10",
+	"WeaponEffectID": "WeaponEffect-Weapon_AC10_Single",
 	"Description": {
 		"Cost": 340000,
 		"Rarity": 0,
@@ -81,14 +80,19 @@
 			"ShotsWhenFired": 1,
 			"HeatGenerated": 12,
 			"FireDelayMultiplier": 0.3,
-			"FlatJammingChance": 0.05
+			"FlatJammingChance": 0.05,
+			"RefireModifier": 1
 		}
 	],
 	"statusEffects": [],
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_long"
+			"range_long",
+			"AutocannonFCSSupported-Ultra",
+			"WebbTCSupported-Ultra",
+			"QuirkEnforcerSupported-AC10-Ultra",
+			"QuirkLegacySupported-UAC10"
 		],
 		"tagSetSourceFile": ""
 	}

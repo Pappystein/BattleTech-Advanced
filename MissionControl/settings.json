@@ -140,15 +140,22 @@
 			},
 			{
 				"MapId": "mapGeneral_desertDam_aDes",
-				"ContractTypeName": "SimpleBattle",
 				"IncreaseBoundarySizeByPercentage": 0.6
+			},
+			{
+				"MapId": "mapGeneral_rockyMesas_aDes",
+				"IncreaseBoundarySizeByPercentage": 0.4
 			},
 			{
 				"MapId": "mapGeneral_lostWorld_vJung",
-				"IncreaseBoundarySizeByPercentage": 0.6
+				"IncreaseBoundarySizeByPercentage": 0.7
 			},
 			{
 				"MapId": "mapGeneral_Interchange_aDes",
+				"IncreaseBoundarySizeByPercentage": 0.4
+			},
+			{
+				"MapId": "mapArena_bigLoch_vHigh",
 				"IncreaseBoundarySizeByPercentage": 0.4
 			},
 			{
@@ -168,12 +175,16 @@
 			},
 			{
 				"MapId": "mapGeneral_splitRange_iGlc",
-				"IncreaseBoundarySizeByPercentage": 0.5
+				"IncreaseBoundarySizeByPercentage": 0.6
 			},
 			{
 				"MapId": "mapGeneral_centralPond_uTech",
 				"ContractTypeName": "DefendBase",
 				"IncreaseBoundarySizeByPercentage": 0.2
+			},
+			{
+				"MapId": "mapGeneral_cityCenter_uTech",
+				"IncreaseBoundarySizeByPercentage": 0.4
 			},
 			{
 				"MapId": "mapGeneral_cragMire_vLow",
@@ -197,12 +208,11 @@
 			{
 				"MapId": "mapGeneral_riftValley_vJung",
 				"ContractTypeName": "AmbushConvoy",
-				"IncreaseBoundarySizeByPercentage": 0.4
+				"IncreaseBoundarySizeByPercentage": 0.6
 			},
 			{
 				"MapId": "mapMultiPurp_metroGreen_uTech",
-				"ContractTypeName": "CaptureBase",
-				"IncreaseBoundarySizeByPercentage": 0.2
+				"IncreaseBoundarySizeByPercentage": 0.3
 			},
 			{
 				"MapId": "mapGeneral_lushIsthmus_vJung",
@@ -210,7 +220,7 @@
 			},
 			{
 				"MapId": "mapGeneral_frostySlopes_iTnd",
-				"IncreaseBoundarySizeByPercentage": 0.5
+				"IncreaseBoundarySizeByPercentage": 0.6
 			},
 			{
 				"MapId": "mapStory_storyEncounter7_vLow",
@@ -228,6 +238,26 @@
 				"IncreaseBoundarySizeByPercentage": 0.4
 			},
 			{
+				"MapId": "mapGeneral_mountainHold_bMoon",
+				"IncreaseBoundarySizeByPercentage": 0.4
+			},
+			{
+				"MapId": "mapGeneral_lostCanyon_aBad",
+				"IncreaseBoundarySizeByPercentage": 0.4
+			},
+			{
+				"MapId": "mapGeneral_bigCrater_bMoon",
+				"IncreaseBoundarySizeByPercentage": 0.6
+			},
+			{
+				"MapId": "mapArena_deathValley_aDes",
+				"IncreaseBoundarySizeByPercentage": 0.4
+			},
+			{
+				"MapId": "mapGeneral_highPlateaus_aDes",
+				"IncreaseBoundarySizeByPercentage": 0.4
+			},
+			{
 				"ContractTypeName": "AmbushConvoy",
 				"IncreaseBoundarySizeByPercentage": 0.2
 			}
@@ -242,7 +272,7 @@
 			"DuoDuel"
 		],
 		"MinDistanceForZone": 50,
-		"MaxDistanceForZone": 288,
+		"MaxDistanceForZone": 175,
 		"DisorderlyWithdrawalCompatibility": false
 	},
 	"AI": {

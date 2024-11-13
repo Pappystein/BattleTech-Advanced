@@ -1,9 +1,5 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Lower"
-		},
 		"AssemblyVariant": {
 			"PrefabID": "Avatar",
 			"Exclude": false,
@@ -23,6 +19,17 @@
 			"prefabName": null
 		},
 		{
+			"ComponentDefID": "Gear_Attachment_Quirk_Avatar_StabilizedAim",
+			"ComponentDefType": "Upgrade",
+			"DamageLevel": "Functional",
+			"GUID": null,
+			"HardpointSlot": -1,
+			"MountedLocation": "CenterTorso",
+			"SimGameUID": "",
+			"hasPrefabName": false,
+			"prefabName": null
+		},
+		{
 			"ComponentDefID": "Weapon_Laser_MediumLaser_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"DamageLevel": "Functional",
@@ -43,6 +50,15 @@
 			"SimGameUID": "",
 			"hasPrefabName": false,
 			"prefabName": null
+		},
+		{
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "emod_armorslots_standard",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
 		},
 		{
 			"MountedLocation": "CenterTorso",
@@ -151,7 +167,7 @@
 	"PrefabIdentifier": "chrprfmech_avatarbase-001",
 	"PrefabBase": "avatar",
 	"Tonnage": 70,
-	"InitialTonnage": 29,
+	"InitialTonnage": 7,
 	"weightClass": "HEAVY",
 	"BattleValue": 6577000,
 	"Heatsinks": 0,
@@ -194,11 +210,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -212,11 +228,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -230,11 +246,11 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -248,11 +264,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -266,11 +282,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -347,7 +363,10 @@
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
-			"HeroMech"
+			"HeroMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},

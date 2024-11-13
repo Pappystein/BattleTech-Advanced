@@ -10,12 +10,13 @@
 			"unit_rarity_3",
 			"Liao",
 			"DeathCommandos",
-			"1stMcCarronsArmoredCavalry",
+	 		"1stMcCarronsArmoredCavalry",
 			"Davion",
 			"DavionAssaultGuards",
 			"Marik",
 			"1stKnightsOfTheInnerSphere",
-			"unit_notsacellum"
+			"MacksMercs",
+			"unit_legal"
 		],
 		"tagSetSourceFile": ""
 	},

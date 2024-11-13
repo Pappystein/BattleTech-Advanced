@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"unit_vehicle",
 			"unit_light",
 			"unit_wheels",
@@ -47,6 +47,7 @@
 			"VLegioRipariensis",
 			"CohorsMorituri",
 			"Hanse",
+			"Castile",
 			"Rim",
 			"Outworld",
 			"1stAllianceAirWing",
@@ -68,6 +69,8 @@
 			"HouseKhulan",
 			"Wolfs_Dragoons",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"KnightsOfCaerbannog",
 			"GraysGhosts",
 			"BroadswordLegion",

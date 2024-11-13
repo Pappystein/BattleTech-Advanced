@@ -17,30 +17,27 @@
 				"CBillCost": "[[Chassis.Tonnage]] * 1.15"
 			}
 		},
-		"Flags": {
-			"flags": [
-				"default",
-				"not_broken",
-				"no_salvage",
-				"autorepair",
-				"ignore_damage"
-			]
-		},
+		"Flags": [
+			"default",
+			"not_broken",
+			"no_salvage",
+			"autorepair",
+			"ignore_damage"
+		],
 		"Weights": {
 			"StructureFactor": 1.4
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"IsGyro",
-				"WalkSpeed: +10%",
-				"RunSpeed: +10%",
-				"KickDamageBonus: +20",
-				"KickAccuracy: +1",
-				"GyroStab: 120",
-				"GyroWeight: +40%",
-				"360Twist"
-			]
-		}
+		"BonusDescriptions": [
+			"IsGyro",
+			"WalkSpeed: +10%",
+			"RunSpeed: +10%",
+			"KickDamageBonus: +20",
+			"KickAccuracy: +1",
+			"GyroStab: 120",
+			"GyroWeight: +40%",
+			"360Twist",
+			"KnockdownImmunity"
+		]
 	},
 	"StatName": null,
 	"RelativeModifier": 0,

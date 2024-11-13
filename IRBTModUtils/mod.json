@@ -2,7 +2,7 @@
 	"Name": "IRBTModUtils",
 	"Enabled": true,
 	"Hidden": true,
-	"Version": "1.30.0",
+	"Version": "2.0.0.0",
 	"Description": "Utility classes required by other mods",
 	"Author": "IceRaptor",
 	"Website": "https://github.com/IceRaptor/IRBTModUtils",
@@ -13,6 +13,9 @@
 	"Settings": {
 		"Debug": false,
 		"Trace": false,
+		"Features": {
+			"EnableMovementModifiers": true
+		},
 		"Dialogue": {
 			"CallsignsPath": "BattleTech_Data/StreamingAssets/data/nameLists/name_callsign.txt",
 			"Portraits": [

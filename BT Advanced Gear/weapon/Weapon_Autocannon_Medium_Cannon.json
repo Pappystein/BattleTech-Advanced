@@ -6,16 +6,17 @@
 			}
 		],
 		"ComponentExplosion": {
-			"ExplosionDamagePerAmmo": 6,
+			"ExplosionDamagePerAmmo": 240,
 			"StabilityDamagePerAmmo": 5
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"CannonShots: 10",
-				"CostPerShot: 700",
-				"IsCannon"
-			]
-		},
+		"BonusDescriptions": [
+			"CannonShots: 10",
+			"CostPerShot: 700",
+			"WpnRecoil: 5",
+			"IsCannon",
+			"WeaponAttachmentCompatible: Periphery FCS",
+			"WeaponAttachmentCompatible: Ammo Feed - Cannon"
+		],
 		"InternalAmmoTonnage": {
             "InternalAmmoTons": 0.05
         },
@@ -46,7 +47,7 @@
 	"CriticalChanceMultiplier": 1.25,
 	"AOECapable": false,
 	"IndirectFireCapable": false,
-	"RefireModifier": 3,
+	"RefireModifier": 5,
 	"ShotsWhenFired": 1,
 	"ProjectilesPerShot": 10,
 	"AttackRecoil": 3,
@@ -83,7 +84,10 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_long"
+			"range_long",
+			"PeripheryFCSSupported",
+			"AmmoFeedCannonSupported-Medium",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

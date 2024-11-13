@@ -4,7 +4,7 @@
 		"Id": "vehicledef_TITAN_SUPERIOR",
 		"Name": "Titan (Superior)",
 		"Details": "",
-		"Icon": "Titan (Superior)",
+		"Icon": "Athena",
 		"Cost": 993,
 		"Rarity": 0,
 		"Purchasable": false
@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.50",
 			"unit_vehicle",
 			"unit_assault",

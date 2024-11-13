@@ -8,7 +8,7 @@
 		"UIName": "Quickdraw",
 		"Id": "chassisdef_quickdraw_QKD-5M",
 		"Name": "Quickdraw",
-		"Details": "Technicron's replacement for the origianl QKD-4G model, the -5M was introduced in 3049 as a solution for the original's heat issues. By swapping the 13 standard heat sinks for double-strength versions, the Quickdraw's firepower became much more effective in longer-term firefights. Additionally, the addition of Ferro-Fibrous armor permitted the addition of CASE for the 'Mech's munitions. Overall, the -5M proved an effective and popular upgrade and slowly supplanted the -4G in most militaries.",
+		"Details": "Technicron's replacement for the original QKD-4G model, the -5M was introduced in 3049 as a solution for the originals heat issues. By swapping the 13 standard heat sinks for double-strength versions, the Quickdraw's firepower became much more effective in longer-term firefights. Additionally, the addition of Ferro-Fibrous armor permitted the addition of CASE for the 'Mech's munitions. Overall, the -5M proved an effective and popular upgrade and slowly supplanted the -4G in most militaries.",
 		"Icon": "uixTxrIcon_quickdraw"
 	},
 	"MovementCapDefID": "movedef_quickdraw_QKD-4G",
@@ -60,15 +60,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -82,7 +82,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -96,7 +96,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -110,11 +110,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -128,11 +128,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -207,11 +207,13 @@
 	],
 	"VariantName": "QKD-5M",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"HeavyMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Striker Cavalry",
-	"YangsThoughts": "Technicron's replacement for the origianl QKD-4G model, the -5M was introduced in 3049 as a solution for the original's heat issues. By swapping the 13 standard heat sinks for double-strength versions, the Quickdraw's firepower became much more effective in longer-term firefights. Additionally, the addition of Ferro-Fibrous armor permitted the addition of CASE for the 'Mech's munitions. Overall, the -5M proved an effective and popular upgrade and slowly supplanted the -4G in most militaries.",
+	"YangsThoughts": "Technicron's replacement for the original QKD-4G model, the -5M was introduced in 3049 as a solution for the originals heat issues. By swapping the 13 standard heat sinks for double-strength versions, the Quickdraw's firepower became much more effective in longer-term firefights. Additionally, the addition of Ferro-Fibrous armor permitted the addition of CASE for the 'Mech's munitions. Overall, the -5M proved an effective and popular upgrade and slowly supplanted the -4G in most militaries.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "LeftArm",

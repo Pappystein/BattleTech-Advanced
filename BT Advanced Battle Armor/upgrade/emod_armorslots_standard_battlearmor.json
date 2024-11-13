@@ -8,16 +8,15 @@
 				"CategoryID": "BAGear"
 			}
 		],
-		"Color": {
-			"UIColor": "DarkGray"
+		"ArmorStructureChanges": {
+			"ArmorFactor": 0.8
 		},
-		"Flags": {
-			"flags": [
-				"ignore_damage",
-				"default",
-				"no_salvage"
-			]
-		}
+		"Color": "DarkGray",
+		"Flags": [
+			"ignore_damage",
+			"default",
+			"no_salvage"
+		]
 	},
 	"Description": {
 		"Cost": 0,

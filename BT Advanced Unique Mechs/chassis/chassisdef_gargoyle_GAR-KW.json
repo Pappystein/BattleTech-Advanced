@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Lower"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"ComponentDefID": "Gear_Gyro_Omnimech",
@@ -111,7 +105,7 @@
 		"UIName": "Kin Wolf",
 		"Id": "chassisdef_gargoyle_GAR-KW",
 		"Name": "Kin Wolf",
-		"Details": "The Kin Wolf is a customized Gargoyle, based on the one piloted by Ulric Kerensky, the greatest leader Clan Wolf ever had after Nicholas Kerensky himself. Ulric was well known for favoring the Gargoyle and his personal Gargoyle was a mixed loadout for both long range and close up combat. At range, Ulric could call upon twin LB-2X Autocannons firing both slug and cluster rounds. At point-blank, he had 14 Streak SRM tubes at his command while the Gargoyle's trasditional ER Small Laser was retained. The Kin Wolf was later found in the arenas of Solaris VII, where it gained new life as a gladiator design.",
+		"Details": "The Kin Wolf is a customized Gargoyle, based on the one piloted by Ulric Kerensky, the greatest leader Clan Wolf ever had after Nicholas Kerensky himself. Ulric was well known for favoring the Gargoyle and his personal Gargoyle was a mixed loadout for both long range and close up combat. At range, Ulric could call upon twin LB-2X Autocannons firing both slug and cluster rounds. At point-blank, he had 14 Streak SRM tubes at his command while the Gargoyle's traditional ER Small Laser was retained. The Kin Wolf was later found in the arenas of Solaris VII, where it gained new life as a gladiator design.",
 		"Icon": "uixTxrIcon_gargoyle"
 	},
 	"MovementCapDefID": "movedef_gargoyle",
@@ -163,11 +157,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -181,11 +175,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -199,11 +193,11 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -217,11 +211,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -235,11 +229,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -317,12 +311,15 @@
 		"items": [
 			"ClanMech",
 			"OmniMech",
-			"HeroMech"
+			"HeroMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Gladiator",
-	"YangsThoughts": "The Kin Wolf is a customized Gargoyle, based on the one piloted by Ulric Kerensky, the greatest leader Clan Wolf ever had after Nicholas Kerensky himself. Ulric was well known for favoring the Gargoyle and his personal Gargoyle was a mixed loadout for both long range and close up combat. At range, Ulric could call upon twin LB-2X Autocannons firing both slug and cluster rounds. At point-blank, he had 14 Streak SRM tubes at his command while the Gargoyle's trasditional ER Small Laser was retained. The Kin Wolf was later found in the arenas of Solaris VII, where it gained new life as a gladiator design.",
+	"YangsThoughts": "The Kin Wolf is a customized Gargoyle, based on the one piloted by Ulric Kerensky, the greatest leader Clan Wolf ever had after Nicholas Kerensky himself. Ulric was well known for favoring the Gargoyle and his personal Gargoyle was a mixed loadout for both long range and close up combat. At range, Ulric could call upon twin LB-2X Autocannons firing both slug and cluster rounds. At point-blank, he had 14 Streak SRM tubes at his command while the Gargoyle's traditional ER Small Laser was retained. The Kin Wolf was later found in the arenas of Solaris VII, where it gained new life as a gladiator design.",
 	"CustomParts": {
 		"CustomParts": []
 	}

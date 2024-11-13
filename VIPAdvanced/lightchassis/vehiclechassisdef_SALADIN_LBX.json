@@ -9,7 +9,7 @@
 		"Name": "Saladin",
 		"Details": "",
 		"Icon": "Saladin",
-		"Cost": 564,
+		"Cost": 250000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -20,7 +20,7 @@
 	"PrefabBase": "sldfdrone",
 	"Tonnage": 35,
 	"weightClass": "LIGHT",
-	"BattleValue": 564,
+	"BattleValue": 500000,
 	"TopSpeed": 125,
 	"TurnRadius": 90,
 	"movementType": "Wheeled",
@@ -73,7 +73,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],

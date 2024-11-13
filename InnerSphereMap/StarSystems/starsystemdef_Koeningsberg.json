@@ -12,7 +12,7 @@
 	},
 	"Tags": {
 		"items": [
-			"planet_name_köningsberg",
+			"planet_name_koeningsberg",
 			"planet_size_medium",
 			"planet_climate_rocky",
 			"planet_feature_moon01",
@@ -134,7 +134,9 @@
 	"FactionShopItems": [
 		"itemCollection_faction_Hanse"
 	],
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Köningsberg",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -152,10 +154,11 @@
 		"Steiner",
 		"Chainelane",
 		"JarnFolk",
+		"Castile",
 		"AuriganPirates",
 		"DarkCaste",
 		"Locals",
 		"Mercenaries",
-		"Rim"
+		"RimWorldsRepublic"
 	]
 }

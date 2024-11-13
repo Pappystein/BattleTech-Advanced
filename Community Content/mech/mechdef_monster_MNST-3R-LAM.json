@@ -11,7 +11,9 @@
 			"6thLyranGuards",
 			"ComStar",
 			"2ndArmyVMu",
+			"MacksMercs",
 			"unit_superheavy",
+			"Ignore_SelfKnockdown",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""

@@ -5,13 +5,14 @@
 				"CategoryID": "w/e/l/x-pulse"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"MultiLaser",
 				"WpnAccuracy: +2",
-				"PipsIgnored: 1"
+				"PipsIgnored: 1",
+				"WpnCrits: +25%",
+				"WeaponAttachmentCompatible: Laser Insulator",
+				"WeaponAttachmentCompatible: Laser FCS"
 			]
-		}
 	},
 	"Category": "Energy",
 	"Type": "Laser",
@@ -33,7 +34,7 @@
 	"DamageVariance": 0,
 	"HeatDamage": 0,
 	"AccuracyModifier": -2,
-	"CriticalChanceMultiplier": 1,
+	"CriticalChanceMultiplier": 1.25,
 	"AOECapable": false,
 	"IndirectFireCapable": false,
 	"RefireModifier": 0,
@@ -43,7 +44,8 @@
 	"Instability": 0,
 	"ImprovedBallistic": true,
 	"FireDelayMultiplier": 0.01,
-	"WeaponEffectID": "WeaponEffect-Weapon_Laser_Large",
+	"ProjectileSpeedMultiplier": 0.5,
+	"WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Large",
 	"Description": {
 		"Cost": 300000,
 		"Rarity": 9,
@@ -72,7 +74,11 @@
 		"items": [
 			"component_type_variant",
 			"component_type_variant3",
-			"range_long"
+			"range_long",
+			"LaserInsulatorAttachable.{location}",
+			"LaserInsulatorSupported-SingleShot",
+			"LaserFCSSupported-SingleShot",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

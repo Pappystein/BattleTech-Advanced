@@ -2,7 +2,7 @@
 	"Name": "SoldiersPiratesAssassinsMercs",
 	"DLL": "SoldiersPiratesAssassinsMercs.dll",
 	"Hidden": true,
-	"Version": "1.1.0.8",
+	"Version": "1.2.0.3",
 	"Description": "",
 	"Author": "T-Bone",
 	"Website": "https://github.com/ajkroeg/SoldiersPiratesAssassinsMercs",
@@ -10,12 +10,10 @@
 	"DependsOn": [],
 	"CustomResourceTypes": [],
 	"Settings": {
+		"dumpSubFactions": false,
 		"enableDebug": true,
 		"enableTrace": true,
 		"BlacklistedContractTypesAndIDs": [
-			"SoloDuel",
-			"DuoDuel",
-			"Blackout",
 			"StoryTime_1_Retreat_Default",
 			"StoryTime_2_ThreeYearsLater_Default",
 			"StoryTime_3_Axylus_Default",
@@ -33,7 +31,16 @@
 			"StoryTime_7b_TyrlonAttack_Default",
 			"StoryTime_8_a_Locura_Default",
 			"StoryTime_8_b_Downfall_Default",
+			"DuoDuel_GameworldDuoAssault",
+			"DuoDuel_GameworldDuoHeavy",
+			"DuoDuel_GameworldDuoLight",
+			"DuoDuel_GameworldDuoMedium",
+			"SoloDuel_GameworldSoloAssault",
+			"SoloDuel_GameworldSoloHeavy",
+			"SoloDuel_GameworldSoloLight",
+			"SoloDuel_GameworldSoloMedium",
 			"Assassinate_Kringle",
+			"Assassinate_JohannsJaegers",
 			"DuoDuel_MaxRevenge1",
 			"Rescue_MaxRevenge",
 			"SimpleBattle_BTAThrowdown"
@@ -48,18 +55,21 @@
 				"Davion": 1.0,
 				"Steiner": 1.0,
 				"Marik": 1.0,
-				"Comstar": 1.0,
+				"Cameron": 1.0,
+				"ComStar": 1.0,
 				"WordOfBlake": 1.0,
 				"Rasalhague": 1.0,
 				"TaurianConcordat": 1.0,
 				"MagistracyOfCanopus": 1.0,
+				"RimWorldsRepublic": 1.0,
 				"Outworld": 1.0,
 				"Marian": 1.0,
+				"ClanFireMandrill": 1.0,
 				"AuriganPirates": 0.8
 			}
 		},
 		"MercLanceAdditionConfig": {
-			"BaseReplaceChance": 0.75,
+			"BaseReplaceChance": 0.9,
 			"FactionsReplaceOverrides": {
 				"Locals": 1.0,
 				"Mercenaries": 1.0,
@@ -109,6 +119,49 @@
 						"FactionName": "CGBThetaGalaxy",
 						"FactionWeight": 1,
 						"FactionFallback": "ClanGhostBear"
+					}
+				]
+			},
+			"ClanSnowRaven": {
+				"FactionReplaceChance": 0.3,
+				"FactionMCAdditionalLanceReplaceChance": 0.6,
+				"AlternateOpforWeights": [
+					{
+						"FactionName": "CSRDeltaGalaxy",
+						"FactionWeight": 1,
+						"FactionFallback": "ClanSnowRaven"
+					}
+				]
+			},
+			"ClanGoliathScorpion": {
+				"FactionReplaceChance": 0.3,
+				"FactionMCAdditionalLanceReplaceChance": 0.6,
+				"AlternateOpforWeights": [
+					{
+						"FactionName": "CGSOmegaGalaxy",
+						"FactionWeight": 1,
+						"FactionFallback": "ClanGoliathScorpion"
+					}
+				]
+			},
+			"ClanFireMandrill": {
+				"FactionReplaceChance": 0.3,
+				"FactionMCAdditionalLanceReplaceChance": 0.2,
+				"AlternateOpforWeights": [
+					{
+						"FactionName": "KindraaSainze",
+						"FactionWeight": 3,
+						"FactionFallback": "ClanFireMandrill"
+					},
+					{
+						"FactionName": "KindraaFaradayTanaga",
+						"FactionWeight": 5,
+						"FactionFallback": "ClanFireMandrill"
+					},
+					{
+						"FactionName": "KindraaMickKreese",
+						"FactionWeight": 2,
+						"FactionFallback": "ClanFireMandrill"
 					}
 				]
 			},
@@ -253,24 +306,45 @@
 					}
 				]
 			},
-			"Comstar": {
+			"Cameron": {
+				"FactionReplaceChance": 0.8,
+				"FactionMCAdditionalLanceReplaceChance": 0.7,
+				"AlternateOpforWeights": [
+					{
+						"FactionName": "StarGuardCorps",
+						"FactionWeight": 3,
+						"FactionFallback": "Cameron"
+					},
+					{
+						"FactionName": "ICorps",
+						"FactionWeight": 5,
+						"FactionFallback": "Cameron"
+					},
+					{
+						"FactionName": "IVCorps",
+						"FactionWeight": 2,
+						"FactionFallback": "Cameron"
+					}
+				]
+			},
+			"ComStar": {
 				"FactionReplaceChance": 0.8,
 				"FactionMCAdditionalLanceReplaceChance": 0.7,
 				"AlternateOpforWeights": [
 					{
 						"FactionName": "2ndArmyVMu",
 						"FactionWeight": 3,
-						"FactionFallback": "Comstar"
+						"FactionFallback": "ComStar"
 					},
 					{
 						"FactionName": "11thArmyVEta",
 						"FactionWeight": 5,
-						"FactionFallback": "Comstar"
+						"FactionFallback": "ComStar"
 					},
 					{
 						"FactionName": "7thArmyVIota",
 						"FactionWeight": 2,
-						"FactionFallback": "Comstar"
+						"FactionFallback": "ComStar"
 					}
 				]
 			},
@@ -355,6 +429,27 @@
 						"FactionName": "4thAllianceAirWing",
 						"FactionWeight": 2,
 						"FactionFallback": "Outworld"
+					}
+				]
+			},
+			"RimWorldsRepublic": {
+				"FactionReplaceChance": 0.8,
+				"FactionMCAdditionalLanceReplaceChance": 0.7,
+				"AlternateOpforWeights": [
+					{
+						"FactionName": "1stHeliusLegionnaires",
+						"FactionWeight": 3,
+						"FactionFallback": "RimWorldsRepublic"
+					},
+					{
+						"FactionName": "8thHeliusFusiliers",
+						"FactionWeight": 5,
+						"FactionFallback": "RimWorldsRepublic"
+					},
+					{
+						"FactionName": "RepublicanGuard",
+						"FactionWeight": 2,
+						"FactionFallback": "RimWorldsRepublic"
 					}
 				]
 			},
@@ -459,7 +554,7 @@
 					}
 				]
 			},
-			"starsystemdef_Elgin": {
+			"starsystemdef_Chisholm(Elgin2878+)": {
 				"FactionReplaceChance": 0.4,
 				"FactionMCAdditionalLanceReplaceChance": 0.6,
 				"AlternateOpforWeights": [
@@ -589,7 +684,7 @@
 					}
 				]
 			},
-			"starsystemdef_Liberty": {
+			"starsystemdef_Carver(Liberty3063+)": {
 				"FactionReplaceChance": 0.4,
 				"FactionMCAdditionalLanceReplaceChance": 0.6,
 				"AlternateOpforWeights": [
@@ -667,7 +762,7 @@
 					}
 				]
 			},
-			"starsystemdef_Fletcher": {
+			"starsystemdef_Fletcher(CC)": {
 				"FactionReplaceChance": 0.4,
 				"FactionMCAdditionalLanceReplaceChance": 0.6,
 				"AlternateOpforWeights": [
@@ -1109,6 +1204,20 @@
 					"PROFESSIONAL"
 				]
 			},
+			"MacksMercs": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 3,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"Davion",
+					"Locals",
+					"Mercenaries"
+				],
+				"UnitRating": 12,
+				"PersonalityAttributes": [
+					"MACKSMERCS"
+				]
+			},
 			"AvantisAngels": {
 				"MercFactionFallbackTag": "Mercenaries",
 				"AppearanceWeight": 5,
@@ -1142,7 +1251,7 @@
 				"AppearanceWeight": 6,
 				"RestrictionIsWhitelist": true,
 				"EmployerRestrictions": [
-					"Steiner",
+					"Cameron",
 					"Locals",
 					"Mercenaries"
 				],
@@ -1450,9 +1559,7 @@
 				"AppearanceWeight": 6,
 				"RestrictionIsWhitelist": true,
 				"EmployerRestrictions": [
-					"Outworld",
-					"Locals",
-					"Mercenaries"
+					"Outworld"
 				],
 				"UnitRating": 12,
 				"PersonalityAttributes": [
@@ -1534,7 +1641,7 @@
 				"AppearanceWeight": 4,
 				"RestrictionIsWhitelist": true,
 				"EmployerRestrictions": [
-					"Comstar",
+					"ComStar",
 					"Locals",
 					"Mercenaries"
 				],
@@ -1697,6 +1804,116 @@
 				"AppearanceWeight": 3,
 				"RestrictionIsWhitelist": true,
 				"EmployerRestrictions": [
+					"Locals",
+					"Mercenaries"
+				],
+				"UnitRating": 6,
+				"PersonalityAttributes": [
+					"PROFESSIONAL"
+				]
+			},
+			"AblesAces": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 5,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"RimWorldsRepublic"
+				],
+				"UnitRating": 8,
+				"PersonalityAttributes": [
+					"ULTRA-PROFESSIONAL"
+				]
+			},
+			"BlackSharks": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 3,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"RimWorldsRepublic",
+					"Locals",
+					"Mercenaries"
+				],
+				"UnitRating": 4,
+				"PersonalityAttributes": [
+					"PERIPHERY"
+				]
+			},
+			"FightingUrukhai": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 4,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"RimWorldsRepublic",
+					"Locals",
+					"Mercenaries"
+				],
+				"UnitRating": 7,
+				"PersonalityAttributes": [
+					"PROFESSIONAL"
+				]
+			},
+			"RaymondsRedcoats": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 3,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"RimWorldsRepublic",
+					"Locals",
+					"Mercenaries"
+				],
+				"UnitRating": 6,
+				"PersonalityAttributes": [
+					"PROFESSIONAL"
+				]
+			},
+			"GraveWalkers": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 4,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"Cameron",
+					"Locals",
+					"Mercenaries"
+				],
+				"UnitRating": 9,
+				"PersonalityAttributes": [
+					"ULTRA-PROFESSIONAL"
+				]
+			},
+			"12thStarGuards": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 4,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"Cameron",
+					"Locals",
+					"Mercenaries"
+				],
+				"UnitRating": 8,
+				"PersonalityAttributes": [
+					"PROFESSIONAL"
+				]
+			},
+			"RedfieldRenegades": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 3,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"Cameron",
+					"Locals",
+					"Mercenaries"
+				],
+				"UnitRating": 7,
+				"PersonalityAttributes": [
+					"PROFESSIONAL"
+				]
+			},
+			"LexingtonCombatGroup": {
+				"MercFactionFallbackTag": "Mercenaries",
+				"AppearanceWeight": 3,
+				"RestrictionIsWhitelist": true,
+				"EmployerRestrictions": [
+					"Cameron",
 					"Locals",
 					"Mercenaries"
 				],

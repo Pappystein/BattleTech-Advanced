@@ -5,13 +5,12 @@
 				"CategoryID": "w/m/s/drm"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"StructureDmgMod: 1",
 				"WpnCrits: -70%",
-				"MissileHealth: 2"
+				"MissileHealth: 2",
+				"WeaponAttachmentCompatible: SRM FCS"
 			]
-		}
 	},
 	"Category": "Missile",
 	"Type": "SRM",
@@ -54,7 +53,7 @@
 	"ColorChangeRule": "Linear",
 	"WeaponEffectID": "WeaponEffect-Weapon_SRM4",
 	"Description": {
-		"Cost": 35000,
+		"Cost": 70000,
 		"Rarity": 0,
 		"Purchasable": true,
 		"Manufacturer": "Sanctuary Manufacturing",
@@ -80,7 +79,9 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_standard"
+			"range_standard",
+			"SRMFCSSupported",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

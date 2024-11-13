@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Lower"
+		"AssemblyVariant": {
+			"PrefabID": "StoneRhino",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -14,14 +15,14 @@
 		"UIName": "Stone Rhino",
 		"Id": "chassisdef_stonerhino_STR-4",
 		"Name": "Stone Rhino",
-		"Details": "While the Stone Rhino =normally serves as a powerful fire platform, the STR-4 mixes things up as a weapon testbed design by Clan Smoke Jaguar. Using an XL Engine for weight saving, the Stone Rhino STR-4 mounts a withering array of weaponry: quad LRM-10s, quad ER Medium Lasers, quad Machine Guns, and a pair of Ultra AC/10s. A trio of jump jets allow the mech to surprise its targets with unexpected mobility. However, the design is terribly crippled with standard heat sinks, relegating it to the worst equipped for Clan garrison forces.",
+		"Details": "While the Stone Rhino normally serves as a powerful fire platform, the STR-4 mixes things up as a weapon testbed design by Clan Smoke Jaguar. Using an XL Engine for weight saving, the Stone Rhino STR-4 mounts a withering array of weaponry: quad LRM-10s, quad ER Medium Lasers, quad Machine Guns, and a pair of Ultra AC/10s. A trio of jump jets allow the mech to surprise its targets with unexpected mobility. However, the design is terribly crippled with standard heat sinks, relegating it to the worst equipped for Clan garrison forces.",
 		"Icon": "uixTxrIcon_stonerhino"
 	},
 	"MovementCapDefID": "movedef_stonerhino_300",
 	"PathingCapDefID": "pathingdef_assault",
-	"HardpointDataDefID": "hardpointdatadef_stonerhino",
-	"PrefabIdentifier": "chrprfmech_stonerhinobase-001",
-	"PrefabBase": "stonerhino",
+	"HardpointDataDefID": "hardpointdatadef_mwostonerhino",
+	"PrefabIdentifier": "chrprfmech_mwostonerhinobase-001",
+	"PrefabBase": "mwostonerhino",
 	"Tonnage": 100,
 	"InitialTonnage": 10,
 	"weightClass": "ASSAULT",
@@ -66,19 +67,19 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -92,15 +93,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -123,15 +124,15 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -145,19 +146,19 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -233,12 +234,15 @@
 	"VariantName": "STR-4",
 	"ChassisTags": {
 		"items": [
-			"ClanMech"
+			"ClanMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Incredible Assault",
-	"YangsThoughts": "While the Stone Rhino =normally serves as a powerful fire platform, the STR-4 mixes things up as a weapon testbed design by Clan Smoke Jaguar. Using an XL Engine for weight saving, the Stone Rhino STR-4 mounts a withering array of weaponry: quad LRM-10s, quad ER Medium Lasers, quad Machine Guns, and a pair of Ultra AC/10s. A trio of jump jets allow the mech to surprise its targets with unexpected mobility. However, the design is terribly crippled with standard heat sinks, relegating it to the worst equipped for Clan garrison forces.",
+	"YangsThoughts": "While the Stone Rhino normally serves as a powerful fire platform, the STR-4 mixes things up as a weapon testbed design by Clan Smoke Jaguar. Using an XL Engine for weight saving, the Stone Rhino STR-4 mounts a withering array of weaponry: quad LRM-10s, quad ER Medium Lasers, quad Machine Guns, and a pair of Ultra AC/10s. A trio of jump jets allow the mech to surprise its targets with unexpected mobility. However, the design is terribly crippled with standard heat sinks, relegating it to the worst equipped for Clan garrison forces.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",

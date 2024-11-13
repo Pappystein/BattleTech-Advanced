@@ -1,4 +1,11 @@
 {
+	"Custom": {
+		"AssemblyVariant": {
+			"PrefabID": "Sorcerer",
+			"Exclude": false,
+			"Include": true
+		}
+	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "LeftArm",
@@ -95,7 +102,9 @@
 	"DFASelfDamage": 105,
 	"DFAInstability": 50,
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"AssaultMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"MechPartMax": 0,
@@ -162,7 +171,7 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "MeleeWeapon"
 				}
 			],
 			"Tonnage": 0,
@@ -176,15 +185,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,
@@ -198,11 +207,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -216,15 +225,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,
@@ -238,15 +247,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,

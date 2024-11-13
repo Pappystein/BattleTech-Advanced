@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Lower"
+		"AssemblyVariant": {
+			"PrefabID": "Firebee",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -13,15 +14,15 @@
 		"Model": "",
 		"UIName": "Primitive Firebee",
 		"Id": "chassisdef_firebee_WAM-B",
-		"Name": "Firebee Primitive",
+		"Name": "Primitive Firebee",
 		"Details": "The original Firebee used a single LRM-5 backed up by a trio of SRM-2s. The Primitive Engine provided a top speed of 85 km/h, more than enough to engage armored vehicles and infantry, and supporting heavier units. The lack of jump jets, combined with six and a half tons of Primitive Armor, forced pilots to pay attention to the terrain to insure they could move effectively.",
 		"Icon": "uixTxrIcon_firebee"
 	},
 	"MovementCapDefID": "movedef_firebee_FRB-2E",
 	"PathingCapDefID": "pathingdef_light",
-	"HardpointDataDefID": "hardpointdatadef_firebee",
-	"PrefabIdentifier": "chrprfmech_firebeebase-001",
-	"PrefabBase": "firebee",
+	"HardpointDataDefID": "hardpointdatadef_firebeev2",
+	"PrefabIdentifier": "chrprfmech_firebeev2base-001",
+	"PrefabBase": "firebeev2",
 	"Tonnage": 35,
 	"InitialTonnage": 3.5,
 	"weightClass": "LIGHT",
@@ -66,7 +67,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -80,7 +85,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -103,7 +108,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -117,7 +122,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -193,7 +198,9 @@
 	"VariantName": "WAM-B",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"ArmLimitLowerRight",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -202,7 +209,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

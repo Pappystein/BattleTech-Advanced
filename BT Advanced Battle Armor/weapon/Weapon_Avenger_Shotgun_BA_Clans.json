@@ -5,17 +5,15 @@
 				"CategoryID": "BAWeapon"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"PipsIgnored: 4",
 				"CostPerShot: 20"
-			]
-		},
+			],
 		"AmmoCost": {
 			"PerUnitCost": 20
 		}
 	},
-	"Category": "AntiPersonnel",
+	"weaponCategoryID": "BattleArmor",
 	"Type": "MachineGun",
 	"WeaponSubType": "MachineGun",
 	"MinRange": 0,
@@ -27,8 +25,8 @@
 	],
 	"AmmoCategory": "NotSet",
 	"StartingAmmoCapacity": 0,
-	"HeatGenerated": 1,
-	"Damage": 1,
+	"HeatGenerated": 0,
+	"Damage": 2,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 4,
@@ -69,6 +67,9 @@
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
 	"ImprovedBallistic": true,
+	"DisableClustering": false,
+	"BallisticDamagePerPallet": true,
+	"AlternateDamageCalc": true,
 	"statusEffects": [],
 	"ComponentTags": {
 		"items": [

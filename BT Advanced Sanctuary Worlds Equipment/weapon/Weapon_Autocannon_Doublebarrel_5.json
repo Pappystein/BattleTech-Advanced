@@ -1,12 +1,11 @@
 {
     "Custom": {
-        "BonusDescriptions": {
-            "Bonuses": [
+        "BonusDescriptions": [
 				"DBACModes",
 				"DBACStab: 25",
-				"WpnRecoil: 1"
-            ]
-        },
+				"WpnRecoil: 1",
+				"WeaponAttachmentCompatible: Autocannon FCS"
+            ],
         "Category": [
 			{
 				"CategoryID": "w/a/a/dbac"
@@ -44,7 +43,7 @@
 	"FireDelayMultiplier": 0.2,
     "WeaponEffectID" : "WeaponEffect-Weapon_AC5",
     "Description" : {
-        "Cost" : 240000,
+        "Cost" : 120000,
         "Rarity" : 0,
         "Purchasable" : true,
         "Manufacturer" : "Sanctuary Engineering",
@@ -52,7 +51,7 @@
         "UIName" : "DBAC/5 (S)",
         "Id" : "Weapon_Autocannon_Doublebarrel_5",
         "Name" : "DBAC/5 (S)",
-        "Details" : "Essentially a pair of ACs stapled together, the Double-Barrel Autocannon is the Sanctuary's version of an Ultra Autocannon. Unlike the Inner Sphere's Ultras, the DBAC cannot jam but also cannot change fire modes, it always shoots two shots at once. It is a simple and effective weapon, which is why the Sanctuary Worlders make heavy use of the system.",
+        "Details" : "Essentially a pair of ACs stapled together, the Double-Barrel Autocannon is the Sanctuary's version of an Ultra Autocannon. Unlike the Inner Sphere's Ultras, the DBAC cannot jam but also cannot fire less than two shots, it always shoots both shots at once. However, the DBAC (as it is called) can swap to a stability-focused mode in combat, allowing at least some tactical flexibility. It is a simple and effective weapon, which is why the Sanctuary Worlders make heavy use of the system.",
         "Icon" : "uixSvgIcon_weapon_Ballistic"
     },
     "BonusValueA" : "",
@@ -69,12 +68,12 @@
     "statusEffects" : [],
 	"Modes": [
 		{
-			"Id": "lv1",
+			"Id": "Dmg",
 			"UIName": "Dmg",
 			"isBaseMode": true
 		},
 		{
-			"Id": "lv2",
+			"Id": "Stab",
 			"UIName": "Stab",
 			"isBaseMode": false,
 			"DamagePerShot": -40,
@@ -84,7 +83,9 @@
     "ComponentTags" : {
         "items" : [
             "component_type_stock",
-            "range_very-long"
+            "range_very-long",
+			"AutocannonFCSSupported-DBAC",
+			"WebbTCSupported-DBAC"
         ],
         "tagSetSourceFile" : ""
     }

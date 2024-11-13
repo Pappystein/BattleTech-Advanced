@@ -5,21 +5,17 @@
 				"CategoryID": "a/m/t/thunderbolt"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 100,
 			"StabilityDamagePerAmmo": 24
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"CostPerShot: 1000",
 				"AmmoCount: 4"
-			]
-		},
+			],
 		"AmmoCost": {
 			"PerUnitCost": 1000
 		}
@@ -36,7 +32,7 @@
 		"Id": "Ammo_AmmunitionBox_Thunderbolt_TB20",
 		"Name": "Thunderbolt 20 Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type.",
-		"Icon": "MRM"
+		"Icon": "missile-pod-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

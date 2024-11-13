@@ -9,15 +9,13 @@
 			"ExplosionDamage": 240,
 			"StabilityDamage": 40
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WeaponBoom: 240",
 				"ExplodeStab: 40",
 				"WpnRecoil: 4",
 				"NumberofBursts: 2",
 				"ProjectileBurst: 5"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Gauss",
@@ -44,7 +42,7 @@
 	"IndirectFireCapable": false,
 	"RefireModifier": 4,
 	"ShotsWhenFired": 2,
-	"ProjectilesPerShot": 5,
+	"ProjectilesPerShot": 1,
 	"AttackRecoil": 4,
 	"Instability": 1,
 	"DisableClustering": false,
@@ -87,7 +85,8 @@
 			"OmniRestriction.{location}",
 			"component_type_stock",
 			"wr-clustered_shots",
-			"range_extreme"
+			"range_extreme",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

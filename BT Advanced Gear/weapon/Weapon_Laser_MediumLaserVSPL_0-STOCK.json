@@ -5,17 +5,17 @@
 				"CategoryID": "w/e/l/vspl"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"VSPL",
-				"PipsIgnored: 1",
-				"VSPLShortMax: 60",
-				"VSPLMedMin: 60",
-				"VSPLMedMax: 150",
-				"VSPLLongMin: 150",
-				"VSPLLongMax: 270"
-			]
-		}
+		"BonusDescriptions": [
+			"VSPL",
+			"VariableShortMax: 90",
+			"VariableMedMin: 90",
+			"VariableMedMax: 150",
+			"VariableLongMin: 150",
+			"VariableLongMax: 270",
+			"PipsIgnored: 1",
+			"WeaponAttachmentCompatible: Laser Insulator",
+			"WeaponAttachmentCompatible: Laser FCS"
+		]
 	},
 	"Category": "Energy",
 	"Type": "Laser",
@@ -75,10 +75,10 @@
 			"Id": "short",
 			"UIName": "Close",
 			"isBaseMode": false,
-			"MaxRange": -90.0,
-			"ShortRange": -90.0,
-			"MediumRange": -90.0,
-			"LongRange": -90.0,
+			"MaxRange": -60.0,
+			"ShortRange": -60.0,
+			"MediumRange": -60.0,
+			"LongRange": -60.0,
 			"DamagePerShot": 10.0,
 			"AccuracyModifier": -1
 		},
@@ -87,7 +87,7 @@
 			"UIName": "Medium",
 			"isBaseMode": true,
 			"forbiddenRangeEnable": true,
-			"ForbiddenRange": 55
+			"ForbiddenRange": 85
 		},
 		{
 			"Id": "long",
@@ -107,7 +107,11 @@
 		"items": [
 			"component_type_stock",
 			"component_type_lostech",
-			"range_standard"
+			"range_standard",
+			"LaserInsulatorAttachable.{location}",
+			"LaserInsulatorSupported-VSPL",
+			"LaserFCSSupported-VSPL",
+			"WebbTCSupported-VSPL"
 		],
 		"tagSetSourceFile": ""
 	}

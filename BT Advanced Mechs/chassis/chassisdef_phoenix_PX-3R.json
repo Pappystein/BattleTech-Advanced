@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Phoenix",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -14,7 +15,7 @@
 		"UIName": "Phoenix",
 		"Id": "chassisdef_phoenix_PX-3R",
 		"Name": "Phoenix",
-		"Details": "The Phoenix was the Rim Worlds Republic's first effort to design a jump-capable BattleMech patterned after the Terran Hegemony's Wasp. The Phoenix took decades to get right, and earned the unfortunate nickname Sparkly Bird in testing, but finally reached completion with this, the PX-3R. Armed with a PPC and dual SRM-2s, the Phoenix was a well armored and maneuverable mech. Sadly, it fell into obscurity after the Amaris Civil War and disappeared outside of Periphery militias. In the 3060s though, the Rim Collection rediscovered some Amaris mechs and put them back into production, including the Phoenix.",
+		"Details": "The Phoenix was the Rim Worlds Republic's first effort to design a jump-capable BattleMech patterned after the Terran Hegemony's Wasp. The Phoenix took decades to get right, and earned the unfortunate nickname Sparkly Bird in testing, but finally reached completion with this, the PX-3R. Armed with a PPC and dual SRM-2s, the Phoenix was a well armored and maneuverable mech. Sadly, it fell into obscurity after the Amaris Civil War and disappeared outside of the Rim Worlds Republic's military. In the 3060s though, the RWR decided to put several of the old Amaris designs back into production in order to boost its flagging military, including the Phoenix.",
 		"Icon": "uixTxrIcon_phoenix"
 	},
 	"MovementCapDefID": "movedef_enforcer_ENF-4R",
@@ -75,15 +76,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -115,15 +116,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -198,11 +199,14 @@
 	],
 	"VariantName": "PX-3R",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"MediumMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Early Skirmisher",
-	"YangsThoughts": "The Phoenix was the Rim Worlds Republic's first effort to design a jump-capable BattleMech patterned after the Terran Hegemony's Wasp. The Phoenix took decades to get right, and earned the unfortunate nickname Sparkly Bird in testing, but finally reached completion with this, the PX-3R. Armed with a PPC and dual SRM-2s, the Phoenix was a well armored and maneuverable mech. Sadly, it fell into obscurity after the Amaris Civil War and disappeared outside of Periphery militias. In the 3060s though, the Rim Collection rediscovered some Amaris mechs and put them back into production, including the Phoenix.",
+	"YangsThoughts": "The Phoenix was the Rim Worlds Republic's first effort to design a jump-capable BattleMech patterned after the Terran Hegemony's Wasp. The Phoenix took decades to get right, and earned the unfortunate nickname Sparkly Bird in testing, but finally reached completion with this, the PX-3R. Armed with a PPC and dual SRM-2s, the Phoenix was a well armored and maneuverable mech. Sadly, it fell into obscurity after the Amaris Civil War and disappeared outside of the Rim Worlds Republic's military. In the 3060s though, the RWR decided to put several of the old Amaris designs back into production in order to boost its flagging military, including the Phoenix.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "LeftTorso",

@@ -10,7 +10,8 @@
       "chrprfmech_phawklammechbase-001_50",
       "chrPrfMech_crabBase-001_50",
       "chrPrfMech_quickdrawBase-001_60",
-      "chrprfmech_mackiebase-001_100",
+      "Mackie_100",
+      "MackieSanc_100",
       "chrPrfMech_vaporeagleBase-001_55",
       "chrprfmech_nightgyrbase-001_75",
       "chrprfmech_warhammeriicbase-001_80",
@@ -23,7 +24,8 @@
       "chrprfmech_toyamabase-001_75",
       "chrprfmech_iondevabase-001_70",
 	  "chrprfmech_ionbruinbase-001_45",
-	  "chrprfmech_lelikoscheibase-001_65"
+	  "chrprfmech_lelikoscheibase-001_65",
+	  "chrprfmech_cuambassadorbase-001_15"
     ],
     "idType": "AssemblyVariant",
     "altMaps": [],

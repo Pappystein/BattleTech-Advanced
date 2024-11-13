@@ -5,10 +5,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_SHAMASH_CLAN",
-		"Name": "Shamash Reconnaissance Vehicle",
+		"Name": "Shamash",
 		"Details": "",
 		"Icon": "Shamash",
-		"Cost": 564,
+		"Cost": 1000000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -19,7 +19,7 @@
 	"PrefabBase": "shamash",
 	"Tonnage": 11,
 	"weightClass": "LIGHT",
-	"BattleValue": 564,
+	"BattleValue": 7500000,
 	"TopSpeed": 125,
 	"TurnRadius": 90,
 	"movementType": "Wheeled",
@@ -104,19 +104,19 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],

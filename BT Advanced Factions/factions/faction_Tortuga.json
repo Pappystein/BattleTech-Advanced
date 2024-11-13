@@ -1,10 +1,20 @@
 {
 	"ID": "faction_Tortuga",
-	"Name": "Tortuga Dominions",
+	"Name": "the Tortuga Dominions",
 	"ShortName": "Tortuga",
 	"Demonym": "Tortugan",
 	"Government": "Dominion",
-	"Allies": [],
+	"Allies": [
+		"BandOfTheDamned",
+		"DeathsConsorts",
+		"MorrisonsExtractors",
+		"NewBeltPirates",
+		"TortugaFusiliers",
+		"ShenSeTian",
+		"AuriganPirates",
+		"Mercenaries",
+		"Locals"
+	],
 	"Enemies": [
 		"Kurita",
 		"Davion",
@@ -13,6 +23,7 @@
 		"Outworld",
 		"Delphi",
 		"Mercenaries",
+		"ClanSnowRaven",
 		"Locals"
 	],
 	"Presence": 0.1,

@@ -6,14 +6,12 @@
 		"ComponentExplosion": {
 			"ExplosionDamage": 50
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"GaussCapRange: +15%",
 				"GaussCapDmg: +15%",
 				"GaussCapHeat: +200%",
 				"WeaponBoom: 50"
 			]
-		}
 	},
 	"StatName": null,
 	"RelativeModifier": 0,
@@ -67,10 +65,10 @@
 				"modType": "System.Single",
 				"additionalRules": "NotSet",
 				"targetCollection": "Weapon",
-				"targetWeaponCategory": "NotSet",
+				"targetWeaponCategory": "Ballistic",
 				"targetWeaponType": "Gauss",
 				"targetAmmoCategory": "NotSet",
-				"targetWeaponSubType": "NotSet"
+				"targetWeaponSubType": "Gauss"
 			}
 		},
 		{
@@ -98,10 +96,10 @@
 				"modValue": "1.15",
 				"modType": "System.Single",
 				"targetCollection": "Weapon",
-				"targetWeaponCategory": "NotSet",
+				"targetWeaponCategory": "Ballistic",
 				"targetWeaponType": "Gauss",
 				"targetAmmoCategory": "NotSet",
-				"targetWeaponSubType": "NotSet"
+				"targetWeaponSubType": "Gauss"
 			}
 		},
 		{
@@ -129,10 +127,10 @@
 				"modValue": "1.15",
 				"modType": "System.Single",
 				"targetCollection": "Weapon",
-				"targetWeaponCategory": "NotSet",
+				"targetWeaponCategory": "Ballistic",
 				"targetWeaponType": "Gauss",
 				"targetAmmoCategory": "NotSet",
-				"targetWeaponSubType": "NotSet"
+				"targetWeaponSubType": "Gauss"
 			}
 		},
 		{
@@ -160,10 +158,10 @@
 				"modValue": "1.15",
 				"modType": "System.Single",
 				"targetCollection": "Weapon",
-				"targetWeaponCategory": "NotSet",
+				"targetWeaponCategory": "Ballistic",
 				"targetWeaponType": "Gauss",
 				"targetAmmoCategory": "NotSet",
-				"targetWeaponSubType": "NotSet"
+				"targetWeaponSubType": "Gauss"
 			}
 		},
 		{
@@ -191,10 +189,10 @@
 				"modValue": "1.15",
 				"modType": "System.Single",
 				"targetCollection": "Weapon",
-				"targetWeaponCategory": "NotSet",
+				"targetWeaponCategory": "Ballistic",
 				"targetWeaponType": "Gauss",
 				"targetAmmoCategory": "NotSet",
-				"targetWeaponSubType": "NotSet"
+				"targetWeaponSubType": "Gauss"
 			}
 		},
 		{
@@ -225,10 +223,10 @@
 				"modType": "System.Single",
 				"additionalRules": "NotSet",
 				"targetCollection": "Weapon",
-				"targetWeaponCategory": "NotSet",
+				"targetWeaponCategory": "Ballistic",
 				"targetWeaponType": "Gauss",
 				"targetAmmoCategory": "NotSet",
-				"targetWeaponSubType": "NotSet"
+				"targetWeaponSubType": "Gauss"
 			}
 		}
 	],

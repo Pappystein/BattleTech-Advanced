@@ -5,27 +5,26 @@
 				"CategoryID": "w/s/t/tag"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"TAG: 1",
-				"PipsIgnored: 4"
-			]
-		}
+		"BonusDescriptions": [
+			"ClanTAG: 13%",
+			"PipsIgnored: 4",
+			"WeaponAttachmentCompatible: TAG FCS"
+		]
 	},
 	"Category": "AntiPersonnel",
 	"Type": "Laser",
 	"WeaponSubType": "SmallLaserER",
 	"MinRange": 0,
-	"MaxRange": 240,
+	"MaxRange": 360,
 	"RangeSplit": [
-		60,
-		120,
-		180
+		90,
+		180,
+		270
 	],
 	"AmmoCategory": "NotSet",
 	"StartingAmmoCapacity": 0,
 	"HeatGenerated": 0,
-	"Damage": 1,
+	"Damage": 0,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 4,
@@ -41,9 +40,9 @@
 	"AttackRecoil": 1,
 	"Instability": 0,
 	"FireDelayMultiplier": 0.2,
-	"WeaponEffectID": "WeaponEffect-Weapon_LaserER_Small",
+	"WeaponEffectID": "WeaponEffect-Weapon_TAG",
 	"Description": {
-		"Cost": 363000,
+		"Cost": 233000,
 		"Rarity": 5,
 		"Purchasable": false,
 		"Manufacturer": "CLAN",
@@ -51,8 +50,8 @@
 		"UIName": "Light TAG (C)",
 		"Id": "Weapon_Laser_Light_TAG_CLAN",
 		"Name": "Light TAG (C)",
-		"Details": "While lost to the Inner Sphere during the devastation of the Succession Wars, the Clans retained the Target Acquisition Gear, but rarely made use of them due to their culture's focus on personal glory rather than supporting roles. Paints the target, making them easier to hit with other units.",
-		"Icon": "uixSvgIcon_weapon_Support"
+		"Details": "While lost to the Inner Sphere during the devastation of the Succession Wars, the Clans retained the Target Acquisition Gear, but rarely made use of them due to their culture's focus on personal glory rather than supporting roles. Paints the target, increasing AoE damage.",
+		"Icon": "laser-burst"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",
@@ -68,23 +67,16 @@
 	"statusEffects": [
 		{
 			"durationData": {
-				"duration": 1,
+				"duration": 2,
 				"ticksOnActivations": true,
 				"useActivationsOfTarget": true,
 				"ticksOnEndOfRound": false,
 				"ticksOnMovements": false,
-				"stackLimit": 1,
+				"stackLimit": 2,
 				"clearedWhenAttacked": false
 			},
 			"targetingData": {
 				"effectTriggerType": "OnHit",
-				"triggerLimit": 0,
-				"extendDurationOnTrigger": 0,
-				"specialRules": "NotSet",
-				"effectTargetType": "NotSet",
-				"range": 0,
-				"forcePathRebuild": false,
-				"forceVisRebuild": false,
 				"showInTargetPreview": false,
 				"showInStatusPanel": true
 			},
@@ -92,32 +84,21 @@
 			"Description": {
 				"Id": "TAG-Effect",
 				"Name": "Target Acquired",
-				"Details": "This target was TAG'ed. +1 to hit.",
+				"Details": "This target was TAG'ed. Target takes 13% more AoE damage. Stacks up to twice.",
 				"Icon": "uixSvgIcon_artillery"
 			},
 			"nature": "Debuff",
 			"statisticData": {
-				"statName": "ToHitThisActor",
-				"operation": "Float_Add",
-				"modValue": "-1.0",
-				"modType": "System.Single",
-				"additionalRules": "NotSet",
-				"targetCollection": "NotSet",
-				"targetWeaponCategory": "NotSet",
-				"targetWeaponType": "NotSet",
-				"targetAmmoCategory": "NotSet",
-				"targetWeaponSubType": "NotSet"
+				"statName": "CACAoEDamageMult",
+				"operation": "Float_Multiply",
+				"modValue": "1.13",
+				"modType": "System.Single"
 			},
 			"tagData": {
 				"tagList": [
 					"lv-tag-effect"
 				]
-			},
-			"floatieData": null,
-			"actorBurningData": null,
-			"vfxData": null,
-			"instantModData": null,
-			"poorlyMaintainedEffectData": null
+			}
 		},
 		{
 			"durationData": {
@@ -165,7 +146,9 @@
 		"items": [
 			"component_type_stock",
 			"component_type_lostech",
-			"range_long"
+			"range_long",
+			"TAGFCSClanSupported",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

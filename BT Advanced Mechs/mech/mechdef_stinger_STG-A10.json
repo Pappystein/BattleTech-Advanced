@@ -9,6 +9,8 @@
 			"unit_ready",
 			"unit_lance_vanguard",
 			"unit_role_scout",
+			"Cameron",
+			"StarGuardCorps",
 			"ComStar",
 			"2ndArmyVMu",
 			"WordOfBlake",
@@ -158,28 +160,6 @@
 			"DamageLevel": "Functional",
 			"prefabName": "",
 			"hasPrefabName": true
-		},
-		{
-			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "emod_engineslots_size1",
-			"SimGameUID": null,
-			"ComponentDefType": "HeatSink",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "RightTorso",
-			"ComponentDefID": "emod_engineslots_size1",
-			"SimGameUID": null,
-			"ComponentDefType": "HeatSink",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
 		},
 		{
 			"MountedLocation": "LeftArm",

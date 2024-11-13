@@ -1,9 +1,11 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
+		"AssemblyVariant": {
+			"PrefabID": "Cyclone",
+			"Exclude": false,
+			"Include": true
+		},
+		 "ChassisDefaults": []
 	},
 	"Description": {
 		"Cost": 2224000,
@@ -75,11 +77,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -102,11 +108,15 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -191,7 +201,8 @@
 	"VariantName": "CYC-A3P",
 	"ChassisTags": {
 		"items": [
-			"OmniMech"
+			"OmniMech",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},

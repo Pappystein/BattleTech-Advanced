@@ -14,21 +14,17 @@
 				"CBillCost": "[[Chassis.Tonnage]] * 1.15"
 			}
 		},
-		"Flags": {
-			"flags": [
+		"Flags": [
 				"default",
 				"not_broken",
 				"no_salvage",
 				"autorepair"
-			]
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"IsSensorsA",
-				"IndividualResolve: +1",
-				"MaxResolveIncrease: 15"
-			]
-		}
+		],
+		"BonusDescriptions": [
+			"IsSensorsA",
+			"IndividualResolve: +1",
+			"MaxResolveIncrease: 15"
+		]
 	},
 	"StatName": null,
 	"RelativeModifier": 0,

@@ -8,35 +8,32 @@
 				"CategoryID": "ArmHandActuator"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"IsPhysWeap",
-				"PhysWeapUnsteady",
-				"PhysWeapDamage: 1.25",
-				"PhysWeapStab: 1.5"
-			]
-		},
-		"Flags": {
-			"flags": [
-				"default",
-				"not_broken",
-				"no_salvage",
-				"autorepair"
-			]
-		}
+		"BonusDescriptions": [
+			"IsPhysWeap",
+			"PhysWeapUnsteady",
+			"PhysWeapDamage: 1.25",
+			"PhysWeapStab: 1.5",
+			"WordsWords: Leave This Weapon Disabled!!"
+		],
+		"Flags": [
+			"default",
+			"not_broken",
+			"no_salvage",
+			"autorepair"
+		]
 	},
-	"Category": "AntiPersonnel",
+	"weaponCategoryID": "MeleeWeapon",
 	"Type": "MachineGun",
 	"WeaponSubType": "MachineGun",
 	"MinRange": 0,
 	"MaxRange": 30,
 	"RangeSplit": [
-		30,
-		30,
-		30
+		0,
+		0,
+		0
 	],
-	"AmmoCategory": "NotSet",
-	"StartingAmmoCapacity": 0,
+	"AmmoCategory": "Flamer",
+	"StartingAmmoCapacity": 1,
 	"HeatGenerated": 0,
 	"Damage": 0,
 	"OverheatedDamageMultiplier": 0,
@@ -181,7 +178,7 @@
 			"Description": {
 				"Id": "StatusEffect-MaceBaseDamage",
 				"Name": "Mace Base Damage",
-				"Details": "Maces do 5 damage per 4 tons of the mech.",
+				"Details": "Maces do 5 damage per 4 tons of the mech and do 6 stab damage per 4 tons of the mech.",
 				"Icon": "flanged-mace"
 			},
 			"nature": "Buff",
@@ -207,7 +204,7 @@
 				"forcePathRebuild": false,
 				"forceVisRebuild": false,
 				"showInTargetPreview": false,
-				"showInStatusPanel": true
+				"showInStatusPanel": false
 			},
 			"effectType": "StatisticEffect",
 			"Description": {

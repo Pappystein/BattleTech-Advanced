@@ -7,13 +7,16 @@
 			"unit_indirectFire",
 			"unit_rarity_5",
 			"unit_mech",
-			"ai_melee_low",
-			"ai_dfa_low",
 			"unit_medium",
 			"unit_ready",
 			"unit_lance_assassin",
 			"ClanJadeFalcon",
 			"ClanDiamondShark",
+			"ClanSnowRaven",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"unit_legal",
 			"unit_role_sniper"
 		],
@@ -66,11 +69,11 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "CenterTorso",
-			"CurrentArmor": 85,
-			"CurrentRearArmor": 30,
+			"CurrentArmor": 90,
+			"CurrentRearArmor": 45,
 			"CurrentInternalStructure": 70,
-			"AssignedArmor": 85,
-			"AssignedRearArmor": 30
+			"AssignedArmor": 90,
+			"AssignedRearArmor": 45
 		},
 		{
 			"DamageLevel": "Functional",
@@ -93,19 +96,19 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftLeg",
-			"CurrentArmor": 85,
+			"CurrentArmor": 100,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 55,
-			"AssignedArmor": 85,
+			"AssignedArmor": 100,
 			"AssignedRearArmor": -1
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightLeg",
-			"CurrentArmor": 85,
+			"CurrentArmor": 100,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 55,
-			"AssignedArmor": 85,
+			"AssignedArmor": 100,
 			"AssignedRearArmor": -1
 		}
 	],
@@ -145,7 +148,7 @@
 		},
 		{
 			"MountedLocation": "LeftArm",
-			"ComponentDefID": "emod_arm_omni_lower",
+			"ComponentDefID": "emod_arm_part_lower",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": 0,
@@ -156,7 +159,7 @@
 		},
 		{
 			"MountedLocation": "LeftArm",
-			"ComponentDefID": "emod_arm_omni_hand",
+			"ComponentDefID": "emod_arm_part_hand",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": 0,

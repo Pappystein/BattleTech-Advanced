@@ -9,15 +9,14 @@
 			"ExplosionDamage": 100,
 			"HeatDamage": 70
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"PLASMADEBUFF: 5%",
-				"AntiBA: 250%",
-				"WpnCrits: -100%",
-				"PipsIgnored: 1",
-				"VariableBurstCount: 2"
-			]
-		}
+		"BonusDescriptions": [
+			"PLASMADEBUFF: 5%",
+			"AntiBA: 250%",
+			"WpnCrits: -100%",
+			"PipsIgnored: 1",
+			"WeaponJAMFlat: 30%",
+			"VariableBurstCount: 2"
+		]
 	},
 	"Category": "Energy",
 	"Type": "Flamer",
@@ -163,7 +162,8 @@
 		"items": [
 			"component_type_stock",
 			"range_standard",
-			"OmniRestriction.{location}"
+			"OmniRestriction.{location}",
+			"WebbTCSupported-Ultra"
 		],
 		"tagSetSourceFile": ""
 	}

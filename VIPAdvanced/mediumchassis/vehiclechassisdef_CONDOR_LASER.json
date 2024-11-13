@@ -9,7 +9,7 @@
 		"Name": "Condor",
 		"Details": "",
 		"Icon": "Condor",
-		"Cost": 993,
+		"Cost": 450000,
 		"Rarity": 3,
 		"Purchasable": false
 	},
@@ -20,7 +20,7 @@
 	"PrefabBase": "condor",
 	"Tonnage": 50,
 	"weightClass": "MEDIUM",
-	"BattleValue": 993,
+	"BattleValue": 2000000,
 	"TopSpeed": 500,
 	"TurnRadius": 90,
 	"movementType": "Wheeled",
@@ -105,31 +105,31 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

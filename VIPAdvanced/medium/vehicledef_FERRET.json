@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.0-1.5-2.0",
 			"unit_vehicle",
 			"unit_medium",
@@ -29,6 +29,10 @@
 			"2ndArmyVMu",
 			"11thArmyVEta",
 			"7thArmyVIota",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
+			"IVCorps",
 			"WordOfBlake",
 			"40thShadowDivision",
 			"9thDivisionWoB",
@@ -177,7 +181,7 @@
 			"DamageLevel": "Functional"
 		},
 		{
-			"ComponentDefID": "Gear_Reflective_Coating",
+			"ComponentDefID": "emod_armorslots_reflective",
 			"ComponentDefType": "Upgrade",
 			"MountedLocation": "Front",
 			"HardpointSlot": -1,

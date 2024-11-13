@@ -2,7 +2,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"unit_vehicle",
 			"unit_heavy",
 			"unit_tracks",
@@ -19,7 +19,12 @@
 			"Illyrian",
 			"Lothian",
 			"Hanse",
+			"Castile",
 			"Rim",
+			"RimWorldsRepublic",
+			"1stHeliusLegionnaires",
+			"8thHeliusFusiliers",
+			"RepublicanGuard",
 			"Circinus",
 			"Tortuga",
 			"JarnFolk",
@@ -28,6 +33,10 @@
 			"2ndArmyVMu",
 			"11thArmyVEta",
 			"7thArmyVIota",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
+			"IVCorps",
 			"AuriganDirectorate",
 			"AuriganRestoration",
 			"unit_legal"

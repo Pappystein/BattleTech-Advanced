@@ -43,12 +43,12 @@
 		"UIName": "Hunchback",
 		"Id": "chassisdef_hunchback_HBK-4PA",
 		"Name": "Hunchback",
-		"Details": "The skunkworks of Periphery Armory, Inc, bring you this, the Hunchback-4PA. Unlike most Hunchbacks, this one is a critical damage machine, designed to chew up fragile enemy structure with its array of Heavy and standard Machine Guns in both array and non-array format. For ranged firepower, the HBK-4PA brings a pair of PAI Fury-brand Large Chemical Lasers to the party. Plenty of ammo for the MGs and lasers keeps the guns firing at all times. It's not the best choice, it's the Periphery Choice!",
+		"Details": "The skunkworks of Periphery Armory, Inc, bring you this, the Hunchback-4PA. Unlike most Hunchbacks, this one is a critical damage machine, designed to chew up fragile enemy structure with its battery of Heavy and standard Machine Guns, all linked in MG Arrays. For ranged firepower, the HBK-4PA brings a pair of PAI Fury-brand Large Chemical Lasers to the party. Plenty of ammo for the MGs and lasers keeps the guns firing at all times. It's not the best choice, it's the Periphery Choice!",
 		"Icon": "uixTxrIcon_hunchback"
 	},
 	"VariantName": "HBK-4PA",
 	"StockRole": "Juggernaut & Close Assault",
-	"YangsThoughts": "The skunkworks of Periphery Armory, Inc, bring you this, the Hunchback-4PA. Unlike most Hunchbacks, this one is a critical damage machine, designed to chew up fragile enemy structure with its array of Heavy and standard Machine Guns in both array and non-array format. For ranged firepower, the HBK-4PA brings a pair of PAI Fury-brand Large Chemical Lasers to the party. Plenty of ammo for the MGs and lasers keeps the guns firing at all times. It's not the best choice, it's the Periphery Choice!",
+	"YangsThoughts": "The skunkworks of Periphery Armory, Inc, bring you this, the Hunchback-4PA. Unlike most Hunchbacks, this one is a critical damage machine, designed to chew up fragile enemy structure with its battery of Heavy and standard Machine Guns, all linked in MG Arrays. For ranged firepower, the HBK-4PA brings a pair of PAI Fury-brand Large Chemical Lasers to the party. Plenty of ammo for the MGs and lasers keeps the guns firing at all times. It's not the best choice, it's the Periphery Choice!",
 	"PrefabIdentifier": "chrprfmech_hunchiebase-001",
 	"PrefabBase": "hunchie",
 	"Tonnage": 50,
@@ -85,7 +85,7 @@
 	"DFAInstability": 65,
 	"ChassisTags": {
 		"items": [
-			"unit_mechtool"
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -144,11 +144,7 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
-				},
-				{
-					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -162,11 +158,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
+				},
+				{
+					"Omni": false,
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,
@@ -198,15 +198,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,
@@ -220,11 +220,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
+				},
+				{
+					"Omni": false,
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,

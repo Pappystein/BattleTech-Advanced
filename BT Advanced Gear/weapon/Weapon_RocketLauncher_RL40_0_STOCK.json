@@ -6,16 +6,17 @@
 			}
 		],
 		"ComponentExplosion": {
-			"ExplosionDamagePerAmmo": 240,
-			"StabilityDamagePerAmmo": 80
+			"ExplosionDamagePerAmmo": 5,
+			"StabilityDamagePerAmmo": 2
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
+				"WpnAccuracy: -2",
 				"WeaponBoom: 240",
 				"CostPerShot: 100",
-				"MissileHealth: 1"
-			]
-		},
+				"MissileHealth: 1",
+				"WeaponAttachmentCompatible: Ammo Feed - Rocket",
+				"WeaponAttachmentCompatible: Periphery FCS"
+			],
 		"InternalAmmoTonnage": {
             "InternalAmmoTons": 0.25
         },
@@ -42,7 +43,7 @@
 	"EvasivePipsIgnored": 0,
 	"DamageVariance": 0,
 	"HeatDamage": 0,
-	"AccuracyModifier": 1,
+	"AccuracyModifier": 2,
 	"CriticalChanceMultiplier": 1,
 	"AOECapable": false,
 	"IndirectFireCapable": false,
@@ -81,7 +82,10 @@
 		"items": [
 			"component_type_variant",
 			"component_type_variant2",
-			"range_standard"
+			"range_standard",
+			"AmmoFeedRocketSupported",
+			"WebbTCSupported-SingleShot",
+			"PeripheryFCSSupported"
 		],
 		"tagSetSourceFile": ""
 	}

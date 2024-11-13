@@ -1,6 +1,13 @@
 {
-  "Description": {
-    "Cost": 31174810,
+  "Custom": {
+		"AssemblyVariant": {
+			"PrefabID": "BattleHammer",
+			"Exclude": false,
+			"Include": true
+		}
+	},
+	"Description": {
+    "Cost": 11174810,
     "Rarity": 5,
     "Purchasable": true,
     "Manufacturer": "",
@@ -8,14 +15,14 @@
     "UIName": "BattleHammer",
     "Id": "chassisdef_battlehammer_BHA1A",
     "Name": "BattleHammer",
-    "Details": "The BattleHammer was the launching point for Pafftek Industries.  It is a production derivative of a Frankenmech made early in the Clan Invasion by a merc company.   The 'Arena Flagship' utilizes Clan Tech\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
+    "Details": "The BattleHammer was the launching point for Pafftek Industries.  It is a production derivative of a frankenmech made early in the Clan Invasion by a merc company.   The 'Arena Flagship' utilizes Clan Tech\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
     "Icon": "uixTxrIcon_battlemaster"
   },
 	"MovementCapDefID": "movedef_templar-TLR1-O",
 	"PathingCapDefID": "pathingdef_assault",
-	"HardpointDataDefID": "hardpointdatadef_templar",
-	"PrefabIdentifier": "chrprfmech_templarbase-001",
-	"PrefabBase": "templar",
+	"HardpointDataDefID": "hardpointdatadef_battlehammer",
+	"PrefabIdentifier": "chrprfmech_battlehammerbase-001",
+	"PrefabBase": "battlehammer",
   "Tonnage": 85,
   "InitialTonnage": 8.5,
   "weightClass": "ASSAULT",
@@ -51,7 +58,7 @@
       "Location": "Head",
       "Hardpoints": [
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }	  
 	  ],
@@ -65,15 +72,15 @@
       "Location": "LeftArm",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },	  
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -87,15 +94,15 @@
       "Location": "LeftTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -109,11 +116,11 @@
       "Location": "CenterTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }		
 		
@@ -128,15 +135,15 @@
       "Location": "RightTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -150,15 +157,15 @@
       "Location": "RightArm",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },	  
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -234,12 +241,15 @@
   "VariantName": "BHA-1A",
   "ChassisTags": {
     "items": [
-		"HeroMech"
+			"HeroMech",
+			"AssaultMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft"
 	],
     "tagSetSourceFile": ""
   },
   "StockRole": "Heavy Brawler & Sniper",
-  "YangsThoughts": "Given unlimited access to clan tech can make some pretty interesting Innersphere designs.  Sometimes I envy the Engineers and Techs that hang around Solaris VII.",
+  "YangsThoughts": "Given almost unlimited access to clan tech can make some exotically configured Inner sphere designs.  Sometimes I envy the engineers and techs that hang around Solaris VII.",
   "FixedEquipment": [
 		{
 		  "MountedLocation": "CenterTorso",

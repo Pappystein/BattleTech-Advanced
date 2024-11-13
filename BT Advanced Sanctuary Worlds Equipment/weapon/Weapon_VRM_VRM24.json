@@ -8,15 +8,14 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"VRMScale",
 				"VRMClose",
 				"VRMMedium",
 				"VRMLong",
-				"NoFireInMelee"
+				"NoFireInMelee",
+				"WeaponAttachmentCompatible: LRM FCS"
 			]
-		}
 	},
     "Category" : "Missile",
     "Type" : "LRM",
@@ -58,7 +57,7 @@
 	"ColorChangeRule": "Linear",
     "WeaponEffectID" : "WeaponEffect-Weapon_LRM20",
     "Description" : {
-        "Cost" : 480000,
+        "Cost" : 640000,
         "Rarity" : 0,
         "Purchasable" : true,
         "Manufacturer" : "Sanctuary Manufacturing",
@@ -117,7 +116,9 @@
     "ComponentTags" : {
         "items" : [
             "component_type_stock",
-            "range_extreme"
+            "range_extreme",
+			"LRMFCSSupported-VRM",
+			"WebbTCSupported-VRM"
         ],
         "tagSetSourceFile" : ""
     }

@@ -6,6 +6,8 @@
 			"unit_jumpOK",
 			"unit_release",
 			"unit_mech",
+			"unit_quad",
+			"Ignore_SelfKnockdown",
 			"unit_light",
 			"unit_ready",
 			"unit_lance_assassin",
@@ -36,6 +38,8 @@
 			"WordOfBlake",
 			"40thShadowDivision",
 			"9thDivisionWoB",
+			"Cameron",
+			"StarGuardCorps",
 			"ComStar",
 			"2ndArmyVMu",
 			"11thArmyVEta",
@@ -65,6 +69,8 @@
 			"PaladinProtectionLLC",
 			"SecuritySolutionsInc",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"KnightsOfCaerbannog",
 			"GraysGhosts",
 			"BroadswordLegion",
@@ -250,150 +256,6 @@
 			"DamageLevel": "Functional",
 			"prefabName": null,
 			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
 		},
 		{
 			"MountedLocation": "LeftTorso",

@@ -1,9 +1,11 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Lower"
-		}
+		"AssemblyVariant": {
+		  "PrefabID": "Talos",
+		  "Exclude": false,
+		  "Include": true
+		},
+		"ChassisDefaults": []
 	},
 	"Description": {
 		"Cost": 4456290,
@@ -14,12 +16,12 @@
 		"UIName": "Talos",
 		"Id": "chassisdef_talos_TLS-2B",
 		"Name": "Talos",
-		"Details": "During the 3040s, when the Helm Memory Core was starting to revitalize the technology of the Inner Sphere, the Taurian Concordat felt like it was being left behind technologically. To challenge this, Protector Calderon ordered the ancient Talos mech put back into production with modern technology sourced from Inner Sphere manufacturers. The TLS-2B very much resembles its progenitor with the SRM-6 and LRM-5s, but upgrades the autocannon to a LB-10X model and adds Artemis to the missiles. A Medium Laser, double heat sinks, and jump jets round out the improvements.",
+		"Details": "During the 3040s, when the Helm Memory Core was starting to revitalize the technology of the Inner Sphere, the Taurian Concordat felt like it was being left behind technologically. To challenge this, Protector Calderon ordered the ancient Talos mech put back into production with modern technology sourced from Inner Sphere manufacturers. The TLS-2B very much resembles its progenitor with the SRM-6 and LRM-5s, but upgrades the autocannon to a LB-10X model. A Medium Laser, double heat sinks, and jump jets round out the improvements.",
 		"Icon": "uixTxrIcon_talos"
 	},
 	"VariantName": "TLS-2B",
 	"StockRole": "General Line Mech",
-	"YangsThoughts": "During the 3040s, when the Helm Memory Core was starting to revitalize the technology of the Inner Sphere, the Taurian Concordat felt like it was being left behind technologically. To challenge this, Protector Calderon ordered the ancient Talos mech put back into production with modern technology sourced from Inner Sphere manufacturers. The TLS-2B very much resembles its progenitor with the SRM-6 and LRM-5s, but upgrades the autocannon to a LB-10X model and adds Artemis to the missiles. A Medium Laser, double heat sinks, and jump jets round out the improvements.",
+	"YangsThoughts": "During the 3040s, when the Helm Memory Core was starting to revitalize the technology of the Inner Sphere, the Taurian Concordat felt like it was being left behind technologically. To challenge this, Protector Calderon ordered the ancient Talos mech put back into production with modern technology sourced from Inner Sphere manufacturers. The TLS-2B very much resembles its progenitor with the SRM-6 and LRM-5s, but upgrades the autocannon to a LB-10X model. A Medium Laser, double heat sinks, and jump jets round out the improvements.",
 	"PrefabIdentifier": "chrprfmech_talosbase-001",
 	"PrefabBase": "talos",
 	"Tonnage": 50,
@@ -54,7 +56,10 @@
 	"DFASelfDamage": 55,
 	"DFAInstability": 25,
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitLowerRight",
+			"MediumMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"MechPartMax": 0,
@@ -111,7 +116,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -125,11 +130,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -143,11 +148,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -170,7 +175,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -184,15 +189,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],

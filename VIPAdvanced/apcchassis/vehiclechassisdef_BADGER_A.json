@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_BADGER_A",
-		"Name": "Badger Tracked Transport",
+		"Name": "Badger",
 		"Details": "",
 		"Icon": "Badger",
-		"Cost": 564,
+		"Cost": 250000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -71,7 +71,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -100,7 +100,7 @@
 			"Location": "Rear",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],

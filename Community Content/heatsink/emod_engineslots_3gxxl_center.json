@@ -4,29 +4,24 @@
 			"ReservedSlots": 4,
 			"EngineFactor": 0.3333
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"EngineWeight: -66%",
-				"EngineReserved: 4",
-				"HeatPerTurn: 10"
-			]
-		},
+				"EngineReserved: 4"
+		],
 		"WorkOrderCosts": {
 			"Default": {
-				"TechCost": "20",
+				"TechCost": "1",
 				"CBillCost": "0"
 			},
 			"Install": {
-				"TechCost": "8 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40",
-				"CBillCost": "1000000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40"
+				"TechCost": "12 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40",
+				"CBillCost": "1500000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40"
 			}
 		},
-		"Flags": {
-			"flags": [
+		"Flags": [
 				"vital",
 				"no_salvage"
-			]
-		},
+		],
 		"Category": [
 			{
 				"CategoryID": "EngineShield"
@@ -49,7 +44,7 @@
 		}
 	},
 	"Description": {
-		"Cost": 500000,
+		"Cost": 15000000,
 		"Rarity": 0,
 		"Purchasable": false,
 		"Manufacturer": "St. Ives",
@@ -71,33 +66,7 @@
 	"AllowedLocations": "CenterTorso",
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
-	"statusEffects": [
-		{
-			"durationData": {
-				"duration": -1,
-				"stackLimit": 1
-			},
-			"targetingData": {
-				"effectTriggerType": "Passive",
-				"effectTargetType": "Creator",
-				"showInStatusPanel": true
-			},
-			"effectType": "StatisticEffect",
-			"Description": {
-				"Id": "XXL_Engine-Heat_Geneartion",
-				"Name": "Increased Heat",
-				"Details": "The XXL Engine produces prodigous waste heat, generating a flat 10 heat per turn of use.",
-				"Icon": "uixSvgIcon_equipment_ThermalExchanger"
-			},
-			"nature": "Buff",
-			"statisticData": {
-				"statName": "HeatSinkCapacity",
-				"operation": "Int_Add",
-				"modValue": "-10",
-				"modType": "System.Int32"
-			}
-		}
-	],
+	"statusEffects": [],
 	"ComponentTags": {
 		"items": [
 			"component_type_stock"

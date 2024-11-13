@@ -5,22 +5,18 @@
 				"CategoryID": "a/m/l/atm"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 3,
 			"StabilityDamagePerAmmo": 1
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"DamageMod: -3",
 				"CostPerShot: 225",
 				"AmmoCount: 60"
-			]
-		},
+			],
 		"AmmoCost": {
 			"PerUnitCost": 225
 		}
@@ -37,7 +33,7 @@
 		"Id": "Ammo_AmmunitionBox_ER_3GM",
 		"Name": "3GM ER Ammo",
 		"Details": "Extreme Range 3rd Gen. Missile Ammo utilizes more advanced flight computers and stabilizer to drastically increase their range. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E.\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
-		"Icon": "MRM"
+		"Icon": "uixSvgIcon_ammoBox_Missile"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

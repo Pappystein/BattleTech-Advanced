@@ -30,7 +30,7 @@
 	"PrefabBase": "sldfdrone",
 	"Tonnage": 35,
 	"weightClass": "LIGHT",
-	"BattleValue": 564,
+	"BattleValue": 1000000,
 	"TopSpeed": 125,
 	"TurnRadius": 90,
 	"SpotterDistanceMultiplier": 1,
@@ -114,15 +114,15 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

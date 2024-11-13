@@ -8,25 +8,22 @@
 				"CategoryID": "Quirk"
 			}
 		],
-		"Flags": {
-			"Flags": [
-				"default",
-				"not_broken",
-				"no_salvage",
-				"autorepair",
-				"ignore_damage"
-			]
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"WalkSpeed: +10%",
-				"RunSpeed: +0.1",
-				"JumpDistance: +10%",
-				"Accuracy: +1",
-				"EndMoveHeat: -6",
-				"MeleeAcc: -30"
-			]
-		}
+		"Flags": [
+			"default",
+			"not_broken",
+			"no_salvage",
+			"autorepair",
+			"ignore_damage"
+		],
+		"BonusDescriptions": [
+			"WalkSpeed: +10%",
+			"RunSpeed: +0.1",
+			"JumpDistance: +10%",
+			"Accuracy: +1",
+			"EndMoveHeat: -6",
+			"HeatGenerated: -10%",
+			"MeleeAcc: -30"
+		]
 	},
 	"Description": {
 		"Cost": 0,
@@ -37,7 +34,7 @@
 		"UIName": "Clan Quirk",
 		"Id": "Gear_LifeSupportA_Clan_Quirk",
 		"Name": "Clan Quirk",
-		"Details": "This piece of equipment represents the inherent bonuses and negatives that Clan mechs, both BattleMechs and OmniMechs, have over their Inner Sphere counterparts. It grants +1 accuracy with weapons, 6 bonus heat venting, and bonus movement speed as well as inflicting a major penalty to melee.",
+		"Details": "This piece of equipment represents the inherent bonuses and negatives that Clan mechs, both BattleMechs and OmniMechs, have over their Inner Sphere counterparts. It grants +1 accuracy with weapons, 6 bonus heat venting, 10% decreased heat generation, and bonus movement speed as well as inflicting a major penalty to melee (except for DFAs).",
 		"Icon": "caduceus"
 	},
 	"BonusValueA": "",
@@ -279,52 +276,6 @@
 			"Description": {
 				"Id": "ClanQuirkMelee",
 				"Name": "Clan Melee Penalty",
-				"Details": "DFA attacks have -30 Accuracy.",
-				"Icon": "uixSvgIcon_equipment_ActuatorArm"
-			},
-			"nature": "Buff",
-			"statisticData": {
-				"appliesEachTick": false,
-				"effectsPersistAfterDestruction": false,
-				"statName": "CBTBE_DFA_Attack_Mod",
-				"operation": "Int_Add",
-				"modValue": "30",
-				"modType": "System.Int32",
-				"additionalRules": "NotSet"
-			},
-			"tagData": null,
-			"floatieData": null,
-			"actorBurningData": null,
-			"vfxData": null,
-			"instantModData": null,
-			"poorlyMaintainedEffectData": null
-		},
-		{
-			"durationData": {
-				"duration": -1,
-				"ticksOnActivations": false,
-				"useActivationsOfTarget": false,
-				"ticksOnEndOfRound": false,
-				"ticksOnMovements": false,
-				"stackLimit": -1,
-				"clearedWhenAttacked": false
-			},
-			"targetingData": {
-				"effectTriggerType": "Passive",
-				"triggerLimit": 0,
-				"extendDurationOnTrigger": 0,
-				"specialRules": "NotSet",
-				"effectTargetType": "Creator",
-				"range": 0,
-				"forcePathRebuild": false,
-				"forceVisRebuild": false,
-				"showInTargetPreview": false,
-				"showInStatusPanel": true
-			},
-			"effectType": "StatisticEffect",
-			"Description": {
-				"Id": "ClanQuirkMelee",
-				"Name": "Clan Melee Penalty",
 				"Details": "Kick attacks have -30 Accuracy.",
 				"Icon": "uixSvgIcon_equipment_ActuatorArm"
 			},
@@ -390,6 +341,36 @@
 			"vfxData": null,
 			"instantModData": null,
 			"poorlyMaintainedEffectData": null
+		},
+		{
+			"durationData": {
+				"duration": -1,
+				"stackLimit": 1
+			},
+			"targetingData": {
+				"effectTriggerType": "Passive",
+				"effectTargetType": "Creator"
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "ClanQuirkHeatGen",
+				"Name": "Decreased Heat Generation",
+				"Details": "Heat generation decreased by 10%.",
+				"Icon": "uixSvgIcon_equipment_ThermalExchanger"
+			},
+			"nature": "Buff",
+			"statisticData": {
+				"statName": "HeatGenerated",
+				"operation": "Float_Multiply",
+				"modValue": "0.9",
+				"modType": "System.Single",
+				"additionalRules": "NotSet",
+				"targetCollection": "Weapon",
+				"targetWeaponCategory": "NotSet",
+				"targetWeaponType": "NotSet",
+				"targetAmmoCategory": "NotSet",
+				"targetWeaponSubType": "NotSet"
+			}
 		}
 	],
 	"ComponentTags": {

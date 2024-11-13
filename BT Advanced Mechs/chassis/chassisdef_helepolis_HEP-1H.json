@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
-		}
-	},
 	"Description": {
 		"Cost": 8372000,
 		"Rarity": 3,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Primitive Helepolis",
 		"Id": "chassisdef_helepolis_HEP-1H",
-		"Name": "Helepolis Primitive",
+		"Name": "Primitive Helepolis",
 		"Details": "The earliest version used standard heat sinks and its Primitive Engine could only manage 30 km/h. This proved to be a challenge as the early Helepolis needed to completely stop to fire the Sniper artillery and then start moving again before counter-battery fire could destroy the unit. Twenty and a half tons of Primitive Armor protected the Helepolis from enemy fire. The weight and bulk of the primitive systems prevented the designers from installing the long range missiles used on later models.",
 		"Icon": "uixTxrIcon_helepolis"
 	},
@@ -57,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -71,7 +65,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -85,7 +79,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -117,7 +111,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Artillery",
 					"Omni": false
 				}
 			],
@@ -193,7 +187,10 @@
 	"VariantName": "HEP-1H",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -202,7 +199,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

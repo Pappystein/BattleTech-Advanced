@@ -3,7 +3,12 @@
   "affinityType": "Chassis",
   "affinityData": {
     "chassisNames": [
-      "GreatTurtle_100"
+      "GreatTurtle_100",
+	  "ColossalTurtle_200",
+	  "Ironclad_100",
+	  "Ironclad_150",
+	  "Volkh_45",
+	  "chrprfmech_cuslagmaidenbase-001_55"
     ],
     "idType": "AssemblyVariant",
     "altMaps": [],

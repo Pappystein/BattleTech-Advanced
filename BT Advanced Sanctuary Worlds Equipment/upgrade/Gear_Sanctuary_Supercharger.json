@@ -6,13 +6,12 @@
 		"ComponentExplosion": {
 			"StabilityDamage": 100
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
+				"ReservedSlots: 2",
 				"RunSpeed: +0.3",
 				"HeatGenerated: +10%",
 				"UpgradeWeight: 25%"
-			]
-		},
+			],
 		"Weights": {
 			"StructureFactor": 1.25
 		},

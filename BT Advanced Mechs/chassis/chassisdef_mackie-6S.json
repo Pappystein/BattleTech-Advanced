@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Mackie",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -13,7 +14,7 @@
 		"Model": "",
 		"UIName": "Primitive Mackie",
 		"Id": "chassisdef_mackie-6S",
-		"Name": "Mackie Primitive",
+		"Name": "Primitive Mackie",
 		"Details": "Developed by the Terran Hegemony in the 25th century, the Mackie was the first true BattleMech. Based on advanced technology that the Hegemony Armed Forces (HAF) had been developing for decades under Director-General Jacob Cameron, the Mackie was the ultimate manifestation of Hegemony military might. The Mackie carries what were considered top-of-the-line weapons for its era. The primary weapons on the 'Mech are a PPC and an Autocannon/10 that both have similar range and damage profiles. For close combat, the Mackie has two Medium Lasers. The weapons systems employed on the Mackie-6S are similar to their modern counterparts, a credit to the Hegemony's technology.",
 		"Icon": "uixTxrIcon_mackie"
 	},
@@ -66,7 +67,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -89,11 +94,11 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -107,7 +112,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [],
 			"Tonnage": 0,
-			"InventorySlots": 12,
+			"InventorySlots": 13,
 			"MaxArmor": 210,
 			"MaxRearArmor": 105,
 			"InternalStructure": 105
@@ -116,7 +121,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -192,7 +197,10 @@
 	"VariantName": "MSK-6S",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"ArmLimitUpperRight",
+			"ArmLimitLowerLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -201,7 +209,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,
@@ -231,6 +239,15 @@
 			"DamageLevel": "Functional",
 			"prefabName": null,
 			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Gear_Quirk_Searchlight_Mackie",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": "",
+			"hasPrefabName": true
 		}
 	],
 	"CustomParts": {

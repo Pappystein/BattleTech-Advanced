@@ -8,12 +8,10 @@
 				"CategoryID": "Negator"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"HeatNegator",
-				"EndMoveHeat: -4"
+				"EndMoveHeat: -5"
 			]
-		}
 	},
 	"DissipationCapacity": 0,
 	"Description": {
@@ -75,7 +73,7 @@
                 "effectsPersistAfterDestruction": false,
                 "statName": "EndMoveHeat",
                 "operation": "Int_Add",
-                "modValue": "-4",
+                "modValue": "-5",
                 "modType": "System.Int32",
                 "additionalRules": "NotSet",
                 "targetCollection": "NotSet",

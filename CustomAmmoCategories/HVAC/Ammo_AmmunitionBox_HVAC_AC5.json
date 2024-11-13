@@ -5,27 +5,23 @@
 				"CategoryID": "a/a/a/hvac"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 45,
 			"StabilityDamagePerAmmo": 12
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"CostPerShot: 500",
-				"AmmoCount: 16"
-			]
-		},
+				"AmmoCount: 15"
+			],
 		"AmmoCost": {
 			"PerUnitCost": 500
 		}
 	},
 	"AmmoID": "Ammunition_HVAC5",
-	"Capacity": 16,
+	"Capacity": 15,
 	"Description": {
 		"Cost": 40000,
 		"Rarity": 1,

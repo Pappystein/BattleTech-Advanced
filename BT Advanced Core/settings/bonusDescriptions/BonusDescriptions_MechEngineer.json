@@ -122,9 +122,9 @@
 		},
 		{
 			"Bonus": "SawedOffArtillery",
-			"Short": "SawedOff Artillery",
+			"Short": "Sawed Off Artillery",
 			"Long": "Sawed Off Artillery",
-			"Full": "Short Barrelled Artillery Piece trading Range and Accuracy for Weight and Size"
+			"Full": "Short Barreled Artillery Piece trading Range and Accuracy for Weight and Size"
 		},
 		{
 			"Bonus": "DefianceAC",
@@ -301,9 +301,15 @@
 			"Full": "Magna PPC has reduced Weight and Size at cost of Recharge Speed(Recoil)"
 		},
 		{
+			"Bonus": "IsSnubnosePPC",
+			"Short": "Snub-Nose PPC",
+			"Long": "Snub-Nose PPC",
+			"Full": "The Snub-Nose PPC is essentially a sawn-off-style PPC. It trades damage at range for increased damage up close. The Snub-Nose PPC has three range bands it operates in and does more damage at closer range bands and loses damage at longer range bands."
+		},
+		{
 			"Bonus": "EmergencyCoolant",
-			"Short": "EmergencyCoolant",
-			"Long": "EmergencyCoolant",
+			"Short": "Emergency Coolant",
+			"Long": "Emergency Coolant",
 			"Full": "Emergency Coolant requires {0} Free Engine Heatsinks and Activates automatically"
 		},
 		{
@@ -319,16 +325,22 @@
 			"Full": "Item has {0} Uses"
 		},
 		{
+			"Bonus": "UseCharges",
+			"Short": "{0} Charges",
+			"Long": "{0} Charges",
+			"Full": "Item has {0} Charges each contract, consuming one each time it is activated. When out of charges, the item cannot be used again until the next contract."
+		},
+		{
 			"Bonus": "ActivateHeatLevel",
 			"Short": "{0} Heat Activated",
 			"Long": "{0} Heat Activated",
-			"Full": "Activates above {0} Heat"
+			"Full": "Automatically activates above the {0} point on the heat bar."
 		},
 		{
 			"Bonus": "DeActivateHeatLevel",
 			"Short": "{0} Heat Deactivated",
 			"Long": "{0} Heat Deactivated",
-			"Full": "Deactivates below {0} Heat"
+			"Full": "Automatically deactivates below the {0} point on the heat bar"
 		},
 		{
 			"Bonus": "FailChance",
@@ -339,8 +351,14 @@
 		{
 			"Bonus": "FailChanceTurn",
 			"Short": "{0} TurnFail.",
-			"Long": "{0} Turn Failure Chance",
+			"Long": "{0}/Turn Failure Chance",
 			"Full": "{0} Additional Chance for Failure on consecutive Turns"
+		},
+		{
+			"Bonus": "FailChanceTurnDelay",
+			"Short": "{0} TurnFailDelay.",
+			"Long": "{0} Turn Delay in Failure Chance",
+			"Full": "Component will not check for activated failure until after {0} turns of activation."
 		},
 		{
 			"Bonus": "FailStruct",
@@ -357,7 +375,7 @@
 		{
 			"Bonus": "FailCritLoc",
 			"Short": "Crit.Fail.",
-			"Long": "Failure Crit",
+			"Long": "Crit Location on Failure",
 			"Full": "On failure deals Critical hit to its Location"
 		},
 		{
@@ -409,6 +427,12 @@
 			"Full": "{0} Resistance against Energy based Attacks when Activated"
 		},
 		{
+			"Bonus": "ActivePPCProtection",
+			"Short": "{0} PPCRes",
+			"Long": "{0} PPC Resistance",
+			"Full": "{0} Damage Reduction against PPC Attacks when Activated"
+		},
+		{
 			"Bonus": "ActiveAccuracy",
 			"Short": "{0} Acc",
 			"Long": "{0} Accuracy",
@@ -443,6 +467,12 @@
 			"Short": "{0} Damage Reduction",
 			"Long": "{0} Damage Reduction",
 			"Full": "{0} Damage Reduction when Activated"
+		},
+		{
+			"Bonus": "ActiveDamageReductionEnergy",
+			"Short": "{0} Damage Reduction",
+			"Long": "{0} Damage Reduction",
+			"Full": "{0} Damage Reduction against energy weapons for {1} rounds when activated."
 		},
 		{
 			"Bonus": "ActivePPCCAPDMG",
@@ -530,9 +560,9 @@
 		},
 		{
 			"Bonus": "ArmoredCowl",
-			"Short": "Armored Cowl",
-			"Long": "Armored Cowl",
-			"Full": "Armored Cowl adds {0} Armor and Structure to the Head"
+			"Short": "Armored Head",
+			"Long": "Armored Head",
+			"Full": "This component adds {0} Armor and Structure to the Head"
 		},
 		{
 			"Bonus": "Reinforced",
@@ -688,19 +718,19 @@
 			"Bonus": "ProtoLAMS",
 			"Short": "ProtoLAMS",
 			"Long": "Prototype LAMS",
-			"Full": "Prototype Laser Anti Missile System does not require Ammo but generates more Heat and will intercept Missiles fired at ANY Lance Member within Range"
+			"Full": "Prototype Laser Anti Missile System does not require Ammo but generates more Heat and will intercept Missiles fired at ANY player unit within Range"
 		},
 		{
 			"Bonus": "AdvAMS",
 			"Short": "AdvAMS",
 			"Long": "Advanced AMS",
-			"Full": "Advanced Anti Missile System will intercept Missiles fired at ANY Lance Member within Range"
+			"Full": "Advanced Anti Missile System will intercept Missiles fired at ANY player unit within Range"
 		},
 		{
 			"Bonus": "AdvLAMS",
 			"Short": "AdvLAMS",
 			"Long": "Advanced LAMS",
-			"Full": "Advanced Laser Anti Missile System will intercept Missiles fired at ANY Lance Member within Range"
+			"Full": "Advanced Laser Anti Missile System will intercept Missiles fired at ANY player unit within Range"
 		},
 		{
 			"Bonus": "AMSAcc",
@@ -933,7 +963,7 @@
 		{
 			"Bonus": "Omni",
 			"Short": "OmniMech",
-			"Long": "OmniMech",
+			"Long": "OmniMech - Fast Refits, assembles from 1 Part, fixed internals.",
 			"Full": "OmniMechs allow near instant Refits but have some permanently affixed internals"
 		},
 		{
@@ -945,13 +975,13 @@
 		{
 			"Bonus": "Explodium",
 			"Short": "{0} Multiplier",
-			"Long": "{0} Missifre Multiplier",
+			"Long": "{0} Misfire Multiplier",
 			"Full": "Weapon has a {0} Misfire multiplier - Recoil X Multipler = Misfire Chance"
 		},
 		{
 			"Bonus": "ExplodiumFlat",
 			"Short": "{0} Misfire Chance",
-			"Long": "{0} Missifre Chance",
+			"Long": "{0} Misfire Chance",
 			"Full": "Weapon has a {0} Misfire Chance - mitigated by Gunnery"
 		},
 		{
@@ -965,6 +995,18 @@
 			"Short": "{0} Jam Chance",
 			"Long": "{0} Jam Chance",
 			"Full": "Weapon has a flat {0}% Jam Chance"
+		},
+		{
+			"Bonus": "WeaponJAMMultiple3Stage",
+			"Short": "Increasing Jam Chance",
+			"Long": "Increasing Jam Chance",
+			"Full": "This weapon has an increased chance to jam as it fires more shots, starting at {0} and increasing to {1} and then {2}."
+		},
+		{
+			"Bonus": "WeaponJAMMultiple2Stage",
+			"Short": "Increasing Jam Chance",
+			"Long": "Increasing Jam Chance",
+			"Full": "This weapon has an increased chance to jam as it fires more shots, starting at {0} and increasing to {1}."
 		},
 		{
 			"Bonus": "Whitespace",
@@ -1614,6 +1656,12 @@
 			"Full": "Targets take {0} more damage for 2 Turns - Multiple effects do not Stack"
 		},
 		{
+			"Bonus": "AcidStack",
+			"Short": "Acid",
+			"Long": "Corrosive Acid",
+			"Full": "Targets take {0} more damage for 2 Turns - Multiple effects stack up to {1} times."
+		},
+		{
 			"Bonus": "Paint",
 			"Short": "Paint",
 			"Long": "Paintgun",
@@ -1623,7 +1671,7 @@
 			"Bonus": "Inferno",
 			"Short": "Inferno",
 			"Long": "Inferno Liquid",
-			"Full": "Targets generate {0} Heat for 2 Turns"
+			"Full": "Target generates {0} extra heat due to burning inferno gel coating it."
 		},
 		{
 			"Bonus": "ThermoBurn",
@@ -1683,7 +1731,7 @@
 			"Bonus": "Tacticon",
 			"Short": "{0} Initiative",
 			"Long": "{0} Initiative",
-			"Full": "Battle Computer provides {0} Initiative for all Lance units"
+			"Full": "Battle Computer provides {0} Initiative for all player units."
 		},
 		{
 			"Bonus": "Sharer",
@@ -1695,25 +1743,25 @@
 			"Bonus": "C3Jamming",
 			"Short": "C3 Jammer",
 			"Long": "C3 Jammer",
-			"Full": "C3 networks are fragile and are vulnerable to jamming. ECM effects jam C3 effects within {0} meters when activated, preventing any unit in the area from being part of any C3 networks."
+			"Full": "C3 networks are fragile and are vulnerable to jamming by ECM. ECM effects jam C3 effects within {0} meters when activated, preventing any unit in the area from being part of any C3 networks. Friendly ECM sources do not jam friendly C3 sources, they only jam enemy C3 sources."
 		},
 		{
 			"Bonus": "C3ECMWeakness",
 			"Short": "ECM Weakness",
 			"Long": "ECM Weakness",
-			"Full": "C3 networks are inherently fragile, causing the networks to be disabled when in the range of any ECM source, friendly or enemy."
+			"Full": "C3 networks are inherently fragile, causing the networks to be disabled when in the range of any enemy ECM source. C3 is not vulnerable to friendly ECM sources."
 		},
 		{
 			"Bonus": "C3Slave",
 			"Short": "C3 Slave",
 			"Long": "C3 Slave",
-			"Full": "C3 Network Slave Unit - Connects unit to a C3 network, allowing it to share sensor data with other C3-equipped units."
+			"Full": "C3 Network Slave Unit - Connects unit to a C3 network, allowing it to share sensor data with other C3-equipped units. Does not function without the presence of a C3 Master in the network."
 		},
 		{
 			"Bonus": "C3Master",
 			"Short": "C3 Master",
 			"Long": "C3 Master",
-			"Full": "C3 Network Master Unit - Connects unit to a C3 network, allowing it to share sensor data with other C3-equipped units"
+			"Full": "C3 Network Master Unit - Controls and generates a C3 network. Without a C3 Master, the C3 Network does not function. C3 networks allow C3-equipped units to share sensor data."
 		},
 		{
 			"Bonus": "C3",
@@ -1737,7 +1785,7 @@
 			"Bonus": "C3iECMHardened",
 			"Short": "ECM Hardening",
 			"Long": "ECM Hardening",
-			"Full": "C3i networks, unlike C3 networks, are hardened against ECM interference. C3i is not disabled when in range of an ECM source."
+			"Full": "C3i networks, unlike C3 networks, are hardened against ECM interference. C3i is not disabled when in range of an enemy ECM source."
 		},
 		{
 			"Bonus": "C3iUnit",
@@ -1812,6 +1860,12 @@
 			"Full": "Requires an ECM system to be installed"
 		},
 		{
+			"Bonus": "ReqISECM",
+			"Short": "IS ECM Required",
+			"Long": "Inner Sphere ECM Required",
+			"Full": "Requires an Inner Sphere ECM system to be installed. Clan/Sanctuary ECM is incompatible."
+		},
+		{
 			"Bonus": "ReqWings",
 			"Short": "PWS Required",
 			"Long": "Partial Wings Required",
@@ -1838,7 +1892,7 @@
 		{
 			"Bonus": "WeaponBoom",
 			"Short": "Volatile",
-			"Long": "Volatile Component",
+			"Long": "Volatile! Explodes for {0}",
 			"Full": "This component explodes for {0} damage when destroyed"
 		},
 		{
@@ -1989,12 +2043,18 @@
 			"Bonus": "IsVRPP",
 			"Short": "VRPP",
 			"Long": "VRPP",
-			"Full": "Virtual Reality Piloting Pod enhances the capabilities of DNI or EI cockpits"
+			"Full": "The Virtual Reality Piloting Pod provides extreme benefits while piloting a 'Mech including excellent accuracy and mobility but is highly vulnerable to enemy ECM effects, even certain severe weather conditions such as solar storms."
+		},
+		{
+			"Bonus": "IsDNI",
+			"Short": "DNI",
+			"Long": "DNI Cockpit",
+			"Full": "This is a Direct Neural Interface cockpit, providing increased control over the 'Mech (and thus granting a wide variety of benefits) but coming with a risk of suffering pilot injuries from incoming structure damage."
 		},
 		{
 			"Bonus": "CalledShot",
 			"Short": "Called Shot",
-			"Long": "Called Shot",
+			"Long": "Grants targeted Called Shots",
 			"Full": "Enables the targeting of specific locations during Precise Strikes."
 		},
 		{
@@ -2010,16 +2070,40 @@
 			"Full": "Weapon carries internal Ammo for a single salvo"
 		},
 		{
+			"Bonus": "ArtilleryAttack",
+			"Short": "Artillery Attack",
+			"Long": "Artillery Attack",
+			"Full": "True artillery weapons have a unique attack sequence. When a target is selected, the attack is programmed in targeting that location (not a unit but the place the unit is standing) and the artillery unit enters an artillery stance and ends its turn. On the artillery unit's next turn, it can either brace (exiting the artillery stance and canceling the attack) or it can fire, completing the attack against the targeted location. Artillery weapons target the ground, not individual units, and do not track if units move out of the blast radius."
+		},
+		{
+			"Bonus": "ArtilleryDetails",
+			"Short": "Artillery Details",
+			"Long": "Artillery Details",
+			"Full": "Because of the special artillery attack, artillery weapons do not use accuracy as a statistic and are completely incapable of direct hits against targets (even stationary ones), only dealing AoE damage, instability damage, and heat damage. Artillery weapons do generate heat but only the turn they actually fire. Artillery weapons do not follow targets and do not make attacks against targets directly, instead functioning like Attack Ground in all situations."
+		},
+		{
+			"Bonus": "NonArtilleryWeapons",
+			"Short": "Non-Artillery Weapons",
+			"Long": "Non-Artillery Weapons",
+			"Full": "If a mech that mounts this weapon also mounts other, non-artillery, weapons, they do not fire during an artillery attack. In order to use non-artillery weapons on a mech that mounts this weapon, disable this weapon in the weapons panel. If this weapon is active, it will override all other non-artillery weapons and perform an artillery attack."
+		},
+		{
 			"Bonus": "IsArtillery",
 			"Short": "Artillery",
 			"Long": "Artillery",
-			"Full": "Artillery deal massive Damage at extreme range but have immense mass"
+			"Full": "Artillery weapons are siege weapons and are incredibly heavy with excellent area of effect damage. They have a unique firing sequence that takes two turns to complete and they require a special hardpoint in order to mount."
+		},
+		{
+			"Bonus": "IsArtilleryCannon",
+			"Short": "Artillery Cannon",
+			"Long": "Artillery Cannon",
+			"Full": "Artillery Cannon weapons are sawn-off versions of the true artillery weapons and are very heavy with moderate damage and high damage variance. They have both a direct-fire mode and an indirect-fire mode and use their own ammunition category. They require a special hardpoint in order to mount."
 		},
 		{
 			"Bonus": "IsNOOK",
 			"Short": "Davy Crockett",
 			"Long": "Davy Crockett",
-			"Full": "Davy Crockett Tactical Nuclear Missiles are launched from an Arrow IV Platform and are capable of eradicating anything in a large area."
+			"Full": "Davy Crockett Tactical Nuclear Missiles are launched from an Arrow IV launcher and are capable of eradicating anything in a massive area. The Davy Crockett also leaves radioactive fallout behind after its initial strike."
 		},
 		{
 			"Bonus": "IsRocket",
@@ -2073,7 +2157,7 @@
 			"Bonus": "IsHeavyGauss",
 			"Short": "Heavy Gauss Rifle",
 			"Long": "Heavy Gauss Rifle",
-			"Full": "Heavy Gauss Rifles fire a large heavy Projectile at supersonic speeds"
+			"Full": "Heavy Gauss Rifles are scaled up Gauss Rifles. However, the Heavy Gauss has three range bands it operates it and gains damage and accuracy at closer range bands and loses damage and accuracy at longer range bands."
 		},
 		{
 			"Bonus": "IsAPGauss",
@@ -2132,8 +2216,32 @@
 		{
 			"Bonus": "Bombast",
 			"Short": "Bombast",
-			"Long": "Bombast Laser",
-			"Full": "Bombast Lasers can select between Damage and Range at cost of Heat and Accuracy"
+			"Long": "Bombast",
+			"Full": "Bombast Lasers have multiple fire modes, with each successive fire mode dealing more damage, generating more heat, gaining more range in each range band, and having an increased accuracy penalty."
+		},
+		{
+			"Bonus": "BombastBaseMode",
+			"Short": "Bombast Base Mode",
+			"Long": "Bombast Base Mode",
+			"Full": "The Bombast's Base mode deals {0} damage, generates {1} heat, has no penalty to attacks made in this mode, and uses the default displayed ranges."
+		},
+		{
+			"Bonus": "BombastLowMode",
+			"Short": "Bombast Low Mode",
+			"Long": "Bombast Low Mode",
+			"Full": "The Bombast's Low Power mode deals {0} additional damage, generates {1} additional heat, has a {2} penalty to attacks made in this mode, and gains {3} meters of range per range bracket (i.e. short range is +30m, medium is +60m, etc)."
+		},
+		{
+			"Bonus": "BombastMidMode",
+			"Short": "Bombast Mid Mode",
+			"Long": "Bombast Mid Mode",
+			"Full": "The Bombast's Mid Power mode deals {0} additional damage, generates {1} additional heat, has a {2} penalty to attacks made in this mode, and gains {3} meters of range per range bracket (i.e. short range is +50m, medium is +100m, etc)."
+		},
+		{
+			"Bonus": "BombastMaxMode",
+			"Short": "Bombast Max Mode",
+			"Long": "Bombast Max Mode",
+			"Full": "The Bombast's Max Power mode deals {0} additional damage, generates {1} additional heat, has a {2} penalty to attacks made in this mode, and gains {3} meters of range per range bracket (i.e. short range is +80m, medium is +160m, etc)."
 		},
 		{
 			"Bonus": "IsLaser",
@@ -2191,9 +2299,21 @@
 		},
 		{
 			"Bonus": "TAG",
-			"Short": "TAG",
+			"Short": "TAG Acc {0}",
 			"Long": "Target Acquisition Gear",
-			"Full": "Target Acquisition Gear grants {0} on attacks against the TAG'd unit."
+			"Full": "TAG, or Target Acquisition Gear, grants a {0} bonus to AoE damage against the TAG'd unit."
+		},
+		{
+			"Bonus": "C3TAG",
+			"Short": "C3 Master Accuracy {0}",
+			"Long": "C3 Master Accuracy {0}",
+			"Full": "C3 Master grants a {0} bonus to hit against a target unit on a hit with the C3 Master's targeting laser."
+		},
+		{
+			"Bonus": "ClanTAG",
+			"Short": "TAG Acc {0}",
+			"Long": "Target Acquisition Gear",
+			"Full": "TAG, or Target Acquisition Gear, grants a {0} bonus to AoE damage against the TAG'd unit. Clan TAG fires two shots and can stack with itself up to a total of two stacks of the effect."
 		},
 		{
 			"Bonus": "LBX",
@@ -2265,7 +2385,7 @@
 			"Bonus": "ERPulse",
 			"Short": "ER Pulse",
 			"Long": "ER Pulse Laser",
-			"Full": "Extended Range Pulse Lasers have +1 Accuracy and ignore 1 Evasion Pip"
+			"Full": "Extended Range Pulse Lasers are a modal weapon, capable of switching between a Clan ER Laser mode and a Clan Pulse Laser mode. Their default stats are those of ER Laser mode. In Pulse mode they lose range and inherent accuracy but gain substantial evasion ignore."
 		},
 		{
 			"Bonus": "VSPL",
@@ -2283,7 +2403,7 @@
 			"Bonus": "FTLLRM",
 			"Short": "FTL",
 			"Long": "FTL Missiles",
-			"Full": "Follow the Leader Missiles will either hit all or miss completely"
+			"Full": "Follow the Leader Missiles will either hit all or miss completely and have improved clustering on the target."
 		},
 		{
 			"Bonus": "MML",
@@ -2329,21 +2449,21 @@
 		},
 		{
 			"Bonus": "CASE",
-			"Short": "C.A.S.E",
-			"Long": "C.A.S.E",
-			"Full": "CASE prevents Ammo Explosion from traveling to Center Torso"
+			"Short": "CASE",
+			"Long": "CASE",
+			"Full": "CASE prevents internal explosions from transferring out of the CASE'd location (e.x. if an explosion happens in a CASE'd side torso it will not transfer into the center torso and destroy the mech)."
 		},
 		{
 			"Bonus": "CASEII",
 			"Short": "CASEII {0}",
 			"Long": "CASEII {0}",
-			"Full": "CASE II reduces Ammo Explosion Damage to only {0} points of Damage."
+			"Full": "CASE II reduces internal explosions damage to only {0} points of damage to the CASE'd location's structure and also prevents explosions from transferring out of the CASE'd location like CASE I does."
 		},
 		{
 			"Bonus": "SHIELD",
 			"Short": "SHIELD {0}",
 			"Long": "SHIELD {0}",
-			"Full": "SHIELD reduces Ammo Explosion Damage to only {0} points of Damage."
+			"Full": "SHIELD reduces internal explosions damage to only {0} points of damage to the SHIELDed location's structure and also prevents explosions from transferring out of the SHIELDed location like Inner Sphere CASE does."
 		},
 		{
 			"Bonus": "CASED",
@@ -2373,7 +2493,7 @@
 			"Bonus": "SureFoot",
 			"Short": "Sure Footing",
 			"Long": "Sure Footing",
-			"Full": "Grants ENTRENCHED when walking"
+			"Full": "Grants ENTRENCHED when walking."
 		},
 		{
 			"Bonus": "Shield",
@@ -2440,6 +2560,12 @@
 			"Short": "{0} MinRange",
 			"Long": "{0} Minimum Range",
 			"Full": "{0} Minimum Range"
+		},
+		{
+			"Bonus": "LongRange",
+			"Short": "{0} LongRange",
+			"Long": "{0} Long Range",
+			"Full": "{0} Long Range"
 		},
 		{
 			"Bonus": "MaxRange",
@@ -2853,7 +2979,7 @@
 			"Bonus": "StructureProtection",
 			"Short": "{0} Structure",
 			"Long": "{0} Structure Points",
-			"Full": "{0} Structure Points"
+			"Full": "Adds {0} Structure Points"
 		},
 		{
 			"Bonus": "TACImmune",
@@ -3069,13 +3195,13 @@
 			"Bonus": "SBCluster",
 			"Short": "{0} Cluster",
 			"Long": "{0} SB Cluster",
-			"Full": "Silver Bullet Gauss Rifles fire a shot that breaks into in {0} submunitions when fired, serving as a large shotgun effect instead of a single pellet"
+			"Full": "Shot Clusters into {0} Submunitions with 15% greater Damage potential"
 		},
 		{
 			"Bonus": "LBXCluster",
 			"Short": "{0} Cluster",
 			"Long": "{0} LBX Cluster",
-			"Full": "LBX cluster munitions break into {0} submunitions when fired, serving as a large shotgun effect instead of a single pellet."
+			"Full": "Shot Clusters into {0} Submunitions with 15% greater Damage potential"
 		},
 		{
 			"Bonus": "LBXClusterPenalty",
@@ -3225,13 +3351,13 @@
 			"Bonus": "LanceIndirectAcc",
 			"Short": "{0} Lance Indirect.Acc",
 			"Long": "{0} Lance Indirect Acc",
-			"Full": "{0} Lance Accuracy with Indirect Fire"
+			"Full": "{0} Player Unit Accuracy with Indirect Fire"
 		},
 		{
 			"Bonus": "LanceDirectAcc",
 			"Short": "{0} Lance Direct.Acc",
 			"Long": "{0} Lance Direct Acc",
-			"Full": "{0} Lance Accuracy with Direct Fire"
+			"Full": "{0} Player Unit Accuracy with Direct Fire"
 		},
 		{
 			"Bonus": "BallisticCrit",
@@ -3411,7 +3537,7 @@
 			"Bonus": "LanceResolve",
 			"Short": "{0} Lance Resolve",
 			"Long": "{0} Increased Lance Resolve",
-			"Full": "{0} increased Resolve gain for all Lance Members"
+			"Full": "{0} increased Resolve gain for all Player Units"
 		},
 		{
 			"Bonus": "IndividualResolve",
@@ -3423,7 +3549,7 @@
 			"Bonus": "LanceAcc",
 			"Short": "{0} Lance Accuracy",
 			"Long": "{0} Increased Lance Accuracy",
-			"Full": "{0} Accuracy for all Lance Members"
+			"Full": "{0} Accuracy for all Player Units"
 		},
 		{
 			"Bonus": "Health",
@@ -3435,13 +3561,13 @@
 			"Bonus": "LanceSensors",
 			"Short": "{0} Sensors",
 			"Long": "{0} Inc.Sensor Range",
-			"Full": "{0} increased Sensor Range for the Lance"
+			"Full": "{0} increased Sensor Range for Player Units"
 		},
 		{
 			"Bonus": "LanceSight",
 			"Short": "{0} Sight",
 			"Long": "{0} Inc.Sight Range",
-			"Full": "{0} increased Sight Range for the Lance"
+			"Full": "{0} increased Sight Range for Player Units"
 		},
 		{
 			"Bonus": "Sensors",
@@ -3471,7 +3597,7 @@
 			"Bonus": "LanceSight2",
 			"Short": "{0} Lance Sight",
 			"Long": "{0} Lance Sight",
-			"Full": "{0} Lance Base Sight Distance"
+			"Full": "{0} Player Unit Base Sight Distance"
 		},
 		{
 			"Bonus": "Visibility",
@@ -3783,19 +3909,25 @@
 			"Bonus": "JamExplode",
 			"Short": "JamExplode",
 			"Long": "JamExplode",
-			"Full": "When the weapon jams, it explodes, dealing damage equal to one shot from the weapon."
+			"Full": "When the weapon jams, it explodes, dealing damage to the carrying unit."
+		},
+		{
+			"Bonus": "DestroyOnJam",
+			"Short": "Destroy Jam",
+			"Long": "Destroy On Jam",
+			"Full": "When this weapon jams it destroys the weapon, requiring it to be replaced."
 		},
 		{
 			"Bonus": "MultiTrac",
 			"Short": "MultiTrac",
-			"Long": "MultiTrac",
+			"Long": "Grants the Multi-Shot pilot ability",
 			"Full": "Grants the Multi-Shot pilot ability to pilots that do not already have the ability."
 		},
 		{
 			"Bonus": "Suppressant",
 			"Short": "Suppressant",
 			"Long": "Suppressant",
-			"Full": "Suppresses the target's heat dissipation systems, making them unable to sink as much heat."
+			"Full": "Suppresses the target's heat dissipation systems, making them sink {0} less heat."
 		},
 		{
 			"Bonus": "MGDamage",
@@ -3944,13 +4076,13 @@
 		{
 			"Bonus": "DRMMoveDebuff",
 			"Short": "DRM Move",
-			"Long": "DRM Movement Debuff",
+			"Long": "DRM Movement Debuff, {0} move speed, stack {1} times",
 			"Full": "DRMs inflict a {0} movement penalty, which stacks up to {1} times with itself."
 		},
 		{
 			"Bonus": "DRMHeatDebuff",
 			"Short": "DRM Heat",
-			"Long": "DRM Heat Debuff",
+			"Long": "DRM Heat Debuff, {0} heat gen penalty, stack {1} times",
 			"Full": "DRMs inflict a {0} heat generation penalty, which stacks up to {1} times with itself."
 		},
 		{
@@ -4074,6 +4206,12 @@
 			"Full": "On overload, the AMS will fire multiple times a turn instead of only once."
 		},
 		{
+			"Bonus": "AMSAttacks",
+			"Short": "AMSAttacks",
+			"Long": "AMSAttacks",
+			"Full": "This AMS will fire multiple times a turn instead of only once on all fire modes."
+		},
+		{
 			"Bonus": "LoanShark",
 			"Short": "C-Bill Loan",
 			"Long": "C-Bill Loan",
@@ -4088,19 +4226,19 @@
 		{
 			"Bonus": "PunchDamageBonus",
 			"Short": "Punch Damage Bonus",
-			"Long": "Punch Damage Bonus",
+			"Long": "{0} Punch Damage Bonus",
 			"Full": "Punches do {0} more damage."
 		},
 		{
 			"Bonus": "PunchStabBonus",
 			"Short": "Punch Stability Bonus",
-			"Long": "Punch Stability Bonus",
+			"Long": "{0} Punch Stability Bonus",
 			"Full": "Punches do {0} more stability damage."
 		},
 		{
 			"Bonus": "DFADamageBonus",
 			"Short": "DFA Damage Bonus",
-			"Long": "DFA Damage Bonus",
+			"Long": "{0} DFA Damage Bonus",
 			"Full": "DFAs do {0} more damage."
 		},
 		{
@@ -4118,37 +4256,37 @@
 		{
 			"Bonus": "KickDamageBonus",
 			"Short": "Kick Damage Bonus",
-			"Long": "Kick Damage Bonus",
+			"Long": "{0} Kick Damage Bonus",
 			"Full": "Kicks do {0} more damage."
 		},
 		{
 			"Bonus": "KickStabBonus",
 			"Short": "Kick Stability Bonus",
-			"Long": "Kick Stability Bonus",
+			"Long": "{0} Kick Stability Bonus",
 			"Full": "Kicks do {0} more stability damage."
 		},
 		{
 			"Bonus": "ChargeDamageBonus",
 			"Short": "Charge Damage Bonus",
-			"Long": "Charge Damage Bonus",
+			"Long": "{0} Charge Damage Bonus",
 			"Full": "Charges do {0} more damage."
 		},
 		{
 			"Bonus": "ChargeStabBonus",
 			"Short": "Charge Stability Bonus",
-			"Long": "Charge Stability Bonus",
+			"Long": "{0} Charge Stability Bonus",
 			"Full": "Charges do {0} more stability damage."
 		},
 		{
 			"Bonus": "ChargeSelfDamage",
 			"Short": "Charge Self Damage Reduction",
-			"Long": "Charge Self Damage Reduction",
+			"Long": "{0} Charge Self Damage Reduction",
 			"Full": "Charges do {0} less self-damage."
 		},
 		{
 			"Bonus": "ChargeSelfStab",
 			"Short": "Charge Self Stability Reduction",
-			"Long": "Charge Self Stability Reduction",
+			"Long": "{0} Charge Self Stability Reduction",
 			"Full": "Charges do {0} less stability self-damage."
 		},
 		{
@@ -4166,73 +4304,73 @@
 		{
 			"Bonus": "PhysWeapDamage",
 			"Short": "Physical Weapon Damage",
-			"Long": "Physical Weapon Damage",
+			"Long": "{0}/ton Physical Weapon Damage",
 			"Full": "This physical weapon does {0} damage per ton of the carrying unit."
 		},
 		{
 			"Bonus": "PhysWeapStab",
 			"Short": "Physical Weapon Stab Damage",
-			"Long": "Physical Weapon Stab Damage",
+			"Long": "{0}/ton Physical Weapon Stab Damage",
 			"Full": "This physical weapon does {0} stability damage per ton of the carrying unit."
 		},
 		{
 			"Bonus": "PhysWeapDamageFlat",
 			"Short": "Physical Weapon Damage",
-			"Long": "Physical Weapon Damage",
+			"Long": "{0} Physical Weapon Damage",
 			"Full": "This physical weapon does {0} damage."
 		},
 		{
 			"Bonus": "PhysWeapStabFlat",
 			"Short": "Physical Weapon Stab Damage",
-			"Long": "Physical Weapon Stab Damage",
+			"Long": "{0} Physical Weapon Stab Damage",
 			"Full": "This physical weapon does {0} stability damage."
 		},
 		{
 			"Bonus": "PhysWeapDamageBonus",
 			"Short": "Physical Weapon Damage Bonus",
-			"Long": "Physical Weapon Damage Bonus",
+			"Long": "{0} Physical Weapon Damage Bonus",
 			"Full": "Physical weapons do {0} more damage."
 		},
 		{
 			"Bonus": "PhysWeapStabBonus",
 			"Short": "Physical Weapon Stability Bonus",
-			"Long": "Physical Weapon Stability Bonus",
+			"Long": "{0} Physical Weapon Stability Bonus",
 			"Full": "Physical weapons do {0} more stability damage."
 		},
 		{
 			"Bonus": "PhysWeapBonusHit",
 			"Short": "Physical Weapon Bonus Hits",
-			"Long": "Physical Weapon Bonus Hits",
+			"Long": "{0} Physical Weapon Bonus Hits",
 			"Full": "Physical weapons hit {0} more times per attack."
 		},
 		{
 			"Bonus": "KickAccuracy",
 			"Short": "Kick Accuracy Bonus",
-			"Long": "Kick Accuracy Bonus",
+			"Long": "{0} Kick Accuracy Bonus",
 			"Full": "Kick attacks have {0} accuracy."
 		},
 		{
 			"Bonus": "PunchAccuracy",
 			"Short": "Punch Accuracy Bonus",
-			"Long": "Punch Accuracy Bonus",
+			"Long": "{0} Punch Accuracy Bonus",
 			"Full": "Punch attacks have {0} accuracy."
 		},
 		{
 			"Bonus": "PunchBonusHit",
 			"Short": "Punch Bonus Hits",
-			"Long": "Punch Bonus Hits",
+			"Long": "{0} Punch Bonus Hits",
 			"Full": "Punchs hit {0} more times per attack."
 		},
 		{
 			"Bonus": "PhysWeapHitCount",
 			"Short": "Physical Weapon Hit Count",
-			"Long": "Physical Weapon Hit Count",
+			"Long": "{0} Physical Weapon Hit Count",
 			"Full": "This physical weapon hits an additional {0} times during a physical weapon attack."
 		},
 		{
 			"Bonus": "PhysWeapAccuracy",
 			"Short": "Physical Weapon Accuracy Bonus",
-			"Long": "Physical Weapon Accuracy Bonus",
+			"Long": "{0} Physical Weapon Accuracy Bonus",
 			"Full": "Physical weapon attacks have {0} accuracy."
 		},
 		{
@@ -4242,39 +4380,39 @@
 			"Full": "This physical weapon hits the target on their upper body only, like a punch."
 		},
 		{
-			"Bonus": "VSPLShortMax",
-			"Short": "VSPL Short Bracket Max Range",
-			"Long": "VSPL Short Bracket Max Range",
+			"Bonus": "VariableShortMax",
+			"Short": "Short Bracket Max Range",
+			"Long": "Short Bracket Max Range",
 			"Full": "The short range bracket max is {0}."
 		},
 		{
-			"Bonus": "VSPLMedMin",
-			"Short": "VSPL Medium Bracket Min Range",
-			"Long": "VSPL Medium Bracket Min Range",
+			"Bonus": "VariableMedMin",
+			"Short": "Medium Bracket Min Range",
+			"Long": "Medium Bracket Min Range",
 			"Full": "The medium range bracket minimum is {0}."
 		},
 		{
-			"Bonus": "VSPLMedMax",
-			"Short": "VSPL Medium Bracket Max Range",
-			"Long": "VSPL Medium Bracket Max Range",
+			"Bonus": "VariableMedMax",
+			"Short": "Medium Bracket Max Range",
+			"Long": "Medium Bracket Max Range",
 			"Full": "The medium range bracket max is {0}."
 		},
 		{
-			"Bonus": "VSPLLongMin",
-			"Short": "VSPL Long Bracket Min Range",
-			"Long": "VSPL Long Bracket Min Range",
+			"Bonus": "VariableLongMin",
+			"Short": "Long Bracket Min Range",
+			"Long": "Long Bracket Min Range",
 			"Full": "The long range bracket minimum is {0}."
 		},
 		{
-			"Bonus": "VSPLLongMax",
-			"Short": "VSPL Long Bracket Max Range",
-			"Long": "VSPL Long Bracket Max Range",
+			"Bonus": "VariableLongMax",
+			"Short": "Long Bracket Max Range",
+			"Long": "Long Bracket Max Range",
 			"Full": "The long range bracket max is {0}."
 		},
 		{
 			"Bonus": "C3Accuracy",
 			"Short": "C3 Accuracy",
-			"Long": "C3 Accuracy",
+			"Long": "{0} C3 Accuracy",
 			"Full": "{0} accuracy to enemies within the C3 radius."
 		},
 		{
@@ -4323,7 +4461,7 @@
 			"Bonus": "ECMStacking",
 			"Short": "ECM Stacks",
 			"Long": "ECM Stacks",
-			"Full": "This ECM stacks with other sources instead of overriding them."
+			"Full": "This ECM stacks with other, different, ECM sources instead of overriding them. (It does not stack with other ECMs of the same type.)"
 		},
 		{
 			"Bonus": "SensorLockImmune",
@@ -4394,7 +4532,7 @@
 		{
 			"Bonus": "Avionics",
 			"Short": "Avionics Equipment",
-			"Long": "Avionics Equipment",
+			"Long": "Avionics Equipment enables AirMech Transformation",
 			"Full": "Avionics equipment allows the carrying unit to transform between BattleMech and AirMech mode. In AirMech mode the unit gains heavily increased movement speed but is more susceptible to both regular damage and stability damage and is not affected by terrain in any way."
 		},
 		{
@@ -4497,12 +4635,12 @@
 			"Bonus": "Clustering",
 			"Short": "Clustering Modifier of {0}",
 			"Long": "Clustering Modifier of {0}",
-			"Full": "Increases the clustering modifier of this weapon by {0}, meaning missiles are that much more likely to hit the same location on the target."
+			"Full": "Increases the clustering modifier of this weapon by {0}, meaning shots are that much more likely to hit the same location on the target."
 		},
 		{
 			"Bonus": "OstscoutTargeting",
 			"Short": "Ostscout Targeting",
-			"Long": "Ostscout Targeting",
+			"Long": "Ostscout Targeting provides {0} accuracy within 150 meters.",
 			"Full": "The Ostscout's targeting systems are so good that they provide {0} accuracy against enemies within a 150 meter radius of the Ostscout."
 		},
 		{
@@ -4520,20 +4658,26 @@
 		{
 			"Bonus": "FuelCellSHS",
 			"Short": "Fuel Cell Engine",
-			"Long": "Fuel Cell Engine",
+			"Long": "Fuel Cell Engine Heatsink Restrictions",
 			"Full": "Fuel cell engines cannot be equipped with advanced heat sinks. Fuel cells cannot make use of any heat sink systems other than standard heat sinks. They also cannot use any e-cooling, heat bank, or heat exchanger equipment."
 		},
 		{
 			"Bonus": "FissionDamage",
 			"Short": "Fission Engine Damage",
-			"Long": "Fission Engine Damage",
-			"Full": "Fission engines are vulnerable to incoming damage. When damaged, a fission engine spews hard radiation around itself. This overwhelms a 'Mech's internal life support systems and makes the pilot inside vulnerable to high heat situations, causing them to take a pilot injury when their 'Mech becomes overheated.."
+			"Long": "Pilot risk from Fission Engine Damage",
+			"Full": "Fission engines are vulnerable to incoming damage. When damaged, a fission engine spews hard radiation around itself. This overwhelms a 'Mech's internal life support systems and makes the pilot inside vulnerable to high heat situations, causing them to take a pilot injury when their 'Mech becomes overheated..."
 		},
 		{
 			"Bonus": "FissionSHS",
 			"Short": "Fission Engine",
-			"Long": "Fission Engine",
+			"Long": "Fission Engine Heatsink Restrictions",
 			"Full": "Fission engines cannot be equipped with advanced heat sinks. Fission engines cannot make use of any heat sink systems other than standard heat sinks. They also cannot use any e-cooling, heat bank, or heat exchanger equipment."
+		},
+		{
+			"Bonus": "ICESHS",
+			"Short": "Internal Combustion Engine",
+			"Long": "Internal Combustion Engine Heatsink Restrictions",
+			"Full": "Internal combustion engines cannot be equipped with advanced heat sinks. Internal combustion engines cannot make use of any heat sink systems other than standard heat sinks. They also cannot use any e-cooling, heat bank, or heat exchanger equipment."
 		},
 		{
 			"Bonus": "InsanityDebuff",
@@ -4550,14 +4694,14 @@
 		{
 			"Bonus": "MaxResolveIncrease",
 			"Short": "Max Resolve Increased",
-			"Long": "Max Resolve Increased",
+			"Long": "Max Resolve Increased by {0}",
 			"Full": "This equipment increases the pilot's maximum resolve capacity by {0}."
 		},
 		{
 			"Bonus": "Airdrop",
 			"Short": "Airdrop",
 			"Long": "Airdrop",
-			"Full": "This equipment permits the carrying unit to call in an airdropped unit of some kind. The airdropped unit is controlled by allied forces and will support you in combat as best it is able."
+			"Full": "This equipment permits the carrying unit to call in an airdropped unit of some kind. The airdropped unit is controlled by allied forces and will support you in combat as best it is able. Must be used before movement and consumes entire turn."
 		},
 		{
 			"Bonus": "AirdropDrone",
@@ -4663,15 +4807,9 @@
 		},
 		{
 			"Bonus": "ModularArmor",
-			"Short": "Modular Armor",
-			"Long": "Modular Armor",
+			"Short": "Bonus Armor",
+			"Long": "Bonus Location Armor",
 			"Full": "This component provides {0} bonus armor to the location this component is mounted in."
-		},
-		{
-			"Bonus": "SkillPiloting",
-			"Short": "Piloting Skill",
-			"Long": "Piloting Skill Modification",
-			"Full": "This component modifies the pilot's Piloting Skill by {0}."
 		},
 		{
 			"Bonus": "HarJel",
@@ -4770,6 +4908,12 @@
 			"Full": "This explosive pod deals damage specifically and exclusively to Battle Armor. It does not damage the carrying unit."
 		},
 		{
+			"Bonus": "MPod",
+			"Short": "M-Pod",
+			"Long": "Anti-Mech Pod",
+			"Full": "This explosive pod is essentially a LB-15X Autocannon in the form of a small explosive pod. However, the M-Pod suffers from dramatic damage falloff over its very short weapon range."
+		},
+		{
 			"Bonus": "PodRadius",
 			"Short": "Pod Explosion Radius",
 			"Long": "Pod Explosion Radius",
@@ -4810,6 +4954,12 @@
 			"Short": "Anti-BA",
 			"Long": "Anti-Battle Armor Weapon",
 			"Full": "This weapon deals {0} more damage to Battle Armor."
+		},
+		{
+			"Bonus": "AntiMech",
+			"Short": "Anti-Mech",
+			"Long": "Anti-Mech Weapon",
+			"Full": "This weapon deals {0} more damage to Mechs."
 		},
 		{
 			"Bonus": "CanMount",
@@ -4989,13 +5139,19 @@
 			"Bonus": "Knockdown",
 			"Short": "Self-Knockdown",
 			"Long": "Self-Knockdown",
-			"Full": "This weapon, when fired, forces a check that, when failed, knocks down the firing unit automatically from the immense recoil effect. This check is resisted by a combination of the firing unit's Piloting skill and base tonnage (more is better in both cases)."
+			"Full": "This weapon, when fired, forces a check that, when failed, knocks down the firing unit automatically from the immense recoil effect. This check is resisted by a combination of the firing unit's Piloting skill and base tonnage (more is better in both cases). Quad 'Mechs and SuperHeavy 'Mechs are immune to this check."
 		},
 		{
 			"Bonus": "KnockdownChance",
 			"Short": "Self-Knockdown Chance",
 			"Long": "Self-Knockdown Chance {0}",
 			"Full": "The base self-knockdown chance on this weapon is {0}."
+		},
+		{
+			"Bonus": "KnockdownImmunity",
+			"Short": "Self-Knockdown Immunity",
+			"Long": "Self-Knockdown Immunity",
+			"Full": "This unit is immune to self-knockdown checks."
 		},
 		{
 			"Bonus": "PilotRecovery",
@@ -5048,8 +5204,8 @@
 		{
 			"Bonus": "MaxCountJJ",
 			"Short": "Maximum JJ Count",
-			"Long": "Maximum JJ Count {0}",
-			"Full": "When using this jump jet type, a mech can mount a number of max jump jets equal to {0} times its Walk MP (i.e. if Walk MP is 4 and Max JJ Count is 1, the mech can mount 4 JJs; if Walk MP is 4 and Max JJ Count is 1.5, the mech can mount 6 JJs)."
+			"Long": "Maximum JJ Count x{0}",
+			"Full": "When using this jump jet type, a mech can mount a number of max jump jets equal to {0} times its Walk MP (e.x. if Walk MP is 4 and Max JJ Count is 1, the mech can mount 4 JJs; if Walk MP is 4 and Max JJ Count is 1.5, the mech can mount 6 JJs)."
 		},
 		{
 			"Bonus": "PhysicalDamageReduction",
@@ -5064,10 +5220,280 @@
 			"Full": "This equipment provides its carrier with immunity to fire weapons and effects in combat. They do not suffer any ill effects from being struck by fire weapons."
 		},
 		{
+			"Bonus": "WebbTC",
+			"Short": "Webb TC",
+			"Long": "Webb Targeting Computer",
+			"Full": "This is a Webb Targeting Computer. Webb TCs provide a variety of weapon attachments to the 'Mech when equipped. These attachments provide a modest accuracy bonus for any attached weapon and are compatible with any and all forms of weaponry."
+		},
+		{
+			"Bonus": "WeaponAttachmentCompatible",
+			"Short": "Weapon Attachment Compatibility",
+			"Long": "Weapon Attachment Compatibility",
+			"Full": "This weapon is compatible with a weapon attachment, specifically: {0}."
+		},
+		{
+			"Bonus": "WeaponAttachmentTargets",
+			"Short": "Weapon Attachment Targets",
+			"Long": "Weapon Attachment Targets",
+			"Full": "This equipment is a weapon attachment. It can target the following weapon types: {0}."
+		},
+		{
+			"Bonus": "WeaponAttachmentMultiple",
+			"Short": "Weapon Attachment Multiple Targets",
+			"Long": "Weapon Attachment Multiple Targets",
+			"Full": "Unlike most weapon attachments, which are single-target, this weapon attachment attaches to every weapon of the appropriate type in the body location the attachment is installed in."
+		},
+		{
+			"Bonus": "WeaponAttachmentModifiesModes",
+			"Short": "Weapon Attachment Modes",
+			"Long": "Weapon Attachment Modes",
+			"Full": "This weapon attachment adds one or more new fire modes to the modified weapon. To use the attachment, be sure to use the new fire mode or modes."
+		},
+		{
+			"Bonus": "WeaponAttachmentArtemisDescription",
+			"Short": "Weapon Attachment Info",
+			"Long": "Weapon Attachment Info",
+			"Full": "This weapon attachment operates differently for different attached weapons and their different ammunitions. Its mechanical effects are described on the ammunition that it enables, specifically: {0}"
+		},
+		{
+			"Bonus": "WeaponAttachmentHeat",
+			"Short": "Weapon Attachment Heat",
+			"Long": "Weapon Attachment Heat",
+			"Full": "This weapon attachment modifies the attached weapon's heat generation by {0}."
+		},
+		{
+			"Bonus": "WeaponAttachmentDamage",
+			"Short": "Weapon Attachment Damage",
+			"Long": "Weapon Attachment Damage",
+			"Full": "This weapon attachment modifies the attached weapon's damage generation by {0}."
+		},
+		{
+			"Bonus": "WeaponAttachmentJam",
+			"Short": "Weapon Attachment Jam Chance",
+			"Long": "Weapon Attachment Jam Chance",
+			"Full": "This weapon attachment adds a {0} jam chance to the attached weapon."
+		},
+		{
+			"Bonus": "WeaponAttachmentPipsIgnored",
+			"Short": "Weapon Attachment Pips Ignored",
+			"Long": "Weapon Attachment Pips Ignored",
+			"Full": "This weapon attachment permits the attached weapon to ignore {0} evasion."
+		},
+		{
+			"Bonus": "WeaponAttachmentAccuracy",
+			"Short": "Weapon Attachment Accuracy",
+			"Long": "Weapon Attachment Accuracy",
+			"Full": "This weapon attachment adds a {0} accuracy bonus to the attached weapon."
+		},
+		{
+			"Bonus": "WeaponAttachmentIDFAccuracy",
+			"Short": "Weapon Attachment IDF Accuracy",
+			"Long": "Weapon Attachment Indirect Fire Accuracy",
+			"Full": "This weapon attachment adds a {0} accuracy bonus to the attached weapon when used for indirect fire only."
+		},
+		{
+			"Bonus": "WeaponAttachmentDamageMissile",
+			"Short": "Weapon Attachment Damage",
+			"Long": "Weapon Attachment Damage",
+			"Full": "This weapon attachment modifies the attached weapon's damage by {0} per missile."
+		},
+		{
+			"Bonus": "WeaponAttachmentClustering",
+			"Short": "Weapon Attachment Clustering",
+			"Long": "Weapon Attachment Clustering Modifier of {0}",
+			"Full": "This weapon attachment modifies the attached weapon's clustering modifier by {0}, meaning shots are that much more likely to hit the same location on the target."
+		},
+		{
+			"Bonus": "WeaponAttachmentMGShotCount",
+			"Short": "MG Shot Count",
+			"Long": "MG Attachment Shot Count",
+			"Full": "This weapon attachment increases the attached weapon's number of shots per trigger pull by {0} in all modes (i.e. it increases each mode by its normal step of shots, so if the weapon on x1 fires 3 shots, it now fires +3 in each mode)."
+		},
+		{
+			"Bonus": "WeaponAttachmentUltraMode",
+			"Short": "Rifle Shot Count",
+			"Long": "Rifle Shot Count",
+			"Full": "This weapon attachment gives the attached weapon the ability to fire twice, like an Ultra Autocannon does, with a jam chance of {0}."
+		},
+		{
+			"Bonus": "WeaponAttachmentAmmoFeedCannon",
+			"Short": "Cannon Ammo Feed",
+			"Long": "Cannon Ammo Feed",
+			"Full": "This weapon attachment gives the attached Cannon the ability to accept external ammo from the same class of Rifle (i.e. the Light Cannon can accept Light Rifle ammo) but at a {0} damage penalty."
+		},
+		{
+			"Bonus": "WeaponAttachmentRevolverRifle",
+			"Short": "Revolver Rifle",
+			"Long": "Revolver Rifle",
+			"Full": "This weapon attachment gives the attached Rifle the ability to fire twice as fast as normal (like an Ultra Autocannon does) but at a {0} damage penalty and with a {1} jam chance on each trigger pull."
+		},
+		{
+			"Bonus": "WeaponAttachmentAmmoFeedRocket",
+			"Short": "Rocket Ammo Feed",
+			"Long": "Rocket Ammo Feed",
+			"Full": "This weapon attachment gives the attached Rocket Launcher the ability to accept external ammo from Medium Range Missiles but at a {0} damage penalty and a {1} accuracy penalty."
+		},
+		{
+			"Bonus": "WeaponAttachmentAmmoFeedGyrojet",
+			"Short": "Rocket Ammo Feed",
+			"Long": "Rocket Ammo Feed",
+			"Full": "This weapon attachment gives the attached Gyrojet launcher the ability to accept external ammo from Long Range Missiles but at a {0} damage penalty and a {1} accuracy penalty."
+		},
+		{
+			"Bonus": "AmmoFeedType",
+			"Short": "Ammo Feed Type",
+			"Long": "Ammo Feed Type",
+			"Full": "This weapon attachment gives the attached weapon the ability to accept external {0} ammo."
+		},
+		{
+			"Bonus": "NonQuad",
+			"Short": "Quad Incompatible",
+			"Long": "Quad Incompatible",
+			"Full": "This piece of equipment is incompatible with Quad Mechs and cannot be used with them."
+		},
+		{
+			"Bonus": "WordsWords",
+			"Short": "{0}",
+			"Long": "{0}",
+			"Full": "{0}"
+		},
+		{
+			"Bonus": "BleedReduction",
+			"Short": "{0} Bleed Reduction",
+			"Long": "{0} Bleed Reduction",
+			"Full": "Reduces pilot bleed out speed by {0}."
+		},
+		{
+			"Bonus": "SkillGuts",
+			"Short": "{0} Increased Guts",
+			"Long": "{0} Increased Guts",
+			"Full": "This component modifies the pilot's Guts Skill by {0}."
+		},
+		{
+			"Bonus": "SkillGunnery",
+			"Short": "{0} Increased Gunnery",
+			"Long": "{0} Increased Gunnery",
+			"Full": "This component modifies the pilot's Gunnery Skill by {0}."
+		},
+		{
+			"Bonus": "SkillPiloting",
+			"Short": "{0} Increased Piloting",
+			"Long": "{0} Increased Piloting",
+			"Full": "This component modifies the pilot's Piloting Skill by {0}."
+		},
+		{
+			"Bonus": "SkillTactics",
+			"Short": "{0} Increased Tactics",
+			"Long": "{0} Increased Tactics",
+			"Full": "This component modifies the pilot's Tactics Skill by {0}."
+		},
+		{
 			"Bonus": "IgnoreDamage",
-			"Short": "Ignore Damage",
-			"Long": "Ignore Damage",
-			"Full": "This piece of equipment ignores incoming damage against it, meaning it cannot be destroyed via critical hits."
+			"Short": "Immune to Damage",
+			"Long": "Immune to Damage",
+			"Full": "This component is immune to damage and cannot be destroyed through normal combat."
+		},
+		{
+			"Bonus": "LocationRestricted",
+			"Short": "Location Restricted",
+			"Long": "Location Restricted",
+			"Full": "This component is restricted to only specific locations: {0}."
+		},
+		{
+			"Bonus": "LeagueNet",
+			"Short": "LeagueNet",
+			"Long": "LeagueNet",
+			"Full": "This component is part of the LeagueNet system of nodes. This means it shares information between LeagueNet support nodes and the LeagueNet focal node in order to power the focal node carrier."
+		},
+		{
+			"Bonus": "LeagueNetFocalNode",
+			"Short": "LeagueNet Focal Node",
+			"Long": "LeagueNet Focal Node",
+			"Full": "This component is a LeagueNet Focal Node and receives various benefits from nearby allied LeagueNet Support Nodes."
+		},
+		{
+			"Bonus": "LeagueNetFocalInterference",
+			"Short": "LeagueNet Focal Interference",
+			"Long": "LeagueNet Focal Interference",
+			"Full": "LeagueNet Focal Nodes interfere with one another when deployed in the field as each tries to compete for dominance over the LeagueNet network. This equates to a -100 weapon attack and melee attack penalty if more than one LeagueNet Focal Node is deployed at once."
+		},
+		{
+			"Bonus": "LeagueNetSupportNode",
+			"Short": "LeagueNet Support Node",
+			"Long": "LeagueNet Support Node",
+			"Full": "This component is a LeagueNet Support Node and provides a benefit to the LeagueNet Focal Node carrier while inflicting a small penalty to the Support Node carrier."
+		},
+		{
+			"Bonus": "LeagueNetAccuracyNode",
+			"Short": "LeagueNet Acc Node",
+			"Long": "LeagueNet Accuracy Node",
+			"Full": "This LeagueNet Support Node provides a {0} accuracy bonus to the Focal Node carrier while imposing a {1} accuracy penalty to the Support Node carrier."
+		},
+		{
+			"Bonus": "LeagueNetDRNode",
+			"Short": "LeagueNet DR Node",
+			"Long": "LeagueNet Damage Reduction Node",
+			"Full": "This LeagueNet Support Node provides a {0} damage reduction bonus to the Focal Node carrier while imposing a {1} damage reduction penalty to the Support Node carrier."
+		},
+		{
+			"Bonus": "LeagueNetCalledShotNode",
+			"Short": "LeagueNet Called Shot Node",
+			"Long": "LeagueNet Called Shot Node",
+			"Full": "This LeagueNet Support Node provides a small Called Shot bonus to the Focal Node carrier while imposing a slightly smaller Called Shot penalty to the Support Node carrier."
+		},
+		{
+			"Bonus": "LeagueNetSpeedNode",
+			"Short": "LeagueNet Speed Node",
+			"Long": "LeagueNet Speed Node",
+			"Full": "This LeagueNet Support Node provides a {0} sprint speed bonus to the Focal Node carrier while imposing a {1} sprint speed penalty to the Support Node carrier."
+		},
+		{
+			"Bonus": "LanceCrit",
+			"Short": "Lance Crit",
+			"Long": "Lance Armor Penetration",
+			"Full": "Lances always punch through armor and force a critical damage check against the target, even if they don't damage structure."
+		},
+		{
+			"Bonus": "TridentCrit",
+			"Short": "Trident Crit",
+			"Long": "Trident Armor Penetration",
+			"Full": "Tridents always punch through armor and force a critical damage check against the target, even if they don't damage structure."
+		},
+		{
+			"Bonus": "iNarcECMScramble",
+			"Short": "iNarc ECM",
+			"Long": "iNarc ECM Scrambling",
+			"Full": "iNarc ECM Pods break enemy C3, C3i, and Drone Networks upon attaching to their targets. Essentially, the ECM pod affects an enemy as though it was forcibly disconnected from its electronic warfare networks; even if the network is not normally affected by ECM in this manner the iNarc ECM pod will remove them from the network."
+		},
+		{
+			"Bonus": "iNarcPermanence",
+			"Short": "iNarc Permanence",
+			"Long": "iNarc Permanence",
+			"Full": "Unlike its progenitor, the iNarc system is a permanent effect. This means that when a target is tagged by an iNarc pod they are stuck with the effects of the pod until the mission ends or they are destroyed, whichever comes first. iNarc pods do not stack with themselves or with standard Narc or TAG effects."
+		},
+		{
+			"Bonus": "VGLModes",
+			"Short": "VGL Modes",
+			"Long": "Vehicular Grenade Launcher Modes",
+			"Full": "The Vehicular Grenade Launcher is a one-shot weapon but it can fire its one shot in one of three modes: Fragmentation mode which does large damage to infantry on a direct hit; Inferno mode which deals heat damage and always starts fires; and AoE mode which deploys a small AoE that is capable of damaging hardened targets in a small radius."
+		},
+		{
+			"Bonus": "ReverseScaling",
+			"Short": "Reverse Scaling",
+			"Long": "Reverse Damage Scaling",
+			"Full": "This weapon has variable damage modes that shift their range bands and increase damage and accuracy the further away the target is. The default mode is medium range, which is reflected in the MechBay. At short range it loses range in each range bracket and does {0} less damage and at a {1} accuracy penalty. At long range it does {2} more damage and has a {3} accuracy bonus."
+		},
+		{
+			"Bonus": "ViralJammer",
+			"Short": "Viral Jammer",
+			"Long": "Viral Jammer",
+			"Full": "The Viral Jammer is a powerful piece of e-war gear. It scrambles all distributed networks in its radius, friendly or enemy, including C3, C3i, and Sanctuary Drone Networks. It also scrambles the Virtual Reality Piloting Pod's controls (both friendly and enemy VRPPs) as well as providing the carrying unit immunity to Sensor Locks."
+		},
+		{
+			"Bonus": "ViralJammerRange",
+			"Short": "Viral Jammer Range",
+			"Long": "Viral Jammer Range",
+			"Full": "The Viral Jammer's range of effect is {0} meters."
 		}
 	]
 }

@@ -155,11 +155,13 @@
 		"Kurita",
 		"Davion",
 		"Liao",
+		"Cameron",
 		"WordOfBlake",
 		"ComStar",
 		"Rasalhague"
 	],
 	"contractTargetIDs": [
-		"ClanGhostBear"
+		"ClanGhostBear",
+		"331stDivision"
 	]
 }

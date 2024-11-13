@@ -5,24 +5,21 @@
 				"CategoryID": "a/m/t/sirocco"
 			}
 		],
-		"Flags": {
-            "flags": [
-                "not_broken"
-            ]
-        },
+		"Flags": [
+			"not_broken"
+		],
         "ComponentExplosion": {
             "ExplosionDamagePerAmmo": 10,
             "StabilityDamagePerAmmo": 5
         },
-        "BonusDescriptions": {
-            "Bonuses": [
-				"AreaOfEffect: 60",
-				"AreaOfEffectDmg: 20",
-				"AreaOfEffectSTABDmg: 5",
-				"CostPerShot: 150",
-				"AmmoCount: 20"
-            ]
-        },
+        "BonusDescriptions": [
+			"AreaOfEffect: 90",
+			"AreaOfEffectDmg: 60",
+			"AreaOfEffectHeatDmg: 10",
+			"AreaOfEffectSTABDmg: 20",
+			"CostPerShot: 150",
+			"AmmoCount: 20"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 150
 		}
@@ -39,7 +36,7 @@
         "Id": "Ammo_AmmunitionBox_Generic_SIROCCO",
         "Name": "Sirocco Ammo",
         "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of SHIELD.",
-        "Icon": "Art-illery"
+        "Icon": "Art-illery-ammo"
     },
     "BonusValueA": "",
     "BonusValueB": "",

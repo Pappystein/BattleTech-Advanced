@@ -25,7 +25,10 @@
 			"SnordsIrregulars",
 			"NorthwindHighlanders",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"DismalDisinherited",
+			"MacksMercs",
 			"SolarisVIIMercLeague",
 			"EridaniLightHorse",
 			"GrayDeathLegion",
@@ -65,9 +68,13 @@
 			"JacobsJuggernauts",
 			"LindonsBattalion",
 			"GrimDetermination",
+			"FightingUrukhai",
+			"RaymondsRedcoats",
+			"12thStarGuards",
+			"RedfieldRenegades",
+			"LexingtonCombatGroup",
 			"ToothOfYmir",
 			"KnightsOfCaerbannog",
-			"ThermoPolice",
 			"HostileMercenaries",
 			"EmeraldDawn",
 			"SianTriumphant",
@@ -498,17 +505,6 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_ARTEMISIV",
-			"SimGameUID": null,
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
 			"MountedLocation": "LeftTorso",
 			"ComponentDefID": "emod_case",
 			"SimGameUID": null,
@@ -528,18 +524,20 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_SRM_1"
 		},
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_HeatSink_Generic_Standard",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
 			"SimGameUID": null,
-			"ComponentDefType": "HeatSink",
+			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"TargetComponentGUID":"target_SRM_1"
 		},
 		{
 			"MountedLocation": "RightArm",

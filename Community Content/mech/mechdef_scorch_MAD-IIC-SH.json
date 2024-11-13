@@ -7,9 +7,11 @@
 			"unit_lance_support",
 			"unit_role_sniper",
 			"unit_superheavy",
+			"Ignore_SelfKnockdown",
 			"unit_rarity_1",
 			"Steiner",
 			"6thLyranGuards",
+			"MacksMercs",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""

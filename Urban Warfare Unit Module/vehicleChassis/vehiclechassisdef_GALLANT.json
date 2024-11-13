@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_GALLANT",
-		"Name": "Gallant Urban Assault Vehicle",
+		"Name": "Gallant",
 		"Details": "",
 		"Icon": "Gallant",
-		"Cost": 993,
+		"Cost": 750000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -18,7 +18,7 @@
 	"PrefabBase": "gallant",
 	"Tonnage": 70,
 	"weightClass": "HEAVY",
-	"BattleValue": 993,
+	"BattleValue": 500000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"movementType": "Wheeled",
@@ -71,7 +71,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -108,27 +108,27 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],

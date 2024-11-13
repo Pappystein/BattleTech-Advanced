@@ -8,24 +8,14 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"ComponentExplosion": {
-			"ExplosionDamagePerAmmo": 25,
-			"StabilityDamagePerAmmo": 2
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"WpnRecoil: 2",
-				"InternalAmmo: 18",
-				"CostPerShot: 100",
-				"IsRifle"
-			]
-		},
-		"InternalAmmoTonnage": {
-            "InternalAmmoTons": 2.0
-        },
-		"AmmoCost": {
-			"PerUnitCost": 100
-		}
+		"BonusDescriptions": [
+			"WpnRecoil: 2",
+			"WpnAccuracy: -1",
+			"NoFireInMelee",
+			"IsRifle",
+			"WeaponAttachmentCompatible: Periphery FCS",
+			"WeaponAttachmentCompatible: Rifle Revolver"
+		]
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -37,16 +27,16 @@
 		240,
 		360
 	],
-	"AmmoCategory": "Flamer",
-	"StartingAmmoCapacity": 18,
-	"HeatGenerated": 3,
-	"Damage": 25,
+	"AmmoCategory": "RifleLight",
+	"StartingAmmoCapacity": 0,
+	"HeatGenerated": 6,
+	"Damage": 18,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 0,
 	"DamageVariance": 0,
 	"HeatDamage": 0,
-	"AccuracyModifier": 0,
+	"AccuracyModifier": 1,
 	"CriticalChanceMultiplier": 1,
 	"AOECapable": false,
 	"IndirectFireCapable": false,
@@ -54,7 +44,7 @@
 	"ShotsWhenFired": 1,
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 2,
-	"Instability": 15,
+	"Instability": 10,
 	"WeaponEffectID": "WeaponEffect-Weapon_AC5",
 	"Description": {
 		"Cost": 50000,
@@ -65,7 +55,7 @@
 		"UIName": "Light Rifle",
 		"Id": "Weapon_Autocannon_AC5_LRIFLE",
 		"Name": "Light Rifle",
-		"Details": "The Light Rifle is the smallest of the ''Rifle'' family. The precursor to the modern Autocannon, the Rifle is based on the main guns used by tanks on pre-spaceflight Terra. The Light Rifle carries 1 ton of ammo with 18 rounds. <b><color=#099ff2>VOLATILE!</color></b>",
+		"Details": "The Light Rifle is the smallest of the ''Rifle'' family. The precursor to the modern Autocannon, the Rifle is based on the main guns used by tanks on pre-spaceflight Terra.",
 		"Icon": "uixSvgIcon_weapon_Ballistic"
 	},
 	"BonusValueA": "",
@@ -74,8 +64,8 @@
 	"ComponentSubType": "Weapon",
 	"PrefabIdentifier": "AC5",
 	"BattleValue": 0,
-	"InventorySize": 2,
-	"Tonnage": 4,
+	"InventorySize": 1,
+	"Tonnage": 3,
 	"AllowedLocations": "All",
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
@@ -83,7 +73,10 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_very-long"
+			"range_very-long",
+			"PeripheryFCSSupported",
+			"RevolverRifleSupported-Light",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

@@ -2,7 +2,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.3",
 			"unit_vehicle",
 			"unit_assault",
@@ -275,7 +275,7 @@
 		},
 		{
 			"MountedLocation": "Rear",
-			"ComponentDefID": "emod_engineslots_FuelCell",
+			"ComponentDefID": "emod_engineslots_fuelcell_center",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"

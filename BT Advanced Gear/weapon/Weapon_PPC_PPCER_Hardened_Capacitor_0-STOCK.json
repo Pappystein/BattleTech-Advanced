@@ -5,19 +5,16 @@
 				"CategoryID": "w/e/p/erppc"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"PPCDEBUFF: 2",
-				"IgnoreDamage"
-			]
-		},
-		"Flags": {
-			"flags": [
+				"IgnoreDamage",
+				"WeaponAttachmentCompatible: PPC FCS"
+			],
+		"Flags": [
 				"ignore_damage",
 				"not_broken",
 				"autorepair"
 			]
-		}
 	},
 	"Category": "Energy",
 	"Type": "PPC",
@@ -31,8 +28,8 @@
 	],
 	"AmmoCategory": "NotSet",
 	"StartingAmmoCapacity": 0,
-	"HeatGenerated": 48,
-	"Damage": 70,
+	"HeatGenerated": 65,
+	"Damage": 85,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 0,
@@ -47,7 +44,7 @@
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 3,
 	"Instability": 20,
-	"WeaponEffectID": "WeaponEffect-Weapon_PPC",
+	"WeaponEffectID": "WeaponEffect-Weapon_PPCER",
 	"Description": {
 		"Cost": 350000,
 		"Rarity": 20,
@@ -128,7 +125,9 @@
 		"items": [
 			"component_type_stock",
 			"component_type_lostech",
-			"range_extreme"
+			"range_extreme",
+			"PPCFCSSupported-Standard",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

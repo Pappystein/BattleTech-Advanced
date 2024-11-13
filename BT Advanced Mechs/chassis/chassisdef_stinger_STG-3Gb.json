@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
-	},
 	"Description": {
 		"Cost": 1600000,
 		"Rarity": 5,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Royal Stinger",
 		"Id": "chassisdef_stinger_STG-3Gb",
-		"Name": "Stinger Royal",
+		"Name": "Royal Stinger",
 		"Details": "The Royal Stinger introduced in 2720 used a XL Engine and Endo Steel chassis, to be able to mount a battery of three medium lasers and one Small Laser. The heat-sinks were upgraded to Double Heat Sinks and the speed and jumping distance of the 'Mech were also been improved slightly. ",
 		"Icon": "uixTxrIcon_stinger"
 	},
@@ -57,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -71,7 +65,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -94,7 +92,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -117,7 +115,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -194,7 +196,8 @@
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
-			"RoyalMech"
+			"RoyalMech",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},

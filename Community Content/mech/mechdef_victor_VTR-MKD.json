@@ -10,6 +10,7 @@
 			"unit_bracket_high",
 			"unit_generic",
 			"Tortuga",
+			"MacksMercs",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""
@@ -332,7 +333,20 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_Plasma_1"
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "Gear_Attachment_PlasmaFCS",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": 0,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false,
+			"TargetComponentGUID":"target_Plasma_1"
 		},
 		{
 			"MountedLocation": "LeftArm",
@@ -343,7 +357,20 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_Plasma_2"
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "Gear_Attachment_PlasmaFCS",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": 0,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false,
+			"TargetComponentGUID":"target_Plasma_2"
 		},
 		{
 			"MountedLocation": "LeftArm",
@@ -351,17 +378,6 @@
 			"SimGameUID": null,
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "Weapon_SRM_SSRM2_0-STOCK",
-			"SimGameUID": null,
-			"ComponentDefType": "Weapon",
-			"HardpointSlot": 0,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
@@ -391,17 +407,6 @@
 		},
 		{
 			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_Streak_SRM_half",
-			"SimGameUID": null,
-			"ComponentDefType": "AmmunitionBox",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "LeftTorso",
 			"ComponentDefID": "Ammo_AmmunitionBox_Generic_Plasma",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
@@ -414,6 +419,17 @@
 		{
 			"MountedLocation": "LeftTorso",
 			"ComponentDefID": "Ammo_AmmunitionBox_Generic_Plasma",
+			"SimGameUID": null,
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftTorso",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HeavyFlamer",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -491,17 +507,6 @@
 		{
 			"MountedLocation": "RightArm",
 			"ComponentDefID": "Weapon_MachineGun_HeavyMG_0-STOCK",
-			"SimGameUID": null,
-			"ComponentDefType": "Weapon",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Weapon_Flamer_Flamer_0-STOCK",
 			"SimGameUID": null,
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": -1,

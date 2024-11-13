@@ -7,7 +7,7 @@
 		"Model": "",
 		"UIName": "Primitive Thunderbolt",
 		"Id": "chassisdef_thunderbolt_TDR-1C",
-		"Name": "Thunderbolt Primitive",
+		"Name": "Primitive Thunderbolt",
 		"Details": "This was the original Thunderbolt design produced in 2491 by Earthwerks Limited, built with Primitive Technology, until the introduction of the modern TDR-5S in 2505. It carries the exact same weapon loadout as the later TDR-5S however, making it still quite threatening.",
 		"Icon": "uixTxrIcon_thunderbolt"
 	},
@@ -60,11 +60,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -78,15 +78,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -109,11 +109,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -127,7 +127,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -203,7 +203,8 @@
 	"VariantName": "TDR-1C",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -212,7 +213,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

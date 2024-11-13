@@ -230,7 +230,10 @@
 		"items": [
 			"ClanMech",
 			"OmniMech",
-			"HeroMech"
+			"HeroMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -298,15 +301,15 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -338,7 +341,7 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -352,15 +355,15 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,

@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.50",
 			"unit_vehicle",
 			"unit_medium",
@@ -29,10 +29,12 @@
 			"1stMcCarronsArmoredCavalry",
 			"WarriorHouseImarra",
 			"6thConfederationReserveCavalry",
-			"MagistracyOfCanopus",
+			"FroncReaches",
+			"MagistracyofCanopus",
 			"RaventhirsIronHand",
 			"2ndCanopianFusiliers",
 			"MagistracyCavaliers",
+			"CalderonProtectorate",
 			"TaurianConcordat",
 			"TaurianGuard",
 			"PleiadesHussars",

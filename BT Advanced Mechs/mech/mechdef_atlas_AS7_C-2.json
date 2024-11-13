@@ -9,9 +9,16 @@
 			"unit_lance_tank",
 			"unit_role_brawler",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""
@@ -107,15 +114,6 @@
 		}
 	],
 	"inventory": [
-		{
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_armorslots_standard",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"DamageLevel": "Functional",
-			"prefabName": "",
-			"hasPrefabName": true
-		},
 		{
 			"MountedLocation": "CenterTorso",
 			"ComponentDefID": "emod_engine_300",

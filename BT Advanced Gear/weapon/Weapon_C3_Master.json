@@ -8,6 +8,14 @@
 				"CategoryID": "w/s/t/tag"
 			}
 		],
+		"DecoratorComponent":[
+			{
+				"Text":"C3M",               
+				"Color":"#ff1616",      
+				"Icon":"mesh-network",       
+				"Importance": 10
+			}
+		],
 		"Linked": {
 			"Links": [
 				{
@@ -17,17 +25,17 @@
 				}
 			]
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"C3",
 				"C3Master",
 				"C3ECMWeakness",
 				"C3MResolve: 120, +2",
 				"C3MEvasion: 120, +1",
-				"TAG: 2",
-				"EvasionIgnored: 3"
-			]
-		}
+				"C3TAG: +2",
+				"EvasionIgnored: 3",
+				"WeaponAttachmentCompatible: TAG FCS",
+				"ReservedSlots: 1"
+		]
 	},
 	"Category": "AntiPersonnel",
 	"Type": "Laser",
@@ -67,7 +75,7 @@
 		"UIName": "C3 Master",
 		"Id": "Weapon_C3_Master",
 		"Name": "C3 Master",
-		"Details": "Acting as the core of a C3 Network, the C3 Master unit provides incredible coordination efforts for C3-equipped units, including increased resolve generation and evasion ignore for weapon attacks. It also functions as a super-powered TAG system, allowing for coordinated designation of targets. C3 Masters coordinate with other C3 units to provide targeting data for all units linked into the network, though Master units are not strictly necessary for the network to function even if they do provide the best benefits to units in the network.",
+		"Details": "Acting as the core of a C3 Network, the C3 Master unit provides incredible coordination efforts for C3-equipped units, including increased resolve generation and evasion ignore for weapon attacks. It also functions as a super-powered targeting laser system, allowing for coordinated designation of targets. C3 Masters coordinate with other C3 units to provide targeting data for all units linked into the network, though Master units are not strictly necessary for the network to function even if they do provide the best benefits to units in the network.",
 		"Icon": "mesh-network"
 	},
 	"BonusValueA": "",
@@ -294,7 +302,9 @@
 		"items": [
 			"component_type_stock",
 			"range_long",
-			"lv-shares-sensors"
+			"lv-shares-sensors",
+			"TAGFCSSupported",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

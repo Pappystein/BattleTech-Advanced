@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_PIKE_CLAN",
-		"Name": "Pike Support Vehicle",
+		"Name": "Pike",
 		"Details": "",
 		"Icon": "Pike",
-		"Cost": 993,
+		"Cost": 1000000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -18,7 +18,7 @@
 	"PrefabBase": "alacorn",
 	"Tonnage": 60,
 	"weightClass": "HEAVY",
-	"BattleValue": 993,
+	"BattleValue": 7500000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"movementType": "Tracked",
@@ -71,7 +71,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -108,23 +108,23 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],

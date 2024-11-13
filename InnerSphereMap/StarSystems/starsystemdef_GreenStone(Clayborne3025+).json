@@ -158,8 +158,8 @@
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
-		"Circinus",
 		"AuriganPirates",
+		"Circinus",
 		"Locals"
 	],
 	"contractTargetIDs": [
@@ -167,7 +167,7 @@
 		"Steiner",
 		"Marik",
 		"Marian",
-		"Rim",
+		"RimWorldsRepublic",
 		"AuriganPirates",
 		"Mercenaries",
 		"Illyrian",

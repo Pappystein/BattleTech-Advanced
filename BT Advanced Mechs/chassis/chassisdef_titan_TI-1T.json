@@ -62,7 +62,9 @@
 	"DFASelfDamage": 110,
 	"DFAInstability": 55,
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"AssaultMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"MechPartMax": 0,
@@ -129,15 +131,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -151,11 +153,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,
@@ -169,7 +171,7 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,
@@ -183,11 +185,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,
@@ -201,15 +203,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,

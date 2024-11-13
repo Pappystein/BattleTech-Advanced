@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_APC_INDRA_CLAN",
-		"Name": "Indra Transport",
+		"Name": "Indra",
 		"Details": "",
 		"Icon": "Indra",
-		"Cost": 564,
+		"Cost": 1000000,
 		"Rarity": 2,
 		"Purchasable": false
 	},
@@ -18,7 +18,7 @@
 	"PrefabBase": "apc",
 	"Tonnage": 35,
 	"weightClass": "LIGHT",
-	"BattleValue": 564,
+	"BattleValue": 7500000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"movementType": "Wheeled",
@@ -71,7 +71,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -108,19 +108,19 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],

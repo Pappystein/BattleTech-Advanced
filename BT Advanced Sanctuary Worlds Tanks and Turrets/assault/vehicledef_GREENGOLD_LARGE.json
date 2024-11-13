@@ -4,7 +4,7 @@
 		"Id": "vehicledef_GREENGOLD_LARGE",
 		"Name": "Greengold Assault Tank",
 		"Details": "",
-		"Icon": "Greengold Assault Tank",
+		"Icon": "Ontos",
 		"Cost": 993,
 		"Rarity": 0,
 		"Purchasable": false
@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"unit_vehicle",
 			"unit_assault",
 			"unit_tracks",

@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_Burro_Cistern",
-		"Name": "Burro Flatbed",
+		"Name": "Burro",
 		"Details": "",
 		"Icon": "J27",
-		"Cost": 993,
+		"Cost": 50000,
 		"Rarity": 2,
 		"Purchasable": false
 	},
@@ -71,7 +71,7 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

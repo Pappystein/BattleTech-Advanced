@@ -1369,7 +1369,7 @@
 						"customUnitName": "",
 						"customHeraldryDefId": "heraldrydef_restoration",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_highlander_HGN-732b",
+						"unitDefId": "mechdef_sorcerer_SRC-1CC",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": ""
@@ -1681,7 +1681,7 @@
 						"customUnitName": "",
 						"customHeraldryDefId": "",
 						"unitType": "Mech",
-						"unitDefId": "mechdef_thunderbolt_TDR-5S",
+						"unitDefId": "mechdef_liberty_LBT-O",
 						"unitTagSet": {
 							"items": [],
 							"tagSetSourceFile": ""

@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_ARES_CLAN",
-		"Name": "Ares Medium Tank",
+		"Name": "Ares",
 		"Details": "",
 		"Icon": "Ares",
-		"Cost": 993,
+		"Cost": 1000000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -18,7 +18,7 @@
 	"PrefabBase": "ares",
 	"Tonnage": 40,
 	"weightClass": "MEDIUM",
-	"BattleValue": 1151,
+	"BattleValue": 7500000,
 	"TopSpeed": 85,
 	"TurnRadius": 90,
 	"movementType": "Tracked",
@@ -71,11 +71,11 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -112,7 +112,7 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],

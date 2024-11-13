@@ -9,13 +9,11 @@
 			"ExplosionDamage": 50,
 			"StabilityDamage": 75
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"StabDamage: 75",
 				"WpnAccuracy: +1",
 				"WeaponBoom: 50"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Gauss",
@@ -45,6 +43,7 @@
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 0,
 	"Instability": 75,
+	"AMSImmune": true,
 	"WeaponEffectID": "WeaponEffect-Weapon_LRM10",
 	"Description": {
 		"Cost": 300000,
@@ -115,7 +114,8 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

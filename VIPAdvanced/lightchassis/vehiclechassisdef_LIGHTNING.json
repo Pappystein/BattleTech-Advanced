@@ -5,10 +5,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_LIGHTNING",
-		"Name": "Lightning Attack Hovercraft",
+		"Name": "Lightning",
 		"Details": "",
 		"Icon": "Lightning",
-		"Cost": 564,
+		"Cost": 250000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -19,7 +19,7 @@
 	"PrefabBase": "lightning",
 	"Tonnage": 35,
 	"weightClass": "LIGHT",
-	"BattleValue": 564,
+	"BattleValue": 500000,
 	"TopSpeed": 125,
 	"TurnRadius": 90,
 	"movementType": "Wheeled",
@@ -104,15 +104,15 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

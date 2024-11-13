@@ -5,14 +5,13 @@
 				"CategoryID": "w/a/a/gatling"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"WpnCrits: -90%",
-				"AntiBA: 100%",
-				"ProjectileBurst: 5",
-				"VariableBurstCount: 3"
-			]
-		}
+		"BonusDescriptions": [
+			"WpnCrits: -90%",
+			"AntiBA: 100%",
+			"ProjectileBurst: 5",
+			"WeaponJAMMultiple2Stage: 5%, 10%",
+			"VariableBurstCount: 3"
+		]
 	},
 	"Category": "Ballistic",
 	"Type": "MachineGun",
@@ -98,7 +97,10 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_close"
+			"range_close",
+			"MGFCSSupported-Gatling",
+			"MGArraySupported-Gatling",
+			"WebbTCSupported-MG"
 		],
 		"tagSetSourceFile": ""
 	}

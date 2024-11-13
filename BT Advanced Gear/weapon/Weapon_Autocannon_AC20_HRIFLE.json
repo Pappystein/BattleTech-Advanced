@@ -3,26 +3,19 @@
 		"Category": [
 			{
 				"CategoryID": "w/a/a/rifle"
+			},
+			{
+				"CategoryID": "NeverMelee"
 			}
 		],
-		"ComponentExplosion": {
-			"ExplosionDamagePerAmmo": 60,
-			"StabilityDamagePerAmmo": 6
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"WpnRecoil: 4",
-				"InternalAmmo: 12",
-				"CostPerShot: 100",
-				"IsRifle"
-			]
-		},
-		"InternalAmmoTonnage": {
-            "InternalAmmoTons": 2.0
-        },
-		"AmmoCost": {
-			"PerUnitCost": 100
-		}
+		"BonusDescriptions": [
+			"WpnRecoil: 4",
+			"WpnAccuracy: -1",
+			"NoFireInMelee",
+			"IsRifle",
+			"WeaponAttachmentCompatible: Periphery FCS",
+			"WeaponAttachmentCompatible: Rifle Revolver"
+		]
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -34,16 +27,16 @@
 		360,
 		540
 	],
-	"AmmoCategory": "Flamer",
-	"StartingAmmoCapacity": 12,
-	"HeatGenerated": 12,
-	"Damage": 60,
+	"AmmoCategory": "RifleHeavy",
+	"StartingAmmoCapacity": 0,
+	"HeatGenerated": 18,
+	"Damage": 54,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 0,
 	"DamageVariance": 0,
 	"HeatDamage": 0,
-	"AccuracyModifier": 0,
+	"AccuracyModifier": 1,
 	"CriticalChanceMultiplier": 1,
 	"AOECapable": false,
 	"IndirectFireCapable": false,
@@ -51,7 +44,7 @@
 	"ShotsWhenFired": 1,
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 4,
-	"Instability": 40,
+	"Instability": 30,
 	"WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
 	"Description": {
 		"Cost": 150000,
@@ -62,7 +55,7 @@
 		"UIName": "Heavy Rifle",
 		"Id": "Weapon_Autocannon_AC20_HRIFLE",
 		"Name": "Heavy Rifle",
-		"Details": "The Heavy Rifle is the largest Rifle in the family. The precursor to the modern Autocannon, the Rifle is based on the main guns used by tanks on pre-spaceflight Terra. The Heavy rifle carries 1 ton of ammo with 12 rounds. <b><color=#099ff2>VOLATILE!</color></b>",
+		"Details": "The Heavy Rifle is the largest Rifle in the family. The precursor to the modern Autocannon, the Rifle is based on the main guns used by tanks on pre-spaceflight Terra.",
 		"Icon": "uixSvgIcon_weapon_Ballistic"
 	},
 	"BonusValueA": "",
@@ -71,8 +64,8 @@
 	"ComponentSubType": "Weapon",
 	"PrefabIdentifier": "AC20",
 	"BattleValue": 0,
-	"InventorySize": 4,
-	"Tonnage": 10,
+	"InventorySize": 3,
+	"Tonnage": 8,
 	"AllowedLocations": "All",
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
@@ -80,7 +73,10 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_standard"
+			"range_standard",
+			"PeripheryFCSSupported",
+			"RevolverRifleSupported-Heavy",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

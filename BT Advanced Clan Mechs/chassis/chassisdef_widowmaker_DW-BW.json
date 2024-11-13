@@ -185,7 +185,10 @@
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
-			"ClanMech"
+			"ClanMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -244,7 +247,7 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,
@@ -258,11 +261,11 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -276,7 +279,7 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,
@@ -290,11 +293,11 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -308,7 +311,7 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				}
 			],
 			"Tonnage": 0,
@@ -322,11 +325,11 @@
 			"Hardpoints": [
 				{
 					"Omni": true,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": true,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,

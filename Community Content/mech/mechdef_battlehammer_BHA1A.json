@@ -22,7 +22,7 @@
 	"ChassisID": "chassisdef_battlehammer_BHA1A",
 	"HeraldryID": null,
 	"Description": {
-		"Cost": 2234962,
+		"Cost": 11174810,
 		"Rarity": 5,
 		"Purchasable": true,
 		"Manufacturer": null,
@@ -30,7 +30,7 @@
 		"UIName": "BattleHammer BHA-1A",
 		"Id": "mechdef_battlehammer_BHA1A",
 		"Name": "BattleHammer",
-		"Details": "The BattleHammer was the launching point for Pafftek Industries.  It is a production derivative of a Frankenmech made early in the Clan Invasion by a merc company.   The 'Arena Flagship' utilizes Clan Tech\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
+		"Details": "The BattleHammer was the launching point for Pafftek Industries.  It is a production derivative of a frankenmech made early in the Clan Invasion by a merc company.   The 'Arena Flagship' utilizes Clan Tech\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
 		"Icon": "uixTxrIcon_battlemaster"
 	},
 	"simGameMechPartCost": 1130000,
@@ -48,64 +48,64 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftArm",
-			"CurrentArmor": 115,
+			"CurrentArmor": 130,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 70,
-			"AssignedArmor": 115,
+			"AssignedArmor": 130,
 			"AssignedRearArmor": -1
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftTorso",
-			"CurrentArmor": 135,
-			"CurrentRearArmor": 50,
+			"CurrentArmor": 140,
+			"CurrentRearArmor": 60,
 			"CurrentInternalStructure": 90,
-			"AssignedArmor": 135,
-			"AssignedRearArmor": 50
+			"AssignedArmor": 140,
+			"AssignedRearArmor": 60
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "CenterTorso",
-			"CurrentArmor": 190,
-			"CurrentRearArmor": 65,
+			"CurrentArmor": 197,
+			"CurrentRearArmor": 75,
 			"CurrentInternalStructure": 135,
-			"AssignedArmor": 190,
-			"AssignedRearArmor": 65
+			"AssignedArmor": 197,
+			"AssignedRearArmor": 75
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightTorso",
-			"CurrentArmor": 135,
-			"CurrentRearArmor": 50,
+			"CurrentArmor": 140,
+			"CurrentRearArmor": 60,
 			"CurrentInternalStructure": 90,
-			"AssignedArmor": 135,
-			"AssignedRearArmor": 50
+			"AssignedArmor": 140,
+			"AssignedRearArmor": 60
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightArm",
-			"CurrentArmor": 115,
+			"CurrentArmor": 130,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 70,
-			"AssignedArmor": 115,
+			"AssignedArmor": 130,
 			"AssignedRearArmor": -1
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftLeg",
-			"CurrentArmor": 130,
+			"CurrentArmor": 135,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 90,
-			"AssignedArmor": 130,
+			"AssignedArmor": 135,
 			"AssignedRearArmor": -1
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightLeg",
-			"CurrentArmor": 130,
+			"CurrentArmor": 135,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 90,
-			"AssignedArmor": 130,
+			"AssignedArmor": 135,
 			"AssignedRearArmor": -1
 		}
 	],
@@ -329,17 +329,6 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "emod_arm_part_hand",
-			"SimGameUID": "",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
 			"MountedLocation": "RightArm",
 			"ComponentDefID": "emod_arm_part_shoulder",
 			"SimGameUID": "",
@@ -364,17 +353,6 @@
 		{
 			"MountedLocation": "RightArm",
 			"ComponentDefID": "emod_arm_part_lower",
-			"SimGameUID": "",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "emod_arm_part_hand",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": 0,

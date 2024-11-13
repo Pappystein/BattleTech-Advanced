@@ -3,9 +3,9 @@ mechdef_commando_COM-TDK,Mech,1,8
 mechdef_firestarter_FS9-E,Mech,1,8
 mechdef_jenner_JR7-O,Mech,1,8
 mechdef_locust_LCT-PB,Mech,1,8
-mechdef_osiris_OSR-SK,Mech,1,8
+mechdef_osiris_OSR-SE,Mech,1,8
 mechdef_panther_PNT-KK,Mech,1,8
-mechdef_spider_SDR-AN,Mech,1,8
+mechdef_spider_SDR-A,Mech,1,8
 mechdef_urbanmech_UM-K9,Mech,1,9
 mechdef_wolfhound_WLF-IIC,Mech,1,8
 mechdef_incubus_INC-SA,Mech,1,8
@@ -23,3 +23,5 @@ mechdef_locustiic_LCT-IIC-TT,Mech,1,8
 mechdef_hollander_BZK-BZ,Mech,1,8
 mechdef_brigand_LDT-AB,Mech,1,8
 mechdef_ostscout_OTT-OP,Mech,1,8
+mechdef_cephalus_CEP-OAB,Mech,1,8
+mechdef_tarantula_ZPH-RC,Mech,1,8

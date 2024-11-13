@@ -1,10 +1,16 @@
 {
 	"ID": "faction_Circinus",
-	"Name": "Circinus Federation",
+	"Name": "the Circinus Federation",
 	"ShortName": "Circinus",
 	"Demonym": "Circinian",
 	"Government": "Federation",
-	"Allies": [],
+	"Allies": [
+		"BullardsArmoredCavalry",
+		"QuintsOlympianGroundpounders",
+		"GraysGhosts",
+		"Mercenaries",
+		"Locals"
+	],
 	"Enemies": [
 		"Steiner",
 		"Marik",
@@ -14,6 +20,7 @@
 		"Mercenaries",
 		"Illyrian",
 		"Lothian",
+		"ClanFireMandrill",
 		"Locals"
 	],
 	"Presence": 0.1,

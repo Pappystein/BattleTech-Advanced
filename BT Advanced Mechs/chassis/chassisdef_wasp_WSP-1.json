@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Lower"
-		}
-	},
 	"Description": {
 		"Cost": 1600000,
 		"Rarity": 1,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Primitive Wasp",
 		"Id": "chassisdef_wasp_WSP-1",
-		"Name": "Wasp Primitive",
+		"Name": "Primitive Wasp",
 		"Details": "The Primitive WSP-1 was introduced in the very early days of the Star League as a platform for deploying the then-newly developed Mech Jump Jets. Making a dramatic entrance to its demonstration, the WSP-1 was immediately approved and showed its worth over its long lifetime of service. Still, constructed with primitive components, the WSP-1 was later replaced with the more modern WSP-1A.",
 		"Icon": "uixTxrIcon_wasp"
 	},
@@ -73,7 +67,12 @@
 		},
 		{
 			"Location": "LeftTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 50,
@@ -102,7 +101,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -178,7 +177,9 @@
 	"VariantName": "WSP-1",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"ArmLimitLowerRight",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -187,7 +188,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

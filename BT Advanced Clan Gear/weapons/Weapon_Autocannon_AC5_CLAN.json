@@ -8,14 +8,13 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"VariableBurstCount: 2",
 				"WpnRecoil: 2",
 				"WeaponJAMFlat: 15",
-				"NoFireInMelee"
+				"NoFireInMelee",
+				"WeaponAttachmentCompatible: Autocannon FCS"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -54,9 +53,9 @@
 		"Purchasable": true,
 		"Manufacturer": "CLAN",
 		"Model": "Tactical Autocannon",
-		"UIName": "Ultra AC/5 (C)",
+		"UIName": "UAC/5 (C)",
 		"Id": "Weapon_Autocannon_AC5_CLAN",
-		"Name": "UAC/5 (C)",
+		"Name": "Ultra AC/5 (C)",
 		"Details": "Ultra Autocannons boast double the rate of fire of a regular Autocannon, with only moderate increases in weight, size, and heat. The UAC/5 is a reliable long range weapon.  \n\n<b><color=#ffcc00>Uses UAC5 Ammo.</color></b> \n\n <b><color=#00ffff>Left Click on Chance to hit during battle to switch firing mode</color> </b>",
 		"Icon": "uixSvgIcon_weapon_Ballistic"
 	},
@@ -64,7 +63,7 @@
 	"BonusValueB": "",
 	"ComponentType": "Weapon",
 	"ComponentSubType": "Weapon",
-	"PrefabIdentifier": "AC5",
+	"PrefabIdentifier": "uac5",
 	"BattleValue": 0,
 	"InventorySize": 3,
 	"Tonnage": 7,
@@ -76,12 +75,12 @@
 		{
 			"Id": "x1",
 			"UIName": "x1",
-			"isBaseMode": true
+			"isBaseMode": false
 		},
 		{
 			"Id": "x2",
 			"UIName": "x2",
-			"isBaseMode": false,
+			"isBaseMode": true,
 			"ShotsWhenFired": 1,
 			"HeatGenerated": 10,
 			"FlatJammingChance": 0.15
@@ -91,7 +90,9 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_very-long"
+			"range_very-long",
+			"AutocannonFCSSupported-Ultra",
+			"WebbTCSupported-Ultra"
 		],
 		"tagSetSourceFile": ""
 	}

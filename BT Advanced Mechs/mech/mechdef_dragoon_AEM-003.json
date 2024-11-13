@@ -8,8 +8,10 @@
 			"unit_lance_assassin",
 			"unit_role_brawler",
 			"unit_release",
-			"unit_rarity_4",
-			"Rim",
+			"unit_rarity_6",
+			"RimWorldsRepublic",
+			"1stHeliusLegionnaires",
+			"8thHeliusFusiliers",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""
@@ -25,7 +27,7 @@
 		"UIName": "Dragoon AEM-003",
 		"Id": "mechdef_dragoon_AEM-003",
 		"Name": "Dragoon",
-		"Details": "Designed by the Rim Worlds Republic during the Amaris Civil War, the Dragoon very quickly became a lost BattleMech as the SLDF purged the existing examples and refused to take any on the Exodus. However, they were not thorough enough and some Dragoons, as well as their design plans, survived in a bunker where the Rim Collection dug them up in the late 3050s. The Dragoon AEM-003 is a fire support model, armed primarily with 3 LRM-15s with Artemis IV while a battery of Medium and Small Pulse Lasers play close-range defense.",
+		"Details": "Designed by the Rim Worlds Republic during the Amaris Civil War, the Dragoon very quickly became a lost BattleMech as the SLDF purged the existing examples and refused to take any on the Exodus. However, they were not thorough enough and some Dragoons, as well as their design plans, survived and were put back into production in the late 3050s. The Dragoon AEM-003 is a fire support model, armed primarily with 3 LRM-15s with Artemis IV while a battery of Medium and Small Pulse Lasers play close-range defense.",
 		"Icon": "uixTxrIcon_dragoon"
 	},
 	"simGameMechPartCost": 880000,
@@ -181,17 +183,6 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_ARTEMISIV",
-			"SimGameUID": null,
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
 			"MountedLocation": "LeftLeg",
 			"ComponentDefID": "emod_leg_hip",
 			"SimGameUID": "",
@@ -354,18 +345,20 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_LRM_1"
 		},
 		{
 			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
 			"SimGameUID": null,
-			"ComponentDefType": "AmmunitionBox",
+			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"TargetComponentGUID":"target_LRM_1"
 		},
 		{
 			"MountedLocation": "LeftArm",
@@ -423,17 +416,6 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "LeftTorso",
-			"ComponentDefID": "Gear_HeatSink_Generic_Double",
-			"SimGameUID": null,
-			"ComponentDefType": "HeatSink",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
 			"MountedLocation": "CenterTorso",
 			"ComponentDefID": "Weapon_Laser_MediumLaser_0-STOCK",
 			"SimGameUID": null,
@@ -464,7 +446,20 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_LRM_2"
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
+			"SimGameUID": null,
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false,
+			"TargetComponentGUID":"target_LRM_2"
 		},
 		{
 			"MountedLocation": "RightArm",
@@ -486,18 +481,20 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_LRM_3"
 		},
 		{
 			"MountedLocation": "RightArm",
-			"ComponentDefID": "Ammo_AmmunitionBox_ArtemisIV_LRM",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
 			"SimGameUID": null,
-			"ComponentDefType": "AmmunitionBox",
+			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"TargetComponentGUID":"target_LRM_3"
 		},
 		{
 			"MountedLocation": "RightArm",

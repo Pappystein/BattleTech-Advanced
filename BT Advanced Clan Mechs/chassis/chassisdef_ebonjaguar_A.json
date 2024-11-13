@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -111,7 +105,7 @@
 		"UIName": "Ebon Jaguar",
 		"Id": "chassisdef_ebonjaguar_A",
 		"Name": "Ebon Jaguar",
-		"Details": "Introduced in 3049 to address flaws in the venerable Hellbringer, by Operation REVIVAL the Ebon Jaguar had only just started to spread through the Jaguar's touman with the Inner Sphere first encountering the design during the Battle of Luthien. By Operation BULLDOG the Cauldron-Born made up a large proportion of the heavy 'Mechs of the rebuilding Smoke Jaguars, and following their Annihilation the design proliferated through the remaining Clans. Built around what was once the largest gun in the Clan arsenal, the Cauldron-Born A is capable of dealing blistering damage at a variety of ranges. For long range, the A uses a pair of ER Large Lasers. At close range, the MechWarrior can switch to a Ultra Autocannon/20 that carries a fair amount of ammunition, along with a Medium Pulse Laser, and three ER Medium Lasers. For light work, it carries a pair of Machine Guns and a multi-purpose Flamer.",
+		"Details": "Introduced in 3049 to address flaws in the venerable Hellbringer, by Operation REVIVAL the Ebon Jaguar had only just started to spread through the Jaguar's touman with the Inner Sphere first encountering the design during the Battle of Luthien. By Operation BULLDOG the Ebon Jaguar made up a large proportion of the heavy 'Mechs of the rebuilding Smoke Jaguars, and following their Annihilation the design proliferated through the remaining Clans. Built around what was once the largest gun in the Clan arsenal, the Ebon Jaguar A is capable of dealing blistering damage at a variety of ranges. For long range, the A uses a pair of ER Large Lasers. At close range, the MechWarrior can switch to a Ultra Autocannon/20 that carries a fair amount of ammunition, along with a Medium Pulse Laser, and three ER Medium Lasers. For light work, it carries a pair of Machine Guns and a multi-purpose Flamer.",
 		"Icon": "uixTxrIcon_ebonjaguar"
 	},
 	"MovementCapDefID": "movedef_ebonjaguar",
@@ -163,15 +157,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -185,15 +179,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -216,7 +210,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				}
 			],
@@ -230,15 +224,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -315,12 +309,15 @@
 	"ChassisTags": {
 		"items": [
 			"ClanMech",
-			"OmniMech"
+			"OmniMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Heavy Cavalry",
-	"YangsThoughts": "Introduced in 3049 to address flaws in the venerable Hellbringer, by Operation REVIVAL the Ebon Jaguar had only just started to spread through the Jaguar's touman with the Inner Sphere first encountering the design during the Battle of Luthien. By Operation BULLDOG the Cauldron-Born made up a large proportion of the heavy 'Mechs of the rebuilding Smoke Jaguars, and following their Annihilation the design proliferated through the remaining Clans. Built around what was once the largest gun in the Clan arsenal, the Cauldron-Born A is capable of dealing blistering damage at a variety of ranges. For long range, the A uses a pair of ER Large Lasers. At close range, the MechWarrior can switch to a Ultra Autocannon/20 that carries a fair amount of ammunition, along with a Medium Pulse Laser, and three ER Medium Lasers. For light work, it carries a pair of Machine Guns and a multi-purpose Flamer.",
+	"YangsThoughts": "Introduced in 3049 to address flaws in the venerable Hellbringer, by Operation REVIVAL the Ebon Jaguar had only just started to spread through the Jaguar's touman with the Inner Sphere first encountering the design during the Battle of Luthien. By Operation BULLDOG the Ebon Jaguar made up a large proportion of the heavy 'Mechs of the rebuilding Smoke Jaguars, and following their Annihilation the design proliferated through the remaining Clans. Built around what was once the largest gun in the Clan arsenal, the Ebon Jaguar A is capable of dealing blistering damage at a variety of ranges. For long range, the A uses a pair of ER Large Lasers. At close range, the MechWarrior can switch to a Ultra Autocannon/20 that carries a fair amount of ammunition, along with a Medium Pulse Laser, and three ER Medium Lasers. For light work, it carries a pair of Machine Guns and a multi-purpose Flamer.",
 	"CustomParts": {
 		"CustomParts": []
 	}

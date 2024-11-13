@@ -30,7 +30,7 @@
 	"PrefabBase": "condor",
 	"Tonnage": 50,
 	"weightClass": "MEDIUM",
-	"BattleValue": 993,
+	"BattleValue": 3000000,
 	"TopSpeed": 500,
 	"TurnRadius": 90,
 	"SpotterDistanceMultiplier": 1,
@@ -82,11 +82,11 @@
 			"Location": "Front",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -123,11 +123,11 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],

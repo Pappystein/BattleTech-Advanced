@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
-		}
-	},
 	"Description": {
 		"Cost": 2123540,
 		"Rarity": 5,
@@ -14,7 +8,7 @@
 		"UIName": "Raven",
 		"Id": "chassisdef_raven_RVN-5X",
 		"Name": "Raven",
-		"Details": "Built to provide inexpensive battlefield support, the Raven-5X never found wide acceptance among buyers due to making use of clumsy and hard to supply Mech Mortars. Armed with a trio of Mech Mortar/2s, the Raven-5X is capable of deploying a wide variety of munitions anywhere on the battlefield without line of sight. Armored with 7 tons of armor, the -5X has only a pair of Medium Lasers and a Small Laser as direct-fire weapons, making it extremely weak to being attacked directly as it can't defend itself well. Ultimately, the Raven-5X failed financially and was sold off cheap to Periphery buyers.",
+		"Details": "Built to provide inexpensive battlefield support, the Raven-5X never found wide acceptance among buyers due to making use of clumsy and hard to supply Mech Mortars. Armed with a trio of Mech Mortar/2s, the Raven-5X is capable of deploying a wide variety of munitions anywhere on the battlefield without line of sight. Armored with 7 tons of armor, the -5X has only a pair of Medium Lasers and a Small Laser as direct-fire weapons, making it extremely weak to being attacked directly as it can't defend itself well. Ultimately, the Raven-5X failed financially and was sold off cheap to garrison forces.",
 		"Icon": "uixTxrIcon_raven"
 	},
 	"MovementCapDefID": "movedef_raven",
@@ -66,11 +60,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -84,11 +78,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -111,7 +105,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -125,7 +119,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -222,11 +216,15 @@
 	],
 	"VariantName": "RVN-5X",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"LightMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Mobile Artillery Support",
-	"YangsThoughts": "Built to provide inexpensive battlefield support, the Raven-5X never found wide acceptance among buyers due to making use of clumsy and hard to supply Mech Mortars. Armed with a trio of Mech Mortar/2s, the Raven-5X is capable of deploying a wide variety of munitions anywhere on the battlefield without line of sight. Armored with 7 tons of armor, the -5X has only a pair of Medium Lasers and a Small Laser as direct-fire weapons, making it extremely weak to being attacked directly as it can't defend itself well. Ultimately, the Raven-5X failed financially and was sold off cheap to Periphery buyers.",
+	"YangsThoughts": "Built to provide inexpensive battlefield support, the Raven-5X never found wide acceptance among buyers due to making use of clumsy and hard to supply Mech Mortars. Armed with a trio of Mech Mortar/2s, the Raven-5X is capable of deploying a wide variety of munitions anywhere on the battlefield without line of sight. Armored with 7 tons of armor, the -5X has only a pair of Medium Lasers and a Small Laser as direct-fire weapons, making it extremely weak to being attacked directly as it can't defend itself well. Ultimately, the Raven-5X failed financially and was sold off cheap to garrison forces.",
 	"CustomParts": {
 		"CustomParts": []
 	}

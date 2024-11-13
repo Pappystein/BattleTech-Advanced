@@ -8,7 +8,7 @@
 		"UIName": "Cyclops",
 		"Id": "chassisdef_cyclops_CP-10-Z-DC",
 		"Name": "Cyclops",
-		"Details": "The preferred command 'Mech of the Capellan Confederation, the CP-10-Z-DC is equipped with a Command Console instead of a B2000 Command Computer. To free up the weight required to fit this device, the 10-Z-DC reduces its LRM10 to a LRM5. The well supplied AC20 makes the Cyclops deadly at close range.  With the addition of the Command Console features this model is prized, but is extremely an extremely rare sight.",
+		"Details": "The preferred command 'Mech of the Capellan Confederation, the CP-10-Z-DC is equipped with a Command Console instead of a B2000 Command Computer. To free up the weight required to fit this device, the 10-Z-DC reduces its LRM10 to a LRM5. The well supplied AC20 makes the Cyclops deadly at close range.  With the addition of the Command Console features this model is prized, but it's an extremely rare sight.",
 		"Icon": "uixTxrIcon_cyclops"
 	},
 	"MovementCapDefID": "movedef_cyclops_CP-10-Z",
@@ -63,15 +63,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -85,8 +85,12 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
+				},
+				{
+					"Omni": false,
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,
@@ -99,7 +103,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -113,8 +117,12 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
+				},
+				{
+					"Omni": false,
+					"WeaponMountID": "AntiPersonnel"
 				}
 			],
 			"Tonnage": 0,
@@ -127,15 +135,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -210,7 +218,9 @@
 	],
 	"VariantName": "CP-10-Z-DC",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"AssaultMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Command & Fire Support",

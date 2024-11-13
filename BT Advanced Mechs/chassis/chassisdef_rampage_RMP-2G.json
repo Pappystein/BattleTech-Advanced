@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Hand"
-		}
-	},
 	"Description": {
 		"Cost": 6953705,
 		"Rarity": 5,
@@ -14,7 +8,7 @@
 		"UIName": "Rampage",
 		"Id": "chassisdef_rampage_RMP-2G",
 		"Name": "Rampage",
-		"Details": "The original version of the Rampage was introduced in 2735 and produced for decades prior to introduction of the Star League-enhanced RMP-5G (and later recovery by the Rim Collection in the 3050s). The 'Mech has a top speed of 54 km/h. It is equipped with an Autocannon/10, LRM-10, two Medium Lasers, a Large Laser, one Flamer, and a Machine Gun with a full ton of ammo. This decidedly low-tech version lacked the weight saving components of the 5G and used single heat sinks, though an additional ten heat sinks kept the 2G quite cool.",
+		"Details": "The original version of the Rampage was introduced in 2735 and produced for decades prior to introduction of the Star League-enhanced RMP-5G. The 'Mech has a top speed of 54 km/h. It is equipped with an Autocannon/10, LRM-10, two Medium Lasers, a Large Laser, one Flamer, and a Machine Gun with a full ton of ammo. This decidedly low-tech version lacked the weight saving components of the 5G and used single heat sinks, though an additional ten heat sinks kept the 2G quite cool.",
 		"Icon": "uixTxrIcon_rampage"
 	},
 	"MovementCapDefID": "movedef_battlemaster_BLR-1G",
@@ -66,7 +60,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -80,19 +74,19 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -106,7 +100,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -120,19 +114,19 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -146,7 +140,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -244,9 +238,12 @@
 	],
 	"VariantName": "RMP-2G",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitLowerLeft",
+			"AssaultMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Heavy Brawler & Close Assault",
-	"YangsThoughts": "The original version of the Rampage was introduced in 2735 and produced for decades prior to introduction of the Star League-enhanced RMP-5G (and later recovery by the Rim Collection in the 3050s). The 'Mech has a top speed of 54 km/h. It is equipped with an Autocannon/10, LRM-10, two Medium Lasers, a Large Laser, one Flamer, and a Machine Gun with a full ton of ammo. This decidedly low-tech version lacked the weight saving components of the 5G and used single heat sinks, though an additional ten heat sinks kept the 2G quite cool."
+	"YangsThoughts": "The original version of the Rampage was introduced in 2735 and produced for decades prior to introduction of the Star League-enhanced RMP-5G. The 'Mech has a top speed of 54 km/h. It is equipped with an Autocannon/10, LRM-10, two Medium Lasers, a Large Laser, one Flamer, and a Machine Gun with a full ton of ammo. This decidedly low-tech version lacked the weight saving components of the 5G and used single heat sinks, though an additional ten heat sinks kept the 2G quite cool."
 }

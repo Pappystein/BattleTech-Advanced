@@ -63,10 +63,10 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftTorso",
-			"CurrentArmor": 50,
+			"CurrentArmor": 45,
 			"CurrentRearArmor": 20,
 			"CurrentInternalStructure": 35,
-			"AssignedArmor": 50,
+			"AssignedArmor": 45,
 			"AssignedRearArmor": 20
 		},
 		{
@@ -81,10 +81,10 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightTorso",
-			"CurrentArmor": 50,
+			"CurrentArmor": 45,
 			"CurrentRearArmor": 20,
 			"CurrentInternalStructure": 35,
-			"AssignedArmor": 50,
+			"AssignedArmor": 45,
 			"AssignedRearArmor": 20
 		},
 		{
@@ -214,17 +214,6 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_Hartford_F3000",
-			"SimGameUID": null,
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": null,
-			"hasPrefabName": false
-		},
-		{
 			"MountedLocation": "LeftTorso",
 			"ComponentDefID": "Weapon_Laser_MicroLaserER_CLAN",
 			"SimGameUID": null,
@@ -303,7 +292,18 @@
 		},
 		{
 			"MountedLocation": "RightTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_MG_half",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_MG",
+			"SimGameUID": null,
+			"ComponentDefType": "AmmunitionBox",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Ammo_AmmunitionBox_Streak_SRM",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,

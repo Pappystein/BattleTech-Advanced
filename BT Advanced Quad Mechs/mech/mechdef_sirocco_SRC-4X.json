@@ -3,6 +3,7 @@
 		"items": [
 			"unit_mech",
 			"unit_quad",
+			"Ignore_SelfKnockdown",
 			"unit_assault",
 			"unit_lance_tank",
 			"unit_role_sniper",
@@ -172,150 +173,6 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
 			"MountedLocation": "Head",
 			"ComponentDefID": "Weapon_Laser_TAG",
 			"SimGameUID": "",
@@ -371,6 +228,17 @@
 			"hasPrefabName": false
 		},
 		{
+			"MountedLocation": "LeftTorso",
+			"ComponentDefID": "Weapon_Gauss_Scattershot_Railgun_0-STOCK",
+			"SimGameUID": "",
+			"ComponentDefType": "Weapon",
+			"HardpointSlot": 0,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
 			"MountedLocation": "RightLeg",
 			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SRM",
 			"SimGameUID": null,
@@ -383,7 +251,7 @@
 		},
 		{
 			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -394,7 +262,7 @@
 		},
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -405,7 +273,7 @@
 		},
 		{
 			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,

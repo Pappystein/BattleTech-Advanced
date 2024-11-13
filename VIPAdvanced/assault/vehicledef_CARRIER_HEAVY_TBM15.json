@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.73",
 			"unit_vehicle",
 			"unit_assault",
@@ -29,6 +29,10 @@
 			"2ndArmyVMu",
 			"11thArmyVEta",
 			"7thArmyVIota",
+			"Cameron",
+			"StarGuardCorps",
+			"ICorps",
+			"IVCorps",
 			"WordOfBlake",
 			"40thShadowDivision",
 			"9thDivisionWoB",
@@ -91,6 +95,8 @@
 			"HouseKhulan",
 			"Wolfs_Dragoons",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"KnightsOfCaerbannog",
 			"GraysGhosts",
 			"BroadswordLegion",
@@ -254,7 +260,7 @@
 		},
 		{
 			"MountedLocation": "Rear",
-			"ComponentDefID": "emod_engineslots_FuelCell",
+			"ComponentDefID": "emod_engineslots_fuelcell_center",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional"

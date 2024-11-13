@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Hand"
-		}
-	},
 	"Description": {
 		"Cost": 4254000,
 		"Rarity": 2,
@@ -13,7 +7,7 @@
 		"Model": "",
 		"UIName": "Royal Wyvern",
 		"Id": "chassisdef_wyvern_WVE-5Nb",
-		"Name": "Wyvern Royal",
+		"Name": "Royal Wyvern",
 		"Details": "The Wyvern was designed in 2660 as an urban warfare BattleMech for the Star League Defense Force. While considered slow when compared to other medium 'Mechs, and indeed vulnerable if forced to engage in open country, the Wyvern quickly proved itself to be one of the best urban combatants ever built. This upgrade, introduced concurrently with the original and utilized by the SLDF Royal brigades, uses an XL Engine for power. That change enabled an upgrade of the large laser to a pulse laser version and one of the small lasers to a Medium Laser, while an additional heat sink helps keep down the extra heat created by these weapons.",
 		"Icon": "uixTxrIcon_wyvern"
 	},
@@ -66,7 +60,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -80,7 +74,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -94,7 +88,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -108,7 +102,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -122,15 +116,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -206,7 +200,8 @@
 	"VariantName": "WVE-5Nb",
 	"ChassisTags": {
 		"items": [
-			"RoyalMech"
+			"RoyalMech",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},

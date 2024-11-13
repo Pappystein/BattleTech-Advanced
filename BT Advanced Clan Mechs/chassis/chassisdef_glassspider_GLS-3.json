@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
-		}
-	},
 	"Description": {
 		"Cost": 5900000,
 		"Rarity": 2,
@@ -19,9 +13,9 @@
 	},
 	"MovementCapDefID": "movedef_hellfire_240",
 	"PathingCapDefID": "pathingdef_heavy",
-	"HardpointDataDefID": "hardpointdatadef_gspider",
-	"PrefabIdentifier": "chrprfmech_gspiderbase-001",
-	"PrefabBase": "gspider",
+	"HardpointDataDefID": "hardpointdatadef_glassspider",
+	"PrefabIdentifier": "chrprfmech_glassspiderbase-001",
+	"PrefabBase": "glassspider",
 	"Tonnage": 60,
 	"InitialTonnage": 6,
 	"weightClass": "HEAVY",
@@ -66,11 +60,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -84,18 +82,18 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 110,
-			"MaxRearArmor": 35,
+			"MaxRearArmor": 40,
 			"InternalStructure": 70
 		},
 		{
@@ -111,33 +109,37 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 110,
-			"MaxRearArmor": 35,
+			"MaxRearArmor": 40,
 			"InternalStructure": 70
 		},
 		{
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -213,7 +215,10 @@
 	"VariantName": "GLS-3",
 	"ChassisTags": {
 		"items": [
-			"ClanMech"
+			"ClanMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},

@@ -8,13 +8,12 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"IsThunderbolt",
 				"NoFireInMelee",
-				"MissileHealth: 6"
+				"MissileHealth: 6",
+				"WeaponAttachmentCompatible: Thunderbolt FCS"
 			]
-		}
 	},
 	"Category": "Missile",
 	"Type": "LRM",
@@ -56,7 +55,7 @@
 		"Id": "Weapon_LRM_Thunderbolt15",
 		"Name": "TBM15",
 		"Details": "The Thunderbolt launcher is an offshoot of standard LRM technology. Instead of firing groups of missiles, the Thunderbolt launcher fires a single missile.\n\n <b><color=#ffcc00>Uses TBOLT15 Ammo.</color></b>",
-		"Icon": "MRM"
+		"Icon": "missile-pod"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",
@@ -73,7 +72,9 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"ThunderboltFCSSupported",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

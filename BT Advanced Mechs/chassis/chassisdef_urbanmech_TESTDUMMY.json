@@ -18,7 +18,8 @@
 	"ChassisTags": {
 		"items": [
 			"BLACKLISTED",
-			"noautofix"
+			"noautofix",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -191,7 +192,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -232,7 +233,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],

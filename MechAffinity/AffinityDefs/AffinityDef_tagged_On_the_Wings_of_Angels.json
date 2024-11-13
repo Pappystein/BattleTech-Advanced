@@ -7,16 +7,19 @@
       "Wasplam_30",
       "Stingerlam_30",
       "MonsterLamOmni_150",
+	  "MonsterLam_150",
       "chrprfmech_phawklegacylambase-001_55",
       "chrprfmech_shawklambase-001_80",
       "Urbie-LAM_30",
+	  "MuninLAM_45",
       "chrprfmech_screamerbase-001_55",
       "chrprfmech_screamermechbase-001_55",
       "chrprfmech_phawklammechbase-001_50",
 	  "ChampionLAM_60",
 	  "chrprfmech_gripbotbase-001_55",
       "chrprfmech_gripgerbase-001_55",
-	  "chrprfmech_blackowlbase-001_65"
+	  "chrprfmech_blackowlbase-001_65",
+	  "chrprfmech_vfwargerwalkbase-001_70"
     ],
     "idType": "AssemblyVariant",
     "altMaps": [],
@@ -30,7 +33,7 @@
         "effectData": [
           {
             "Description": {
-              "Details": "Ridgeline gains +2 bonus accuracy in Wasp LAMs, Stinger LAMs, and Phoenix Hawk LAMs.",
+              "Details": "Ridgeline gains +2 bonus accuracy in all LAMs.",
               "Icon": "layeredarmor",
               "Id": "StatusEffect-Affinity-RidgelineLAM",
               "Name": "Ridgeline Affinity LAM Accuracy"

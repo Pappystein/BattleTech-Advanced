@@ -19,9 +19,8 @@
 			"MasonsMarauders",
 			"SteelBeast",
 			"KellHounds",
+			"MacksMercs",
 			"RazorbackMercs",
-			"SelfEmployed",
-			"FlakJackals",
 			"HostileMercenaries",
 			"EmeraldDawn",
 			"SianTriumphant",
@@ -40,14 +39,15 @@
 			"BlackWidowCompany",
 			"BountyHunterAssociates",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"KnightsOfCaerbannog",
 			"GraysGhosts",
 			"BroadswordLegion",
 			"Moderbjorn",
 			"BountyHunterAssociates",
 			"BaumannGroup",
-			"BlackWidowCompany",
-			"unit_legal"
+			"BlackWidowCompany"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -64,7 +64,6 @@
 		"Icon": "uixTxrIcon_highlander"
 	},
 	"ChassisID": "chassisdef_highlander_HGN-IB",
-	"prefabOverride": "chrPrfMech_highlander_SLDFBase-001",
 	"simGameMechPartCost": 1680000,
 	"Locations": [
 		{

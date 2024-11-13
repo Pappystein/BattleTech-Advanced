@@ -18,8 +18,8 @@
       "MoveClamp": 0.5
     },
     "MoveCostModPerBiome": {
-      "DesignMaskBiomeMartianVacuum": 2,
-      "DesignMaskBiomeLunarVacuum": 3
+      "DesignMaskBiomeMartianVacuum": 5,
+      "DesignMaskBiomeLunarVacuum": 7
     },
     "NullifyBodyMesh": true,
     "TieToGroundOnDeath": "true"
@@ -95,23 +95,23 @@
       "Location": "Front",
       "Hardpoints": [
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         }
       ],
@@ -124,19 +124,19 @@
       "Location": "Left",
       "Hardpoints": [
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         }
       ],
@@ -149,19 +149,19 @@
       "Location": "Right",
       "Hardpoints": [
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         }
       ],

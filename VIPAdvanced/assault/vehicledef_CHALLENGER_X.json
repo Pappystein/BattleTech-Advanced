@@ -35,7 +35,10 @@
 			"SnordsIrregulars",
 			"NorthwindHighlanders",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"DismalDisinherited",
+			"MacksMercs",
 			"SolarisVIIMercLeague",
 			"EridaniLightHorse",
 			"GrayDeathLegion",
@@ -75,6 +78,11 @@
 			"JacobsJuggernauts",
 			"LindonsBattalion",
 			"GrimDetermination",
+			"FightingUrukhai",
+			"RaymondsRedcoats",
+			"12thStarGuards",
+			"RedfieldRenegades",
+			"LexingtonCombatGroup",
 			"ToothOfYmir",
 			"KnightsOfCaerbannog",
 			"HostileMercenaries",
@@ -99,9 +107,15 @@
 			"IrukjandiCompany",
 			"AntianLanciarii",
 			"BlackCaravel",
+			"BlackSharks",
+			"SarnaSupremacy",
+			"SaiphTriumvirate",
+			"TerracapConfederation",
+			"StykCommonality",
 			"Moderbjorn",
 			"LocalsBrockwayRefugees",
 			"EdCorbu",
+			"CalderonProtectorate",
 			"TaurianConcordat",
 			"TaurianGuard",
 			"PleiadesHussars",
@@ -119,6 +133,8 @@
 			"PaladinProtectionLLC",
 			"Wolfs_Dragoons",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"KnightsOfCaerbannog",
 			"GraysGhosts",
 			"BroadswordLegion",
@@ -241,7 +257,8 @@
 			"ComponentDefID": "Weapon_LRM_LRM10_0-STOCK",
 			"ComponentDefType": "Weapon",
 			"HardpointSlot": 2,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"LocalGUID":"target_LRM_1"
 		},
 		{
 			"MountedLocation": "Front",
@@ -300,11 +317,12 @@
 			"DamageLevel": "Functional"
 		},
 		{
-			"MountedLocation": "Front",
-			"ComponentDefID": "Gear_TargetingTrackingSystem_ARTEMISIV",
+			"MountedLocation": "Turret",
+			"ComponentDefID": "Gear_Attachment_ArtemisIV",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
-			"DamageLevel": "Functional"
+			"DamageLevel": "Functional",
+			"TargetComponentGUID":"target_LRM_1"
 		},
 		{
 			"MountedLocation": "Front",

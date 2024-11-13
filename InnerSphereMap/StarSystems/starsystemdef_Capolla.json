@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Capolla",
 		"Name": "Capolla",
-		"Details": "Capolla's thick surface jungle hides significant mineral wealth. The residents have long-standing political ties with their neighbours on Terra Firma, and the two planets tend to wield their economic and politcal power together. Capolla joined the so-called Chaos March in the 3060s, sparking off a race to conquer the wayward independent worlds.",
+		"Details": "Capolla's thick surface jungle hides significant mineral wealth. The residents have long-standing political ties with their neighbours on Terra Firma, and the two planets tend to wield their economic and politcal power together.",
 		"Icon": ""
 	},
 	"Position": {
@@ -24,7 +24,7 @@
 			"planet_industry_manufacturing",
 			"planet_other_comstar",
 			"planet_other_alienvegetation",
-			"planet_faction_locals"
+			"planet_faction_cameron"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -42,7 +42,7 @@
 	},
 	"FuelingStation": false,
 	"JumpDistance": 14,
-	"ownerID": "Locals",
+	"ownerID": "Cameron",
 	"ShopRefreshRate": 0,
 	"ShopMaxInventory": 0,
 	"ShopMaxSpecials": 9,
@@ -129,10 +129,13 @@
 	"MaxContractOverride": 0,
 	"SystemShopItems": [
 		"itemCollection_shop_chemicalsProgression",
-		"itemCollection_shop_miningProgression"
+		"itemCollection_shop_miningProgression",
+		"itemCollection_major_Cameron"
 	],
-	"factionShopOwnerID": "Locals",
-	"FactionShopItems": [],
+	"factionShopOwnerID": "Cameron",
+	"FactionShopItems": [
+		"itemCollection_faction_Cameron"
+	],
 	"BlackMarketShopItems": null,
 	"CoreSystemID": "starsystemdef_Capolla",
 	"StartingSystemModes": [
@@ -144,24 +147,17 @@
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
-		"Locals",
-		"Steiner",
-		"Davion",
-		"Liao",
-		"Kurita",
-		"Marik",
+		"Cameron",
 		"ComStar",
-		"WordOfBlake",
-		"AuriganPirates"
+		"Locals"
 	],
 	"contractTargetIDs": [
 		"Steiner",
+		"Marik",
+		"Kurita",
 		"Davion",
 		"Liao",
-		"Kurita",
-		"Marik",
-		"ComStar",
-		"WordOfBlake",
+		"Locals",
 		"Mercenaries",
 		"AuriganPirates"
 	]

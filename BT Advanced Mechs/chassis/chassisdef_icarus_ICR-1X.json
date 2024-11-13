@@ -1,7 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower"
+		"AssemblyVariant": {
+			"PrefabID": "IcarusII",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -12,7 +14,7 @@
 		"Model": "",
 		"UIName": "Primitive Icarus",
 		"Id": "chassisdef_icarus_ICR-1X",
-		"Name": "Icarus Primitive",
+		"Name": "Primitive Icarus",
 		"Details": "The original prototype Icarus was developed at the Happen Military Reservation on Xanthe III in 2466 and was first deployed on Alula Australis in 2469. Its premiere date in official documents is listed as 2470. The prototype used primitive equipment and lacked jump jets. It had a Large Laser to complement the Small Laser. Two SRM-2s and twin Machine Guns could prove devastating to conventional troops. The primitive engine drove it to a maximum of 64 km/h. Ten and a half tons of Primitive Armor provided protection.",
 		"Icon": "uixTxrIcon_icarusii"
 	},
@@ -54,7 +56,9 @@
 	"DFAInstability": 20,
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"ArmLimitLowerLeft",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -118,11 +122,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -136,11 +140,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -172,11 +176,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -211,7 +215,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,

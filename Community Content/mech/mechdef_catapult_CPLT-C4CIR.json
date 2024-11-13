@@ -19,8 +19,6 @@
 			"SteelBeast",
 			"KellHounds",
 			"RazorbackMercs",
-			"SelfEmployed",
-			"FlakJackals",
 			"HostileMercenaries",
 			"EmeraldDawn",
 			"SianTriumphant",
@@ -39,6 +37,8 @@
 			"BlackWidowCompany",
 			"BountyHunterAssociates",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"KnightsOfCaerbannog",
 			"GraysGhosts",
 			"BroadswordLegion",
@@ -46,6 +46,7 @@
 			"BountyHunterAssociates",
 			"BaumannGroup",
 			"BlackWidowCompany",
+			"MacksMercs",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""

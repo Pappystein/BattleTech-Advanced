@@ -22,36 +22,45 @@
 			]
 		},
 		{
-			"Tag": "emod_case",
-			"IncompatibleTags": [
-				"emod_case2"
+			"Tag": "ArmHandActuator",
+			"RequiredTags": [
+				"LowerArm.Equipped"
 			]
 		},
 		{
-			"Tag": "emod_clancase2",
+			"Tag": "MeleeWeaponHandRequired",
+			"RequiredTags": [
+				"Hand.Equipped"
+			]
+		},
+		{
+			"Tag": "CASE",
+			"IncompatibleTags": [
+				"CASE2"
+			]
+		},
+		{
+			"Tag": "ClanCASE2",
 			"RequiredTags": [
 				"ClanArmor"
 			]
 		},
 		{
-			"Tag": "StealthSystem",
-			"RequiredTags": [
-				"ElectronicCounterMeasures",
-				"StealthArmor"
-			],
-			"IncompatibleTags": [
-				"ModularArmor",
-				"ModularRearArmor"
-			]
-		},
-		{
 			"Tag": "StealthArmor",
 			"RequiredTags": [
-				"ElectronicCounterMeasures"
+				"StealthCompatible"
 			],
 			"IncompatibleTags": [
 				"ModularArmor",
-				"ModularRearArmor"
+				"ModularRearArmor",
+				"C3i",
+				"DroneNetwork",
+				"C3Master",
+				"C3Slave",
+				"NullSig",
+				"CLPS",
+				"BlueShield",
+				"StealthIncompatible"
 			]
 		},
 		{
@@ -63,7 +72,8 @@
 				"JumpTurbine",
 				"PartialWing",
 				"MechanicalJJ",
-				"DirectionalJJ"
+				"DirectionalJJ",
+				"ExperimentalJJ"
 			]
 		},
 		{
@@ -74,7 +84,8 @@
 				"SHJJ",
 				"JumpTurbine",
 				"MechanicalJJ",
-				"DirectionalJJ"
+				"DirectionalJJ",
+				"ExperimentalJJ"
 			]
 		},
 		{
@@ -88,7 +99,8 @@
 				"SHJJ",
 				"MechanicalJJ",
 				"PartialWing",
-				"DirectionalJJ"
+				"DirectionalJJ",
+				"ExperimentalJJ"
 			]
 		},
 		{
@@ -96,7 +108,8 @@
 			"IncompatibleTags": [
 				"Articulated",
 				"MechanicalJJ",
-				"ImprovedJJ"
+				"ImprovedJJ",
+				"ExperimentalJJ"
 			]
 		},
 		{
@@ -166,10 +179,28 @@
 			]
 		},
 		{
+			"Tag": "NoArtemisSRM",
+			"IncompatibleTags": [
+				"ArtemisAttachment"
+			]
+		},
+		{
+			"Tag": "NoArtemisLRM",
+			"IncompatibleTags": [
+				"ArtemisAttachment"
+			]
+		},
+		{
 			"Tag": "MRMApolloAmmo",
 			"IncompatibleTags": [],
 			"RequiredTags": [
 				"ApolloTTS"
+			]
+		},
+		{
+			"Tag": "NoApollo",
+			"IncompatibleTags": [
+				"ApolloAttachment"
 			]
 		},
 		{
@@ -192,6 +223,50 @@
 			]
 		},
 		{
+			"Tag": "TarCompLightMech",
+			"IncompatibleTags": [
+				"TarComp",
+				"AESArm",
+				"AESLeg"
+			],
+			"RequiredTags": [
+				"LightMech"
+			]
+		},
+		{
+			"Tag": "TarCompMediumMech",
+			"IncompatibleTags": [
+				"TarComp",
+				"AESArm",
+				"AESLeg"
+			],
+			"RequiredTags": [
+				"MediumMech"
+			]
+		},
+		{
+			"Tag": "TarCompHeavyMech",
+			"IncompatibleTags": [
+				"TarComp",
+				"AESArm",
+				"AESLeg"
+			],
+			"RequiredTags": [
+				"HeavyMech"
+			]
+		},
+		{
+			"Tag": "TarCompAssaultMech",
+			"IncompatibleTags": [
+				"TarComp",
+				"AESArm",
+				"AESLeg"
+			],
+			"RequiredTags": [
+				"AssaultMech"
+			]
+		},
+		{
 			"Tag": "CLANTTS",
 			"IncompatibleTags": [
 				"Gear_FCS_Athena",
@@ -204,13 +279,12 @@
 		{
 			"Tag": "TSM",
 			"IncompatibleTags": [
-				"OmniGyro",
 				"MASC",
 				"AESArm",
 				"AESLeg",
 				"ProtoTSM",
-				"MASCOmni",
-				"TSMOmni"
+				"OmniGyro",
+				"ProtoMech"
 			]
 		},
 		{
@@ -220,20 +294,19 @@
 				"AESArm",
 				"AESLeg",
 				"ProtoTSM",
-				"MASCOmni"
+				"TSM"
 			]
 		},
 		{
 			"Tag": "MASC",
 			"IncompatibleTags": [
-				"OmniGyro",
 				"TSM",
 				"AESArm",
 				"AESLeg",
 				"Supercharger",
 				"ProtoTSM",
 				"MASCOmni",
-				"TSMOmni"
+				"OmniGyro"
 			]
 		},
 		{
@@ -243,8 +316,8 @@
 				"AESArm",
 				"AESLeg",
 				"Supercharger",
-				"TSMOmni",
-				"ProtoTSM"
+				"ProtoTSM",
+				"MASC"
 			]
 		},
 		{
@@ -252,6 +325,7 @@
 			"IncompatibleTags": [
 				"TSM",
 				"MASC",
+				"MASCOmni",
 				"TarComp",
 				"ProtoTSM"
 			]
@@ -261,6 +335,7 @@
 			"IncompatibleTags": [
 				"TSM",
 				"MASC",
+				"MASCOmni",
 				"TarComp",
 				"ProtoTSM"
 			]
@@ -272,11 +347,30 @@
 			]
 		},
 		{
+			"Tag": "Supercharger.CenterTorso",
+			"RequiredTags": [
+				"EnginePart.CenterTorso"
+			]
+		},
+		{
+			"Tag": "Supercharger.LeftTorso",
+			"RequiredTags": [
+				"EnginePart.LeftTorso"
+			]
+		},
+		{
+			"Tag": "Supercharger.RightTorso",
+			"RequiredTags": [
+				"EnginePart.RightTorso"
+			]
+		},
+		{
 			"Tag": "ProtoTSM",
 			"IncompatibleTags": [
 				"MASC",
 				"TSM",
-				"AES"
+				"AES",
+				"ProtoMech"
 			]
 		},
 		{
@@ -284,8 +378,13 @@
 			"IncompatibleTags": [
 				"C3Master",
 				"C3i",
+				"DroneNetwork",
 				"NullSig",
-				"CLPS"
+				"CLPS",
+				"StealthArmor",
+				"LeagueNetFocalNode",
+				"LeagueNetSupportNode",
+				"ProtoMech"
 			]
 		},
 		{
@@ -293,28 +392,50 @@
 			"IncompatibleTags": [
 				"C3Slave",
 				"C3i",
+				"DroneNetwork",
 				"NullSig",
-				"CLPS"
+				"CLPS",
+				"StealthArmor",
+				"LeagueNetFocalNode",
+				"LeagueNetSupportNode",
+				"ProtoMech"
 			]
 		},
 		{
 			"Tag": "C3i",
 			"IncompatibleTags": [
 				"C3Slave",
-				"C3Master"
+				"C3Master",
+				"DroneNetwork",
+				"LeagueNetFocalNode",
+				"LeagueNetSupportNode",
+				"ProtoMech"
 			]
 		},
 		{
 			"Tag": "NullSig",
 			"IncompatibleTags": [
-				"ECM"
+				"C3i",
+				"C3Slave",
+				"C3Master",
+				"DroneNetwork",
+				"ECM",
+				"ProtoMech",
+				"StealthArmor",
+				"BlueShield"
 			]
 		},
 		{
 			"Tag": "CLPS",
 			"IncompatibleTags": [
+				"C3i",
+				"C3Slave",
+				"C3Master",
+				"DroneNetwork",
 				"ECM",
-				"ProtoMech"
+				"ProtoMech",
+				"StealthArmor",
+				"BlueShield"
 			]
 		},
 		{
@@ -326,7 +447,7 @@
 			]
 		},
 		{
-			"Tag": "BAWeapon",
+			"Tag": "BAGear",
 			"RequiredTags": [
 				"ProtoMech"
 			],
@@ -336,7 +457,7 @@
 			]
 		},
 		{
-			"Tag": "BAGear",
+			"Tag": "BACombatShield",
 			"RequiredTags": [
 				"ProtoMech"
 			],
@@ -488,6 +609,81 @@
 			"Tag": "BombBay",
 			"RequiredTags": [
 				"Avionics"
+			]
+		},
+		{
+			"Tag": "ApolloAttachment",
+			"IncompatibleTags": [
+				"TTS"
+			]
+		},
+		{
+			"Tag": "SMES",
+			"RequiredTags": [
+				"SuperHeavyMech"
+			],
+			"IncompatibleTags": [
+				"Supercharger",
+				"MASC"
+			]
+		},
+		{
+			"Tag": "BlueShield",
+			"IncompatibleTags": [
+				"StealthArmor",
+				"NullSig",
+				"OmniGyro",
+				"ProtoMech"
+			]
+		},
+		{
+			"Tag": "LeagueNetFocalNode",
+			"IncompatibleTags": [
+				"LeagueNetSupportNode",
+				"C3Slave",
+				"C3Master",
+				"C3i",
+				"ProtoMech"
+			]
+		},
+		{
+			"Tag": "LeagueNetSupportNode",
+			"IncompatibleTags": [
+				"LeagueNetFocalNode",
+				"C3Slave",
+				"C3Master",
+				"C3i",
+				"ProtoMech"
+			]
+		},
+		{
+			"Tag": "Probe",
+			"IncompatibleTags": [
+				"ProtoMech"
+			]
+		},
+		{
+			"Tag": "ECM",
+			"IncompatibleTags": [
+				"ProtoMech"
+			]
+		},
+		{
+			"Tag": "CoolantPod",
+			"IncompatibleTags": [
+				"RadicalHS"
+			]
+		},
+		{
+			"Tag": "RadicalHS",
+			"IncompatibleTags": [
+				"CoolantPod"
+			]
+		},
+		{
+			"Tag": "NoArtemis",
+			"IncompatibleTags": [
+				"ArtemisTTS"
 			]
 		}
 	]

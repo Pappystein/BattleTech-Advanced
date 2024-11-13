@@ -8,27 +8,20 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"IsArtillery",
-				"WpnCrits: +50%",
-				"DFAccuracy: -1",
-				"VariableDmg: 30",
-				"WpnRecoil: 3",
-				"ScatterRadius: 75, 135",
-				"Indirect",
-				"NoFireInMelee",
-				"AMSImmune"
-			]
-		},
-		"InventorySorter": {
-			"SortKey": "01330"
-		}
+		"BonusDescriptions": [
+			"IsArtillery",
+			"ArtilleryAttack",
+			"ArtilleryDetails",
+			"NonArtilleryWeapons",
+			"NoFireInMelee",
+			"AMSImmune",
+			"WeaponAttachmentCompatible: Artillery FCS"
+		]
 	},
-	"Category": "Ballistic",
+	"weaponCategoryID": "Artillery",
 	"Type": "Autocannon",
-	"WeaponSubType": "AC20",
-	"MinRange": 120,
+	"WeaponSubType": "LRM10",
+	"MinRange": 200,
 	"MaxRange": 1560,
 	"RangeSplit": [
 		360,
@@ -38,23 +31,26 @@
 	"AmmoCategory": "LongTom",
 	"StartingAmmoCapacity": 0,
 	"HeatGenerated": 60,
-	"Damage": 70,
+	"Damage": 300,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 0,
-	"DamageVariance": 30,
-	"HeatDamage": 0,
+	"HeatDamage": 60,
 	"AccuracyModifier": 0,
-	"CriticalChanceMultiplier": 1.5,
+	"CriticalChanceMultiplier": 1,
 	"RefireModifier": 3,
 	"ShotsWhenFired": 1,
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 6,
-	"Instability": 40,
+	"Instability": 60,
 	"AMSImmune": true,
 	"FireTerrainChance": 0.085,
-	"MinMissRadius": 75,
-	"MaxMissRadius": 135,
+	"AlwaysIndirectVisuals": true,
+	"IndirectFireCapable": true,
+	"IsArtillery": true,
+	"ArtilleryReticleColor": { "C":"#FF0000", "I": 1.5 },
+	"ArtilleryReticleRadius" : 200,
+	"ArtilleryReticleText": "Long Tom",
 	"WeaponEffectID": "WeaponEffect-Weapon_AC20_Single",
 	"Description": {
 		"Cost": 2100000,
@@ -80,34 +76,14 @@
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
 	"ImprovedBallistic": true,
-	"Modes": [
-		{
-			"Id": "directfire",
-			"UIName": "Direct",
-			"isBaseMode": false,
-			"AccuracyModifier": 1.0,
-			"IndirectFireCapable": false,
-			"ShortRange": -120.0,
-			"MediumRange": -540.0,
-			"LongRange": -810.0,
-			"MaxRange": -1080.0
-		},
-		{
-			"Id": "indirectfire",
-			"UIName": "Indirect",
-			"isBaseMode": true,
-			"AlwaysIndirectVisuals": true,
-			"IndirectFireCapable": true,
-			"ForbiddenRange": 120
-		}
-	],
 	"statusEffects": [],
 	"ComponentTags": {
 		"items": [
 			"OmniRestriction.{location}",
 			"component_type_stock",
 			"mr-resize-12",
-			"range_extreme"
+			"range_extreme",
+			"ArtilleryFCSSupported-LongTom"
 		],
 		"tagSetSourceFile": ""
 	}

@@ -3,11 +3,9 @@
 		"Weights": {
 			"EngineFactor": 0.5
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"EngineWeight: 50%"
-			]
-		},
+		"BonusDescriptions": [
+				"EngineWeight: -50%"
+			],
 		"WorkOrderCosts": {
 			"Default": {
 				"TechCost": "20",
@@ -18,12 +16,10 @@
 				"CBillCost": "1000000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 40"
 			}
 		},
-		"Flags": {
-			"flags": [
+		"Flags": [
 				"vital",
 				"no_salvage"
-			]
-		},
+		],
 		"Category": [
 			{
 				"CategoryID": "EngineShield"
@@ -34,7 +30,7 @@
 		]
 	},
 	"Description": {
-		"Cost": 500000,
+		"Cost": 10000000,
 		"Rarity": 0,
 		"Purchasable": false,
 		"Manufacturer": "St. Ives",

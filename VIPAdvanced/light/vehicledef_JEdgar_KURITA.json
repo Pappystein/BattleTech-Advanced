@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.40",
 			"unit_vehicle",
 			"unit_light",
@@ -27,6 +27,7 @@
 			"1stSwordOfLight",
 			"3rdNightStalkers",
 			"2ndLegionOfVega",
+			"CalderonProtectorate",
 			"TaurianConcordat",
 			"TaurianGuard",
 			"PleiadesHussars",

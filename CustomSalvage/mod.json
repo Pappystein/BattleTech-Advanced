@@ -10,6 +10,7 @@
 	],
 	"DLL": "CustomSalvage.dll",
 	"DLLEntryPoint": "CustomSalvage.Control.Init",
+	"CustomResourceTypes": ["CSTags"],
 	"Settings": {
 		"LogLevel": "Debug",
 		"RecoveryType": "PartDestroyed",
@@ -74,37 +75,21 @@
 		"LeftLegRepaired": false,
 		"RightLegRepaired": false,
 		"RepairMechLimbs": true,
-		"RepairMechLimbsChance": 0.75,
+		"RepairMechLimbsChance": 1,
 		"RandomStructureOnRepairedLimbs": true,
-		"MinStructure": 0.25,
+		"MinStructure": 1,
 		"RepairMechComponents": true,
-		"RepairComponentsFunctionalThreshold": 0.25,
-		"RepairComponentsNonFunctionalThreshold": 0.5,
+		"RepairComponentsFunctionalThreshold": 1,
+		"RepairComponentsNonFunctionalThreshold": 0,
 		"RepairChanceByTP": false,
 		"BaseTP": 10,
-		"LimbChancePerTp": 0.01,
-		"ComponentChancePerTp": 0.01,
-		"LimbMinChance": 0.1,
-		"LimbMaxChance": 0.95,
-		"ComponentMinChance": 0.1,
-		"ComponentMaxChance": 0.95,
-		"BrokeByTag": [
-			{
-				"tag": "hard_to_repair",
-				"BaseTp": "30",
-				"Limb": "0.0075",
-				"Component": "0.0075"
-			},
-			{
-				"tag": "easy_to_repair",
-				"Limb": "0.015",
-				"Component": "0.015"
-			},
-			{
-				"tag": "poor_maintained",
-				"BaseTp": "20"
-			}
-		],
+		"LimbChancePerTp": 1,
+		"ComponentChancePerTp": 1,
+		"LimbMinChance": 1,
+		"LimbMaxChance": 1,
+		"ComponentMinChance": 1,
+		"ComponentMaxChance": 1,
+		"BrokeByTag": [],
 		"AdaptPartBaseCost": 0.015,
 		"MaxAdaptMod": 5,
 		"AdaptModWeight": 2,
@@ -114,7 +99,24 @@
 		"OmniNormalMod": 0,
 		"AllowScrapToParts": false,
 		"MinScrapParts": 0.51,
-		"MaxScrapParts": 0.91
+		"MaxScrapParts": 0.91,
+		"ShowSalvageFloaties": true,
+		"FullEnemyUnitSalvage": false,
+		"MaxFullUnitsInSalvage": 1,
+		"FullUnitInfoIcon": "icons8-info",
+		"FullUnitRandomSalvageSlotUsingMod": 1.0,
+		"FullUnitUsedAllRandomSalvageSlots": false,
+		"FullUnitUsedAmountOfLootableComponents": true,
+		"FullUnitStructurePersentage": 0.45,
+		"SquadDisassembleComponents": true,
+		"VehicleDisassembleComponents": true,
+		"VehicleAlwaysDisassembled": true
 	},
-	"Manifest": []
+	"Manifest": [
+		{
+			"Type": "SVGAsset",
+			"Path": "icons",
+			"ShouldMergeJSON": false
+		}
+	]
 }

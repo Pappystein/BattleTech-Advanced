@@ -8,30 +8,26 @@
 				"CategoryID": "TankStuff"
 			}
 		],
-		"Flags": {
-			"flags": [
+		"Flags": [
 				"not_broken",
 				"no_salvage",
 				"autorepair"
-			]
-		},
-		"VehicleCriticalEffects": {
+		],
+		"CriticalEffects": {
 		  "LinkedStatisticName": "VehicleMotiveHoverCrits",
 		  "OnDestroyedEffectIDs": [
 			"CriticalEffect-VehicleMotiveCruiseHoverCrit1",
 			"CriticalEffect-VehicleMotiveFlankHoverCrit1"
 		  ]
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"HoverMotive",
 				"MotiveSystemCrit",
 				"CritRes: -10%"
 			]
-		}
 	},
 	"Description": {
-		"Cost": 0,
+		"Cost": -450000,
 		"Rarity": 99,
 		"Purchasable": true,
 		"Manufacturer": "Generic",

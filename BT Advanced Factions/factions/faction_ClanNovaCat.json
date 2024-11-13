@@ -4,19 +4,27 @@
 	"ShortName": "Nova Cat",
 	"Demonym": "Nova Cat",
 	"Government": "Clan",
-	"Allies": [],
+	"Allies": [
+		"ClanWolf",
+		"ClanJadeFalcon",
+		"Kurita",
+		"Cameron",
+		"Locals"
+	],
 	"Enemies": [
 		"Steiner",
 		"Davion",
-		"ComStar",
+		"331stDivision",
 		"DarkCaste",
 		"WordOfBlake",
 		"ClanGhostBear",
+		"ClanSnowRaven",
 		"ClanJadeFalcon",
 		"ClanWolf",
 		"Rasalhague",
 		"Mercenaries",
-		"Locals"
+		"Locals",
+		"RimWorldsRepublic"
 	],
 	"Presence": 0.1,
 	"DefaultCombatLeaderCastDefId": "castDef_LocalsDefault",

@@ -5,14 +5,15 @@
 				"CategoryID": "w/m/s/mml"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"MML",
 				"MMLLRMHealth: 1",
 				"MMLSRMHealth: 2",
-				"MMLATMHealth: 2"
+				"MMLATMHealth: 2",
+				"WeaponAttachmentCompatible: LRM FCS",
+				"WeaponAttachmentCompatible: SRM FCS",
+				"WordsWords: Attached LRM and SRM FCS only apply to the relevant MML fire mode (LRM also applies to ATM fire mode)."
 			]
-		}
 	},
 	"Category": "Missile",
 	"Type": "LRM",
@@ -59,7 +60,7 @@
 	"BonusValueB": "",
 	"ComponentType": "Weapon",
 	"ComponentSubType": "Weapon",
-	"PrefabIdentifier": "lrm10",
+	"PrefabIdentifier": "lrm5",
 	"BattleValue": 0,
 	"InventorySize": 2,
 	"Tonnage": 3,
@@ -86,6 +87,7 @@
 			"ShortRange": -120.0,
 			"MediumRange": -240.0,
 			"LongRange": -360.0,
+			"StatusEffectsPerHit": true,
 			"AmmoCategory": "SRM",
 			"WeaponEffectID": "WeaponEffect-Weapon_SRM2",
 			"Instability": 3,
@@ -111,7 +113,10 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"WebbTCSupported-iMML",
+			"LRMFCSSupported-iMML",
+			"SRMFCSSupported-iMML"
 		],
 		"tagSetSourceFile": ""
 	}

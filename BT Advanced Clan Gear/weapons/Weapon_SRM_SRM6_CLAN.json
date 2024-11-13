@@ -5,11 +5,11 @@
 				"CategoryID": "w/m/s/srm"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"MissileHealth: 2"
+		"BonusDescriptions": [
+				"MissileHealth: 2",
+				"WeaponAttachmentCompatible: Artemis IV FCS",
+				"WeaponAttachmentCompatible: SRM FCS"
 			]
-		}
 	},
 	"Category": "Missile",
 	"Type": "SRM",
@@ -43,6 +43,7 @@
 	"ImprovedBallistic": true,
 	"ProjectileSpeedMultiplier": 1.6,
 	"MissileHealth": 2,
+	"StatusEffectsPerHit": true,
 	"WeaponEffectID": "WeaponEffect-Weapon_SRM6",
 	"Description": {
 		"Cost": 216000,
@@ -71,7 +72,10 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_standard"
+			"range_standard",
+			"ArtemisIVSRMSupported",
+			"SRMFCSSupported",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

@@ -5,24 +5,21 @@
 				"CategoryID": "a/a/a/ac"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
 			"ExplosionDamagePerAmmo": 25,
 			"StabilityDamagePerAmmo": 6
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"BonusAmmo: 100%",
-				"RecoilAC: +2",
-				"CostPerShot: 50",
-				"AmmoCount: 90",
-				"Caseless"
-			]
-		},
+		"BonusDescriptions": [
+			"BonusAmmo: 100%",
+			"RecoilAC: +2",
+			"WordsWords: Increases range for each (non-min) range bracket by 60 meters.",
+			"CostPerShot: 50",
+			"AmmoCount: 90",
+			"Caseless"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 50
 		}

@@ -5,15 +5,14 @@
 				"CategoryID": "w/m/s/ssrm"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WpnAccuracy: +1",
 				"PipsIgnored: +1",
 				"Clustering: 2",
 				"Streak",
-				"MissileHealth: 3"
+				"MissileHealth: 3",
+				"WeaponAttachmentCompatible: SRM FCS"
 			]
-		}
 	},
 	"Category": "Missile",
 	"Type": "SRM",
@@ -60,7 +59,7 @@
 		"UIName": "Streak SRM2 (C)",
 		"Id": "Weapon_SRM_SRM2_STREAK_CLAN",
 		"Name": "Streak SRM2 (C)",
-		"Details": "The Streak SRM-2 launcher is a prototype SRM that uses an advanced active guidance system to track targets, but at the cost of 50% increased weight and heat generation. \n\n<b><color=#ffcc00>Uses Streak SRM Ammo.</color></b>",
+		"Details": "The Streak SRM-2 launcher is an advanced SRM that uses an advanced active guidance system to track targets, but at the cost of 50% increased weight and heat generation. \n\n<b><color=#ffcc00>Uses Streak SRM Ammo.</color></b>",
 		"Icon": "uixSvgIcon_weapon_Missile"
 	},
 	"BonusValueA": "Streak",
@@ -79,7 +78,9 @@
 		"items": [
 			"component_type_stock",
 			"component_type_lostech",
-			"range_standard"
+			"range_standard",
+			"SRMFCSSupported",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

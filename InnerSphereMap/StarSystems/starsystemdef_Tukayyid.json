@@ -29,7 +29,6 @@
 		"tagSetSourceFile": ""
 	},
 	"SupportedBiomes": [
-		"lunarVacuum",
 		"highlandsSpring",
 		"highlandsFall",
 		"lowlandsSpring",
@@ -147,20 +146,17 @@
 		"CAREER",
 		"NONE"
 	],
-	"DefaultDifficulty": 4,
+	"DefaultDifficulty": 6,
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
-		"ComStar",
-		"Locals"
+		"ComStar"
 	],
 	"contractTargetIDs": [
-		"Locals",
-		"Steiner",
-		"Kurita",
-		"AuriganPirates",
 		"WordOfBlake",
-		"Mercenaries",
-		"ClanNovaCat"
+		"ClanNovaCat",
+		"ClanWolf",
+		"ClanJadeFalcon",
+		"ClanGhostBear"
 	]
 }

@@ -5,15 +5,12 @@
 				"CategoryID": "w/a/o/mg"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"IsMG",
-				"WpnCrits: -99%",
-				"AntiBA: 50%",
-				"VariableBurstCount: 6",
-				"PipsIgnored: 3"
-			]
-		}
+		"BonusDescriptions": [
+			"WpnCrits: -99%",
+			"AntiBA: 50%",
+			"VariableBurstCount: 6",
+			"PipsIgnored: 3"
+		]
 	},
 	"Category": "AntiPersonnel",
 	"Type": "MachineGun",
@@ -113,7 +110,10 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_close"
+			"range_close",
+			"MGFCSSupported-Sanctuary",
+			"MGArraySupported-Sanctuary",
+			"WebbTCSupported-SanctuaryMG"
 		],
 		"tagSetSourceFile": ""
 	}

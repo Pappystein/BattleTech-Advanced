@@ -1,4 +1,12 @@
 {
+	"Custom": {
+		"AssemblyVariant": {
+		  "PrefabID": "Yeoman",
+		  "Exclude": false,
+		  "Include": true
+		},
+		"ChassisDefaults": []
+	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "Head",
@@ -32,12 +40,12 @@
 		"UIName": "Yeoman",
 		"Id": "chassisdef_yeoman_YMN-8Y",
 		"Name": "Yeoman",
-		"Details": "<color=#53ff1a><b>Arm Actuator Limit</b>: <b>upper</b> on left and <b>upper</b> on right</color>\nOne of House Marik's many variants on their homegrown fire support chassis the Yeoman, the Yeoman-8Y takes a slightly unusual approach by adding energy weapons to the chassis. In the cavernous arms rest a quartet of Streak SRM-4s but those play second fiddle to the stars of the show, a pair of Snub-Nose PPCs in the side torsos. Despite the bonus heat sinks the mech carries, the YMN-8Y has heat problems if all its weapons lock, so pilots are advised to be cautious with their trigger finger. The Yeoman-8Y found limited success in the FWLM but its pilots speak extremely highly of it, often resisting promotions out of the mech.",
+		"Details": "One of House Marik's many variants on their homegrown fire support chassis the Yeoman, the Yeoman-8Y takes a slightly unusual approach by adding energy weapons to the chassis. In the cavernous arms rest a quartet of Streak SRM-4s but those play second fiddle to the stars of the show, a pair of Snub-Nose PPCs in the side torsos. Despite the bonus heat sinks the mech carries, the YMN-8Y has heat problems if all its weapons lock, so pilots are advised to be cautious with their trigger finger. The Yeoman-8Y found limited success in the FWLM but its pilots speak extremely highly of it, often resisting promotions out of the mech.",
 		"Icon": "uixTxrIcon_yeoman"
 	},
 	"VariantName": "YMN-8Y",
 	"StockRole": "Pure Missile Support",
-	"YangsThoughts": "<color=#53ff1a><b>Arm Actuator Limit</b>: <b>upper</b> on left and <b>upper</b> on right</color>\nOne of House Marik's many variants on their homegrown fire support chassis the Yeoman, the Yeoman-8Y takes a slightly unusual approach by adding energy weapons to the chassis. In the cavernous arms rest a quartet of Streak SRM-4s but those play second fiddle to the stars of the show, a pair of Snub-Nose PPCs in the side torsos. Despite the bonus heat sinks the mech carries, the YMN-8Y has heat problems if all its weapons lock, so pilots are advised to be cautious with their trigger finger. The Yeoman-8Y found limited success in the FWLM but its pilots speak extremely highly of it, often resisting promotions out of the mech.",
+	"YangsThoughts": "One of House Marik's many variants on their homegrown fire support chassis the Yeoman, the Yeoman-8Y takes a slightly unusual approach by adding energy weapons to the chassis. In the cavernous arms rest a quartet of Streak SRM-4s but those play second fiddle to the stars of the show, a pair of Snub-Nose PPCs in the side torsos. Despite the bonus heat sinks the mech carries, the YMN-8Y has heat problems if all its weapons lock, so pilots are advised to be cautious with their trigger finger. The Yeoman-8Y found limited success in the FWLM but its pilots speak extremely highly of it, often resisting promotions out of the mech.",
 	"PrefabIdentifier": "chrprfmech_yeomanbase-001",
 	"PrefabBase": "yeoman",
 	"Tonnage": 60,
@@ -73,7 +81,11 @@
 	"DFASelfDamage": 60,
 	"DFAInstability": 30,
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"HeavyMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"MechPartMax": 0,
@@ -140,11 +152,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -158,11 +170,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -185,11 +201,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -203,11 +223,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,

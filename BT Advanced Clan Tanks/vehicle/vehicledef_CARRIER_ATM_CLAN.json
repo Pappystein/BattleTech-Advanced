@@ -13,7 +13,7 @@
 	"VehicleTags": {
 		"items": [
 			"unit_noncontrollableTank",
-			"no_parts",
+			"NOSALVAGE",
 			"mr-resize-1.50",
 			"unit_vehicle",
 			"unit_heavy",
@@ -27,10 +27,19 @@
 			"unit_indirectFire",
 			"unit_bracket_med",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"ClanWolf",
+			"ClanGoliathScorpion",
+			"ClanSnowRaven",
 			"ClanJadeFalcon",
 			"ClanGhostBear",
 			"ClanNovaCat",
@@ -127,13 +136,6 @@
 		},
 		{
 			"ComponentDefID": "Gear_TTS_AdvancedTC",
-			"ComponentDefType": "Upgrade",
-			"MountedLocation": "Front",
-			"HardpointSlot": -1,
-			"DamageLevel": "Functional"
-		},
-		{
-			"ComponentDefID": "Gear_TargetingTrackingSystem_Hartford_S2000",
 			"ComponentDefType": "Upgrade",
 			"MountedLocation": "Front",
 			"HardpointSlot": -1,

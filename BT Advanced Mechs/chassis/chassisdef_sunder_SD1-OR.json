@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"RightLimit": "Lower",
-			"LeftLimit": "Upper"
-		}
-	},
 	"Description": {
 		"Cost": 14000000,
 		"Rarity": 4,
@@ -14,7 +8,7 @@
 		"UIName": "Sunder",
 		"Id": "chassisdef_sunder_SD1-OR",
 		"Name": "Sunder",
-		"Details": "The Sunder is the product of what was learned from captured Loki and Thor OmniMechs. The Sunder weighs ninety tons and uses a 360 XL Engine to save weight. The Sunder carries sixteen and a half tons of armor protection and has fifteen double heat sinks to handle the assault 'Mech's heavy heat load. The Sunder A is armed primarily for long-range engagements. The primary weapon is an ER PPC supported by a Gauss Rifle for direct fire engagements. The Sunder R dates to Operation Bulldog and uses salvaged Clantech, including two each Large Pulse Lasers and Streak SRM-6s as well as four ER Medium Lasers and a LB-10X Autocannon.",
+		"Details": "The Sunder is the product of what was learned from captured Loki and Thor OmniMechs. The Sunder weighs ninety tons and uses a 360 XL Engine to save weight. The Sunder carries sixteen and a half tons of armor protection and has fifteen double heat sinks to handle the assault 'Mech's heavy heat load. The Sunder R dates to Operation Bulldog and uses salvaged Clantech, including two each Large Pulse Lasers and Streak SRM-6s as well as four ER Medium Lasers and a LB-10X Autocannon.",
 		"Icon": "uixTxrIcon_sunder"
 	},
 	"MovementCapDefID": "movedef_emperor_EMP-6A",
@@ -57,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -71,15 +65,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				}
 			],
@@ -93,7 +87,7 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -107,7 +101,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": true
 				}
 			],
@@ -121,7 +115,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -135,11 +129,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -215,12 +209,15 @@
 	"VariantName": "SD1-OR",
 	"ChassisTags": {
 		"items": [
-			"OmniMech"
+			"OmniMech",
+			"ArmLimitLowerRight",
+			"ArmLimitUpperLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "First-Gen Assault Omni",
-	"YangsThoughts": "The Sunder is the product of what was learned from captured Loki and Thor OmniMechs. The Sunder weighs ninety tons and uses a 360 XL Engine to save weight. The Sunder carries sixteen and a half tons of armor protection and has fifteen double heat sinks to handle the assault 'Mech's heavy heat load. The Sunder A is armed primarily for long-range engagements. The primary weapon is an ER PPC supported by a Gauss Rifle for direct fire engagements. The Sunder R dates to Operation Bulldog and uses salvaged Clantech, including two each Large Pulse Lasers and Streak SRM-6s as well as four ER Medium Lasers and a LB-10X Autocannon.",
+	"YangsThoughts": "The Sunder is the product of what was learned from captured Loki and Thor OmniMechs. The Sunder weighs ninety tons and uses a 360 XL Engine to save weight. The Sunder carries sixteen and a half tons of armor protection and has fifteen double heat sinks to handle the assault 'Mech's heavy heat load. The Sunder R dates to Operation Bulldog and uses salvaged Clantech, including two each Large Pulse Lasers and Streak SRM-6s as well as four ER Medium Lasers and a LB-10X Autocannon.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -229,6 +226,15 @@
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,
 			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "emod_armorslots_standard",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
 			"DamageLevel": "Functional",
 			"prefabName": null,
 			"hasPrefabName": false

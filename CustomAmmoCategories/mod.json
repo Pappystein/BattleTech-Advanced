@@ -121,7 +121,15 @@
 		},
 		{
 			"Type": "AmmunitionBoxDef",
-			"Path": "Fluid"
+			"Path": "Industrial"
+		},
+		{
+			"Type": "AmmunitionBoxDef",
+			"Path": "Rifles"
+		},
+		{
+			"Type": "AmmunitionBoxDef",
+			"Path": "Flamer"
 		},
 		{
 			"Type": "AmmunitionBoxDef",
@@ -130,6 +138,10 @@
 		{
 			"Type": "AmmunitionBoxDef",
 			"Path": "StratOps"
+		},
+		{
+			"Type": "AmmunitionBoxDef",
+			"Path": "Superweapon"
 		},
 		{
 			"Type": "AbilityDef",
@@ -142,6 +154,14 @@
 		{
 			"Type": "SoundBankDef",
 			"Path": "soundBanks"
+		},
+		{
+			"Type": "Sprite",
+			"Path": "sprites"
+		},
+		{
+			"Type": "SVGAsset",
+			"Path": "icons"
 		}
 	]
 }

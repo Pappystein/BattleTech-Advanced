@@ -11,8 +11,9 @@
 			"ClanJadeFalcon",
 			"ClanGhostBear",
 			"ClanNovaCat",
+			"MacksMercs",
 			"unit_superheavy",
-			"unit_legal"
+			"Ignore_SelfKnockdown"
 		],
 		"tagSetSourceFile": ""
 	},

@@ -6,14 +6,12 @@
 		"Icon": "event_wulf_holiday_kringle_killers.png"
 	},
 	"Scope": "Company",
-	"Weight": 10000,
+	"Weight": 0,
 	"Requirements": {
 		"Scope": "Company",
 		"RequirementTags": {
 			"tagSetSourceFile": "",
-			"items": [
-				"timeline_3062_12_01"
-			]
+			"items": []
 		},
 		"ExclusionTags": {
 			"tagSetSourceFile": "",

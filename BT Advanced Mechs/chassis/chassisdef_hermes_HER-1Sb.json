@@ -1,9 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower"
-		}
-	},
 	"Description": {
 		"Cost": 3000000,
 		"Rarity": 1,
@@ -12,7 +7,7 @@
 		"Model": "",
 		"UIName": "Royal Hermes",
 		"Id": "chassisdef_hermes_HER-1Sb",
-		"Name": "Hermes Royal",
+		"Name": "Royal Hermes",
 		"Details": "Released in an incomplete state to quickly fulfill an SLDF contract, the original Hermes eventually found a grudging place in militia forces across the Inner Sphere where its issues weren't as crippling. With the return of advanced technology, the Hermes became viable in front line units as a fast, if lightly armored, scout once again. Designed for the SLDF Royal Divisions, the -1Sb version installs an XL engine to free up tonnage for MASC and a Beagle Active Probe. The installation of Double Heat Sinks offsets the heat from a Small Laser, four Medium Lasers and a Flamer. It is an exceptionally well armored and armed scout.",
 		"Icon": "uixTxrIcon_hermes"
 	},
@@ -56,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -70,11 +65,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -88,11 +83,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -124,11 +119,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -204,7 +199,9 @@
 	"VariantName": "HER-1Sb",
 	"ChassisTags": {
 		"items": [
-			"RoyalMech"
+			"RoyalMech",
+			"ArmLimitLowerLeft",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},

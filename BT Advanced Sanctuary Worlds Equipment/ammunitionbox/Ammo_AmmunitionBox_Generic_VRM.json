@@ -5,21 +5,17 @@
 				"CategoryID": "a/m/l/vrm"
 			}
 		],
-		"Flags": {
-            "flags": [
-                "not_broken"
-            ]
-        },
+		"Flags": [
+			"not_broken"
+		],
         "ComponentExplosion": {
             "ExplosionDamagePerAmmo": 2,
             "StabilityDamagePerAmmo": 1
         },
-        "BonusDescriptions": {
-            "Bonuses": [
+        "BonusDescriptions": [
 				"CostPerShot: 30",
 				"AmmoCount: 120"
-            ]
-        },
+            ],
 		"AmmoCost": {
 			"PerUnitCost": 30
 		}
@@ -36,7 +32,7 @@
         "Id": "Ammo_AmmunitionBox_Generic_VRM",
         "Name": "VRM Ammo",
         "Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of SHIELD.",
-        "Icon": "MRM"
+        "Icon": "MRM-ammo"
     },
     "BonusValueA": "",
     "BonusValueB": "",

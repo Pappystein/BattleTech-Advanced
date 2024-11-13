@@ -5,35 +5,36 @@
 				"CategoryID": "w/s/l/er"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"PipsIgnored: 4",
-				"WpnAccuracy: +1",
-				"AntiBA: 50%"
-			]
-		}
+		"BonusDescriptions": [
+			"ERPulse",
+			"WpnCrits: 20%",
+			"PipsIgnored: 4",
+			"AntiBA: 50%",
+			"WeaponAttachmentCompatible: Laser Insulator",
+			"WeaponAttachmentCompatible: Laser FCS"
+		]
 	},
 	"Category": "AntiPersonnel",
 	"Type": "Laser",
 	"WeaponSubType": "SmallLaser",
 	"MinRange": 0,
-	"MaxRange": 180,
+	"MaxRange": 200,
 	"RangeSplit": [
-		50,
-		105,
-		130
+		60,
+		100,
+		150
 	],
 	"AmmoCategory": "NotSet",
 	"StartingAmmoCapacity": 0,
-	"HeatGenerated": 12,
-	"Damage": 25,
+	"HeatGenerated": 11,
+	"Damage": 18,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 4,
 	"DamageVariance": 0,
 	"HeatDamage": 0,
-	"AccuracyModifier": -1,
-	"CriticalChanceMultiplier": 1,
+	"AccuracyModifier": 0,
+	"CriticalChanceMultiplier": 1.2,
 	"AOECapable": false,
 	"IndirectFireCapable": false,
 	"RefireModifier": 0,
@@ -52,9 +53,9 @@
 	"ColorSpeedChange": 1,
 	"ColorChangeRule": "Linear",
 	"TrooperSquadDamageModifier": 1.5,
-	"WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Small",
+	"WeaponEffectID": "WeaponEffect-Weapon_LaserER_Small",
 	"Description": {
-		"Cost": 441000,
+		"Cost": 381000,
 		"Rarity": 10,
 		"Purchasable": true,
 		"Manufacturer": "CLAN",
@@ -63,7 +64,7 @@
 		"Id": "Weapon_Laser_SmallLaserERPulse_CLAN",
 		"Name": "ER S Pulse Laser (C)",
 		"Details": "The technicians of Clan Wolf were interested in creating an improved pulse laser with extended range. Unlike their Inner Sphere counterparts, who simply pumped more energy into a standard pulse laser, the Wolf techs combined the best features of their Pulse and Extended range lasers to create the ER Pulse Laser family.",
-		"Icon": "uixSvgIcon_weapon_Support"
+		"Icon": "laser-burst"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",
@@ -77,11 +78,36 @@
 	"DisallowedLocations": "All",
 	"CriticalComponent": false,
 	"statusEffects": [],
+	"Modes": [
+		{
+			"Id": "ER",
+			"UIName": "ER",
+			"isBaseMode": true
+		},
+		{
+			"Id": "Pulse",
+			"UIName": "Pulse",
+			"isBaseMode": false,
+			"WeaponEffectID": "WeaponEffect-Weapon_LaserPulse_Small",
+			"DamagePerShot": 7,
+			"HeatGenerated": -5,
+			"EvasivePipsIgnored": 2,
+			"AccuracyModifier": 1,
+			"ShortRange": -20.0,
+			"MediumRange": -40.0,
+			"LongRange": -70.0,
+			"MaxRange": -90.0
+		}
+	],
 	"ComponentTags": {
 		"items": [
 			"component_type_variant",
 			"component_type_variant3",
-			"range_close"
+			"range_close",
+			"LaserInsulatorAttachable.{location}",
+			"LaserInsulatorSupported-ERPulse",
+			"LaserFCSSupported-ERPulse",
+			"WebbTCSupported-ERPulse"
 		],
 		"tagSetSourceFile": ""
 	}

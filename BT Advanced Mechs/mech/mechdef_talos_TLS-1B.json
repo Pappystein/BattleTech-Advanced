@@ -9,9 +9,14 @@
 			"unit_indirectFire",
 			"unit_mech",
 			"unit_generic",
+			"FroncReaches",
+			"CalderonProtectorate",
 			"TaurianConcordat",
 			"PleiadesHussars",
 			"3rdTaurianLancers",
+			"RimWorldsRepublic",
+			"8thHeliusFusiliers",
+			"RepublicanGuard",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""

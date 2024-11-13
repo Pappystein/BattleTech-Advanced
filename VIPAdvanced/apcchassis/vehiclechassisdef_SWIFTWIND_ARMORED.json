@@ -4,10 +4,10 @@
 	},
 	"Description": {
 		"Id": "vehiclechassisdef_SWIFTWIND_ARMORED",
-		"Name": "Armored Swift Wind",
+		"Name": "Swift Wind",
 		"Details": "",
 		"Icon": "Swiftwind",
-		"Cost": 564,
+		"Cost": 100000,
 		"Rarity": 0,
 		"Purchasable": false
 	},

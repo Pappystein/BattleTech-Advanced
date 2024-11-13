@@ -12,7 +12,7 @@
 		"CustomParts": []
 	},
 	"Description": {
-		"Cost": 564,
+		"Cost": 100000,
 		"Rarity": 4,
 		"Purchasable": false,
 		"UIName": "Heavy Wheeled APC (VRM)",
@@ -113,15 +113,15 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

@@ -5,14 +5,12 @@
 				"CategoryID": "BAWeapon"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WpnAccuracy: +1",
 				"PipsIgnored: 3"
 			]
-		}
 	},
-	"Category": "AntiPersonnel",
+	"weaponCategoryID": "BattleArmor",
 	"Type": "Laser",
 	"WeaponSubType": "SmallLaser",
 	"MinRange": 0,
@@ -25,7 +23,7 @@
 	"AmmoCategory": "NotSet",
 	"StartingAmmoCapacity": 0,
 	"HeatGenerated": 5,
-	"Damage": 10,
+	"Damage": 6,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 3,

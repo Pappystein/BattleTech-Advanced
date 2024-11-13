@@ -18,8 +18,8 @@
       "MoveClamp": 0.5
     },
     "MoveCostModPerBiome": {
-      "DesignMaskBiomeMartianVacuum": 2,
-      "DesignMaskBiomeLunarVacuum": 3
+      "DesignMaskBiomeMartianVacuum": 5,
+      "DesignMaskBiomeLunarVacuum": 7
     },
     "NullifyBodyMesh": true,
     "TieToGroundOnDeath": "true"
@@ -30,7 +30,7 @@
     "Purchasable": false,
     "UIName": "Dixon Peacekeeping Zeppelin",
     "Id": "vehiclechassisdef_DIXON",
-    "Name": "Dixon Peacekeeping Zeppelin",
+    "Name": "Dixon",
     "Details": "The Dixon was originally intended for police work and later for firefighting. Armed with various sprayers and liquid storage tanks, the Dixon was relatively successful at its jobs and can still be found among various planetary emergency reponse forces. However, this variant of the Dixon was repurposed for military applications. Armed with a variety of mortars, machine guns, flamers, and some military-grade armor, the Dixon Peacekeeper proved moderately effective but generally could only be found among the poorer periphery forces that couldn't afford better equipment.",
     "Icon": "Dixon"
   },
@@ -95,19 +95,19 @@
       "Location": "Front",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -120,11 +120,11 @@
       "Location": "Left",
       "Hardpoints": [
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -137,11 +137,11 @@
       "Location": "Right",
       "Hardpoints": [
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -154,11 +154,11 @@
       "Location": "Rear",
       "Hardpoints": [
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],

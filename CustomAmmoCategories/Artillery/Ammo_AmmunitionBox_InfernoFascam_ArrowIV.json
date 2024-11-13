@@ -5,35 +5,28 @@
 				"CategoryID": "a/m/t/arrowiv"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
+		"Flags": [
+			"not_broken"
+		],
 		"ComponentExplosion": {
-			"ExplosionDamagePerAmmo": 150,
+			"ExplosionDamagePerAmmo": 75,
+			"HeatDamagePerAmmo": 75,
 			"StabilityDamagePerAmmo": 40
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"DamageMod: -75%",
-				"Airburst: 20, 300",
-				"AirburstRadius: 120",
-				"AirburstPenalty: 40%",
-				"Thunder",
-				"ThunderCripple",
-				"ThunderBurnReactionDestroy",
-				"ThunderSympathetic: 50%",
-				"ThunderMines: 1",
-				"ThunderChance: 80%",
-				"ThunderHeatDamage: 1",
-				"ThunderAOERadius: 30",
-				"ThunderAOEHeatDamage: 1",
-				"AlwaysStartsFire",
-				"CostPerShot: 850",
-				"AmmoCount: 5"
-			]
-		},
+		"BonusDescriptions": [
+			"Thunder",
+			"ThunderCripple",
+			"ThunderBurnReactionDestroy",
+			"ThunderSympathetic: 50%",
+			"ThunderMines: 1",
+			"ThunderChance: 80%",
+			"ThunderHeatDamage: 1",
+			"ThunderAOERadius: 30",
+			"ThunderAOEHeatDamage: 1",
+			"AlwaysStartsFire",
+			"CostPerShot: 850",
+			"AmmoCount: 5"
+		],
 		"AmmoCost": {
 			"PerUnitCost": 850
 		}
@@ -50,7 +43,7 @@
 		"Id": "Ammo_AmmunitionBox_InfernoFascam_ArrowIV",
 		"Name": "ArrowIV Ammo",
 		"Details": "FASCAM (Field Artillery Scatterable Mines) rounds, contains small but powerful anti-vehicle and anti-personnel mines which scatter out when fired,. Upon receiving a Critical Hit, any remaining ammunition stored inside an Ammo Bin will explode dealing damage to the install location. Risk can be mitigated with the use of C.A.S.E. Has 5 shots.",
-		"Icon": "Art-illery"
+		"Icon": "Art-illery-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

@@ -4,15 +4,20 @@
 			"unit_release",
 			"unit_rarity_5",
 			"unit_mech",
-			"ai_melee_low",
-			"ai_dfa_low",
 			"unit_light",
 			"unit_ready",
 			"unit_lance_support",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
 			"unit_legal",
 			"unit_role_sniper"
 		],
@@ -29,7 +34,7 @@
 		"UIName": "Incubus INC-3",
 		"Id": "mechdef_incubus_3",
 		"Name": "Incubus",
-		"Details": "The Incubus, as it is known among the Clans, is somewhat expensive for a light garrison Mech. Despite this, the Incubus does occasionally show up in second-line garrison forces. The Incubus uses an XL Engine, Endo Steel frame, and five and a half tons of Ferro-Fibrous armor and is armed with primarily medium-range weaponry. The second variant mounts a Streak SRM-6 and a single ton of ammo in the rifle, the weight saved allowing the torso lasers to be upgraded to Medium Pulse Lasers.",
+		"Details": "The Incubus, as it is known among the Clans, is somewhat expensive for a light garrison Mech. Despite this, the Incubus does occasionally show up in second-line garrison forces. The Incubus uses an XL Engine, Endo Steel frame, and five and a half tons of Ferro-Fibrous armor and is armed with primarily medium-range weaponry. The third variant mounts a Streak SRM-6 and a single ton of ammo in the rifle, the weight saved allowing the torso lasers to be upgraded to Medium Pulse Lasers.",
 		"Icon": "uixTxrIcon_incubus"
 	},
 	"simGameMechPartCost": 492211,
@@ -65,10 +70,10 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "CenterTorso",
-			"CurrentArmor": 70,
+			"CurrentArmor": 75,
 			"CurrentRearArmor": 25,
 			"CurrentInternalStructure": 50,
-			"AssignedArmor": 70,
+			"AssignedArmor": 75,
 			"AssignedRearArmor": 25
 		},
 		{
@@ -92,19 +97,19 @@
 		{
 			"DamageLevel": "Functional",
 			"Location": "LeftLeg",
-			"CurrentArmor": 55,
+			"CurrentArmor": 70,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 35,
-			"AssignedArmor": 55,
+			"AssignedArmor": 70,
 			"AssignedRearArmor": -1
 		},
 		{
 			"DamageLevel": "Functional",
 			"Location": "RightLeg",
-			"CurrentArmor": 55,
+			"CurrentArmor": 70,
 			"CurrentRearArmor": -1,
 			"CurrentInternalStructure": 35,
-			"AssignedArmor": 55,
+			"AssignedArmor": 70,
 			"AssignedRearArmor": -1
 		}
 	],

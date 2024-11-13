@@ -4,14 +4,30 @@
 	"ShortName": "the Magistracy",
 	"Demonym": "Canopian",
 	"Government": "Magistracy",
-	"Allies": [],
-	"Enemies": [
-		"Marik",
+	"Allies": [
+		"CaesarsCohorts",
+		"CanopianHighlanders",
+		"DismalDisinherited",
+		"Dragonslayers",
+		"HarcourtsDestructors",
+		"RamiliesRaiders",
+		"AuriganRestoration",
 		"Liao",
 		"TaurianConcordat",
+		"Outworld",
+		"Locals"
+	],
+	"Enemies": [
+		"Marik",
+		"Cameron",
+		"ComStar",
+		"WordOfBlake",
+		"Circinus",
 		"Marian",
 		"Mercenaries",
-		"Locals"
+		"Locals",
+		"FroncReaches",
+		"AuriganDirectorate"
 	],
 	"Presence": 1.5,
 	"factionID": "MagistracyOfCanopus",

@@ -41,6 +41,8 @@ main settings in mod.json
 										  you can't hit cause your units have flag but you can move. When you've done AI units chooses to reserve act 
 										  and still can't hit cause they have flag. Next round both yours and AI units loose protection flag and can shoot normally
 	"DeployAutoSpawnProtection": true - if true on first round begin all units gain spawn protection 
+	"OnUnitSpawnProtection": true - if true AI units will gain spawn protection after they spawn in a middle of battle
+	                                Note! this spawn protection will NOT stop objectives timers (if any) from count
 	"AskForDeployManual": true - if true and manual deployment is allowed will ask if player wants to set deploy position. 
 	                             if false and manual deployment is allowed - deploy will be manual. 
 	"ManualDeployForbidContractTypes": [] - list of contract types names, for listed contract types manual deploy will be forbidden
@@ -74,6 +76,8 @@ main settings in mod.json
     "ShowPassiveAbilitiesIcon": "ram",
     "HideActiveAbilitiesIcon": "futuristic",
     "HidePassiveAbilitiesIcon": "ram",
+	"globalGameRepresenationAudioEventsSupress": [], - list of audio events names to suppress. I'm using value [ "hatchet_latch" ] 
+	                                                   to suppress annoying hatchetman's clicking sound
 	"PlayerControlConvoyTag": "convoy_player_control" - tag added to lance's spawnEffects to turn on player controllable convoy to mechanic
 example from contract override definition:
 .............
@@ -186,6 +190,8 @@ VehicleChassis/Chassis
         "Type": "AirMech",                                              - type (available values: Normal, AirMech)
         "HoveringSoundStart": "jet_start",                              - hover sound start event. Default jet_start
         "HoveringSoundEnd": "jet_end",									- hover sound start event. Default jet_end
+		"SwitchOutAudio":"",                                            - sound event will be pushed when this representation switched to another alternative
+		"SwitchInAudio":"",                                             - sound event will be pushed when this representation becomes active
 		"additionalEncounterTags": [ "unit_vtol" ],                     - encounter tags list will be applied to actor. Note: you should be careful with this option, 
 																		  tags in this list should not be equal to tags in contracts definitions otherwise you can break 
 																		  objectives logic. 
@@ -227,6 +233,9 @@ VehicleChassis/Chassis
 	"SquadInfo": {            - ONLY for mech's chassis 
       "Troopers":5,           - units count in trooper squad, up to 8. If set as 1 no logic changing performed 
       "UnitSize": 0.2,        - unit scale
+	  "armorIcon":"VehicleSwarm_Solid",  - custom squad unit icons
+	  "outlineIcon":"VehicleSwarm_Outline",
+	  "structureIcon":"VehicleSwarm_Lined",
       "DeadUnitToHitMod": 9,  - to-hit mod when last trooper squad remain. Example squad - 4 units, DeadUnitToHitMod - 9. When all 4 units operational modifier = 0
 	                            one unit dead modifier = 3, two units dead, modifier = 6, three units dead, modifier = 9. Formula: modifier = <DeadUnitToHitMod> * <dead units> / (<Troopers> - 1)
       "Hardpoints":{          - visual hardpoints mapping. Internally squad it is one mech, each trooper is its location. MechDef reflects this fact.
@@ -250,6 +259,25 @@ VehicleChassis/Chassis
     "MeleeWeaponOverride":{    - override melee weapon for chassis. If you'll set weapon with non-melee weapon category or weapon than needs ammo, it will be only your fucken problem.
       "DefaultWeapon": "Weapon_MeleeAttackBattleClaw"
     }
+	"CrewLocation":"Head", - location where pilot's cockpit is supposed to be. Can be in mech (Head, CenterTorso etc) or vehicle (Turret, Left, Right etc) style
+	                         pilot gets injures if CrewLocation is hit
+							 on eject CrewLocation nuked
+							 Can be altered at runtime via unit statistic "CUCrewLocation"(string). 
+							 Value in CustomParts.CrewLocation is inital value for this statistic
+							 Default value is Head (Turret for vehicles)
+	"InjurePilotOnCrewLocationHit": true - if true pilot gets injures if CrewLocation is hit, 
+											if false pilot would not get hurt by CU code (other mods can override this)
+											Can be altered at runtime via unit statistic "CUInjurePilotOnCrewLocationHit"(boolean). 
+											Value in CustomParts.InjurePilotOnCrewLocationHit is inital value for this statistic
+											Default value is true
+	"NukeCrewLocationOnEject": true - if true on eject CrewLocation nuked, 
+									  if false eject would not be nuked by CU code (other mods can override this)
+									  Can be altered at runtime via unit statistic "CUNukeCrewLocationOnEject"(boolean). 
+									  Value in CustomParts.NukeCrewLocationOnEject is inital value for this statistic
+									  Default value is true
+
+									  Note! For squads these settings are meaningless. 
+
     "AOEHeight": 55,  - this value will be added to y-coordinate of current position in AoE damage calculations (weapon/landmines/component's explosions). 
                         Can be altered runtime via CUAOEHeight actor's statistic value (float)
     "FiringArc":60, - if set and > 10 means vehicle firing arc in degrees and vehicle have to rotate toward target to fire. 
@@ -308,6 +336,10 @@ VehicleChassis/Chassis
 									 4. Arm destruction leads to increase minimum instability even with OnlyPermanentLossFromLegs: true in constants.
 									 5. Destruction of arm counts as leg destruction in terms of added instability after attack
 									 6. Destruction one leg not force mech to fall. To fall on limb destruction two limbs should be destroyed.
+	"FrontLegsDestructedOnSideTorso": false - working only is ArmsCountedAsLegs is true. If set to true it overrides "Side torso crush not lead to attached arm destroy" 
+											  to original behavior eg. on side torso nuke, relevant front leg will be nuked too
+	"CustomStructure": "customstruct_experimental" - id of custom structure table. See "custom hit tables" section for more info.
+													Note! squads are not reacting this setting. They have own structure rules.
 	"LegDestroyedMovePenalty": -1f - move speed penalty on leg destroy. if < 0 or omitted Constants.MoveConstants.LegDestroyedPenalty used
 	"LegDamageRedMovePenalty": -1f - move speed penalty on leg penalized. if < 0 or omitted Constants.MoveConstants.LegDamageRedPenalty used
 	"LegDamageYellowMovePenalty": -1f - move speed penalty on leg damages. if < 0 or omitted Constants.MoveConstants.LegDamageYellowPenalty used
@@ -583,7 +615,177 @@ CustomHardpoints section
   }, 
   
 !NOTE! With current version even if game can't find prefab for weapon - empty object will be spawned and default weapon representation will be setup. It will have wrong fire position an no mesh but no circle of death. 
-  
+
+Custom hit tables
+
+Custom structure rules
+
+{
+	"Id": "customstruct_experimental", - id for this table, must be same as file name
+	"adjacentLocations": {                                         - setting for adjacent locations
+		"Head": [ "CenterTorso", "LeftTorso", "RightTorso" ],      - <armor location>: <list of nearby locations>. location can be either mech-style (CenterTorso, LeftTorso etc) 
+			                                                         either vehicle-style (Front, Rear etc)
+		"CenterTorso": [ "LeftTorso", "RightTorso", "Head" ],
+		"LeftTorso": [ "CenterTorso", "LeftArm" ],
+		"RightTorso": [ "CenterTorso", "RightArm" ],
+		"LeftArm": [ "LeftTorso" ],
+		"RightArm": [ "RightTorso" ],
+		"LeftLeg": [ "LeftTorso" ],
+		"RightLeg": [ "RightTorso" ],
+		"CenterTorsoRear": [ "LeftTorsoRear", "RightTorsoRear" ],
+		"LeftTorsoRear": [ "RightTorsoRear", "CenterTorsoRear" ],
+		"RightTorsoRear": [ "LeftTorsoRear", "CenterTorsoRear" ]
+	},
+	"clusterSpecialLocation": "None"              - special location for cluster hit table generation. 
+	                                                for mechs by default it is Head, for vehicles None
+													this location. This location is reacting on
+													ClusterChanceNeverClusterHead and ClusterChanceNeverMultiplyHead 
+													Combat constants
+}
+
+Custom hit table
+{
+	"ParentStructureId":"customstruct_experimental", - id of parent custom structure rules definition
+	"Id": "default",                                 - key this hit table will be references. 
+	                                                   Hit table loaded later overrides loaded earlier. 
+													   "default" - is hardcoded id for an default hit table for this units type
+
+	"hitTable": {                      - hit table
+		"FromFront": {                 - attack direction
+			"Head": 10,                - <Armor location name>:<weight>. Armor location can be either mech-style (CenterTorso, LeftTorso etc) 
+			                             either vehicle-style (Front, Rear etc). <weight> is integer.
+			"CenterTorso": 1,
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1,
+			"CenterTorsoRear": 1,
+			"LeftTorsoRear": 1,
+			"RightTorsoRear": 1
+		},
+		"FromLeft": {
+			"Head": 10,
+			"CenterTorso": 1,
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1,
+			"CenterTorsoRear": 1,
+			"LeftTorsoRear": 1,
+			"RightTorsoRear": 1
+		},
+		"FromRight": {
+			"Head": 10,
+			"CenterTorso": 1,
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1,
+			"CenterTorsoRear": 1,
+			"LeftTorsoRear": 1,
+			"RightTorsoRear": 1
+		},
+		"FromBack": {
+			"Head": 10,
+			"CenterTorso": 1,
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1,
+			"CenterTorsoRear": 1,
+			"LeftTorsoRear": 1,
+			"RightTorsoRear": 1
+		},
+		"FromTop": {
+			"Head": 10,
+			"CenterTorso": 1,
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1,
+			"CenterTorsoRear": 1,
+			"LeftTorsoRear": 1,
+			"RightTorsoRear": 1
+		},
+		"ToProne": {
+			"Head": 10,
+			"CenterTorso": 1,
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1,
+			"CenterTorsoRear": 1,
+			"LeftTorsoRear": 1,
+			"RightTorsoRear": 1
+		},
+		"FromArtillery": {
+			"Head": 10,
+			"CenterTorso": 1,
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1,
+			"CenterTorsoRear": 1,
+			"LeftTorsoRear": 1,
+			"RightTorsoRear": 1
+		}
+	},
+}
+
+Animator Replacer
+you can create component can be used to replace animation from one mech model to another
+for example you can create component which gives hatchetman style melee animation to any other mech you want
+to do it you should add AnimatorReplacer custom component to Custom section of component you want
+"Custom": {
+	"AnimatorReplacer":{
+		"AnimationSource":"chrPrfMech_hatchetmanBase-001" - prefab used as source of animation clips
+	}
+},
+in example - if chrPrfMech_hatchetmanBase-001 is exists in player manifest (eg. DLC bought) 
+any mech having this component get hatchetman animation
+if AnimationSource prefab is absent is manifest - animations remains intact
+NOTE! this only works for "normal" mechs, trying to use this mechanic for vehicles, quads, troopers 
+can lead to unpredictable behavior.
+
+PilotingClassDef
+{
+  "Description": {
+    "Id": "QuadVeeClass",                         - unique id
+    "Name": "Mechs and Vehicles",                 - name
+    "Details": "Mechs and Vehicles"               - description
+  },
+  "UnitTags": [                                   - list of tags chassis should have to require this expertise from pilot
+    "QuadVee"
+  ],
+  "PilotTags": [                                  - list of tags pilot should have to be able to pilot this unit class
+    "can_pilot_generic_mech",
+    "can_pilot_generic_vehicle"
+  ],
+  "ExcludeClasses": [],                           - used in expertises auto-generation process. If this expertise generated for this pilot, 
+                                                    expertises from this list will not be generated for this pilot further
+  "expertiseGenerationChance": 0,                 - raw chance to generate this expertise 
+  "expertiseGenerationMinCount": 0,               - after 1-stage random expertises generation, on 2-stage algorithm ensures there are 
+                                                    at least <expertiseGenerationMinCount> pilots with this expertise in list
+  "additionalExpertisesCount": 0,                 - if this expertise been rolled for this pilot, algorithm will try to add up to <additionalExpertisesCount>
+													form <AdditionalClasses> list. 
+  "AdditionalClasses": [],                        - list of additional expertises fro this class
+}
+
+
 appendix A. Game's build-in audio events names in format '<name>':<id>
 id - just for info purposes
  'AudioEventList_aircraft_aircraft_dropship_gencon_landing':3307102648

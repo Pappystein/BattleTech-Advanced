@@ -9,7 +9,9 @@
 			"unit_role_sniper",
 			"Steiner",
 			"6thLyranGuards",
+			"MacksMercs",
 			"unit_superheavy",
+			"Ignore_SelfKnockdown",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""

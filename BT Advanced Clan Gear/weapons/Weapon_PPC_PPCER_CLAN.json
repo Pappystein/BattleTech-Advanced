@@ -5,12 +5,12 @@
 				"CategoryID": "w/e/p/erppc"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"PPCDEBUFF: 2",
-				"WpnRecoil: 1"
+				"WpnRecoil: 1",
+				"WeaponAttachmentCompatible: PPC Capacitor",
+				"WeaponAttachmentCompatible: PPC FCS"
 			]
-		}
 	},
 	"Category": "Energy",
 	"Type": "PPC",
@@ -40,9 +40,18 @@
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 0,
 	"Instability": 15,
-	"WeaponEffectID": "WeaponEffect-Weapon_PPC",
+	"ColorsTable": [
+		{
+			"C": "#FFD966",
+			"I": 5
+		}
+	],
+	"ImprovedBallistic": true,
+	"ColorSpeedChange": 1,
+	"ColorChangeRule": "Linear",
+	"WeaponEffectID": "WeaponEffect-Weapon_PPCER",
 	"Description": {
-		"Cost": 1393000,
+		"Cost": 1250000,
 		"Rarity": 10,
 		"Purchasable": true,
 		"Manufacturer": "CLAN",
@@ -106,7 +115,12 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_extreme"
+			"range_extreme",
+			"PPCCapacitorAttachable.{location}",
+			"PPCCapacitorSupported",
+			"PPCFCSSupported-Standard",
+			"WebbTCSupported-SingleShot",
+			"QuirkPulverizerSupported-ERPPC"
 		],
 		"tagSetSourceFile": ""
 	}

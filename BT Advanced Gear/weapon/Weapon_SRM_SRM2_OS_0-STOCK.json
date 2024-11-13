@@ -5,12 +5,11 @@
 				"CategoryID": "w/m/s/srm"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
-				"InternalAmmo: 2",
-				"MissileHealth: 2"
-			]
-		}
+		"BonusDescriptions": [
+			"InternalAmmo: 2",
+			"MissileHealth: 2",
+			"WeaponAttachmentCompatible: SRM FCS"
+		]
 	},
 	"Category": "Missile",
 	"Type": "SRM",
@@ -24,7 +23,7 @@
 	],
 	"AmmoCategory": "Flamer",
 	"StartingAmmoCapacity": 2,
-	"HeatGenerated": 6,
+	"HeatGenerated": 4,
 	"Damage": 8,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
@@ -69,7 +68,9 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_standard"
+			"range_standard",
+			"SRMFCSSupported",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

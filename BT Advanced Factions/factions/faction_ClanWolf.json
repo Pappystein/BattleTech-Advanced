@@ -4,13 +4,19 @@
 	"ShortName": "Wolf",
 	"Demonym": "Wolf",
 	"Government": "Clan",
-	"Allies": [],
+	"Allies": [
+		"ClanSnowRaven",
+		"ClanNovaCat",
+		"Locals"
+	],
 	"Enemies": [
 		"Steiner",
 		"Marik",
 		"Kurita",
 		"Davion",
 		"Liao",
+		"Cameron",
+		"331stDivision",
 		"DarkCaste",
 		"AuriganRestoration",
 		"ComStar",
@@ -37,10 +43,8 @@
 		"ClanHellsHorses",
 		"ClanIceHellion",
 		"ClanJadeFalcon",
-		"ClanNovaCat",
 		"ClansGeneric",
 		"ClanSmokeJaguar",
-		"ClanSnowRaven",
 		"ClanStarAdder",
 		"ClanSteelViper",
 		"Delphi",
@@ -55,7 +59,8 @@
 		"AuriganPirates",
 		"WordOfBlake",
 		"Mercenaries",
-		"Rim"
+		"Rim",
+		"RimWorldsRepublic"
 	],
 	"Presence": 0.1,
 	"DefaultCombatLeaderCastDefId": "castDef_LocalsDefault",

@@ -7,7 +7,7 @@
 		"Name": "M.A.S.H Truck",
 		"Details": "",
 		"Icon": "MASHTruck",
-		"Cost": 564,
+		"Cost": 50000,
 		"Rarity": 0,
 		"Purchasable": false
 	},
@@ -103,11 +103,11 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],

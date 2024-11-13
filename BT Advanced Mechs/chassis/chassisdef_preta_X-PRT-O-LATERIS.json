@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Preta",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -14,7 +15,7 @@
 		"UIName": "Preta",
 		"Id": "chassisdef_preta_X-PRT-O-LATERIS",
 		"Name": "Preta",
-		"Details": "This mech is a mystery. It is not listed on any recorded mech registry and is visually unique. It's not clear where it came from or what it is, only that it uses cutting-edge technology and is very dangerous. Named the Preta according to captured Word of Blake MechWarriors, the Preta seems to be a middle-weight skirmisher design. It is fast for its size, well armored, and apparently is an OmniMech. Expect the unexpected from the Preta. The Preta Lateris seems to carry a Large Variable-Speed Pulse Laser and a Medium Variable-Speed Pulse Laser, making it deadly at close range.",
+		"Details": "This mech is a mystery. It is not listed on any recorded mech registry and is visually unique. It's not clear where it came from or what it is, only that it uses cutting-edge technology and is very dangerous. Named the Preta according to captured Word of Blake MechWarriors, the Preta seems to be a middle-weight skirmisher design. It is fast for its size, well armored, and apparently is an OmniMech. Expect the unexpected from the Preta. The Preta Lateris seems to carry a Large Variable-Speed Pulse Laser and a Medium Variable-Speed Pulse Laser, which combined with a Retractable Blade makes it deadly at close range.",
 		"Icon": "uixTxrIcon_preta"
 	},
 	"MovementCapDefID": "movedef_vindicator_VND-1R",
@@ -57,7 +58,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -71,12 +72,8 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
-					"Omni": true
-				},
-				{
-					"WeaponMount": "AntiPersonnel",
-					"Omni": true
+					"WeaponMountID": "MeleeWeapon",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -89,7 +86,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": true
+				},
+				{
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -110,7 +111,16 @@
 		},
 		{
 			"Location": "RightTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "Energy",
+					"Omni": true
+				},
+				{
+					"WeaponMountID": "Energy",
+					"Omni": true
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 110,
@@ -121,11 +131,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -201,12 +211,14 @@
 	"VariantName": "X-PRT-O-LATERIS",
 	"ChassisTags": {
 		"items": [
-			"OmniMech"
+			"OmniMech",
+			"ArmLimitUpperRight",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Fire Support & Brawler",
-	"YangsThoughts": "This mech is a mystery. It is not listed on any recorded mech registry and is visually unique. It's not clear where it came from or what it is, only that it uses cutting-edge technology and is very dangerous. Named the Preta according to captured Word of Blake MechWarriors, the Preta seems to be a middle-weight skirmisher design. It is fast for its size, well armored, and apparently is an OmniMech. Expect the unexpected from the Preta. The Preta Lateris seems to carry a Large Variable-Speed Pulse Laser and a Medium Variable-Speed Pulse Laser, making it deadly at close range.",
+	"YangsThoughts": "This mech is a mystery. It is not listed on any recorded mech registry and is visually unique. It's not clear where it came from or what it is, only that it uses cutting-edge technology and is very dangerous. Named the Preta according to captured Word of Blake MechWarriors, the Preta seems to be a middle-weight skirmisher design. It is fast for its size, well armored, and apparently is an OmniMech. Expect the unexpected from the Preta. The Preta Lateris seems to carry a Large Variable-Speed Pulse Laser and a Medium Variable-Speed Pulse Laser, which combined with a Retractable Blade makes it deadly at close range.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -216,6 +228,15 @@
 			"DamageLevel": "Functional",
 			"prefabName": "",
 			"hasPrefabName": true
+		},
+		{
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "emod_armorslots_standard",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
 		},
 		{
 			"MountedLocation": "CenterTorso",
@@ -300,6 +321,39 @@
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "emod_arm_part_lower",
+			"SimGameUID": "",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": 0,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "emod_arm_part_hand",
+			"SimGameUID": "",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": 0,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "Weapon_Preta_RetractableBlade",
+			"SimGameUID": "",
+			"ComponentDefType": "Weapon",
+			"HardpointSlot": 0,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,

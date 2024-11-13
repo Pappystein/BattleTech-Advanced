@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Lower",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Mackie",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -13,7 +14,7 @@
 		"Model": "",
 		"UIName": "Primitive Mackie",
 		"Id": "chassisdef_mackie-5S",
-		"Name": "Mackie Primitive",
+		"Name": "Primitive Mackie",
 		"Details": "The initial prototype Mackie was designated the MSK-5S, and carried a slightly different weapons load than the production model MSK-6S. Using an Autocannon/5 in the right arm instead of the AC/10, the MSK-5S also mounted a Large Laser in the center torso, rather than the twin Medium Lasers, and had two more heat sinks. Twenty tons of Primitive Armor protected the first generation Mackie. This armor, though heavier, provided less protection than later models.[2] The MSK-5S was used by Colonel Kincaid in his now-famous combat trial versus the Merkava tanks.",
 		"Icon": "uixTxrIcon_mackie"
 	},
@@ -66,7 +67,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -89,7 +94,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -103,7 +108,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [],
 			"Tonnage": 0,
-			"InventorySlots": 12,
+			"InventorySlots": 13,
 			"MaxArmor": 210,
 			"MaxRearArmor": 105,
 			"InternalStructure": 105
@@ -112,7 +117,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				}
 			],
@@ -188,7 +193,10 @@
 	"VariantName": "MSK-5S",
 	"ChassisTags": {
 		"items": [
-			"PrimitiveMech"
+			"PrimitiveMech",
+			"ArmLimitUpperRight",
+			"ArmLimitLowerLeft",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -197,7 +205,7 @@
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_engineslots_Primitive_center",
+			"ComponentDefID": "emod_engineslots_primitive_center",
 			"SimGameUID": "",
 			"ComponentDefType": "HeatSink",
 			"HardpointSlot": -1,
@@ -227,6 +235,15 @@
 			"DamageLevel": "Functional",
 			"prefabName": null,
 			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Gear_Quirk_Searchlight_Mackie",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": "",
+			"hasPrefabName": true
 		}
 	],
 	"CustomParts": {

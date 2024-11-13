@@ -1,8 +1,9 @@
 {
 	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Upper"
+		"AssemblyVariant": {
+			"PrefabID": "Preta",
+			"Exclude": false,
+			"Include": true
 		}
 	},
 	"Description": {
@@ -14,7 +15,7 @@
 		"UIName": "Sirocco",
 		"Id": "chassisdef_preta_X-PRT-O-SIROCCO",
 		"Name": "Sirocco",
-		"Details": "Driven by a Word of Blake Precentor by the name of Aria Shannadah who is even more mysterious than her mech's origins, the Sirocco is a whirlwind of flames, burning anything it can catch. For its primary weapon, the Sirocco uses a head-mounted Plasma Rifle, while twin Heavy Flamers contribute to the heat. A pair of Inferno Rocket Launcher/20s provide even more burn potential. The only concession to actually killing the target, if the heat fails, is a Clan-grade Heavy Medium Laser in the arm.",
+		"Details": "Driven by a Word of Blake Precentor by the name of Aria Shannadah who is even more mysterious than her mech's origins, the Sirocco is a whirlwind of flames, burning anything it can catch. For its primary weapon, the Sirocco uses a head-mounted Plasma Rifle, while a Flamers contribute to the heat. A pair of Inferno Rocket Launcher/20s provide even more burn potential. The only concession to actually killing the target, if the heat fails, is a Clan-grade Heavy Medium Laser in the arm and a Retractable Blade for melee combat.",
 		"Icon": "uixTxrIcon_preta"
 	},
 	"MovementCapDefID": "movedef_vindicator_VND-1R",
@@ -57,7 +58,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -71,8 +72,8 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
-					"Omni": true
+					"WeaponMountID": "MeleeWeapon",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -85,7 +86,11 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
+					"Omni": true
+				},
+				{
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -108,7 +113,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": true
+				},
+				{
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -122,11 +131,11 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -203,16 +212,27 @@
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
-			"HeroMech"
+			"HeroMech",
+			"ArmLimitUpperRight",
+			"MediumMech"
 		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Gladiator",
-	"YangsThoughts": "Driven by a Word of Blake Precentor by the name of Aria Shannadah who is even more mysterious than her mech's origins, the Sirocco is a whirlwind of flames, burning anything it can catch. For its primary weapon, the Sirocco uses a head-mounted Plasma Rifle, while twin Heavy Flamers contribute to the heat. A pair of Inferno Rocket Launcher/20s provide even more burn potential. The only concession to actually killing the target, if the heat fails, is a Clan-grade Heavy Medium Laser in the arm.",
+	"YangsThoughts": "Driven by a Word of Blake Precentor by the name of Aria Shannadah who is even more mysterious than her mech's origins, the Sirocco is a whirlwind of flames, burning anything it can catch. For its primary weapon, the Sirocco uses a head-mounted Plasma Rifle, while a Flamers contribute to the heat. A pair of Inferno Rocket Launcher/20s provide even more burn potential. The only concession to actually killing the target, if the heat fails, is a Clan-grade Heavy Medium Laser in the arm and a Retractable Blade for melee combat.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
 			"ComponentDefID": "emod_structureslots_endosteel",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"DamageLevel": "Functional",
+			"prefabName": "",
+			"hasPrefabName": true
+		},
+		{
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "emod_armorslots_clanferrosfibrous",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"DamageLevel": "Functional",
@@ -302,6 +322,39 @@
 			"SimGameUID": null,
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "emod_arm_part_lower",
+			"SimGameUID": "",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": 0,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "emod_arm_part_hand",
+			"SimGameUID": "",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": 0,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": null,
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "LeftArm",
+			"ComponentDefID": "Weapon_Preta_RetractableBlade",
+			"SimGameUID": "",
+			"ComponentDefType": "Weapon",
+			"HardpointSlot": 0,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,

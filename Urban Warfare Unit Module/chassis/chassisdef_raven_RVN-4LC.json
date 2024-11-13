@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
-		}
-	},
 	"Description": {
 		"Cost": 2123540,
 		"Rarity": 5,
@@ -14,7 +8,7 @@
 		"UIName": "Raven",
 		"Id": "chassisdef_raven_RVN-4LC",
 		"Name": "Raven",
-		"Details": "This early 3060s variant of the Raven incorporates the Confederation's new Stealth Armor. The 'Mech carries six tons of Stealth Armor and also uses ten double heat sinks for greater heat dissipation capabilities. The 'Mech is armed with two ER Medium Lasers and an SRM-6, and also carries part of the electronic warfare package carried by the 3L model. This refit variant of the -4L loses the Beagle Active Probe of the -3L and -4L in exchange for an ER Small Laser and a C3 Slave unit.",
+		"Details": "This early 3060s variant of the Raven incorporates the Confederation's new Stealth Armor. The 'Mech carries six tons of Stealth Armor and also uses ten double heat sinks for greater heat dissipation capabilities. The 'Mech is armed with two ER Medium Lasers and an SRM-6, and also carries part of the electronic warfare package carried by the 3L model. This refit variant of the -4L loses the Beagle Active Probe of the -3L and -4L in exchange for an ER Small Laser.",
 		"Icon": "uixTxrIcon_raven"
 	},
 	"MovementCapDefID": "movedef_raven_RVN-1X",
@@ -66,15 +60,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -88,15 +82,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -119,11 +113,11 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -137,19 +131,19 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -246,7 +240,11 @@
 	],
 	"VariantName": "RVN-4LC",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"LightMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Stealth Scout",

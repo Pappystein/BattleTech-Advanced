@@ -5,7 +5,7 @@
 		"CustomParts": []
 	},
 	"Description": {
-		"Cost": 100000,
+		"Cost": 340000,
 		"Rarity": 1,
 		"Purchasable": false,
 		"UIName": "Wheeled APC",
@@ -107,11 +107,11 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],

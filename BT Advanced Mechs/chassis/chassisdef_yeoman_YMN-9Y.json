@@ -1,4 +1,12 @@
 {
+	"Custom": {
+		"AssemblyVariant": {
+		  "PrefabID": "Yeoman",
+		  "Exclude": false,
+		  "Include": true
+		},
+		"ChassisDefaults": []
+	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "Head",
@@ -32,12 +40,12 @@
 		"UIName": "Yeoman",
 		"Id": "chassisdef_yeoman_YMN-9Y",
 		"Name": "Yeoman",
-		"Details": "<color=#53ff1a><b>Arm Actuator Limit</b>: <b>upper</b> on left and <b>upper</b> on right</color>\nOne of House Marik's many variants of their premier fire support mech the Yeoman, the YMN-9Y uses weaponry acquired in an agreement with the Draconis Combine. In exchange for some of House Marik's ER Large Laser production, the Combine provided the FWL with a shipment of MRM-40 launchers. The FWLM immediately put them to use on Yeoman chassis, two to a Yeoman. It's a simple design with a simple purpose: vomit missiles at the targets until they stop moving. The YMN-9Y found mild success but the inaccuracy of the MRM system turned off many pilots from the mech.",
+		"Details": "One of House Marik's many variants of their premier fire support mech the Yeoman, the YMN-9Y uses weaponry acquired in an agreement with the Draconis Combine. In exchange for some of House Marik's ER Large Laser production, the Combine provided the FWL with a shipment of MRM-40 launchers. The FWLM immediately put them to use on Yeoman chassis, two to a Yeoman. It's a simple design with a simple purpose: vomit missiles at the targets until they stop moving. The YMN-9Y found mild success but the inaccuracy of the MRM system turned off many pilots from the mech.",
 		"Icon": "uixTxrIcon_yeoman"
 	},
 	"VariantName": "YMN-9Y",
 	"StockRole": "Pure Missile Support",
-	"YangsThoughts": "<color=#53ff1a><b>Arm Actuator Limit</b>: <b>upper</b> on left and <b>upper</b> on right</color>\nOne of House Marik's many variants of their premier fire support mech the Yeoman, the YMN-9Y uses weaponry acquired in an agreement with the Draconis Combine. In exchange for some of House Marik's ER Large Laser production, the Combine provided the FWL with a shipment of MRM-40 launchers. The FWLM immediately put them to use on Yeoman chassis, two to a Yeoman. It's a simple design with a simple purpose: vomit missiles at the targets until they stop moving. The YMN-9Y found mild success but the inaccuracy of the MRM system turned off many pilots from the mech.",
+	"YangsThoughts": "One of House Marik's many variants of their premier fire support mech the Yeoman, the YMN-9Y uses weaponry acquired in an agreement with the Draconis Combine. In exchange for some of House Marik's ER Large Laser production, the Combine provided the FWL with a shipment of MRM-40 launchers. The FWLM immediately put them to use on Yeoman chassis, two to a Yeoman. It's a simple design with a simple purpose: vomit missiles at the targets until they stop moving. The YMN-9Y found mild success but the inaccuracy of the MRM system turned off many pilots from the mech.",
 	"PrefabIdentifier": "chrprfmech_yeomanbase-001",
 	"PrefabBase": "yeoman",
 	"Tonnage": 60,
@@ -73,7 +81,11 @@
 	"DFASelfDamage": 60,
 	"DFAInstability": 30,
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"HeavyMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"MechPartMax": 0,
@@ -131,7 +143,7 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -145,11 +157,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -160,7 +172,12 @@
 		},
 		{
 			"Location": "LeftTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 140,
@@ -172,7 +189,7 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				}
 			],
 			"Tonnage": 0,
@@ -183,7 +200,12 @@
 		},
 		{
 			"Location": "RightTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 140,
@@ -195,11 +217,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,

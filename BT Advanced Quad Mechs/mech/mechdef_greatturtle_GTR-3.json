@@ -3,6 +3,8 @@
 		"items": [
 			"unit_jumpOK",
 			"unit_mech",
+			"unit_quad",
+			"Ignore_SelfKnockdown",
 			"unit_assault",
 			"unit_release",
 			"unit_gladiator",
@@ -160,150 +162,6 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Quad_Front_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightArm",
-			"ComponentDefID": "Quad_Front_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Quad_Hind_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_hip",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_upper",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_lower",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
-			"MountedLocation": "RightLeg",
-			"ComponentDefID": "Quad_Hind_leg_foot",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": 0,
-			"SimGameUID": "",
-			"hasPrefabName": false,
-			"DamageLevel": "Functional"
-		},
-		{
 			"MountedLocation": "LeftTorso",
 			"ComponentDefID": "Gear_JumpJet_Generic_Assault",
 			"SimGameUID": null,
@@ -360,7 +218,7 @@
 		},
 		{
 			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -371,7 +229,7 @@
 		},
 		{
 			"MountedLocation": "LeftLeg",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,
@@ -382,7 +240,7 @@
 		},
 		{
 			"MountedLocation": "LeftArm",
-			"ComponentDefID": "Ammo_AmmunitionBox_Generic_HGAUSS",
+			"ComponentDefID": "Ammo_AmmunitionBox_Generic_SUGAUSS",
 			"SimGameUID": null,
 			"ComponentDefType": "AmmunitionBox",
 			"HardpointSlot": -1,

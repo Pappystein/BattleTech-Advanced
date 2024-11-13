@@ -4,10 +4,6 @@
 			"PrefabID": "Bullshark",
 			"Exclude": false,
 			"Include": true
-		},
-		"ArmActuatorSupport": {
-			"LeftLimit": "Upper",
-			"RightLimit": "Upper"
 		}
 	},
 	"Description": {
@@ -19,7 +15,7 @@
 		"UIName": "Bull Shark",
 		"Id": "chassisdef_bullshark_BSK-MAZ",
 		"Name": "Bull Shark",
-		"Details": "Apparently constructed by the now-destroyed Clan Wolverine in the early days of the Clans before Clan technology was conceived of, the Bull Shark-MAZ is a deadly design. Armed with the best the SLDF had to offer, the BSK-MAZ carries a LB-10X Autocannon, a pair of Ultra AC/5s, and a pair each of Large and Medium Lasers. 13 double heat sinks keep it all cold while 16 tons of armor cover dual CASE'd ammo bins. Though the design has been forgotten until recently, the Bull Shark is a deadly and sleek machine, ready for trouble.",
+		"Details": "Apparently constructed by the now-destroyed Clan Wolverine in the early days of the Clans before Clan technology was conceived of, the Bull Shark-MAZ is a deadly design. Armed with the best the SLDF had to offer, the BSK-MAZ carries a Thumper Cannon, a pair of LB-10X Autocannons, and a pair of Improved Large Lasers and a pair Medium Lasers. 13 double heat sinks keep it all cold while 16 tons of armor cover dual CASE'd ammo bins. Though the design has been forgotten until recently, the Bull Shark is a deadly and sleek machine, ready for trouble.",
 		"Icon": "uixTxrIcon_bullshark"
 	},
 	"MovementCapDefID": "movedef_bullshark_BSK-MAZ",
@@ -68,11 +64,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -86,15 +86,15 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -117,15 +117,19 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Missile",
+					"WeaponMountID": "Missile",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Artillery",
 					"Omni": false
 				}
 			],
@@ -139,11 +143,15 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -218,11 +226,15 @@
 	],
 	"VariantName": "BSK-MAZ",
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"AssaultMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Heavy Brawler",
-	"YangsThoughts": "Apparently constructed by the now-destroyed Clan Wolverine in the early days of the Clans before Clan technology was conceived of, the Bull Shark-MAZ is a deadly design. Armed with the best the SLDF had to offer, the BSK-MAZ carries a LB-10X Autocannon, a pair of Ultra AC/5s, and a pair each of Large and Medium Lasers. 13 double heat sinks keep it all cold while 16 tons of armor cover dual CASE'd ammo bins. Though the design has been forgotten until recently, the Bull Shark is a deadly and sleek machine, ready for trouble.",
+	"YangsThoughts": "Apparently constructed by the now-destroyed Clan Wolverine in the early days of the Clans before Clan technology was conceived of, the Bull Shark-MAZ is a deadly design. Armed with the best the SLDF had to offer, the BSK-MAZ carries a Thumper Cannon, a pair of LB-10X Autocannons, and a pair of Improved Large Lasers and a pair Medium Lasers. 13 double heat sinks keep it all cold while 16 tons of armor cover dual CASE'd ammo bins. Though the design has been forgotten until recently, the Bull Shark is a deadly and sleek machine, ready for trouble.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",

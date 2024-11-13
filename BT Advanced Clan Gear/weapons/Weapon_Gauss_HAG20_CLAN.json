@@ -12,8 +12,7 @@
 			"ExplosionDamage": 100,
 			"StabilityDamage": 20
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WeaponBoom: 100",
 				"HAGR",
 				"NoFireInMelee",
@@ -21,9 +20,9 @@
 				"WpnRecoil: 2",
 				"NumberofBursts: 2",
 				"WpnAccuracy: +1",
-				"ProjectileBurst: 10"
+				"ProjectileBurst: 10",
+				"WeaponAttachmentCompatible: Gauss FCS"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Gauss",
@@ -50,7 +49,7 @@
 	"IndirectFireCapable": false,
 	"RefireModifier": 2,
 	"ShotsWhenFired": 2,
-	"ProjectilesPerShot": 10,
+	"ProjectilesPerShot": 1,
 	"AttackRecoil": 4,
 	"Instability": 1,
 	"DisableClustering": false,
@@ -93,7 +92,9 @@
 			"OmniRestriction.{location}",
 			"component_type_stock",
 			"wr-clustered_shots",
-			"range_extreme"
+			"range_extreme",
+			"GaussFCSSupported-Standard",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

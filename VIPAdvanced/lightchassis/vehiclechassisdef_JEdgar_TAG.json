@@ -9,7 +9,7 @@
 		"Name": "J.Edgar",
 		"Details": "",
 		"Icon": "J.edgar",
-		"Cost": 993,
+		"Cost": 250000,
 		"Rarity": 3,
 		"Purchasable": false
 	},
@@ -20,7 +20,7 @@
 	"PrefabBase": "jedgar",
 	"Tonnage": 25,
 	"weightClass": "LIGHT",
-	"BattleValue": 993,
+	"BattleValue": 500000,
 	"TopSpeed": 500,
 	"TurnRadius": 90,
 	"movementType": "Wheeled",
@@ -105,15 +105,15 @@
 			"Location": "Turret",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],

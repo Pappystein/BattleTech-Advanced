@@ -1,6 +1,13 @@
 {
-  "Description": {
-    "Cost": 31174810,
+  "Custom": {
+		"AssemblyVariant": {
+			"PrefabID": "BattleHammer",
+			"Exclude": false,
+			"Include": true
+		}
+	},
+	"Description": {
+    "Cost": 11174810,
     "Rarity": 1,
     "Purchasable": true,
     "Manufacturer": "",
@@ -8,14 +15,14 @@
     "UIName": "BattleHammer",
     "Id": "chassisdef_battlehammer_BHA2G",
     "Name": "BattleHammer",
-    "Details": "Pafftek Industries, trying to reduce the cost of the exceptional Battlehammer, made a series utilizing only innersphere tech.  This, the Gauss equipped BattleHammer, utilizes some of the latest InnerSphere tech.  It is available to many of the Great Houses and ComStar.  Uniquely it is also sold to Clan NovaCat.\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
+    "Details": "Pafftek Industries, trying to reduce the cost of the exceptional BattleHammer, made a series utilizing only inner-sphere tech.  This, the gauss-equipped BattleHammer, utilizes some of the latest inner-sphere techs.  It is available to many of the Great Houses and ComStar.  Uniquely it is also sold to Clan NovaCat.\n\n <b><color=#e51717>COMMUNITY CONTENT</color></b>",
     "Icon": "uixTxrIcon_battlemaster"
   },
 	"MovementCapDefID": "movedef_templar-TLR1-O",
 	"PathingCapDefID": "pathingdef_assault",
-	"HardpointDataDefID": "hardpointdatadef_templar",
-	"PrefabIdentifier": "chrprfmech_templarbase-001",
-	"PrefabBase": "templar",
+	"HardpointDataDefID": "hardpointdatadef_battlehammer",
+	"PrefabIdentifier": "chrprfmech_battlehammerbase-001",
+	"PrefabBase": "battlehammer",
   "Tonnage": 85,
   "InitialTonnage": 8.5,
   "weightClass": "ASSAULT",
@@ -51,7 +58,7 @@
       "Location": "Head",
       "Hardpoints": [
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }	  
 	  ],
@@ -65,11 +72,11 @@
       "Location": "LeftArm",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },	  
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         }
       ],
@@ -83,15 +90,15 @@
       "Location": "LeftTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -105,7 +112,7 @@
       "Location": "CenterTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }		
 		
@@ -120,15 +127,15 @@
       "Location": "RightTorso",
       "Hardpoints": [
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "Energy",
+          "WeaponMountID": "Energy",
           "Omni": false
         },
         {
-          "WeaponMount": "AntiPersonnel",
+          "WeaponMountID": "AntiPersonnel",
           "Omni": false
         }
       ],
@@ -142,11 +149,11 @@
       "Location": "RightArm",
       "Hardpoints": [
         {
-          "WeaponMount": "Ballistic",
+          "WeaponMountID": "Ballistic",
           "Omni": false
         },	  
         {
-          "WeaponMount": "Missile",
+          "WeaponMountID": "Missile",
           "Omni": false
         }
       ],
@@ -222,11 +229,14 @@
   "VariantName": "BHA-2G",
   "ChassisTags": {
     "items": [
-	],
+			"AssaultMech",
+			"ArmLimitLowerRight",
+			"ArmLimitLowerLeft"
+  	],
     "tagSetSourceFile": ""
   },
   "StockRole": "Heavy Brawler & Sniper",
-  "YangsThoughts": "I don't know if this is still considered a Frankenmech or if, now that it is in production, just a mech.  Either way this is a unique and powerful mech.",
+  "YangsThoughts": "I don't know if this is still considered a frankenmech or if, now that it is in production, just a mech.  Either way, this is a unique and powerful mech in its tech base.",
   "FixedEquipment": [
 		{
 		  "MountedLocation": "CenterTorso",

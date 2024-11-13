@@ -25,7 +25,8 @@
 			"planet_industry_recreation",
 			"planet_industry_mining",
 			"planet_industry_agriculture",
-			"planet_faction_hanse"
+			"planet_faction_hanse",
+			"planet_factory"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -154,10 +155,11 @@
 		"Steiner",
 		"Chainelane",
 		"JarnFolk",
+		"Castile",
 		"AuriganPirates",
 		"DarkCaste",
 		"Locals",
 		"Mercenaries",
-		"Rim"
+		"RimWorldsRepublic"
 	]
 }

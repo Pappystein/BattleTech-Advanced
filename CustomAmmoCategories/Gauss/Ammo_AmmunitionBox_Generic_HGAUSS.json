@@ -2,21 +2,17 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "a/a/g/gauss"
+				"CategoryID": "a/a/g/hgauss"
 			}
 		],
-		"Flags": {
-			"flags": [
-				"not_broken"
-			]
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"Flags": [
+			"not_broken"
+		],
+		"BonusDescriptions": [
 				"CostPerShot: 1000",
 				"AmmoCount: 4",
 				"GaussNoBoom"
-			]
-		},
+			],
 		"AmmoCost": {
 			"PerUnitCost": 1000
 		}
@@ -33,7 +29,7 @@
 		"Id": "Ammo_AmmunitionBox_Generic_HGAUSS",
 		"Name": "Heavy Gauss Ammo",
 		"Details": "Ammo Bins contain the rounds needed for projectile-based weaponry, with at least one bin required per weapon type. <b><color=#099ff2>Does not explode.</color></b> Has 4 shots.",
-		"Icon": "FerroMag"
+		"Icon": "FerroMag-ammo"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

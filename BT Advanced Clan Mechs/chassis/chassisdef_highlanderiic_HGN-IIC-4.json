@@ -1,9 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"RightLimit": "Lower"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -69,7 +64,8 @@
 	"ChassisTags": {
 		"items": [
 			"ClanMech",
-			"unit_mechtool"
+			"ArmLimitLowerRight",
+			"AssaultMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -137,11 +133,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -155,15 +151,19 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -186,11 +186,11 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -204,11 +204,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Ballistic"
+					"WeaponMountID": "Ballistic"
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,

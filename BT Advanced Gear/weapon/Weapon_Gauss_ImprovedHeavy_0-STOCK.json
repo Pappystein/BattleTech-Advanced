@@ -2,26 +2,32 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/a/g/gaussrifle"
+				"CategoryID": "w/a/g/hgaussrifle"
+			},
+			{
+				"CategoryID": "NeverMelee"
 			}
 		],
 		"ComponentExplosion": {
 			"ExplosionDamage": 110,
 			"StabilityDamage": 60
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"WpnRecoil: 5",
-				"IsHeavyGauss",
-				"WpnAccuracy: +1",
-				"WeaponBoom: 110"
-			]
-		}
+		"BonusDescriptions": [
+			"WpnRecoil: 5",
+			"IsHeavyGauss",
+			"WpnAccuracy: +1",
+			"WeaponBoom: 110",
+			"NoFireInMelee",
+			"Knockdown",
+			"KnockdownChance: 60%",
+			"WeaponAttachmentCompatible: Gauss FCS",
+			"LocationRestricted: Torsos Only"
+		]
 	},
 	"Category": "Ballistic",
 	"Type": "Gauss",
 	"WeaponSubType": "Gauss",
-	"MinRange": 0,
+	"MinRange": 90,
 	"MaxRange": 720,
 	"RangeSplit": [
 		180,
@@ -70,11 +76,41 @@
 	"AllowedLocations": "LeftTorso,RightTorso,CenterTorso",
 	"DisallowedLocations": "LeftArm,RightArm",
 	"CriticalComponent": false,
-	"statusEffects": [],
+	"statusEffects": [
+		{
+			"durationData": {
+				"duration": 1,
+				"stackLimit": 1
+			},
+			"targetingData": {
+				"effectTriggerType": "OnWeaponFire",
+				"effectTargetType": "Creator",
+				"showInStatusPanel": false
+			},
+			"effectType": "StatisticEffect",
+			"Description": {
+				"Id": "WeaponEffect-SelfknockdownCheck_OnFire",
+				"Name": "self knockdown check",
+				"Details": "self knockdown check.",
+				"Icon": "uixSvgIcon_run_n_gun"
+			},
+			"statisticData": {
+				"statName": "SelfknockdownCheck_OnFire",
+				"operation": "Float_Add",
+				"modValue": "0.6",
+				"modType": "System.Single"
+			},
+			"nature": "Buff"
+		}
+	],
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_standard"
+			"range_standard",
+			"GaussFCSSupported-Standard",
+			"WebbTCSupported-SingleShot",
+			"QuirkHollanderSupported-Gauss",
+			"QuirkFafnirSupported-Gauss"
 		],
 		"tagSetSourceFile": ""
 	}

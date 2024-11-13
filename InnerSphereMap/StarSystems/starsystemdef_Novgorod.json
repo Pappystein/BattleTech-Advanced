@@ -142,6 +142,7 @@
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
+		"AuriganPirates",
 		"Hanse",
 		"Locals"
 	],
@@ -149,10 +150,11 @@
 		"Steiner",
 		"Chainelane",
 		"JarnFolk",
+		"Castile",
 		"AuriganPirates",
 		"DarkCaste",
 		"Locals",
 		"Mercenaries",
-		"Rim"
+		"RimWorldsRepublic"
 	]
 }

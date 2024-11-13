@@ -76,7 +76,7 @@
 		"items": [
 			"OmniMech",
 			"mr-resize-0.8",
-			"unit_mechtool"
+			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},
@@ -144,15 +144,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -184,7 +184,7 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -198,15 +198,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "AntiPersonnel"
+					"WeaponMountID": "AntiPersonnel"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Energy"
+					"WeaponMountID": "Energy"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -220,7 +220,7 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -234,7 +234,7 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,

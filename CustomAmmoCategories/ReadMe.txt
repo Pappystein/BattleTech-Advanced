@@ -26,22 +26,48 @@ CACExtraLongRangeAccuracyMod - LongRange <= X < MaxRange
 
 
 Additional unit statistic
-CACAPProtection - boolean - if true unit is protected from all AP damage including AP crits. If armor is absent crits will be rolled anyway
-CACAoEDamageMult - float - multipicator for all AoE damage to unit including AoE heat and stability if applicable. (Working for weapon attacks, landmines and component explosions)
-CACAPDamageMult - float - multipicator for all AP damage to unit (only pierce through part of damage)
+CACAPProtection - boolean - if true unit is protected from all AP damage including AP crits. If armor is absent crits will be rolled anyway. Can be locational
+CACAoEDamageMult - float - multipicator for all AoE damage to unit including AoE heat and stability if applicable. (Working for weapon attacks, landmines and component explosions).
+						   Can be locational
+CACAPDamageMult - float - multipicator for all AP damage to unit (only pierce through part of damage). Can be locational
 CACIncomingHeatMult - float - multipicator for all incoming heat (weapon attacks, landmines, burning terrain, AoE damage)
 CACIncomingStabilityMult - float - multipicator for all incoming stability (weapon attacks, landmines, burning terrain, AoE damage)
-CACAPShardsMult - float - multipicator for weapon shards TAC modifier (shardsMod = weapon.APArmorShardsMod() * unit.{CACAPShardsMult}) default 1.0
-CACAPMaxThiknessMult - float - multipicator for weapon max armor thikness TAC modifier (maxThickness = weapon.APMaxArmorThickness() * unit.{CACAPMaxThiknessMult}) default 1.0
-CAC_FlatCritChance - float - multipicator for any crit roll, default 1.0
-CAC_BaseCritChance - float - multipicator for crit roll if armor exposed, default 1.0
-CAC_APCritChance - float - multipicator for through armor crit roll, default 1.0
+CACAPShardsMult - float - multipicator for weapon shards TAC modifier (shardsMod = weapon.APArmorShardsMod() * unit.{CACAPShardsMult}) default 1.0. Can be locational
+CACAPMaxThiknessMult - float - multipicator for weapon max armor thikness TAC modifier (maxThickness = weapon.APMaxArmorThickness() * unit.{CACAPMaxThiknessMult}) default 1.0. Can be locational
+CAC_FlatCritChance - float - multipicator for any crit roll, default 1.0. Can be locational
+CAC_BaseCritChance - float - multipicator for crit roll if armor exposed, default 1.0. Can be locational
+CAC_APCritChance - float - multipicator for through armor crit roll, default 1.0. Can be locational
 CACMinefieldMult - float - multipicator for minefield triggering chance, default 1.0
 MINIMAP_JAMMED - float if greater than 0 minimap for this unit will be random gray pixels instead of real minimap
 MINIMAP_UNITS_JAMMED - float if greater than 0 enemy units will not be shown on minimap while this unit is selected
+CACWeaponBlocked - bool is true weapon is counted as blocked. Note you can't unblock weapon blocked by 
+                   another weapon (blockWeaponsInMechLocations, blockWeaponsInInstalledLocation). 
+				   But you can block weapon by stat effect.
+
+DamageReductionMultiplierAll can be locational
+DamageReductionMultipliers for weapon categories can be locational
+CriticalHitChanceReceivedMultiplier can be locational
 
 {
 "debugLog":true, - enable debug log 
+"MapOnlineClientLink":"http://www.roguewar.org/playerlut?cId={0}" - link for an online client
+"ScaleWeaponHeat": 150, - if > 0 incoming heat from next sources (AoE, weapon hits, landmines, landmines AoE) is scaled
+                            scale modifier = 1 - (<target heat>/<ScaleWeaponHeat>)
+							Note! scale modifier for weapon damage calculates before attack. 
+"ExternalHeatLimit":149, - if > 0 all incoming heat from external sources (weapon hits, AoE, walk burning terrain, landmines,landmines AoE )
+                           can't make unit heat level exceed this value. Example 
+						   your attack inflicted 250 heat damage, 
+						   target have 50 unused heat sink capacity
+						   target have 75 current heat level
+						   on heat dissipation sequence your attack heat will be limited to 129 heat, 
+						   all heat sinks capacity will counted as used, target heat level will be 149
+						   Note! value is integer
+						   Note! overheat from internal sources (moving, jumping, weapon fire) 
+						   still can make heat level pass this value
+"AMSUseAttractiveness": true, - if true AMS calculation will try to shoot down missiles with higher attractiveness first
+"AMSDefaultInterceptedTrace": 2, - default value for weapon AMSInterceptedTrace
+"RestoreEjectedWeapons": true, - ejected weapon will not be counted as destroyed at the end of the battle
+"HexSizeForMods": 30 - hex size used for moved hexes modifiers calculations
 "SpawnProtectionAffectsCanFire": true - if true weapon can't fire if its owner under spawn protection
 "SpawnProtectionAffectsBurningTerrain": true, - if true spawn protection also prevent burning terrain of any kind.
 "SpawnProtectionAffectsDesignMasks": true, - if true spawn protection also prevent weapon from changing terrain.
@@ -345,7 +371,15 @@ NOTE: Current values is my own vision of flame mechanics process, adjust them fo
 
 "AIPathingOptimization": true - enable/disable AI pathing optimization
 "AIPathingSamplesLimit": 120 - amount of AI move destination positions AI can have if AIPathingOptimization enabled
+
 "AIPathingMultithread": false - enable/disable AI pathing multithread (code by Ashakar) assumed to be off cause does not do anything good
+
+ "PhysicsAoE_Weapons": true - if true weapons AoE process will use raycasting to limit affected targets rather than just range
+ "PhysicsAoE_Deffered": true - if true deffered effects AoE process will use raycasting to limit affected targets rather than just range
+ "PhysicsAoE_Minefield": true - if true minefields explosion effects AoE process will use raycasting to limit affected targets rather than just range
+ "PhysicsAoE_API": true        - if true explosion API (mostly used by engine explosions) will use raycasting to limit affected targets rather than just range
+ "PhysicsAoE_API_Height" : 10f - default height of AoE explosions for an API use
+ "AIAwareArtillery":true - if true AI will try to avoid artillery strikes (not vanilla artillery but CAC ones, look "IsArtillery" weapon param)
 
 "AIMinefieldAware": true - if true AI will try to avoid significant direct minefield damage
 "AIMinefieldAwareAllMines": false - if true AI will be aware of all minefields not only visible ones
@@ -403,14 +437,43 @@ new fields
 						         VTOL is still vehicle, mech in air mech mode is still mech.
   "MinMissRadius": 5,
   "MaxMissRadius": 15,
-                        - min and max radius. Used only in ground attack and indirect attack. Additive for ammo/mode/weapon
+                        - min and max radius. Used ground attack, indirect attack and if weapon have effective MissInCircle true. Additive for ammo/mode/weapon
 						  If MinMissRadius less than target radius (for mechs in chassis definition, for vehicles and turrets 5) radius value will be used.
 						  If MaxMissRadius less or equal than MinMissRadius value MinMissRadius * 3 will be used.
 						  actual scatter radius = ((MaxMissRadius - MinMissRadius) * (hitRoll - toHitChance) / (1 - toHitChance) + MinMissRadius)
+  "MissInCircle": false, - explicitly force MinMissRadius/MaxMissRadius miss position calculation regardless weapon type and indirect status
+						   can be set for weapon, mode and ammo. Mode have priority, than ammo, than weapon. Default NotSet
   "evasivePipsMods": {  - list of modifiers for values by current evasive pips count. Additive per weapon/ammo/mode. 
                           Overall formula value = [base value] * ([evasive pips count]^[mod value]). Example base damage = 35, evasive pips count = 7, mod value = -1
                           damage = 35 * (7^-1) = 35 * 0.142857(142857) = 5.
                           NOTE: of evasive pips count = 0, value will not been altered. If mod value = 0 same behavior.
+      "Damage":0,
+      "APDamage":0,
+      "Heat":0,
+      "Instablility":0,
+      "GeneratedHeat":0,
+      "FlatJammingChance":0,
+      "MinRange":0,
+      "ShortRange":0,
+      "MediumRange":0,
+      "LongRange":0,
+      "MaxRange":0,
+      "AOERange":0,
+      "AOEDamage":0,
+      "AOEHeatDamage":0,
+      "AOEInstability":0,
+      "RefireModifier":0,
+      "APCriticalChanceMultiplier":0,
+      "AccuracyModifier":0,
+      "DamageVariance":0,
+      "CriticalChanceMultiplier":0
+  },
+  "hexesMovedMod": {  - list of modifiers for values by moved hexes.
+						  moved hexes = (<DistMovedThisRound>/<HexSizeForMods>) rounded to lower integer
+						  Additive per weapon/ammo/mode. 
+                          Overall formula value = [base value] * ([moved hexes]^[mod value]). Example base damage = 35, moved hexes = 7, mod value = -1
+                          damage = 35 * (7^-1) = 35 * 0.142857(142857) = 5.
+                          NOTE: if DistMovedThisRound < HexSizeForMods, value will not been altered. If mod value = 0 same behavior.
       "Damage":0,
       "APDamage":0,
       "Heat":0,
@@ -463,6 +526,16 @@ new fields
 	                                                     chance is based on distance from center of effect. 
 	  "sticky": true                                     - it true on success hit deferred effect position links to target. Does not matter if it moves or become dead.
   },
+  "IsArtillery": NotSet,                                 - if True delayed attack logic will be used for this weapon. Can be set for mode, ammo and weapon.
+  "ArtilleryReticleColor": { "C":"#FF0000", "I": 1.5 },  - Color for reticle. Will be used value for instance (mode, ammo, weapon) which has IsArtillery: True
+  "ArtilleryReticleRadius" : 120,                        - Color radius for reticle. Will be used value for instance (mode, ammo, weapon) which has IsArtillery: True
+  "ArtilleryReticleText": "Text",                        - Text for reticle. Will be used value for instance (mode, ammo, weapon) which has IsArtillery: True
+                           Artillery logic explanation: if while attack request in weapons list there are any weapons with effective IsArtillery: True
+						   no weapon will fire, unit braces and goes to the artillery mode. Reticle indicator created. 
+						   Next round this unit will be only able to fire or brace. If player chooses to fire - weapon with IsArtillery will fire position selected prev. round
+						   If player chooses brace - unit braces and goes out from artillery mode without attack performing.
+						   AI can fire artillery same rules. AI knows about incoming artillery strikes and will try to get out from danger area if can.
+
   "ShotsPerAmmo": 1,              - shots per ammo. Example: you have effective shots count = 4 and ShotsPerAmmo = 0.5. After fire ammo will be decremented by 2 (4 * 0.5)
                                     Mutiplicative per weapon, ammo, mode. Default value 1. NOTE: Ammo decrement value rounded to nearest integer. 
                                     If it will be less than 0.5 - it will be your own problem - no ammo will be used.
@@ -470,7 +543,11 @@ new fields
     "Ammunition_intLRM":20,                    StartingAmmoCapacity is counted as default ammo for base category
     "Ammunition_intSRM":15
   },
-
+  "IgnoreCover": false - if true weapon will ignore target cover state. Eg. each hit have solid blow quality regardless target guard level. 
+                         mode have priority, than ammo, than weapon
+  "BreachingShot": false - if true weapon damage will be calculated as if breaching shot triggered. 
+                           Note! this setting makes sense only for damage calculation, eg. no floatie messages etc, only damage multiplier
+                           mode have priority, than ammo, than weapon
   "prefireDuration": 0 - direct control of prefire duraction, applied to: mode, ammo, weapon in this order. Used first met non zero value.
                    Used by ballistic, laser, PP, LBX and missile effects, not used by burst ballistic (machine gun) effect
   "ProjectileSpeed":0 - direct control of projectile speed, applied to: mode, ammo, weapon in this order. Used first met non zero value.
@@ -480,6 +557,7 @@ new fields
   
   "firstPreFireSFX": null
   "preFireSFX": null
+  "parentPreFireSFX": null
   "lastPreFireSFX": null
 
   "firstFireSFX": null
@@ -501,35 +579,41 @@ new fields
   
   firing SFX sequence 
 	First shot in volley 
-    1. firstPreFireSFX - (preFireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by ballistic and PPC.
-	2. preFireStartSFX - SFX emitter is unit. Looped. Ends with preFireStopSFX when projectile completes. In vanilla used by lasers.
-	3. projectilePreFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
-	4. firingStartSFX - SFX emitter is unit. Looped. Ends with firingStopSFX immediately after last shot. In vanilla used by missiles.
-    5. Pre-fire ends and projectile becomes active
-	6. delayedSFX - SFX emitter is unit. Single shot. In vanilla used by lasers. Repeats every delayedSFXDelay (if > 0) until projectile completes.
-	7. projectileFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
-	8. firstFireSFX - (fireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by missiles.
+	1. parentPreFireSFX - SFX emitter is unit. Single shot. In vanilla used by gauss rifles to play charge-up SFX.
+    2. firstPreFireSFX - (preFireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by ballistic and PPC.
+	3. preFireStartSFX - SFX emitter is unit. Looped. Ends with preFireStopSFX when projectile completes. In vanilla used by lasers.
+	4. projectilePreFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
+	5. firingStartSFX - SFX emitter is unit. Looped. Ends with firingStopSFX immediately after last shot. In vanilla used by missiles.
+    6. Pre-fire ends and projectile becomes active
+	7. delayedSFX - SFX emitter is unit. Single shot. In vanilla used by lasers. Repeats every delayedSFXDelay (if > 0) until projectile completes.
+	8. projectileFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
+	9. firstFireSFX - (fireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by missiles.
 	Next shot in volley
-    1. preFireSFX - SFX emitter is unit. Single shot. In vanilla used by ballistic and PPC.
-	2. preFireStartSFX - SFX emitter is unit. Looped. Ends with preFireStopSFX when projectile completes. In vanilla used by lasers.
-	3. projectilePreFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
-    4. Pre-fire ends and projectile becomes active
-	5. delayedSFX - SFX emitter is unit. Single shot. In vanilla used by lasers. Repeats every delayedSFXDelay (if > 0) until projectile completes.
-	6. projectileFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
-	7. fireSFX - (fireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by missiles.
-	Last shot in volley
-    1. lastPreFireSFX - (preFireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by ballistic and PPC.
-	2. preFireStartSFX - SFX emitter is unit. Looped. Ends with preFireStopSFX when projectile completes. In vanilla used by lasers.
-	3. projectilePreFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
-	4. firingStopSFX - In vanilla used by missiles.
+	1. parentPreFireSFX - SFX emitter is unit. Single shot. In vanilla used by gauss rifles to play charge-up SFX.
+    2. preFireSFX - SFX emitter is unit. Single shot. In vanilla used by ballistic and PPC.
+	3. preFireStartSFX - SFX emitter is unit. Looped. Ends with preFireStopSFX when projectile completes. In vanilla used by lasers.
+	4. projectilePreFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
     5. Pre-fire ends and projectile becomes active
 	6. delayedSFX - SFX emitter is unit. Single shot. In vanilla used by lasers. Repeats every delayedSFXDelay (if > 0) until projectile completes.
 	7. projectileFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
-	8. lastFireSFX - (fireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by missiles.
+	8. fireSFX - (fireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by missiles.
+	Last shot in volley
+	1. parentPreFireSFX - SFX emitter is unit. Single shot. In vanilla used by gauss rifles to play charge-up SFX.
+    2. lastPreFireSFX - (preFireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by ballistic and PPC.
+	3. preFireStartSFX - SFX emitter is unit. Looped. Ends with preFireStopSFX when projectile completes. In vanilla used by lasers.
+	4. projectilePreFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
+	5. firingStopSFX - In vanilla used by missiles.
+    6. Pre-fire ends and projectile becomes active
+	7. delayedSFX - SFX emitter is unit. Single shot. In vanilla used by lasers. Repeats every delayedSFXDelay (if > 0) until projectile completes.
+	8. projectileFireSFX - SFX emitter is projectile. Looped. Ends with projectileStopSFX when projectile hits ground. In vanilla used by LBX.
+	9. lastFireSFX - (fireSFX if not set) SFX emitter is unit. Single shot. In vanilla used by missiles.
 
   Note! Empty SFX value (example "preFireSFX":"") means vanilla value should be cleared. If want to keep vanilla value parameter should be omitted.
+  Note! both AudioKenetik and CustomVoices audio samples string ids can be used, if used CustomVoices ones <stop> events have no meaning and should be omitted
   For mentioned values mode have priority, than ammo, than weapon.
 
+  "RestrictedAmmo": [],  - list of ammunition ids restricted for this weapon/mode. List is concatenated for weapon and mode. 
+                           Note! restriction check is performed only in battle
   "blockWeaponsInMechLocations": [], - list of mech locations. all weapons installed in this locations can't fire if this weapon is functional.
                                        NOTE: weapon can block itself.
   "CanBeBlocked": true               - if false weapon can't be blocked by other weapons presents (default is true).
@@ -616,11 +700,64 @@ new fields
 								  if not set weapon hit generator will be used.
 								  if not set hit generator will be choosed by weapon type.
 								  if weapon define has tag "wr-clustered_shots", "Cluster" hit generator will be forced. 
+								  Can be altered at runtime using weapon's statistic "HitGenerator" (string).
+								  Statistic have higher priority than mode, ammo, weapon but lower than tags.
+  "MinRangeClusterMod": 0, - Cluster modifier added to weapon's effective "ClusteringModifier" if distance to target < MinRange
+							 Additive per weapon, ammo, mode. Can be altered at runtime  via component statistic values
+							 "CAC_MinRangeClusterMod" and "CAC_MinRangeClusterMod_Mod".
+							 "CAC_MinRangeClusterMod" has default value from WeaponDef.MinRangeClusterMod
+							 "CAC_MinRangeClusterMod_Mod" has default value 1.0
+							 effective formula 
+							 (<weapon statistic CAC_MinRangeClusterMod> + <ammo MinRangeClusterMod> + <mode MinRangeClusterMod>) * <weapon statistic CAC_MinRangeClusterMod_Mod>
+  "ShortRangeClusterMod": 0, - Cluster modifier added to weapon's effective "ClusteringModifier" if distance MinRange < target < ShortRange
+							 Additive per weapon, ammo, mode. Can be altered at runtime  via component statistic values
+							 "CAC_ShortRangeClusterMod" and "CAC_ShortRangeClusterMod_Mod".
+							 "CAC_ShortRangeClusterMod" has default value from WeaponDef.ShortRangeClusterMod
+							 "CAC_ShortRangeClusterMod_Mod" has default value 1.0
+							 effective formula 
+							 (<weapon statistic CAC_ShortRangeClusterMod> + <ammo ShortRangeClusterMod> + <mode ShortRangeClusterMod>) * <weapon statistic CAC_ShortRangeClusterMod_Mod>
+  "MediumRangeClusterMod": 0, - Cluster modifier added to weapon's effective "ClusteringModifier" if distance ShortRange < target < MediumRange
+							 Additive per weapon, ammo, mode. Can be altered at runtime  via component statistic values
+							 "CAC_MediumRangeClusterMod" and "CAC_MediumRangeClusterMod_Mod".
+							 "CAC_MediumRangeClusterMod" has default value from WeaponDef.MediumRangeClusterMod
+							 "CAC_MediumRangeClusterMod_Mod" has default value 1.0
+							 effective formula 
+							 (<weapon statistic CAC_MediumRangeClusterMod> + <ammo MediumRangeClusterMod> + <mode MediumRangeClusterMod>) * <weapon statistic CAC_MediumRangeClusterMod_Mod>
+  "LongRangeClusterMod": 0, - Cluster modifier added to weapon's effective "ClusteringModifier" if distance MediumRange < target < LongRange
+							 Additive per weapon, ammo, mode. Can be altered at runtime  via component statistic values
+							 "CAC_LongRangeClusterMod" and "CAC_LongRangeClusterMod_Mod".
+							 "CAC_LongRangeClusterMod" has default value from WeaponDef.LongRangeClusterMod
+							 "CAC_LongRangeClusterMod_Mod" has default value 1.0
+							 effective formula 
+							 (<weapon statistic CAC_LongRangeClusterMod> + <ammo LongRangeClusterMod> + <mode LongRangeClusterMod>) * <weapon statistic CAC_LongRangeClusterMod_Mod>
+  "MaxRangeClusterMod": 0, - Cluster modifier added to weapon's effective "ClusteringModifier" if distance LongRange < target < MaxRange
+							 Additive per weapon, ammo, mode. Can be altered at runtime  via component statistic values
+							 "CAC_MaxRangeClusterMod" and "CAC_MaxRangeClusterMod_Mod".
+							 "CAC_MaxRangeClusterMod" has default value from WeaponDef.MaxRangeClusterMod
+							 "CAC_MaxRangeClusterMod_Mod" has default value 1.0
+							 effective formula 
+							 (<weapon statistic CAC_MaxRangeClusterMod> + <ammo MaxRangeClusterMod> + <mode MaxRangeClusterMod>) * <weapon statistic CAC_MaxRangeClusterMod_Mod>
+
+							 NOTE! ClusteringModifier and <..>RangeClusterMod have only meaning with hit generators "Cluster" and "Streak"
+
+  "RangeBonusDistance": 0, - if distance to target less than RangeBonusDistance - RangeBonusAccuracyMod is applied
+                             additive for weapon, mode and ammo. Can be altered runtime via component statistic values
+							 "CAC_RangeBonusDistance" and "CAC_RangeBonusDistance_Mod".
+							 "CAC_RangeBonusDistance" has default value from WeaponDef.RangeBonusDistance
+							 "CAC_RangeBonusDistance_Mod" has default value 1.0
+							 effective formula 
+							 (<weapon statistic CAC_RangeBonusDistance> + <ammo RangeBonusDistance> + <mode RangeBonusDistance>) * <weapon statistic CAC_RangeBonusDistance_Mod>
+  "RangeBonusAccuracyMod": 0, - additive for weapon, mode and ammo. Can be altered runtime via component statistic values
+							 "CAC_RangeBonusAccuracyMod" and "CAC_RangeBonusAccuracyMod_Mod".
+							 "CAC_RangeBonusAccuracyMod" has default value from WeaponDef.RangeBonusAccuracyMod
+							 "CAC_RangeBonusAccuracyMod_Mod" has default value 1.0
+							 effective formula 
+							 (<weapon statistic CAC_RangeBonusAccuracyMod> + <ammo RangeBonusAccuracyMod> + <mode RangeBonusAccuracyMod>) * <weapon statistic CAC_RangeBonusAccuracyMod_Mod>
   "DirectFireModifier" : -10.0, Accuracy modifier if weapon can strike directly
   "DamageVariance": 20, - Simple damage variance as implemented in WeaponRealizer
   "DamageFalloffStartDistance": 0, - distance where damage starts to change, additive per ammo/mode/weapon.
   "DamageFalloffEndDistance": 0, - distance where damage stops to change, additive per ammo/mode/weapon.
-  "DistantVariance": 0.3, - Distance damage variance addiditve per ammo/mode/weapon
+  "DistantVariance": 0.3, - Distance damage variance additive per ammo/mode/weapon
   "DistantVarianceReversed": false, - Set is distance damage variance is reversed (mode have priority, than ammo, than weapon)
 	Distance variance logic:
 	1. If DistantVarianceReversed false
@@ -651,23 +788,55 @@ new fields
 						   mode have priority, than ammo, than weapon. Default value Linear
   "DamageOnJamming": true/false, - if true on jamming weapon will be damaged
   "DestroyOnJamming": true/false, - if true on jamming weapon will be destroyed (need DamageOnJamming to be set true also)
+  "PersistentJamming": true/false, - if true weapon will be jammed until end of combat. No attemts of jamming will be done at all
   "FlatJammingChance": 1.0, - Chance of jamming weapon after fire. 1.0 is jamm always. Unjamming logic implemented as in WeaponRealizer
                               NOTE! There FlatJammingChance can be altered via CACFlatJammingChance statistic value per actor's and/or per weapon's statistic collections
+  "RecoilJammingChance": 0.0, - addition to  FlatJammingChance based on recoil. Adds RecoilJammingChance * <RefireModifier> to FlatJammingChance
+                                <RefireModifier> is effective weapon's RefireModifier if roundsSinceLastFire < 2 and 0 otherwise. 
+								Can be set for weapon, ammo and mode. Additive.
+  "UnsafeJamChance": 1.0, - if DamageOnJamming or DestroyOnJamming is true, performed random roll to unsafe jamm. If roll wins (bad)
+                            damage or destroying applied. If roll fail (good) weapon will be only jammed instead without damage or destruction
+							Additive per weapon, ammo, mode
+							Default value for weapondef - 1.0, for ammo and mode - 0
+							Can be controlled in runtime by weapon statistic values "CAC_UnsafeJamChance" and "CAC_UnsafeJamChance_Mod"
+							Effective formula (<weapon statistic.CAC_UnsafeJamChance> + <ammo.UnsafeJamChance> + <mode.UnsafeJamChance>) * <weapon statistic.CAC_UnsafeJamChance_Mod>
+							statistic CAC_UnsafeJamChance have default value from weapon definition
+							CAC_UnsafeJamChance_Mod default value 1.0f
+  "AIUnsafeJamChanceMod": 1.0 - if unit is under AI control additional modifier to UnsafeJamChance applied
+								Additive per weapon, ammo, mode
+								Default value for weapondef - 1.0, for ammo and mode - 0
+                                Modifier formula (<weapon statistic.CAC_AIUnsafeJamChanceMod> + <ammo.AIUnsafeJamChanceMod> + <mode.AIUnsafeJamChanceMod>) * <weapon statistic.CAC_AIUnsafeJamChanceMod_Mod> * <CAC setting AIUnsafeJamChance>
+								CAC setting AIUnsafeJamChance have default value 1.0
+								statistic CAC_AIUnsafeJamChance have default value from weapon definition
+							    CAC_AIUnsafeJamChance_Mod default value 1.0f
   "GunneryJammingBase": 5, - 
   "GunneryJammingMult": 0.05, - this values uses to alter flat jamming chance by pilot skills 
                                   formula effective jamming chance = FlatJammingChance + (GunneryJammingBase - Pilot Gunnery)* GunneryJammingMult
 								  if FlatJammingChance = 1.0, GunneryJammingBase = 6, GunneryJammingMult = 0.1, GunnerySkill = 10
 								  result = 1.0 + (6-10)*0.1 = 0.6
-								  GunneryJammingBase if ommited in weapon def., ammo def. and mode def. assumed as 5. 
+								  GunneryJammingBase if omitted in weapon def., ammo def. and mode def. assumed as 5. 
   "DisableClustering": true/false - if true ProjectilesPerShot > 1 will affect only visual nor damage. If omitted consider as true.
   (not used any more)"NotUseInMelee": true, - if true even AntiPersonel weapon type will not fire on melee attack, AI aware. 
   "AlternateDamageCalc": false, - if true alternate damage calc formula will be implemented 
                               DamagePerShot = (damage from weaponDef + (damage from ammo) + (damage from mode)*(damage multiplayer from ammo)*(damage multiplayer from mode)*(damage with effects)/(damage from weaponDef)
   "AlternateHeatDamageCalc": false, - same as  AlternateDamageCalc but for heat 
   "AlternateInstabilityCalc": false, - same as  AlternateDamageCalc but for instability 
+  "AMSAttractiveness": 0.0 - attractiveness of this particular missile for AMS, additive for weapon, ammo, mode
+                             can be altered runtime using statistic CAC_AMSAttractiveness and CAC_AMSAttractiveness_Mod
   "AMSHitChance": 0.0, - if this weapon is AMS, this value is AMS efficiency, 
                          if this weapon is missile launcher this value shows how difficult to intercept missile with AMS. Negative value - is harder, 
-						 positive is easer.
+						 positive is easer. Additive per mode, ammo, weapon
+						 can be altered on runtime via CAC_AMSHitChance and CAC_AMSHitChance_Mod statistic values
+						 effective ams-to-missile hit chance is sum on missile's and AMS's AMSHitChance values 
+  "AMSHitChanceMod": 1.0 - modifier for an AMSHitChance can be set for ONLY for mode and ammo
+                           multiplicative per ammo and mode, default 1.0
+  "AMSHitChanceMult": 1.0 - modifier for effective AMS hit chance (sum of missile.AMSHitChance and AMS.AMSHitChance)
+                           additive per weapon, ammo and mode, for weapon default 1.0, for mode and ammo 0.0
+						   can be altered on runtime via CAC_AMSHitChanceMult and CAC_AMSHitChanceMult_Mod statistic values
+  "AMSInterceptedTrace": -1, - if above 0 AMS will shoot missile after missile intercepted, for AMSInterceptedTrace shots
+							   additive per weapon, ammo and mode. For weapon have special processing - if AMSInterceptedTrace
+							   for weapon is less than 0 - AMSDefaultInterceptedTrace will be used instead.
+							   Note! only used if AMSUseAttractiveness enabled
   "IsAMS": false, - if true this weapon acts as AMS. It will not fire during normal attack. But tries to intercept incomming missiles.
                     rude model: every 10 meters of missile fly path there is check, if it in range of any AMS. 
 					If so, AMS have AMS.AMSHitChance + missile.AMSHitChance chance to shoot missile down. Avaible shoots count of AMS is decrementing.
@@ -684,17 +853,45 @@ new fields
 						NOTE! Every weapon effect can be used as visuals for AMS fire (missile, machine gun, ballistic, laser, gauss) you can experiment,
 						      but some effects is more suitable.
   "AMSShootsEveryAttack": false, - if true AMS will not share AMS.ShootsWhenFired between all missile attacks this round. 
-                                       Every missile attack will cause AMS.ShootsWhenFired shoots. 
+                                       Every missile attack will cause AMS.ShotsWhenFired shoots. 
 								   if false AMS will shoot AMS.ShootsWhenFired per round
+  "AMSActivationsPerTurn": 0, - if VALUE > 0 AMS will not share AMS.ShotsWhenFired between all missile attacks this round.
+									First VALUE missile attacks will cause up to AMS.ShotsWhenFired shoots.
+									All next attacks AMS will not fire. 
+									If AMS had not shoot during attack, attack counter will not be increased
+									if VALUE > 0 - AMSShotsEveryAttack is ignored.
+									Can be set for weapon and mode (additive).
   "AMSImmune": false - if true, weapon missiles is immune to AMS and none AMS will try to intercept them. Can be set for mode ammo and weapon
   "MissileHealth": 1, - health of missile. Used while AMS working. If missile health become 0 missile counted as intercepted. Additive for ammo, mode, weapon.
   "AMSDamage": 1, - damage AMS inflicting to missiles subtracting from missile health on success hit. Used while AMS working. If missile health become 0 missile counted as intercepted. Additive for ammo, mode, weapon.
-  "AOECapable" : false, - if true weapon will included in AOE damage calculations. If true set in weapon definition 
-                            all shoots will have AoE effect (even for energy weapon). If true, it can't be overridden by ammo.
-  "AOERange": 100, - Area of effect range. If AOECapable in weapon is set to true this value will be used. If AOECapable is true, it can't be overridden by ammo.
-  "AOEDamage": 0 - AoE damage. Same rules as for AOERange
-  "AOEHeatDamage": 0 - AoE heat. Same rules as for AOERange 
-  "AOEInstability": 0 - instability AoE damage. Same rules as for AOERange 
+  "AOECapable" : false, - if true shoots will be included in AOE damage calculations. Can be set for mode, ammo and weapon. 
+                          Mode have priority, than ammo, than weapon. Once set true it can't be set to false. 
+						  Eg. if set true in weapon definition, shoots will have AoE effect regardless mode and ammo settings
+						  if set true in ammo, shoots will have AoE effect regardless mode and weapon settings, etc.
+  "AOERange": 0, - Area of effect range. Can be set for mode, ammo and weapon. Setting nor additive not multiplicative. 
+                          Effective value get from entity which set AOECapable - true first. Mode have priority, than ammo, than weapon
+						  Eg. if you set AOECapable - true in mode, mode value will be used, but if you set AOECapable in weapon
+						  and mode have AOECapable - false (or not set) it will use weapon's value, even if 0 or not set. 
+						  
+						  AOE shots can inflict heat damage. It value based on weapon heat damage per shot and decreasing by distance between target and impact base point.
+						  Projectiles intercepted by AMS will not cause AOE damage.
+						  AOE to hit effect will be implemented to all targets in AoE range. 
+						  On fire weapon effects will be implemented to real target only
+						  Base point of AoE range calculations will be point where first projectile,
+						            (if weapon have ShotsWhenFired > 1) not intercepted by AMS, hits ground.
+						  It is recommended to use LRM5, LRM10, LRM15 or LRM20 as weapon subtype cause other subtypes have too huge spread when misses
+						  It is good idea to set ForbiddenRage for AoE weapon
+						  AOE weapon can't hit mech head, cause every headshot inflicts pilot injury. With fact AoE always dealt damage it will be imbalance. 
+						  Damage variations are not applying to AoE damage
+  "AOEDamage": 0 - if > 0 alternative AoE damage algorithm will be used. Main projectile will not always miss. Instead it will inflict damage twice 
+                            one for main target - direct hit (this damage can be have variance) and second for all targets in AoE range including main. 
+							can be set for mode, ammo, weapon - set logic as for AOERange
+  "AOEHeatDamage": 0 - if > 0 alternative AoE damage algorithm will be used. Main projectile will not always miss. Instead it will inflict damage twice 
+                            one for main target - direct hit (this damage can be have variance) and second for all targets in AoE range including main. 
+							can be set for mode, ammo, weapon - set logic as for AOERange
+  "AOEInstability": 0 - instability AoE damage 
+							can be set for mode, ammo, weapon - set logic as for AOERange
+
   "SpreadRange": 0, - Area of projectiles spread effect. If > 0 projectiles will include in spread calculations. Per weapon, ammo, mode values are additive.
                          if used for missiles, and target have AMS it will fire no matter if it is not advanced and target is not primary.
   "IFFDef" : "IFFComponentDefId", if not empty and target have component with such defId it will exclude form AoE and spread targets list. 
@@ -913,8 +1110,10 @@ new fields
     "HeatLevel":{"Low":40,"High":60}, - lock by absolute heat. If current heat is less Low or greater High, mode using will be forbidden.
     "OverheatLevel":{"Low":0.5,"High":1.0}, - lock by heat relative to Overheat. If current heat level is less Low or greater High, mode using will be forbidden.
     "MaxheatLevel":{"Low":0.3,"High":0.5}, - lock by heat relative to maximum heat. If current heat level is less Low or greater High, mode using will be forbidden.
+	"StatValueLevel":{"Low":0.9,"High":9999,"Stat":"overload_mode_unlock"} - lock by weapon specific statistic value.If current statistic value is less Low or greater High, mode using will be forbidden.
                                              NOTE! If two or more lock options defined check logic will be: at first checked HeatLevel(if available) if pass 
-                                             check OverheatLevel(if available) if pass check (MaxheatLevel is available) if all available options pass mode is allowed. 
+                                             check OverheatLevel(if available) if pass check MaxheatLevel(if available) if pass check StatValueLevel (if available) 
+											 if all available options pass mode is allowed. 
                                              NOTE! Heat level have sense only for mechs, for vehicles and turrets check is always passed. 
                                              NOTE! If all modes fail check weapon will be disabled.
   }
@@ -1019,23 +1218,6 @@ Ammo definition
    "ArmorDamageModifier" : 1,
    "ISDamageModifier" : 1,
    "CriticalDamageModifier" : 1,
-   "AOECapable" : false, - if true shoots will be included in AOE damage calculations 
-   "AOERange": 100, - Area of effect range
-						  AOE shots can inflict heat damage. It value based on weapon heat damage per shot and decreasing linear by distance between target and impact base point.
-						  Projectiles intercepted by AMS will not cause AOE damage.
-						  AOE to hit effect will be implemented to all targets in AoE range. 
-						  On fire weapon effects will be implemented to real target only
-						  Base point of AoE range calculations will be point where first projectile,
-						            (if weapon have ShotsWhenFired > 1) not intercepted by AMS, hits ground.
-						  It is recommended to use LRM5, LRM10, LRM15 or LRM20 as weapon subtype cause other subtypes have too huge spread when misses
-						  It is good idea to set ForbiddenRage for AoE weapon
-						  AOE weapon can't hit mech head, cause every headshot inflicts pilot injury. With fact AoE always dealt damage it will be imbalance. 
-						  Damage variations are not applying to AoE damage
-  "AOEDamage": 0 - if > 0 alternative AoE damage algorithm will be used. Main projectile will not always miss. Instead it will inflict damage twice 
-                            one for main target - direct hit (this damage can be have variance) and second for all targets in AoE range including main. 
-  "AOEHeatDamage": 0 - if > 0 alternative AoE damage algorithm will be used. Main projectile will not always miss. Instead it will inflict damage twice 
-                            one for main target - direct hit (this damage can be have variance) and second for all targets in AoE range including main. 
-  "AOEInstability": 0 - instability AoE damage 
   "SpreadRange": 0, - Area of projectiles spread effect. If > 0 projectiles will include in spread calculations. Per weapon, ammo, mode values are additive.
                          if used for missiles, and target have AMS it will fire no matter if it is not advanced and target is not primary.
   "IFFDef" : "IFFComponentDefId", if not empty and target have component with such defId it will exclude form AoE and spread targets list. 

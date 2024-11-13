@@ -2,7 +2,7 @@
 	"Name": "TrainingMissions",
 	"DLL": "TrainingMissions.dll",
 	"Hidden": true,
-	"Version": "1.0.4.0",
+	"Version": "1.1.0.1",
 	"Description": "",
 	"Author": "T-Bone",
 	"Website": "https://github.com/ajkroeg/TrainingMissions",
@@ -18,7 +18,13 @@
 		"TrainingContractIDs": {
 			"CaptureEscort_BTA_Training": "ALWAYS",
 			"SimpleBattle_BTAThrowdown": "ALWAYS",
-			"Assassinate_Kringle": "ALWAYS"
+			"Assassinate_Kringle": "ALWAYS",
+			"Assassinate_JohannsJaegers": "ALWAYS",
+			"CaptureBase_TheBTeam": "ALWAYS",
+			"CaptureBase_TheBTeam_Alt": "ALWAYS",
+			"ThreeWayBattle_TrainingDay": "ALWAYS",
+			"ThreeWayBattle_TrainingDay_Alt": "ALWAYS",
+			"ThreeWayBattle_TrainingDay_Alt_2": "ALWAYS"
 		},
 		"SwapUnitsWithAIContractIDs": {},
 		"DoppelgangerContractIDs": {},

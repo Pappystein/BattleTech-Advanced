@@ -1,4 +1,12 @@
 {
+	"Custom": {
+		"AssemblyVariant": {
+		  "PrefabID": "Yeoman",
+		  "Exclude": false,
+		  "Include": true
+		},
+		"ChassisDefaults": []
+	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "Head",
@@ -32,12 +40,12 @@
 		"UIName": "Yeoman",
 		"Id": "chassisdef_yeoman_YMN-7Y-AR",
 		"Name": "Yeoman",
-		"Details": "<color=#53ff1a><b>Arm Actuator Limit</b>: <b>upper</b> on left and <b>upper</b> on right</color>\nOne of House Marik's many variants on their homegrown fire support mech the Yeoman, the YMN-7Y-AR takes a decidedly Solaris VII approach to the mech. After a particularly disastrous battle in which supporting Yeomans were rendered useless by massed AMS coverage, the FWLM decided to push forward with a Thunderbolt launcher centric variant, the -7Y-AR. Armed with a pair of Thunderbolt-10 and a quartet of Thunderbolt-5 launchers, all of which are AMS resistant, the YMN-7Y-AR can put down a respectable amount of firepower with minimal AMS interference. However, the weight of the weapons left little room for ammo, meaning the design's endurance leaves much to be desired.",
+		"Details": "One of House Marik's many variants on their homegrown fire support mech the Yeoman, the YMN-7Y-AR takes a decidedly Solaris VII approach to the mech. After a particularly disastrous battle in which supporting Yeomans were rendered useless by massed AMS coverage, the FWLM decided to push forward with a Thunderbolt launcher centric variant, the -7Y-AR. Armed with a pair of Thunderbolt-10 and a quartet of Thunderbolt-5 launchers, all of which are AMS resistant, the YMN-7Y-AR can put down a respectable amount of firepower with minimal AMS interference. However, the weight of the weapons left little room for ammo, meaning the design's endurance leaves much to be desired.",
 		"Icon": "uixTxrIcon_yeoman"
 	},
 	"VariantName": "YMN-7Y-AR",
 	"StockRole": "Pure Missile Support",
-	"YangsThoughts": "<color=#53ff1a><b>Arm Actuator Limit</b>: <b>upper</b> on left and <b>upper</b> on right</color>\nOne of House Marik's many variants on their homegrown fire support mech the Yeoman, the YMN-7Y-AR takes a decidedly Solaris VII approach to the mech. After a particularly disastrous battle in which supporting Yeomans were rendered useless by massed AMS coverage, the FWLM decided to push forward with a Thunderbolt launcher centric variant, the -7Y-AR. Armed with a pair of Thunderbolt-10 and a quartet of Thunderbolt-5 launchers, all of which are AMS resistant, the YMN-7Y-AR can put down a respectable amount of firepower with minimal AMS interference. However, the weight of the weapons left little room for ammo, meaning the design's endurance leaves much to be desired.",
+	"YangsThoughts": "One of House Marik's many variants on their homegrown fire support mech the Yeoman, the YMN-7Y-AR takes a decidedly Solaris VII approach to the mech. After a particularly disastrous battle in which supporting Yeomans were rendered useless by massed AMS coverage, the FWLM decided to push forward with a Thunderbolt launcher centric variant, the -7Y-AR. Armed with a pair of Thunderbolt-10 and a quartet of Thunderbolt-5 launchers, all of which are AMS resistant, the YMN-7Y-AR can put down a respectable amount of firepower with minimal AMS interference. However, the weight of the weapons left little room for ammo, meaning the design's endurance leaves much to be desired.",
 	"PrefabIdentifier": "chrprfmech_yeomanbase-001",
 	"PrefabBase": "yeoman",
 	"Tonnage": 60,
@@ -73,7 +81,11 @@
 	"DFASelfDamage": 60,
 	"DFAInstability": 30,
 	"ChassisTags": {
-		"items": [],
+		"items": [
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
+			"HeavyMech"
+		],
 		"tagSetSourceFile": ""
 	},
 	"MechPartMax": 0,
@@ -140,15 +152,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,
@@ -159,7 +171,12 @@
 		},
 		{
 			"Location": "LeftTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 140,
@@ -177,7 +194,12 @@
 		},
 		{
 			"Location": "RightTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 140,
@@ -189,15 +211,15 @@
 			"Hardpoints": [
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				},
 				{
 					"Omni": false,
-					"WeaponMount": "Missile"
+					"WeaponMountID": "Missile"
 				}
 			],
 			"Tonnage": 0,

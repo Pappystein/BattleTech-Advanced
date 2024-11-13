@@ -1,10 +1,4 @@
 {
-	"Custom": {
-		"ArmActuatorSupport": {
-			"LeftLimit": "Hand",
-			"RightLimit": "Upper"
-		}
-	},
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -125,7 +119,7 @@
 		"UIName": "Kit Fox",
 		"Id": "chassisdef_kitfox_KFX-BW",
 		"Name": "Kit Fox",
-		"Details": "A personalized Kit Fox design used by a mechwarrior named Aether, this Kit Fox is configured for close-range knife-fighting. Armed with a quartet of Heavy Small Lasers, it can tear apart anything up close. Its only concession to ranged combat is a sole ATM-9, with three tons of ammo. A bevy of cDHS keeps it cold while a Clan ECM suite provides additional security.",
+		"Details": "A personalized Kit Fox design used by a mechwarrior named Aether, this Kit Fox is configured for close-range knife-fighting. Armed with a quintet of Heavy Small Lasers, it can tear apart anything up close. Its only concession to ranged combat is a sole ATM-9, with three tons of ammo. A bevy of cDHS keeps it cold while a Clan ECM suite provides additional security.",
 		"Icon": "uixTxrIcon_kitfox"
 	},
 	"MovementCapDefID": "movedef_kitfox",
@@ -134,7 +128,7 @@
 	"PrefabIdentifier": "chrprfmech_kitfoxbase-001",
 	"PrefabBase": "kitfox",
 	"Tonnage": 30,
-	"InitialTonnage": 3.5,
+	"InitialTonnage": 3,
 	"weightClass": "LIGHT",
 	"BattleValue": 4642000,
 	"Heatsinks": 0,
@@ -177,15 +171,15 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "AntiPersonnel",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": true
 				}
 			],
@@ -193,7 +187,7 @@
 			"InventorySlots": 12,
 			"MaxArmor": 50,
 			"MaxRearArmor": -1,
-			"InternalStructure": 30
+			"InternalStructure": 25
 		},
 		{
 			"Location": "LeftTorso",
@@ -201,8 +195,8 @@
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 55,
-			"MaxRearArmor": 15,
-			"InternalStructure": 40
+			"MaxRearArmor": 20,
+			"InternalStructure": 35
 		},
 		{
 			"Location": "CenterTorso",
@@ -211,26 +205,31 @@
 			"InventorySlots": 15,
 			"MaxArmor": 75,
 			"MaxRearArmor": 25,
-			"InternalStructure": 55
+			"InternalStructure": 50
 		},
 		{
 			"Location": "RightTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "Energy",
+					"Omni": true
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 55,
-			"MaxRearArmor": 15,
-			"InternalStructure": 40
+			"MaxRearArmor": 20,
+			"InternalStructure": 35
 		},
 		{
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMount": "Ballistic",
+					"WeaponMountID": "Ballistic",
 					"Omni": true
 				},
 				{
-					"WeaponMount": "Energy",
+					"WeaponMountID": "Energy",
 					"Omni": true
 				}
 			],
@@ -238,7 +237,7 @@
 			"InventorySlots": 12,
 			"MaxArmor": 50,
 			"MaxRearArmor": -1,
-			"InternalStructure": 30
+			"InternalStructure": 25
 		},
 		{
 			"Location": "LeftLeg",
@@ -247,7 +246,7 @@
 			"InventorySlots": 6,
 			"MaxArmor": 70,
 			"MaxRearArmor": -1,
-			"InternalStructure": 40
+			"InternalStructure": 35
 		},
 		{
 			"Location": "RightLeg",
@@ -256,7 +255,7 @@
 			"InventorySlots": 6,
 			"MaxArmor": 70,
 			"MaxRearArmor": -1,
-			"InternalStructure": 40
+			"InternalStructure": 35
 		}
 	],
 	"LOSSourcePositions": [
@@ -308,12 +307,14 @@
 		"items": [
 			"ClanMech",
 			"OmniMech",
-			"HeroMech"
+			"HeroMech",
+			"ArmLimitUpperRight",
+			"LightMech"
 		],
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Light Skirmisher",
-	"YangsThoughts": "A personalized Kit Fox design used by a mechwarrior named Aether, this Kit Fox is configured for close-range knife-fighting. Armed with a quartet of Heavy Small Lasers, it can tear apart anything up close. Its only concession to ranged combat is a sole ATM-9, with three tons of ammo. A bevy of cDHS keeps it cold while a Clan ECM suite provides additional security.",
+	"YangsThoughts": "A personalized Kit Fox design used by a mechwarrior named Aether, this Kit Fox is configured for close-range knife-fighting. Armed with a quintet of Heavy Small Lasers, it can tear apart anything up close. Its only concession to ranged combat is a sole ATM-9, with three tons of ammo. A bevy of cDHS keeps it cold while a Clan ECM suite provides additional security.",
 	"CustomParts": {
 		"CustomParts": []
 	}

@@ -3,12 +3,10 @@
 		"Category": {
 			"CategoryID": "w/e/p/fluidgun"
 		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"FluidGun",
 				"PipsIgnored: 1"
 			]
-		}
 	},
 	"Category": "Energy",
 	"Type": "Flamer",
@@ -74,7 +72,8 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_close"
+			"range_close",
+			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""
 	}

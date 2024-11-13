@@ -8,14 +8,12 @@
 				"CategoryID": "NeverMelee"
 			}
 		],
-		"BonusDescriptions": {
-			"Bonuses": [
+		"BonusDescriptions": [
 				"WpnRecoil: 3",
 				"VariableBurstCount: 2",
 				"WeaponJAMFlat: 15",
 				"NoFireInMelee"
 			]
-		}
 	},
 	"Category": "Ballistic",
 	"Type": "Autocannon",
@@ -67,7 +65,7 @@
 	"BonusValueB": "",
 	"ComponentType": "Weapon",
 	"ComponentSubType": "Weapon",
-	"PrefabIdentifier": "AC5",
+	"PrefabIdentifier": "uac5",
 	"BattleValue": 0,
 	"InventorySize": 4,
 	"Tonnage": 9,
@@ -97,7 +95,8 @@
 			"OmniRestriction.{location}",
 			"component_type_stock",
 			"component_type_lostech",
-			"range_very-long"
+			"range_very-long",
+			"WebbTCSupported-Ultra"
 		],
 		"tagSetSourceFile": ""
 	}

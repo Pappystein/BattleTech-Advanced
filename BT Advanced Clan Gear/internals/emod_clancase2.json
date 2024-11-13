@@ -3,21 +3,27 @@
 		"CASE": {
 			"MaximumDamage": 10
 		},
-		"Flags": {
-			"flags": [
-				"ignore_damage",
-				"autorepair",
-				"no_salvage"
-			]
+		"Flags": [
+			"ignore_damage",
+			"autorepair",
+			"no_salvage"
+		],
+		"WorkOrderCosts": {
+			"Install": {
+				"CBillCost": "2000 * [[Chassis.Tonnage]] * [[Chassis.Tonnage]] / 50"
+			}
 		},
-		"Category": {
-			"CategoryID": "CASE"
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
-				"CASEII: 10"
-			]
-		}
+		"Category": [
+			{
+				"CategoryID": "CASE2"
+			},
+			{
+				"CategoryID": "ClanCASE2"
+			}
+		],
+		"BonusDescriptions": [
+			"CASEII: 10"
+		]
 	},
 	"Description": {
 		"Cost": 100000,

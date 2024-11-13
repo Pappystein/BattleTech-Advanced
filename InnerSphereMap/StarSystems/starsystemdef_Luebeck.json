@@ -2,7 +2,7 @@
 	"Description": {
 		"Id": "starsystemdef_Luebeck",
 		"Name": "Lübeck",
-		"Details": "Lubeck is one of the worlds that forms part ofthe Hanseatic League. There are two worlds in this system, Quarantine, and Lubeck - Quarantine is used as a customs holding point before allowing access to Lubeck.",
+		"Details": "Lübeck is one of the worlds that forms part ofthe Hanseatic League. There are two worlds in this system, Quarantine, and Lübeck - Quarantine is used as a customs holding point before allowing access to Lübeck.",
 		"Icon": ""
 	},
 	"Position": {
@@ -12,7 +12,7 @@
 	},
 	"Tags": {
 		"items": [
-			"planet_name_lübeck",
+			"planet_name_luebeck",
 			"planet_size_medium",
 			"planet_climate_arid",
 			"planet_pop_medium",
@@ -134,7 +134,9 @@
 	"FactionShopItems": [
 		"itemCollection_faction_Hanse"
 	],
-	"BlackMarketShopItems": null,
+	"BlackMarketShopItems": [
+		"itemCollection_faction_AuriganPirates"
+	],
 	"CoreSystemID": "starsystemdef_Lübeck",
 	"StartingSystemModes": [
 		"KAMEA_CAMPAIGN",
@@ -145,6 +147,7 @@
 	"DifficultyList": [],
 	"DifficultyModes": [],
 	"contractEmployerIDs": [
+		"AuriganPirates",
 		"Hanse",
 		"Locals"
 	],
@@ -152,10 +155,11 @@
 		"Steiner",
 		"Chainelane",
 		"JarnFolk",
+		"Castile",
 		"AuriganPirates",
 		"DarkCaste",
 		"Locals",
 		"Mercenaries",
-		"Rim"
+		"RimWorldsRepublic"
 	]
 }

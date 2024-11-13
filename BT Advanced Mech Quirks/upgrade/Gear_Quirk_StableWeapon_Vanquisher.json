@@ -17,23 +17,16 @@
 				"CBillCost": "[[Chassis.Tonnage]] * 1.15"
 			}
 		},
-		"Flags": {
-			"flags": [
+		"Flags": [
 				"default",
 				"not_broken",
 				"no_salvage",
 				"autorepair"
-			]
-		},
-		"BonusDescriptions": {
-			"Bonuses": [
+		],
+		"BonusDescriptions": [
 				"Recoil: -3",
 				"IsGyro"
 			]
-		},
-		"InventorySorter": {
-			"SortKey": "00019"
-		}
 	},
 	"StatName": null,
 	"RelativeModifier": 0,
@@ -48,7 +41,7 @@
 		"Id": "Gear_Quirk_StableWeapon_Vanquisher",
 		"Name": "Vanquisher Stabilized Weapon",
 		"Details": "This piece of gear represents the Vanquisher's inherent Stabilized Weapon quirk. This gives the Vanquisher reduced recoil penalties with all weapons.",
-		"Icon": "uixSvgIcon_equipment_Cockpit"
+		"Icon": "uixSvgIcon_equipment_Gyro"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

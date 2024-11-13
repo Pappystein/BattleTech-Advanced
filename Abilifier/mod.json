@@ -3,12 +3,14 @@
 	"DLL": "Abilifier.dll",
 	"Enabled": true,
 	"Hidden": true,
-	"Version": "1.2.0.1",
+	"Version": "1.4.2.0",
 	"Description": "Allows for choices between abilities when leveling pilots.",
 	"Author": "gnivler, T-Bone",
 	"Website": "",
 	"DependsOn": [
-		"CustomActivatableEquipment"
+		"CustomActivatableEquipment",
+		"IRBTModUtils",
+		"IRTweaks"
 	],
 	"OptionallyDependsOn": [
 		"CustomUnits"
@@ -16,6 +18,7 @@
 	"ConflictsWith": [],
 	"CustomResourceTypes": [],
 	"Settings": {
+		"debugExpiration": false,
 		"enableTrace": false,
 		"enableLog": true,
 		"usePopUpsForAbilityDesc": false,
@@ -24,6 +27,8 @@
 		"disableResolveAttackGround": false,
 		"resolveGenBaseMult": 1.0,
 		"resolveCostBaseMult": 1.0,
+		"resolveCostHighMult": 0.8,
+		"resolveCostLowMult": 1.2,
 		"extraFirstTierAbilities": 0,
 		"extraAbilities": 1,
 		"extraAbilitiesAllowedPerSkill": 1,
@@ -81,6 +86,7 @@
 				"AbilityDefT10Aa"
 			]
 		},
+		"ticksOnMovementDistanceIDs": [],
 		"retrainerSettings": {
 			"enableRetrainer": true,
 			"cost": 500000,

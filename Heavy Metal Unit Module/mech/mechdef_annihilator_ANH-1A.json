@@ -9,10 +9,16 @@
 			"unit_role_brawler",
 			"unit_generic",
 			"CGBThetaGalaxy",
+			"CSRDeltaGalaxy",
 			"CJFIotaGalaxy",
 			"CNCOmicronGalaxy",
 			"CWEpsilonGalaxy",
-			"DarkCaste",
+			"CGSOmegaGalaxy",
+			"ScorpionEmpire",
+			"ClanFireMandrill",
+			"KindraaSainze",
+			"KindraaFaradayTanaga",
+			"KindraaMickKreese",
 			"AuriganMercenaries",
 			"Mercenaries",
 			"Wolfs_Dragoons",
@@ -24,7 +30,10 @@
 			"SnordsIrregulars",
 			"NorthwindHighlanders",
 			"LoneStarRegiment",
+			"AblesAces",
+			"GraveWalkers",
 			"DismalDisinherited",
+			"MacksMercs",
 			"SolarisVIIMercLeague",
 			"EridaniLightHorse",
 			"GrayDeathLegion",
@@ -64,9 +73,13 @@
 			"JacobsJuggernauts",
 			"LindonsBattalion",
 			"GrimDetermination",
+			"FightingUrukhai",
+			"RaymondsRedcoats",
+			"12thStarGuards",
+			"RedfieldRenegades",
+			"LexingtonCombatGroup",
 			"ToothOfYmir",
 			"KnightsOfCaerbannog",
-			"ThermoPolice",
 			"HostileMercenaries",
 			"EmeraldDawn",
 			"SianTriumphant",
@@ -84,24 +97,6 @@
 			"RazorbackMercs",
 			"SelfEmployed",
 			"FlakJackals",
-			"BannockburnsBandits",
-			"CleanKill",
-			"LongwoodsBluecoats",
-			"CaesarsCohorts",
-			"CanopianHighlanders",
-			"Dragonslayers",
-			"HarcourtsDestructors",
-			"RamiliesRaiders",
-			"BronsonsHorde",
-			"BullardsArmoredCavalry",
-			"QuintsOlympianGroundpounders",
-			"GraysGhosts",
-			"IrukjandiCompany",
-			"AntianLanciarii",
-			"BlackCaravel",
-			"Moderbjorn",
-			"LocalsBrockwayRefugees",
-			"EdCorbu",
 			"unit_legal"
 		],
 		"tagSetSourceFile": ""
@@ -457,7 +452,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_AC10_1"
 		},
 		{
 			"MountedLocation": "LeftTorso",
@@ -501,7 +497,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_AC10_2"
 		},
 		{
 			"MountedLocation": "LeftTorso",
@@ -534,7 +531,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_AC10_3"
 		},
 		{
 			"MountedLocation": "RightTorso",
@@ -611,7 +609,8 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false
+			"hasPrefabName": false,
+			"LocalGUID":"target_AC10_4"
 		},
 		{
 			"MountedLocation": "LeftLeg",

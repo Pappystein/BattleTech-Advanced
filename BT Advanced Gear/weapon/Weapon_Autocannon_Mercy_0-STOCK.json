@@ -2,7 +2,7 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/a/a/rac"
+				"CategoryID": "w/s/su/superweapon"
 			},
 			{
 				"CategoryID": "NeverMelee"
@@ -14,11 +14,10 @@
 			"VariableBurstCount: 6",
 			"NoFireInMelee",
 			"AreaOfEffect: 45",
-			"AreaOfEffectDmg: 18",
-			"WeaponAttachmentCompatible: Autocannon FCS"
+			"AreaOfEffectDmg: 18"
 		]
 	},
-	"Category": "Ballistic",
+	"weaponCategoryID": "Superweapon",
 	"Type": "Autocannon",
 	"WeaponSubType": "AC10",
 	"MinRange": 0,
@@ -130,7 +129,6 @@
 		"items": [
 			"component_type_stock",
 			"range_long",
-			"AutocannonFCSSupported-Rotary",
 			"WebbTCSupported-RotaryAC"
 		],
 		"tagSetSourceFile": ""

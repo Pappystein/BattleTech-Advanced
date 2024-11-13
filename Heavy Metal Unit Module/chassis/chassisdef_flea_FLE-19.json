@@ -113,7 +113,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				}
 			],

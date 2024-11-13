@@ -67,7 +67,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Ballistic",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				},
 				{
@@ -150,7 +150,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Ballistic",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				},
 				{

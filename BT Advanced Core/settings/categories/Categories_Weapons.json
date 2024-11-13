@@ -653,6 +653,14 @@
 			}
 		},
 		{
+			"Name": "w/s/su/superweapon",
+			"DisplayName": "Superweapon",
+			"DefaultCustoms": {
+				"Sorter": 1000,
+				"InventorySorter": "895"
+			}
+		},
+		{
 			"Name": "w/s/a/ams",
 			"DisplayName": "AMS",
 			"DefaultCustoms": {

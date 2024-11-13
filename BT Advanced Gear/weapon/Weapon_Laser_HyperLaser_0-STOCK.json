@@ -2,7 +2,7 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/e/l/laser"
+				"CategoryID": "w/s/su/superweapon"
 			}
 		],
 		"ComponentExplosion": {
@@ -14,12 +14,10 @@
 			"WpnCrits: +50%",
 			"WeaponJAMFlat: 1.25",
 			"JamExplode",
-			"WeaponBoom: 150",
-			"WeaponAttachmentCompatible: Laser Insulator",
-			"WeaponAttachmentCompatible: Laser FCS"
+			"WeaponBoom: 150"
 		]
 	},
-	"Category": "Energy",
+	"weaponCategoryID": "Superweapon",
 	"Type": "Laser",
 	"WeaponSubType": "LargeLaser",
 	"MinRange": 0,
@@ -80,9 +78,6 @@
 			"component_type_variant",
 			"component_type_variant3",
 			"range_long",
-			"LaserInsulatorAttachable.{location}",
-			"LaserInsulatorSupported-SingleShot",
-			"LaserFCSSupported-SingleShot",
 			"WebbTCSupported-SingleShot"
 		],
 		"tagSetSourceFile": ""

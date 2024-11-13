@@ -2,7 +2,7 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/a/g/railgun"
+				"CategoryID": "w/s/su/superweapon"
 			},
 			{
 				"CategoryID": "NeverMelee"
@@ -23,7 +23,7 @@
 			"no_salvage"
 		]
 	},
-	"weaponCategoryID": "Artillery",
+	"weaponCategoryID": "Superweapon",
 	"Type": "Gauss",
 	"WeaponSubType": "Gauss",
 	"MinRange": 120,

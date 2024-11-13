@@ -2,21 +2,21 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/s/l/coil"
+				"CategoryID": "w/s/su/superweapon"
 			}
 		],
 		"ComponentExplosion": {
 			"ExplosionDamage": 30
 		},
 		"BonusDescriptions": [
-				"HeatPerCharge: 0.8",
-				"EvasiveExponent: 0.75",
-				"HeatPerChargeOC: 1.15",
-				"EvasiveExponentOC: 1.1",
-				"PipsIgnored: 3"
-			]
+			"HeatPerCharge: 0.8",
+			"EvasiveExponent: 0.75",
+			"HeatPerChargeOC: 1.15",
+			"EvasiveExponentOC: 1.1",
+			"PipsIgnored: 3"
+		]
 	},
-	"Category": "AntiPersonnel",
+	"weaponCategoryID": "Superweapon",
 	"Type": "COIL",
 	"WeaponSubType": "COILS",
 	"MinRange": 0,
@@ -97,7 +97,8 @@
 	"ComponentTags": {
 		"items": [
 			"component_type_stock",
-			"range_close"
+			"range_close",
+			"WebbTCSupported-COIL"
 		],
 		"tagSetSourceFile": ""
 	}

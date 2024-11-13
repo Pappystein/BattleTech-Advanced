@@ -2,7 +2,7 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/a/g/hgaussrifle"
+				"CategoryID": "w/s/su/superweapon"
 			},
 			{
 				"CategoryID": "NeverMelee"
@@ -26,7 +26,6 @@
 			"WpnAccuracy: +1",
 			"WpnCooldown: 1",
 			"WeaponBoom: 150",
-			"WeaponAttachmentCompatible: Gauss FCS",
 			"LocationRestricted: Torsos Only"
 		],
 		"Flags": [
@@ -34,7 +33,7 @@
 			"not_broken"
 		]
 	},
-	"Category": "Ballistic",
+	"weaponCategoryID": "Superweapon",
 	"Type": "Gauss",
 	"WeaponSubType": "Gauss",
 	"MinRange": 0,
@@ -154,7 +153,6 @@
 		"items": [
 			"component_type_stock",
 			"range_standard",
-			"GaussFCSSupported-Heavy",
 			"WebbTCSupported-VSPL"
 		],
 		"tagSetSourceFile": ""

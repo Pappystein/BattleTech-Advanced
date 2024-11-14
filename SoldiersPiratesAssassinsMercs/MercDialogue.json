@@ -6,8 +6,7 @@
 				"Commander of {COMPANY.CompanyName}, withdraw your forces at once before we come to blows."
 			],
 			"BribeSuccessDialogue": [
-				"After consideration, your offer is acceptable. We will withdraw immediately. Good hunting, {Commander.Callsign}.",
-			
+				"After consideration, your offer is acceptable. We will withdraw immediately. Good hunting, {Commander.Callsign}."
 			],
 			"BribeFailureDialogue": [
 				"Our contract prevents me from accepting your offer. All allied forces, lock weapons!",
@@ -27,7 +26,7 @@
 				"...fine. We'll withdraw this time. Don't push your luck though.",
 				"Very well. That's enough money to cover our costs. Next time the price goes up.",
 				"We will spare you this time. But we have a reputation to uphold - sign this non-disclosure agreement. If you break it we break you.",
-				"A pleasure doing business with you, {Commander.Callsign}. Glad to have this unpleasant business behind us."  
+				"A pleasure doing business with you, {Commander.Callsign}. Glad to have this unpleasant business behind us."
 			],
 			"BribeFailureDialogue": [
 				"No deal this time. We've got a reputation to uphold, you understand. Don't worry, it'll be over quick."
@@ -67,7 +66,7 @@
 			"BribeSuccessDialogue": [
 				"God dammit, that's just too good an offer to pass up. Fine, we'll pull out this time, but let's stop meeting this way in the future.",
 				"At that price, we can't afford not to let you live. See you next time and bring your wallet!",
-				"Fine, but only because I don't want to scuff my mech's paint job crushing your cockpit. Get out of here before I change my mind."				
+				"Fine, but only because I don't want to scuff my mech's paint job crushing your cockpit. Get out of here before I change my mind."
 			],
 			"BribeFailureDialogue": [
 				"No deal. Sorry to shoot it out, but some people just can't take a hint. Light 'em up, boys.",
@@ -135,11 +134,11 @@
 				"This is Overlord Stables, Steiner's finest. Give up or your family is going to see your corpse on next week's highlight reel.",
 				"This is Starlight Stables, Davion's heroes on Solaris. If you want to beg for mercy you have 30 seconds.",
 				"We are Galahad Stables, and we fight for Sir Galf, House Marik, truth, justice, and the chivalric code. In that order. Face us in honorable combat and may the best mechwarrior win!",
-				"Yes, we're Leaguers. But this is Fitzhugh Stables. We're Anduriens, not those Knights of the Inner Sphere chumps over in Galahad. We fight to win, prepare to get wrecked!"				 				
+				"Yes, we're Leaguers. But this is Fitzhugh Stables. We're Anduriens, not those Knights of the Inner Sphere chumps over in Galahad. We fight to win, prepare to get wrecked!"
 			],
 			"BribeSuccessDialogue": [
 				"Alright, you make some good points with that check of yours. Quick, cut the cameras, this episode isn't going live since we're pulling out!",
-				"Screw it. All of our advertisers pulled out after I made that comment about Regulans last week. Cut us the check, we're done here.",				 
+				"Screw it. All of our advertisers pulled out after I made that comment about Regulans last week. Cut us the check, we're done here."
 			],
 			"BribeFailureDialogue": [
 				"No can do, mercs, we got reputations to uphold! Get ready to rumble!",

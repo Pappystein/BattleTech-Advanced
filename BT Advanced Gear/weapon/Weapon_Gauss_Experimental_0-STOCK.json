@@ -60,7 +60,6 @@
 	"ProjectilesPerShot": 1,
 	"AttackRecoil": 4,
 	"Instability": 60,
-	"Cooldown": 1,
 	"ProjectileSpeedMultiplier": 2.5,
 	"ImprovedBallistic": true,
 	"WeaponEffectID": "WeaponEffect-Weapon_GaussRifle",

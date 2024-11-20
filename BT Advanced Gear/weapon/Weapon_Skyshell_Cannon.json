@@ -9,7 +9,9 @@
 			}
 		],
 		"BonusDescriptions": [
+			"NoFireInMelee",
 			"WpnRecoil: 3",
+			"WpnCooldown: 1",
 			"Airburst: 20, 60",
 			"AirburstRadius: 60",
 			"AirburstPenalty: 50%, 60"
@@ -43,6 +45,7 @@
 	"ShotsWhenFired": 1,
 	"ProjectilesPerShot": 20,
 	"AttackRecoil": 4,
+	"Cooldown": 1,
 	"Instability": 40,
 	"HasShells": true,
 	"ShellsRadius": 60,

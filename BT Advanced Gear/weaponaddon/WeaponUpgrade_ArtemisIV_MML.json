@@ -22,7 +22,7 @@
 			"UIName": "SRM",
 			"Name": "ArtIV",
 			"Description": "Weapon fires in ArtIV mode",
-			"isBaseMode": true,
+			"isBaseMode": false,
 			"EvasivePipsIgnored": 2,
 			"AccuracyModifier": -1.0,
 			"ClusteringModifier": 1.25,

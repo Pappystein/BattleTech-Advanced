@@ -23,7 +23,6 @@
 			"WpnRecoil: 3",
 			"NoFireInMelee",
 			"WpnAccuracy: +1",
-			"WpnCooldown: 1",
 			"WeaponBoom: 150",
 			"LocationRestricted: Torsos Only"
 		],

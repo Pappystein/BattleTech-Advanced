@@ -13,8 +13,8 @@
 			"StabilityDamage": 60
 		},
 		"BonusDescriptions": [
-			"WpnCooldown: 2",
 			"NoFireInMelee",
+			"WpnCooldown: 1",
 			"VariableDmg: 50",
 			"WpnAccuracy: +1",
 			"WeaponBoom: 300",

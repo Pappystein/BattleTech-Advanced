@@ -51,8 +51,8 @@
 			"IsEnergy": false,
 			"IsSupport": false,
 			"UsesInternalAmmo": false,
-			"UIColorRef": "WolfGray",
-			"FallbackUIColor": "WolfGray",
+			"UIColorRef": "Ballistic",
+			"FallbackUIColor": null,
 			"Icon": "BallisticHardpointIcon",
 			"OutOfAmmoAudioVOEvent": "AmmoDepleted_Gauss"
 		},
@@ -1846,7 +1846,35 @@
 			"UIColorRef": "WolfGray",
 			"FallbackUIColor": "WolfGray",
 			"Icon": "BallisticHardpointIcon",
-			"OutOfAmmoAudioVOEvent": "AmmoDepleted_MG"
+			"OutOfAmmoAudioVOEvent": "AmmoDepleted_Gauss"
+		},
+		{
+			"ID": 6132,
+			"Name": "MIRV",
+			"FriendlyName": "MIRV",
+			"IsBallistic": false,
+			"IsMissile": true,
+			"IsEnergy": false,
+			"IsSupport": false,
+			"UsesInternalAmmo": false,
+			"UIColorRef": "WolfGray",
+			"FallbackUIColor": "WolfGray",
+			"Icon": "MissileHardpointIcon",
+			"OutOfAmmoAudioVOEvent": "AmmoDepleted_LRM"
+		},
+		{
+			"ID": 6133,
+			"Name": "SKYSHELL",
+			"FriendlyName": "SKYSHELL",
+			"IsBallistic": true,
+			"IsMissile": false,
+			"IsEnergy": false,
+			"IsSupport": false,
+			"UsesInternalAmmo": false,
+			"UIColorRef": "WolfGray",
+			"FallbackUIColor": "WolfGray",
+			"Icon": "BallisticHardpointIcon",
+			"OutOfAmmoAudioVOEvent": "AmmoDepleted_AC20"
 		}
 	]
 }

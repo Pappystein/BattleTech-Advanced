@@ -51,7 +51,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				}
 			],

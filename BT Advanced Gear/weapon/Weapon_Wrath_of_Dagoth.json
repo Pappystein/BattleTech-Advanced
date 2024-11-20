@@ -17,7 +17,7 @@
 			"no_salvage"
 		]
 	},
-	"Category": "Energy",
+	"weaponCategoryID": "Superweapon",
 	"Type": "PPC",
 	"WeaponSubType": "PPC",
 	"MinRange": 0,

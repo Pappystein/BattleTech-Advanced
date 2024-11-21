@@ -1,6 +1,13 @@
 {
 	"Custom": {
 		"AssemblyVariant": {
+			"PrefabID": "UrbanMech",
+			"Exclude": false,
+			"Include": true
+		}
+	},
+	"Custom": {
+		"AssemblyVariant": {
 			"PrefabID": "UrbTD",
 			"Exclude": true,
 			"Include": false

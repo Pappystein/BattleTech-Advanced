@@ -1,28 +1,28 @@
 {
 	"Custom": {
 		"AssemblyVariant": {
-			"PrefabID": "VisionQuest",
+			"PrefabID": "Argus",
 			"Exclude": false,
 			"Include": true
 		}
 	},
 	"Description": {
-		"Cost": 5900000,
+		"Cost": 6872000,
 		"Rarity": 2,
 		"Purchasable": true,
 		"Manufacturer": "",
 		"Model": "",
-		"UIName": "Vision Quest",
-		"Id": "chassisdef_visionquest_VQ-2NC",
-		"Name": "Vision Quest",
-		"Details": "Introduced in 2828 by Clan Nova Cat as an inspirational design, the Vision Quest did not see heavy service and was used more as a symbol than as an effective war machine, though it was moderately effective as such. The VQ-2NC is the eventual standard Clan-tech design that lasted the ages. Armed with all clan-spec technology, the VQ-2NC carries a Gauss Rifle, dual ER Large Lasers, triple ER Small Lasers, and plenty of armor and heat sinks to keep it active. This mech eventually found its way into other Clan toumans and would be spread out thinly but widely after the Golden Century in solahma units.",
-		"Icon": "uixTxrIcon_visionquest"
+		"UIName": "Argus",
+		"Id": "chassisdef_argus_AGS-4X",
+		"Name": "Argus",
+		"Details": "The Argus had a troubled genesis but after finally being accepted by the AFFS it proved its great worth time and again so when the time came for testing the new Skyshell Cannon superweapon, the AFFS decided to employ the Argus as a test chassis. Armed with a simple loadout of the Skyshell plus four ER Medium Lasers, the AGS-4X is an effective fire support design in almost every circumstance. The 300-rated XL engine keeps the 'Mech agile in the field while some advanced heat dissipation technology makes sure the weapons run cool.",
+		"Icon": "uixTxrIcon_argus"
 	},
-	"MovementCapDefID": "movedef_hellfire_240",
+	"MovementCapDefID": "movedef_champion_CHP-2N",
 	"PathingCapDefID": "pathingdef_heavy",
-	"HardpointDataDefID": "hardpointdatadef_visionquest",
-	"PrefabIdentifier": "chrprfmech_visionquestbase-001",
-	"PrefabBase": "visionquest",
+	"HardpointDataDefID": "hardpointdatadef_argus",
+	"PrefabIdentifier": "chrprfmech_argusbase-001",
+	"PrefabBase": "argus",
 	"Tonnage": 60,
 	"InitialTonnage": 6,
 	"weightClass": "HEAVY",
@@ -30,7 +30,7 @@
 	"Heatsinks": 0,
 	"TopSpeed": 150,
 	"TurnRadius": 90,
-	"MaxJumpjets": 99,
+	"MaxJumpjets": 30,
 	"Stability": 160,
 	"StabilityDefenses": [
 		0,
@@ -46,17 +46,22 @@
 	"Signature": 0,
 	"Radius": 8,
 	"PunchesWithLeftArm": false,
-	"MeleeDamage": 55,
-	"MeleeInstability": 15,
+	"MeleeDamage": 60,
+	"MeleeInstability": 30,
 	"MeleeToHitModifier": 0,
-	"DFADamage": 55,
+	"DFADamage": 60,
 	"DFAToHitModifier": 0,
-	"DFASelfDamage": 55,
-	"DFAInstability": 15,
+	"DFASelfDamage": 60,
+	"DFAInstability": 30,
 	"Locations": [
 		{
 			"Location": "Head",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 6,
 			"MaxArmor": 45,
@@ -67,15 +72,11 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				},
 				{
-					"WeaponMountID": "AntiPersonnel",
-					"Omni": false
-				},
-				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Missile",
 					"Omni": false
 				}
 			],
@@ -89,10 +90,6 @@
 			"Location": "LeftTorso",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Ballistic",
-					"Omni": false
-				},
-				{
 					"WeaponMountID": "Energy",
 					"Omni": false
 				},
@@ -103,27 +100,28 @@
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 110,
-			"MaxRearArmor": 35,
+			"MaxArmor": 140,
+			"MaxRearArmor": 70,
 			"InternalStructure": 70
 		},
 		{
 			"Location": "CenterTorso",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
-			"InventorySlots": 15,
-			"MaxArmor": 150,
-			"MaxRearArmor": 50,
+			"InventorySlots": 16,
+			"MaxArmor": 200,
+			"MaxRearArmor": 100,
 			"InternalStructure": 100
 		},
 		{
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Ballistic",
-					"Omni": false
-				},
-				{
 					"WeaponMountID": "Energy",
 					"Omni": false
 				},
@@ -134,19 +132,19 @@
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 110,
-			"MaxRearArmor": 35,
+			"MaxArmor": 140,
+			"MaxRearArmor": 70,
 			"InternalStructure": 70
 		},
 		{
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Ballistic",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				},
 				{
-					"WeaponMountID": "Ballistic",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
 			],
@@ -219,25 +217,39 @@
 			"z": 0
 		}
 	],
-	"VariantName": "VQ-2NC",
+	"VariantName": "AGS-4X",
 	"ChassisTags": {
 		"items": [
-			"ClanMech",
-			"ArmLimitLowerRight",
+			"OmniMech",
+			"ArmLimitUpperRight",
+			"ArmLimitUpperLeft",
 			"HeavyMech"
 		],
 		"tagSetSourceFile": ""
 	},
-	"StockRole": "Symbolism In Motion",
-	"YangsThoughts": "Introduced in 2828 by Clan Nova Cat as an inspirational design, the Vision Quest did not see heavy service and was used more as a symbol than as an effective war machine, though it was moderately effective as such. The VQ-2NC is the eventual standard Clan-tech design that lasted the ages. Armed with all clan-spec technology, the VQ-2NC carries a Gauss Rifle, dual ER Large Lasers, triple ER Small Lasers, and plenty of armor and heat sinks to keep it active. This mech eventually found its way into other Clan toumans and would be spread out thinly but widely after the Golden Century in solahma units.",
+	"StockRole": "Superweapon Striker",
+	"YangsThoughts": "The Argus had a troubled genesis but after finally being accepted by the AFFS it proved its great worth time and again so when the time came for testing the new Skyshell Cannon superweapon, the AFFS decided to employ the Argus as a test chassis. Armed with a simple loadout of the Skyshell plus four ER Medium Lasers, the AGS-4X is an effective fire support design in almost every circumstance. The 300-rated XL engine keeps the 'Mech agile in the field while some advanced heat dissipation technology makes sure the weapons run cool.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_structureslots_clanendosteel",
+			"ComponentDefID": "emod_structureslots_endosteel",
+			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
+			"GUID": null,
 			"DamageLevel": "Functional",
-			"prefabName": null,
+			"prefabName": "",
+			"hasPrefabName": false
+		},
+		{
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "Gear_Quirk_EasytoMaintain_Argus",
+			"SimGameUID": "",
+			"ComponentDefType": "Upgrade",
+			"HardpointSlot": -1,
+			"GUID": null,
+			"DamageLevel": "Functional",
+			"prefabName": "",
 			"hasPrefabName": false
 		}
 	],

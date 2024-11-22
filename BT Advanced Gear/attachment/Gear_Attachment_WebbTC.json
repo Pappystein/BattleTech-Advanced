@@ -18,6 +18,7 @@
 				"WeaponUpgrade_WebbTC_Grazer",
 				"WeaponUpgrade_WebbTC_SanctuaryModal",
 				"WeaponUpgrade_WebbTC_VSPL",
+				"WeaponUpgrade_WebbTC_COIL",
 				"WeaponUpgrade_WebbTC_APM",
 				"WeaponUpgrade_WebbTC_VRM",
 				"WeaponUpgrade_WebbTC_MG",
@@ -42,9 +43,9 @@
 			"WeaponAttachmentAccuracy: +2"
 		],
 		"Flags": [
-				"not_broken",
-				"no_salvage",
-				"default"
+			"not_broken",
+			"no_salvage",
+			"default"
 		],
 		"RGBColor": "#5C6670"
 	},

@@ -208,7 +208,7 @@
 			{
 				"MapId": "mapGeneral_riftValley_vJung",
 				"ContractTypeName": "AmbushConvoy",
-				"IncreaseBoundarySizeByPercentage": 0.4
+				"IncreaseBoundarySizeByPercentage": 0.6
 			},
 			{
 				"MapId": "mapMultiPurp_metroGreen_uTech",
@@ -247,7 +247,7 @@
 			},
 			{
 				"MapId": "mapGeneral_bigCrater_bMoon",
-				"IncreaseBoundarySizeByPercentage": 0.4
+				"IncreaseBoundarySizeByPercentage": 0.6
 			},
 			{
 				"MapId": "mapArena_deathValley_aDes",

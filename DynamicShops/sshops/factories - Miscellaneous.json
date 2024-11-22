@@ -1,0 +1,20 @@
+[
+	{
+		"conditions": {
+			"tag": "planet_name_twycross"
+		},
+		"items": "itemCollection_major_ClanDiamondShark"
+	},
+	{
+		"conditions": {
+			"tag": "planet_name_merchantsrest"
+		},
+		"items": "itemCollection_major_ClanDiamondShark"
+	},
+	{
+		"conditions": {
+			"tag": "planet_name_rezak'shole"
+		},
+		"items": "itemCollection_faction_Rezak"
+	}
+]

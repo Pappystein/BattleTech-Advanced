@@ -140,6 +140,10 @@
 			"Path": "StratOps"
 		},
 		{
+			"Type": "AmmunitionBoxDef",
+			"Path": "Superweapon"
+		},
+		{
 			"Type": "AbilityDef",
 			"Path": "abilities"
 		},

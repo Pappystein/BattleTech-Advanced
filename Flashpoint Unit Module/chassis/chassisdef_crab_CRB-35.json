@@ -65,11 +65,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Energy",
-					"Omni": false
-				},
-				{
-					"WeaponMountID": "Energy",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				},
 				{

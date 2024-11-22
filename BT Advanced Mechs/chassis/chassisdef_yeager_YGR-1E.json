@@ -114,7 +114,7 @@
 			"Location": "RightTorso",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Ballistic",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				},
 				{

@@ -361,6 +361,14 @@
 			}
 		},
 		{
+			"Name": "a/s/su/superweapon",
+			"DisplayName": "Superweapon Ammo",
+			"DefaultCustoms": {
+				"Sorter": 1000,
+				"InventorySorter": "830"
+			}
+		},
+		{
 			"Name": "a/s/a/ams",
 			"DisplayName": "AMS Ammo",
 			"DefaultCustoms": {

@@ -11,7 +11,7 @@
 			"no_salvage"
 		]
 	},
-	"Category": "AntiPersonnel",
+	"weaponCategoryID": "Superweapon",
 	"Type": "PPC",
 	"WeaponSubType": "PPC",
 	"MinRange": 0,

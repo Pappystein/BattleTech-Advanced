@@ -2,7 +2,7 @@
 	"Custom": {
 		"Category": [
 			{
-				"CategoryID": "w/a/g/railgun"
+				"CategoryID": "w/s/su/superweapon"
 			},
 			{
 				"CategoryID": "NeverMelee"
@@ -13,18 +13,18 @@
 			"StabilityDamage": 60
 		},
 		"BonusDescriptions": [
-			"WpnCooldown: 2",
 			"NoFireInMelee",
+			"WpnCooldown: 1",
 			"VariableDmg: 50",
-			"IsHeavyGauss",
 			"WpnAccuracy: +1",
-			"WeaponBoom: 300"
+			"WeaponBoom: 300",
+			"LocationRestricted: Torsos Only"
 		],
 		"Flags": [
 			"no_salvage"
 		]
 	},
-	"weaponCategoryID": "Artillery",
+	"weaponCategoryID": "Superweapon",
 	"Type": "Gauss",
 	"WeaponSubType": "Gauss",
 	"MinRange": 120,
@@ -34,10 +34,10 @@
 		780,
 		1200
 	],
-	"AmmoCategory": "HGAUSS",
+	"AmmoCategory": "SUGAUSS",
 	"StartingAmmoCapacity": 0,
 	"HeatGenerated": 30,
-	"Damage": 350,
+	"Damage": 400,
 	"OverheatedDamageMultiplier": 0,
 	"EvasiveDamageMultiplier": 0,
 	"EvasivePipsIgnored": 0,
@@ -71,8 +71,8 @@
 		"UIName": "Scattershot Railgun",
 		"Id": "Weapon_Gauss_Scattershot_Railgun_0-STOCK",
 		"Name": "Scattershot Railgun",
-		"Details": "Designed as a theoretical alternative to more traditional tube artillery, the Scattershot Railgun uses complex magnetic fields to fracture a standard ferro-magnetic gauss slug into shards mid-flight that then saturate the target's location. The Scattershot Railgun is extremely powerful and long ranged but is extremely bulky. To accomodate the weapon, Corean Enterprises built a customized Sirocco to carry it into battle and the Railgun has been unmountable on anything else so far to date. \n\n <b><color=#ffcc00>Uses Heavy Gauss Ammo.</color></b> \n\n <b><color=#099ff2>VOLATILE!</color></b>",
-		"Icon": "FerroMag"
+		"Details": "Designed as a theoretical alternative to more traditional tube artillery, the Scattershot Railgun uses complex magnetic fields to fracture a standard ferro-magnetic gauss slug into shards mid-flight that then saturate the target's location. The Scattershot Railgun is extremely powerful and long ranged but is extremely bulky. To accomodate the weapon, Corean Enterprises built a customized Sirocco to carry it into battle and the Railgun has been unmountable on anything else so far to date. \n\n <b><color=#ffcc00>Uses Superweapon Gauss Ammo.</color></b> \n\n <b><color=#099ff2>VOLATILE!</color></b>",
+		"Icon": "death-star"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

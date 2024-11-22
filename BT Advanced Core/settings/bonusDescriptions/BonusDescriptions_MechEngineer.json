@@ -640,7 +640,7 @@
 			"Bonus": "AirburstPenalty",
 			"Short": "{0} MR Penalty",
 			"Long": "{0} Min Range Penalty",
-			"Full": "{0} damage penalty to direct hits before the airburst shell splits normally, so under 300m."
+			"Full": "{0} damage penalty to direct hits before the airburst shell splits normally, so under {1} meters."
 		},
 		{
 			"Bonus": "NoAreaOfEffect",

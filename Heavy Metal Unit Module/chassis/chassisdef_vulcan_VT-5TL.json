@@ -135,7 +135,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				}
 			],

@@ -65,7 +65,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Missile",
+					"WeaponMountID": "Superweapon",
 					"Omni": false
 				},
 				{

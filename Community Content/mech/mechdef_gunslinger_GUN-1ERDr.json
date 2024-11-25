@@ -679,7 +679,7 @@
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
-			"hasPrefabName": false,
+			"hasPrefabName": false
 		},
 		{
 			"MountedLocation": "RightTorso",

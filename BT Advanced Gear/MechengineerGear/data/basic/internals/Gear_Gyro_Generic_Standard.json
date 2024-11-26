@@ -1,5 +1,8 @@
 {
 	"Custom": {
+		"ComponentExplosion": {
+			"StabilityDamage": 50
+		},
 		"Category": {
 			"CategoryID": "Gyro"
 		},

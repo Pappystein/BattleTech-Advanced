@@ -53,7 +53,7 @@
 		"UIName": "Thumper Cannon",
 		"Id": "Weapon_Autocannon_THUMPER_CANNON",
 		"Name": "Thumper Cannon",
-		"Details": "The Thumper Artillery Cannon is to the Thumper Artillery Piece what a sawn-off shotgun is to a standard 12 gauge. The Thumper Cannon is a short-barreled artillery piece meant for breaking fortifications at close range. However, it is sometimes, rarely, mounted onto mechs. \n\n <b><color=#ffcc00>Uses Thumper Ammo.</color></b>",
+		"Details": "The Thumper Artillery Cannon is to the Thumper Artillery Piece what a sawn-off shotgun is to a standard 12 gauge. The Thumper Cannon is a short-barreled artillery piece meant for breaking fortifications at close range. However, it is sometimes, rarely, mounted onto mechs. \n\n <b><color=#ffcc00>Uses Thumper Cannon Ammo.</color></b>",
 		"Icon": "Art-illery"
 	},
 	"BonusValueA": "",

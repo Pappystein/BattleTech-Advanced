@@ -14,14 +14,14 @@
 		},
 		"BonusDescriptions": [
 				"CostPerShot: 200",
-				"AmmoCount: 15"
+				"AmmoCount: 30"
 			],
 		"AmmoCost": {
 			"PerUnitCost": 200
 		}
 	},
 	"AmmoID": "Ammunition_UAC5",
-	"Capacity": 15,
+	"Capacity": 30,
 	"Description": {
 		"Cost": 20000,
 		"Rarity": 1,

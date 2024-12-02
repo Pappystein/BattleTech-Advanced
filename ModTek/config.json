@@ -49,18 +49,6 @@
                 "AbsoluteTimeEnabled": false,
                 "AbsoluteTimeUseUtc": false
             },
-            "ModTek.log": {
-                "Includes": [{
-                        "LoggerNames": [
-                            "ModTek"
-                        ]
-                    }
-                ],
-                "IndentNewLines": true,
-                "NormalizeNewLines": true,
-                "AbsoluteTimeEnabled": true,
-                "AbsoluteTimeUseUtc": true
-            },
             "battletech_log_cleaned.txt": {
                 "Excludes": [{
                         "LoggerNames": [

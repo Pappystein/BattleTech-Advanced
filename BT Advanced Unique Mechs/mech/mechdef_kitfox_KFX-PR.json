@@ -37,7 +37,7 @@
 		"UIName": "Purifier KFX-PR",
 		"Id": "mechdef_kitfox_KFX-PR",
 		"Name": "Purifier",
-		"Details": "A design first piloted by Brett Andrews of Clan Steel Viper, the Kit Fox Hero 'Mech, the Purifier mounts an ER Large Laser and ER Small Laser in each side torso, supported by a Machine Gun in each arm. Carrying two and half tons of Machine Gun ammo, four extra Double Heat Sinks maintain a high rate of laser fire on targets.",
+		"Details": "A design first piloted by Brett Andrews of Clan Steel Viper, the Kit Fox Hero 'Mech, the Purifier mounts an ER Large Laser and ER Small Laser in each side torso, supported by a Machine Gun in each arm. Carrying one and half tons of Machine Gun ammo, four extra Double Heat Sinks maintain a high rate of laser fire on targets.",
 		"Icon": "uixTxrIcon_kitfox"
 	},
 	"simGameMechPartCost": 200000,

@@ -103,20 +103,7 @@
 			"Influence": 0
 		}
 	],
-	"TravelRequirements": [
-		{
-			"Scope": "Company",
-			"RequirementTags": {
-				"items": [],
-				"tagSetSourceFile": ""
-			},
-			"ExclusionTags": {
-				"items": [],
-				"tagSetSourceFile": ""
-			},
-			"RequirementComparisons": []
-		}
-	],
+	"TravelRequirements": [],
 	"StarPosition": null,
 	"StarType": "G",
 	"Depletable": true,

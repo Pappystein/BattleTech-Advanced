@@ -105,22 +105,7 @@
 			"Influence": 0
 		}
 	],
-	"TravelRequirements": [
-		{
-			"Scope": "Company",
-			"RequirementTags": {
-				"items": [
-					"map_travel_2a"
-				],
-				"tagSetSourceFile": ""
-			},
-			"ExclusionTags": {
-				"items": [],
-				"tagSetSourceFile": ""
-			},
-			"RequirementComparisons": []
-		}
-	],
+	"TravelRequirements": [],
 	"StarPosition": null,
 	"StarType": "G",
 	"Depletable": false,

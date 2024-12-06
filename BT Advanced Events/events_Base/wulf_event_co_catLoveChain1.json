@@ -15,7 +15,9 @@
 		},
 		"ExclusionTags": {
 			"tagSetSourceFile": "",
-			"items": []
+			"items": [
+				"wulfalreadystarted"
+			]
 		},
 		"RequirementComparisons": []
 	},
@@ -102,7 +104,8 @@
 								"tagSetSourceFile": "",
 								"items": [
 									"wulf_event_co_catLoveChain1",
-									"company_cat"
+									"company_cat",
+									"wulfalreadystarted"
 								]
 							},
 							"RemovedTags": {
@@ -141,7 +144,8 @@
 								"tagSetSourceFile": "",
 								"items": [
 									"wulf_event_co_catLoveChain1",
-									"company_cat"
+									"company_cat",
+									"wulfalreadystarted"
 								]
 							},
 							"RemovedTags": {
@@ -222,7 +226,8 @@
 								"tagSetSourceFile": "Tags/PilotTags",
 								"items": [
 									"pilot_morale_low",
-									"pilot_assassin"
+									"pilot_assassin",
+									"wulfalreadystarted"
 								]
 							},
 							"RemovedTags": {

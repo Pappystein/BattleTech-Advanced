@@ -13,6 +13,7 @@
 	"TurretTags": {
 		"items": [
 			"unit_turret",
+			"invalid_unset",
 			"ComStar",
 			"DarkCaste",
 			"331stDivision",

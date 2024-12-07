@@ -14,7 +14,7 @@ The actual function is very simple: the action checks out this repo and the [wik
 # Settings
 ## Variables and Secrets
 
-The automation uses Mediawiki's login functions to post to the API. As such, a bot account is required. Create one for the wiki automation and give it the following grants:
+The automation uses Mediawiki's login functions to post to the API. As such, a bot account is required. Go to [the wiki page](https://www.bta3062.com/index.php?title=Special:BotPasswords) for that and create one for the wiki automation and give it the following grants:
 
 - Basic rights
 - High-volume editing

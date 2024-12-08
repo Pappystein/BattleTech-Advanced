@@ -112,12 +112,12 @@
 			"applyToFaction": [
 				"Davion"
 			],
-			"description": "The Archon has recognized this pilot as a famed killer of FedRats. Gain reputation with the Lyrans from contracts against the Federated Suns, and receive 10% off in Lyran stores.",
+			"description": "The Archon has recognized this pilot as a famed killer of FedRats. Gain reputation with the Lyrans from contracts against the Federated Suns, and receive 5% off in Lyran stores.",
 			"repMod": {
 				"Steiner": 3
 			},
 			"storeDiscount": {
-				"Steiner": -0.1
+				"Steiner": -0.05
 			},
 			"effectDataJO": []
 		},
@@ -129,12 +129,12 @@
 			"applyToFaction": [
 				"Steiner"
 			],
-			"description": "The First Prince has recognized this pilot as a famed killer of Lyran scum. Gain reputation with the FedSuns from contracts against the Lyran Alliance, and receive 10% off in Davion stores.",
+			"description": "The First Prince has recognized this pilot as a famed killer of Lyran scum. Gain reputation with the FedSuns from contracts against the Lyran Alliance, and receive 5% off in Davion stores.",
 			"repMod": {
 				"Davion": 3
 			},
 			"storeDiscount": {
-				"Davion": -0.1
+				"Davion": -0.05
 			},
 			"effectDataJO": []
 		},
@@ -214,9 +214,9 @@
 			"applyToFaction": [
 				"MagistracyOfCanopus"
 			],
-			"description": "Some very interesting 'toys' tend to fall off the back of Canopian trucks. Take a 10% discount when buying and get 10% better prices when selling at the black market.",
+			"description": "Some very interesting 'toys' tend to fall off the back of Canopian trucks. Take a 5% discount when buying and get 10% better prices when selling at the black market.",
 			"storeDiscount": {
-				"AuriganPirates": -0.1
+				"AuriganPirates": -0.05
 			},
 			"storeBonus": {
 				"AuriganPirates": 0.1
@@ -324,12 +324,12 @@
 			"applyToFaction": [
 				"Rim"
 			],
-			"description": "The remnants of the Rim Worlds Republic are not to be trusted, even 300 years later. Gain reputation with ComStar when taking contracts against the Rim Collection and a 10% discount from ComStar stores.",
+			"description": "The remnants of the Rim Worlds Republic are not to be trusted, even 300 years later. Gain reputation with ComStar when taking contracts against the Rim Collection and a 5% discount from ComStar stores.",
 			"repMod": {
 				"ComStar": 2
 			},
 			"storeDiscount": {
-				"ComStar": -0.1
+				"ComStar": -0.05
 			},
 			"effectDataJO": []
 		},
@@ -341,12 +341,12 @@
 			"applyToFaction": [
 				"Circinus"
 			],
-			"description": "This pilot has taken to bringing some order to the chaos of the anti-spinward Periphery. Gain reputation with the FWL when taking contracts against the Circinus Federation. Also get a 10% discount in stores belonging to the Marian Hegemony.",
+			"description": "This pilot has taken to bringing some order to the chaos of the anti-spinward Periphery. Gain reputation with the FWL when taking contracts against the Circinus Federation. Also get a 5% discount in stores belonging to the Marian Hegemony.",
 			"repMod": {
 				"Marik": 2
 			},
 			"storeDiscount": {
-				"Marian": -0.1
+				"Marian": -0.05
 			},
 			"effectDataJO": []
 		},
@@ -389,9 +389,9 @@
 			"applyToFaction": [
 				"JarnFolk"
 			],
-			"description": "Rule 125: You can't make a deal if you're dead. Get a 25% discount when buying from the Hanseatic League.",
+			"description": "Rule 125: You can't make a deal if you're dead. Get a 10% discount when buying from the Hanseatic League.",
 			"storeDiscount": {
-				"Hanse": -0.2
+				"Hanse": -0.1
 			},
 			"effectDataJO": []
 		},
@@ -403,10 +403,10 @@
 			"applyToFaction": [
 				"Hanse"
 			],
-			"description": "Rule 125: You can't make a deal if you're dead. Get a 20% discount when buying from the JarnFolk and a 10% discount from the Lyrans.",
+			"description": "Rule 125: You can't make a deal if you're dead. Get a 10% discount when buying from the JarnFolk and a 5% discount from the Lyrans.",
 			"storeDiscount": {
-				"Steiner": -0.1,
-				"JarnFolk": -0.2
+				"Steiner": -0.05,
+				"JarnFolk": -0.1
 			},
 			"effectDataJO": []
 		},
@@ -1062,12 +1062,12 @@
 			"applyToFaction": [
 				"Ives"
 			],
-			"description": "This pilot is an expert at fighting St. Ives and House Liao likes that. Each successful contract against St. Ives gives bonus Liao reputation and better discounts in Liao stores.",
+			"description": "This pilot is an expert at fighting St. Ives and House Liao likes that. Each successful contract against St. Ives gives bonus Liao reputation and 5% better discounts in Liao stores.",
 			"repMod": {
 				"Liao": 2
 			},
 			"storeDiscount": {
-				"Liao": -0.1
+				"Liao": -0.05
 			},
 			"effectDataJO": []
 		},
@@ -1098,12 +1098,12 @@
 			"applyToFaction": [
 				"Lothian"
 			],
-			"description": "This pilot likes beating on the downtrodden. Each successful contract against the Lothian League gives bonus reputation with the Marian Hegemony and gain a 15% discount in Marian Hegemony stores.",
+			"description": "This pilot likes beating on the downtrodden. Each successful contract against the Lothian League gives bonus reputation with the Marian Hegemony and gain a 5% discount in Marian Hegemony stores.",
 			"repMod": {
 				"Marian": 2
 			},
 			"storeDiscount": {
-				"Marian": -0.15
+				"Marian": -0.05
 			},
 			"effectDataJO": []
 		},
@@ -1115,12 +1115,12 @@
 			"applyToFaction": [
 				"Illyrian"
 			],
-			"description": "This pilot has decided the Marian Hegemony was right and the Illyrians make good slaves. Each successful contract against the Illyrian Palatinate gives bonus reputation with the Marian Hegemony and gain a 15% discount in Marian Hegemony stores.",
+			"description": "This pilot has decided the Marian Hegemony was right and the Illyrians make good slaves. Each successful contract against the Illyrian Palatinate gives bonus reputation with the Marian Hegemony and gain a 5% discount in Marian Hegemony stores.",
 			"repMod": {
 				"Marian": 2
 			},
 			"storeDiscount": {
-				"Marian": -0.15
+				"Marian": -0.05
 			},
 			"effectDataJO": []
 		},

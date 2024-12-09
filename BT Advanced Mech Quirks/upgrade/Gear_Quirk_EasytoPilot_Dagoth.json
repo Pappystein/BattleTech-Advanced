@@ -39,7 +39,7 @@
 		"Id": "Gear_Quirk_EasytoPilot_Dagoth",
 		"Name": "Dagoth Easy to Pilot",
 		"Details": "This piece of gear represents the Dagoth's inherent Easy to Pilot quirk. This gives the Dagoth a bonus to movement speed.",
-		"Icon": "uixSvgIcon_equipment_Cockpit"
+		"Icon": "uixSvgIcon_equipment_Gyro"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

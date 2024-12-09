@@ -192,5 +192,14 @@
 	"CohorsMorituri": [
 		"Heh. You think we're scared of you? We're the Cohors Morituri, the Cohort of the Dead, we fear no man because we're already dead men, and you can't kill what's already dead.",
 		"Hail Caesar! If we don't say that our political officer will execute us later."
+	],
+	"StarGuardCorps": [
+		"We are the Star Guard Corps. You will not stand in our path. Retreat or die."
+	],
+	"ICorps": [
+		"I Corps, these mercenaries dare to stand between us and our objective! Make the Director-General proud and wipe these fools out!"
+	],
+	"IVCorps": [
+		"We represent the Terran Hegemony, the rightful ruler of the Inner Sphere and all the stars of humanity, you'll be swept away by our might."
 	]
 }

@@ -39,7 +39,7 @@
 		"Id": "Gear_Quirk_EasytoPilot_Gurkha",
 		"Name": "Gurkha Easy to Pilot",
 		"Details": "This piece of gear represents the Gurkha's inherent Easy to Pilot quirk. This gives the Gurkha a bonus to movement speed.",
-		"Icon": "uixSvgIcon_equipment_Cockpit"
+		"Icon": "uixSvgIcon_equipment_Gyro"
 	},
 	"BonusValueA": "",
 	"BonusValueB": "",

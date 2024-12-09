@@ -66,7 +66,7 @@
 		"UIName": "'Naval' PPC",
 		"Id": "Weapon_PPC_Naval",
 		"Name": "'Naval' PPC",
-		"Details": "Don't let the name fool you, this isn't actually a naval=scale weapon. Instead, the 'Naval' PPC is a superpowered and heavily overcharged Heavy PPC that has had all its limiters removed. The name comes from the raw power the weapon deals making it look like the target was hit by a naval-scale PPC. House Kurita developed the 'Naval' PPC and has put it into service on a few select units, where it has performed adequately if not exceptionally. \n\n <b><color=#099ff2>VOLATILE!</color></b>",
+		"Details": "Don't let the name fool you, this isn't actually a naval-scale weapon. Instead, the 'Naval' PPC is a superpowered and heavily overcharged Heavy PPC that has had all its limiters removed. The name comes from the raw power the weapon deals making it look like the target was hit by a naval-scale PPC. House Kurita developed the 'Naval' PPC and has put it into service on a few select units, where it has performed adequately if not exceptionally. \n\n <b><color=#099ff2>VOLATILE!</color></b>",
 		"Icon": "death-star"
 	},
 	"BonusValueA": "",

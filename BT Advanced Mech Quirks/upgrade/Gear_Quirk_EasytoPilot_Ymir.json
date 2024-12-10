@@ -39,7 +39,7 @@
 		"Id": "Gear_Quirk_EasytoPilot_Ymir",
 		"Name": "Ymir Easy to Pilot",
 		"Details": "This piece of gear represents the Ymir's inherent Easy to Pilot quirk. This gives the Ymir a bonus to movement speed.",
-		"Icon": "uixSvgIcon_equipment_Cockpit"
+		"Icon": "uixSvgIcon_equipment_Gyro"
 	},
 	"BonusValueA": "+20% Walk Speed",
 	"BonusValueB": "",

@@ -39,7 +39,7 @@
 		"Id": "Gear_Quirk_EasytoPilot_Toyama",
 		"Name": "Toyama Easy to Pilot",
 		"Details": "This piece of gear represents the Toyama's inherent Easy to Pilot quirk. This gives the Toyama a bonus to movement speed.",
-		"Icon": "uixSvgIcon_equipment_Cockpit"
+		"Icon": "uixSvgIcon_equipment_Gyro"
 	},
 	"BonusValueA": "+10% Walk Speed",
 	"BonusValueB": "",

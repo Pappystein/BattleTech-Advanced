@@ -2,4 +2,5 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto encoding=UTF-8
-*.sh text ini eol=lf
+*.sh text eol=lf
+*.ini text eol=

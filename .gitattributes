@@ -3,4 +3,4 @@
 ###############################################################################
 * text=auto encoding=UTF-8
 *.sh text eol=lf
-*.ini text eol=
+*.ini text eol=lf

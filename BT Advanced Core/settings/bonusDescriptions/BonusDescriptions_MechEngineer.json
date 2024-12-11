@@ -5493,7 +5493,7 @@
 			"Bonus": "ViralJammerRange",
 			"Short": "Viral Jammer Range",
 			"Long": "Viral Jammer Range",
-			"Full": "The Viral Jammer's range of effect is {0} meters."
+			"Full": "The Viral Jammer's range of effect is a radius of {0} meters."
 		}
 	]
 }

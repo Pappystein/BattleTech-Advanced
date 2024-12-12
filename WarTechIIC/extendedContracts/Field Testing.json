@@ -1,6 +1,14 @@
 {
 	"name": "Field Testing",
-	"requirementList": [],
+	"requirementList": [
+        {
+            "Scope": "StarSystem",
+            "ExclusionTags": {
+                "items": [ "planet_other_empty" ],
+                "tagSetSourceFile": ""
+            }
+        }
+    ],
 	"weight": 1,
 	"spawnLocation": "OwnSystem",
 	"employer": ["Allied"],

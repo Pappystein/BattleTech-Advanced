@@ -1,6 +1,14 @@
 {
 	"name": "Pirate Raid",
-	"requirementList": [],
+	"requirementList": [
+        {
+            "Scope": "StarSystem",
+            "ExclusionTags": {
+                "items": [ "planet_other_empty" ],
+                "tagSetSourceFile": ""
+            }
+        }
+    ],
 	"weight": 1,
 	"spawnLocation": "NearbyEnemy",
 	"employer": ["AuriganPirates"],

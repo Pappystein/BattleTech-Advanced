@@ -18,7 +18,8 @@
 			"VariableDmg: 50",
 			"WpnAccuracy: +1",
 			"WeaponBoom: 300",
-			"LocationRestricted: Torsos Only"
+			"LocationRestricted: Torsos Only",
+			"WeaponAttachmentCompatible: Superweapon FCS"
 		],
 		"Flags": [
 			"no_salvage"

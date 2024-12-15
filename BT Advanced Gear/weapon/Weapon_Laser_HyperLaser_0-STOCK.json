@@ -14,7 +14,8 @@
 			"WpnCrits: +50%",
 			"WeaponJAMFlat: 1.25",
 			"JamExplode",
-			"WeaponBoom: 150"
+			"WeaponBoom: 150",
+			"WeaponAttachmentCompatible: Superweapon FCS"
 		]
 	},
 	"weaponCategoryID": "Superweapon",

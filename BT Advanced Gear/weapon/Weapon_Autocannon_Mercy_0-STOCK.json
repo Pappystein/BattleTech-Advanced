@@ -14,7 +14,8 @@
 			"VariableBurstCount: 6",
 			"NoFireInMelee",
 			"AreaOfEffect: 45",
-			"AreaOfEffectDmg: 18"
+			"AreaOfEffectDmg: 18",
+			"WeaponAttachmentCompatible: Superweapon FCS"
 		]
 	},
 	"weaponCategoryID": "Superweapon",

@@ -11,7 +11,8 @@
 		"BonusDescriptions": [
 			"WpnAccuracy: +1",
 			"WpnCrits: +25%",
-			"WeaponBoom: 125"
+			"WeaponBoom: 125",
+			"WeaponAttachmentCompatible: Superweapon FCS"
 		]
 	},
 	"weaponCategoryID": "Superweapon",

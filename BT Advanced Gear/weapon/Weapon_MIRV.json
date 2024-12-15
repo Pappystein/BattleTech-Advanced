@@ -14,7 +14,8 @@
 			"AreaOfEffect: 90",
 			"AreaOfEffectDmg: 40",
 			"ScatterRadius: 60, 120",
-			"AMSImmune"
+			"AMSImmune",
+			"WeaponAttachmentCompatible: Superweapon FCS"
 		]
 	},
 	"weaponCategoryID": "Superweapon",

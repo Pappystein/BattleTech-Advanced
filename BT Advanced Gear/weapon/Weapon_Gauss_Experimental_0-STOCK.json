@@ -150,7 +150,8 @@
 		"items": [
 			"component_type_stock",
 			"range_standard",
-			"WebbTCSupported-VSPL"
+			"WebbTCSupported-VSPL",
+			"SuperweaponFCSSupported-VSPL"
 		],
 		"tagSetSourceFile": ""
 	}

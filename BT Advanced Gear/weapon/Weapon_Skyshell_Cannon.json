@@ -87,7 +87,8 @@
 			"component_type_stock",
 			"component_type_lostech",
 			"range_standard",
-			"WebbTCSupported-SingleShot"
+			"WebbTCSupported-SingleShot",
+			"SuperweaponFCSSupported-Standard"
 		],
 		"tagSetSourceFile": ""
 	}

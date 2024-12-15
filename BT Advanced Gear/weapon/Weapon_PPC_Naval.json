@@ -137,7 +137,8 @@
 		"items": [
 			"component_type_stock",
 			"range_long",
-			"WebbTCSupported-SingleShot"
+			"WebbTCSupported-SingleShot",
+			"SuperweaponFCSSupported-Standard"
 		],
 		"tagSetSourceFile": ""
 	}

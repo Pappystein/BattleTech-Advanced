@@ -26,6 +26,7 @@ Ammo_AmmunitionBox_ArtemisIV_LRM,AmmunitionBox,0,1
 Ammo_AmmunitionBox_ArtemisIV_SRM,AmmunitionBox,0,1
 Gear_Attachment_ArtemisIV,Upgrade,0,1
 Gear_Attachment_ThunderboltFCS,Upgrade,0,1
+Gear_Attachment_SuperweaponFCS,Upgrade,0,1
 Gear_Cockpit_AmbientTargeter,Upgrade,0,1
 Gear_LeagueNet_Focal_Node,Upgrade,0,1
 Gear_LeagueNet_Support_Node_Accuracy,Upgrade,0,1

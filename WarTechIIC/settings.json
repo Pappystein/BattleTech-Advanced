@@ -46,6 +46,11 @@
     "ClanWolfInExile",
     "Wolfs_Dragoons"
   ],
+  "neverBlockContractsOfferedBy": [
+    "SelfEmployed",
+    "SelfEmployed_Yang",
+    "SelfEmployed_Farah"
+  ],
   "maxAttackRaidDistance": 300,
   "dailyAttackChance": 0.15,
   "dailyRaidChance": 0.15,

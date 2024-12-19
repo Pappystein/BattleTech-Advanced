@@ -17,36 +17,30 @@
     ],
     "MinimalLastConfig": true,
     "Logging": {
+        "DebugLogDumpServerListen": "",
         "LogUncaughtExceptions": true,
         "LogExceptionInitializations": false,
         "LogSqlQueryInitializations": false,
+        "LogSqlQueryExecutionsFromDapper": false,
         "LogThreadStarts": false,
         "LogStackTraces": false,
         "LogStackTracesOnExceptions": true,
-        "OverrideLoggerLevels": {
-            "Unity": "Debug",
-            "Profiler": "Debug",
-            "Debugger": "Debug",
-            "AppDomain": "Debug",
-            "ModTek": 200
-        },
         "IgnoreLoggerLogLevel": false,
         "DebugLogLevelSetters": false,
         "SkipOriginalLoggers": true,
-        "IgnoreSkipForLoggers": [],
+        "IgnoreSkipForLoggers": [
+            "ModTek"
+        ],
         "UnityConsoleAppenderEnabled": false,
+        "ModLogAppendersEnabled": true,
         "UnityConsoleAppender": {
             "LogRotationCount": 1,
-            "IndentNewLines": true,
-            "NormalizeNewLines": true,
-            "MessageSanitizerRegex": "[\\p{C}-[\\r\\n\\t]]+",
             "AbsoluteTimeEnabled": false,
             "AbsoluteTimeUseUtc": true,
-            "AbsoluteFormat": "HH:mm:ss.fffffff",
-            "StartupTimeEnabled": false,
-            "StartupTimeFormat": "hh':'mm':'ss'.'fffffff"
+            "StartupTimeEnabled": false
         },
         "AsynchronousLoggingEnabled": true,
+        "LogFlushToDisk": true,
         "MainLog": {
             "LogRotationCount": 1,
             "Excludes": [
@@ -56,18 +50,13 @@
                     ]
                 }
             ],
-            "IndentNewLines": true,
-            "NormalizeNewLines": true,
-            "MessageSanitizerRegex": "[\\p{C}-[\\r\\n\\t]]+",
             "AbsoluteTimeEnabled": true,
-            "AbsoluteTimeUseUtc": false,
-            "AbsoluteFormat": "HH:mm:ss.fffffff",
-            "StartupTimeEnabled": false,
-            "StartupTimeFormat": "hh':'mm':'ss'.'fffffff"
+            "AbsoluteTimeUseUtc": true,
+            "StartupTimeEnabled": false
         },
         "MainLogFilePath": "battletech_log.txt",
         "Logs": {
-            "ModTek.log": {
+            "ModTek_cleaned.log": {
                 "LogRotationCount": 1,
                 "Includes": [
                     {
@@ -76,14 +65,9 @@
                         ]
                     }
                 ],
-                "IndentNewLines": true,
-                "NormalizeNewLines": true,
-                "MessageSanitizerRegex": "[\\p{C}-[\\r\\n\\t]]+",
-                "AbsoluteTimeEnabled": true,
-                "AbsoluteTimeUseUtc": true,
-                "AbsoluteFormat": "HH:mm:ss.fffffff",
-                "StartupTimeEnabled": false,
-                "StartupTimeFormat": "hh':'mm':'ss'.'fffffff"
+                "AbsoluteTimeEnabled": false,
+                "AbsoluteTimeUseUtc": false,
+                "StartupTimeEnabled": false
             },
             "battletech_log_cleaned.txt": {
                 "LogRotationCount": 1,
@@ -137,27 +121,36 @@
                     "CombatLog.Initialization [WARNING] Turret",
                     "MechEngineer [WARNING] Unsupported weapon category for 667",
                     "MechEngineer [WARNING] Unsupported weapon category for 666",
+                    "MechEngineer [DEBUG] set",
                     "CustomComponents [DEBUG] [CC]Mech validation for NULL return",
                     "CustomComponents [DEBUG] [CC]-- CustomComponents.Flags",
                     "CustomComponents [DEBUG] [CC]-- CustomComponents.AutoLinked",
+                    "CustomComponents.UnitType [DEBUG]",
                     "Data.DataManager [WARNING] LoadRequest for",
-                    "LewdableTanks [DEBUG] [LTMod]Fixing cost of",
+                    "LewdableTanks [DEBUG] Fixing cost of",
                     "CombatLog.Initialization [ERROR] Error instantiating VFX",
                     "PilotDef [WARNING] PilotDef already did Init From Save!",
                     "Achievements [LOG]",
+                    "CombatLog.Hit [LOG] ????????",
+                    "MechEngineer [ERROR] Can't find critical effect id",
+                    "MechEngineer [ERROR] Could not find bonus description",
+                    "MechEngineer [DEBUG] set",
+                    "CombatLog.Attacking [ERROR] ERROR!!! breakdown of Universal Modifier",
+                    "MechEngineer [LOG] Auto fixing",
                     "DataLoader [DEBUG] Loading:",
                     "Save.Core.SaveSystem [DEBUG]",
                     "Unity [ERROR] Generating SIM GAME UID while still loading!",
-                    "Unity [WARNING] HBS Tooltip on UI Element"
+                    "Unity [WARNING] HBS Tooltip on UI Element",
+                    "HarmonyX [TRACE]",
+                    "HarmonyX [LOG]",
+                    "Unity [ERROR] RenderTexture.Create failed: format unsupported for random writes",
+                    "WartechIIC [ERROR] Newtonsoft.Json.JsonSerializationException:",
+                    "Unity [ERROR] ObjectDisposedException: Cannot access a disposed object.",
+                    "AppDomain [DEBUG] UnhandledException"
                 ],
-                "IndentNewLines": true,
-                "NormalizeNewLines": true,
-                "MessageSanitizerRegex": "[\\p{C}-[\\r\\n\\t]]+",
                 "AbsoluteTimeEnabled": true,
-                "AbsoluteTimeUseUtc": false,
-                "AbsoluteFormat": "HH:mm:ss.fffffff",
-                "StartupTimeEnabled": false,
-                "StartupTimeFormat": "hh':'mm':'ss'.'fffffff"
+                "AbsoluteTimeUseUtc": true,
+                "StartupTimeEnabled": false
             }
         }
     }

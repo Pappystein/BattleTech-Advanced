@@ -4470,10 +4470,10 @@
 			"Full": "This equipment provides the carrying unit with immunity to sensor locks."
 		},
 		{
-			"Bonus": "DEPRECIATED",
-			"Short": "DEPRECIATED",
-			"Long": "DEPRECIATED",
-			"Full": "This equipment is depreciated and will not function. Remove it from your mechs and sell it at first opportunity."
+			"Bonus": "DEPRECATED",
+			"Short": "DEPRECATED",
+			"Long": "DEPRECATED",
+			"Full": "This equipment is deprecated and will not function. Remove it from your mechs and sell it at first opportunity."
 		},
 		{
 			"Bonus": "vMRM",

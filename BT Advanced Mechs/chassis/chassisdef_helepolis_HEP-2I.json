@@ -69,6 +69,10 @@
 					"Omni": false
 				},
 				{
+					"WeaponMountID": "Ballistic",
+					"Omni": false
+				},
+				{
 					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				}
@@ -129,6 +133,10 @@
 			"Hardpoints": [
 				{
 					"WeaponMountID": "Artillery",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Ballistic",
 					"Omni": false
 				},
 				{

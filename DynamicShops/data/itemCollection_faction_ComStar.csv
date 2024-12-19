@@ -4,6 +4,12 @@ Gear_C3,Upgrade,0,1
 Weapon_C3_Master,Weapon,0,1
 Weapon_SRM_SRM_NARC_INARC,Weapon,0,10
 Weapon_Ground_Mobile_HPG,Weapon,1,10
+Weapon_Bomb_Bay,Weapon,0,1
+Weapon_Bomb_Bay_Cluster,Weapon,0,1
+Weapon_Bomb_Bay_Inferno,Weapon,0,1
+Weapon_Bomb_Bay_FuelAir,Weapon,0,1
+Weapon_Bomb_Bay_FASCAM,Weapon,0,1
+Weapon_Bomb_Bay_Rocket_Pod,Weapon,0,1
 Ammo_AmmunitionBox_Narc_Beacon_Improved,AmmunitionBox,0,10
 Ammo_AmmunitionBox_Narc_Explosive_Improved,AmmunitionBox,0,10
 Ammo_AmmunitionBox_Narc_Haywire_Improved,AmmunitionBox,0,10
@@ -14,6 +20,7 @@ Gear_NullSignatureSystem,Upgrade,0,1
 Gear_Contract_Mech_KingCrab_ComStar,Upgrade,0,1
 Gear_Contract_Tank_Alacorn_ComStar,Upgrade,0,1
 Gear_Gyro_XL,Upgrade,0,1
+Gear_Attachment_SuperweaponFCS,Upgrade,0,1
 mechdef_blackknight_BL-9-KNT,Mech,2,1
 mechdef_champion_CHP-3N,Mech,2,1
 mechdef_kingcrab_KGC-001,Mech,2,1

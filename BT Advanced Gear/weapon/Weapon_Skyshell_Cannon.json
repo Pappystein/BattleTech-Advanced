@@ -14,7 +14,8 @@
 			"WpnCooldown: 1",
 			"Airburst: 20, 60",
 			"AirburstRadius: 60",
-			"AirburstPenalty: 50%, 60"
+			"AirburstPenalty: 50%, 60",
+			"WeaponAttachmentCompatible: Superweapon FCS"
 		]
 	},
 	"weaponCategoryID": "Superweapon",
@@ -67,7 +68,7 @@
 		"UIName": "Skyshell Cannon",
 		"Id": "Weapon_Skyshell_Cannon",
 		"Name": "Skyshell Cannon",
-		"Details": "The Skyshll was developed by the Federated Suns and was created with the intent of being the final word in area damage saturation. The Skyshell Cannon fires a single large shell in a high fire arc that shatters into more than a dozen submunitions and rains down over the target, causing high damage with good accuracy and being excellent at dealing critical damage. The Skyshell Cannon proved effective and was put into limited service by the Suns in their elite military forces.\n\n <b><color=#ffcc00>Uses Skyshell Ammo.</color></b>",
+		"Details": "The Skyshell was developed by the Federated Suns and was created with the intent of being the final word in area damage saturation. The Skyshell Cannon fires a single large shell in a high fire arc that shatters into more than a dozen submunitions and rains down over the target, causing high damage with good accuracy and being excellent at dealing critical damage. The Skyshell Cannon proved effective and was put into limited service by the Suns in their elite military forces.\n\n <b><color=#ffcc00>Uses Skyshell Ammo.</color></b>",
 		"Icon": "death-star"
 	},
 	"BonusValueA": "",
@@ -87,7 +88,8 @@
 			"component_type_stock",
 			"component_type_lostech",
 			"range_standard",
-			"WebbTCSupported-SingleShot"
+			"WebbTCSupported-SingleShot",
+			"SuperweaponFCSSupported-Standard"
 		],
 		"tagSetSourceFile": ""
 	}

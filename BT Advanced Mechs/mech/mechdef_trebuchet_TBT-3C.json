@@ -106,7 +106,7 @@
 	"ChassisID": "chassisdef_trebuchet_TBT-3C",
 	"HeraldryID": null,
 	"Description": {
-		"Cost": 10000000,
+		"Cost": 5000000,
 		"Rarity": 2,
 		"Purchasable": true,
 		"Manufacturer": null,

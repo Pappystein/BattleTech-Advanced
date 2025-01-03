@@ -107,7 +107,8 @@
 		"MechSprayPaint",
 		"SearchAndRescue",
 		"JwNetOverride",
-		"VMMWSGC"
+		"VMMWSGC",
+		"JwTweaks"
 	],
 	"OptionallyDependsOn": [
 		"FlashpointEnabler"

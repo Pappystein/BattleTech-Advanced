@@ -32,12 +32,14 @@ fi
 
 # get doorstop settings for linux/mac from the ini (why does doorstop not do this for us?)
 doorstop_config() { grep "^${1}=" "${BASEDIR}/doorstop_config.ini" | cut -d= -f2- ; }
-doorstop_bool() { sed s@true@1@ | sed s@false@0@ ; }
-export DOORSTOP_MONO_DEBUG_ENABLED="$(doorstop_config debug_enabled | doorstop_bool)"
+doorstop_convert_bool() { sed s@true@1@ | sed s@false@0@ ; }
+doorstop_convert_path() { tr '\\' '/' | tr ';' ':' ; }
+export DOORSTOP_MONO_DEBUG_ENABLED="$(doorstop_config debug_enabled | doorstop_convert_bool)"
 export DOORSTOP_MONO_DEBUG_ADDRESS="$(doorstop_config debug_address)"
-export DOORSTOP_MONO_DEBUG_SUSPEND="$(doorstop_config debug_suspend | doorstop_bool)"
-export DOORSTOP_ENABLED="$(doorstop_config enabled | doorstop_bool)"
-export DOORSTOP_TARGET_ASSEMBLY="$(doorstop_config target_assembly | tr '\\' '/' )"
+export DOORSTOP_MONO_DEBUG_SUSPEND="$(doorstop_config debug_suspend | doorstop_convert_bool)"
+export DOORSTOP_ENABLED="$(doorstop_config enabled | doorstop_convert_bool)"
+export DOORSTOP_TARGET_ASSEMBLY="$(doorstop_config target_assembly | doorstop_convert_path)"
+export DOORSTOP_MONO_DLL_SEARCH_PATH_OVERRIDE="$(doorstop_config dll_search_path_override | doorstop_convert_path)"
 
 # check if the first parameter is the executable, e.g. as forwarded through Steam
 if [ -n "${1:-}" ] && [ -x "$1" ]
@@ -77,6 +79,10 @@ case ${os_type} in
       cd "$BASEDIR" || exit 99
       ln -fs Data BattleTech_Data
     )
+    # why is this suddenly necessary? ask the doorstop devs
+    additional_path="BattleTech.app/Contents/Resources"
+    DOORSTOP_TARGET_ASSEMBLY="$additional_path/$DOORSTOP_TARGET_ASSEMBLY"
+    DOORSTOP_MONO_DLL_SEARCH_PATH_OVERRIDE="$additional_path/$DOORSTOP_MONO_DLL_SEARCH_PATH_OVERRIDE"
 
     export DYLD_INSERT_LIBRARIES="${BASEDIR}/libdoorstop.dylib:${DYLD_INSERT_LIBRARIES:-}"
     DYLD_INSERT_LIBRARIES="${DYLD_INSERT_LIBRARIES%:}"

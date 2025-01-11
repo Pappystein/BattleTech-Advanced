@@ -6,7 +6,7 @@
 		"Icon": "uixTxrSpot_BigCity"
 	},
 	"Scope": "Company",
-	"Weight": 10000,
+	"Weight": 600,
 	"Requirements": {
 		"Scope": "Company",
 		"RequirementTags": {

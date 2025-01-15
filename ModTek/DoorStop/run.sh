@@ -32,12 +32,14 @@ fi
 
 # get doorstop settings for linux/mac from the ini (why does doorstop not do this for us?)
 doorstop_config() { grep "^${1}=" "${BASEDIR}/doorstop_config.ini" | cut -d= -f2- ; }
-doorstop_bool() { sed s@true@1@ | sed s@false@0@ ; }
-export DOORSTOP_MONO_DEBUG_ENABLED="$(doorstop_config debug_enabled | doorstop_bool)"
+doorstop_convert_bool() { sed s@true@1@ | sed s@false@0@ ; }
+doorstop_convert_path() { tr '\\' '/' | tr ';' ':' ; }
+export DOORSTOP_MONO_DEBUG_ENABLED="$(doorstop_config debug_enabled | doorstop_convert_bool)"
 export DOORSTOP_MONO_DEBUG_ADDRESS="$(doorstop_config debug_address)"
-export DOORSTOP_MONO_DEBUG_SUSPEND="$(doorstop_config debug_suspend | doorstop_bool)"
-export DOORSTOP_ENABLED="$(doorstop_config enabled | doorstop_bool)"
-export DOORSTOP_TARGET_ASSEMBLY="$(doorstop_config target_assembly | tr '\\' '/' )"
+export DOORSTOP_MONO_DEBUG_SUSPEND="$(doorstop_config debug_suspend | doorstop_convert_bool)"
+export DOORSTOP_ENABLED="$(doorstop_config enabled | doorstop_convert_bool)"
+export DOORSTOP_TARGET_ASSEMBLY="$(doorstop_config target_assembly | doorstop_convert_path)"
+export DOORSTOP_MONO_DLL_SEARCH_PATH_OVERRIDE="$(doorstop_config dll_search_path_override | doorstop_convert_path)"
 
 # check if the first parameter is the executable, e.g. as forwarded through Steam
 if [ -n "${1:-}" ] && [ -x "$1" ]
@@ -65,11 +67,20 @@ case ${os_type} in
     LD_PRELOAD="${LD_PRELOAD%:}"
   ;;
   Darwin*)
+    # why is this suddenly necessary? see https://github.com/NeighTools/UnityDoorstop/issues/67
+    # we have: BASEDIR="/..../BATTLETECH/BattleTech.app/Contents/Resources"
+    # we want: additional_path="BattleTech.app/Contents/Resources"
+    contents_path="$(dirname "$BASEDIR")"
+    app_dir="$(basename "$(dirname "$contents_path")")"
+    additional_path="$app_dir/Contents/Resources"
+    DOORSTOP_TARGET_ASSEMBLY="$additional_path/$DOORSTOP_TARGET_ASSEMBLY"
+    DOORSTOP_MONO_DLL_SEARCH_PATH_OVERRIDE="$additional_path/$DOORSTOP_MONO_DLL_SEARCH_PATH_OVERRIDE"
+
     # guess executable path if launched without specifying an executable
     if [ -z "${executable_path:-}" ]
     then
       # BASEDIR should be the Resources directory
-      executable_path="$(dirname "$BASEDIR")/MacOS/${executable_name}"
+      executable_path="$contents_path/MacOS/${executable_name}"
     fi
     
     # fix mods wanting BattleTech_Data

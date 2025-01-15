@@ -2715,7 +2715,7 @@
 			"Bonus": "ACDamage",
 			"Short": "{0} AC Dmg",
 			"Long": "{0} AC Damage",
-			"Full": "{0} Autocannon Damage"
+			"Full": "Increased Autocannon Damage by +{0} per shot."
 		},
 		{
 			"Bonus": "MissileDamage",

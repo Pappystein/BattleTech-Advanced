@@ -41,6 +41,7 @@
 			"pilot_dependable",
 			"pilot_naive",
 			"pilot_honest",
+			"pilot_radio",
 			"name_HBFT",
 			"pilot_periphery",
 			"pilot_mechwarrior"

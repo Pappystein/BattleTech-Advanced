@@ -68,9 +68,9 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 30,
+			"MaxArmor": 10,
 			"MaxRearArmor": -1,
-			"InternalStructure": 10
+			"InternalStructure": 5
 		},
 		{
 			"Location": "LeftTorso",
@@ -86,9 +86,9 @@
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 50,
+			"MaxArmor": 30,
 			"MaxRearArmor": 25,
-			"InternalStructure": 20
+			"InternalStructure": 15
 		},
 		{
 			"Location": "CenterTorso",
@@ -104,9 +104,9 @@
 			],
 			"Tonnage": 0,
 			"InventorySlots": 15,
-			"MaxArmor": 60,
+			"MaxArmor": 40,
 			"MaxRearArmor": 30,
-			"InternalStructure": 25
+			"InternalStructure": 20
 		},
 		{
 			"Location": "RightTorso",
@@ -122,36 +122,36 @@
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 50,
+			"MaxArmor": 30,
 			"MaxRearArmor": 25,
-			"InternalStructure": 20
+			"InternalStructure": 15
 		},
 		{
 			"Location": "RightArm",
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 30,
+			"MaxArmor": 10,
 			"MaxRearArmor": -1,
-			"InternalStructure": 10
+			"InternalStructure": 5
 		},
 		{
 			"Location": "LeftLeg",
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 6,
-			"MaxArmor": 40,
+			"MaxArmor": 30,
 			"MaxRearArmor": -1,
-			"InternalStructure": 15
+			"InternalStructure": 10
 		},
 		{
 			"Location": "RightLeg",
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 6,
-			"MaxArmor": 40,
+			"MaxArmor": 30,
 			"MaxRearArmor": -1,
-			"InternalStructure": 15
+			"InternalStructure": 10
 		}
 	],
 	"LOSSourcePositions": [

@@ -15,7 +15,7 @@
 		"UIName": "Foxfire",
 		"Id": "chassisdef_foxfire_FXR-5R",
 		"Name": "Foxfire",
-		"Details": "One of the few ultralight BattleMechs developed by the Lyran Commonwealth, the Foxfire was designed entirely to carry its unique Firestorm Flamer into combat, all other considerations are secondary. In the 3060s, the Lyran Commonwealth revisited the idea of the Foxfire and produced an extensive series of upgrade variants, starting with the -5R. Armed with the Firestorm as well as four standard Flamers, the FXR-5R proved adept at its job of spreading flame. However, it proved unsuitable for fighting other armored units and production ceased relatively quickly.",
+		"Details": "One of the few ultralight BattleMechs developed by the Lyran Commonwealth, the Foxfire was designed entirely to carry its unique Firestorm Flamer into combat, all other considerations are secondary. In the 3060s, the Lyran Commonwealth revisited the idea of the Foxfire and produced an extensive series of upgrade variants, starting with the -5R. Armed with the Firestorm as well as five standard Flamers, the FXR-5R proved adept at its job of spreading flame. However, it proved unsuitable for fighting other armored units and production ceased relatively quickly.",
 		"Icon": "uixTxrIcon_foxfire"
 	},
 	"MovementCapDefID": "movedef_flea_FLE-15",
@@ -73,7 +73,7 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 30,
+			"MaxArmor": 20,
 			"MaxRearArmor": -1,
 			"InternalStructure": 10
 		},
@@ -91,8 +91,8 @@
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 50,
-			"MaxRearArmor": 25,
+			"MaxArmor": 40,
+			"MaxRearArmor": 20,
 			"InternalStructure": 20
 		},
 		{
@@ -105,8 +105,8 @@
 			],
 			"Tonnage": 0,
 			"InventorySlots": 15,
-			"MaxArmor": 60,
-			"MaxRearArmor": 30,
+			"MaxArmor": 50,
+			"MaxRearArmor": 25,
 			"InternalStructure": 25
 		},
 		{
@@ -123,8 +123,8 @@
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 50,
-			"MaxRearArmor": 25,
+			"MaxArmor": 40,
+			"MaxRearArmor": 20,
 			"InternalStructure": 20
 		},
 		{
@@ -132,7 +132,7 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 30,
+			"MaxArmor": 20,
 			"MaxRearArmor": -1,
 			"InternalStructure": 10
 		},
@@ -141,7 +141,7 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 6,
-			"MaxArmor": 40,
+			"MaxArmor": 30,
 			"MaxRearArmor": -1,
 			"InternalStructure": 15
 		},
@@ -150,7 +150,7 @@
 			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 6,
-			"MaxArmor": 40,
+			"MaxArmor": 30,
 			"MaxRearArmor": -1,
 			"InternalStructure": 15
 		}
@@ -210,7 +210,7 @@
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Ultralight Flamebringer",
-	"YangsThoughts": "One of the few ultralight BattleMechs developed by the Lyran Commonwealth, the Foxfire was designed entirely to carry its unique Firestorm Flamer into combat, all other considerations are secondary. In the 3060s, the Lyran Commonwealth revisited the idea of the Foxfire and produced an extensive series of upgrade variants, starting with the -5R. Armed with the Firestorm as well as four standard Flamers, the FXR-5R proved adept at its job of spreading flame. However, it proved unsuitable for fighting other armored units and production ceased relatively quickly.",
+	"YangsThoughts": "One of the few ultralight BattleMechs developed by the Lyran Commonwealth, the Foxfire was designed entirely to carry its unique Firestorm Flamer into combat, all other considerations are secondary. In the 3060s, the Lyran Commonwealth revisited the idea of the Foxfire and produced an extensive series of upgrade variants, starting with the -5R. Armed with the Firestorm as well as five standard Flamers, the FXR-5R proved adept at its job of spreading flame. However, it proved unsuitable for fighting other armored units and production ceased relatively quickly.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",

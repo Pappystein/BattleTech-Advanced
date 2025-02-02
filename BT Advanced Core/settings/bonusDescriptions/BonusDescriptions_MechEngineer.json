@@ -4638,10 +4638,10 @@
 			"Full": "Increases the clustering modifier of this weapon by {0}, meaning shots are that much more likely to hit the same location on the target."
 		},
 		{
-			"Bonus": "OstscoutTargeting",
-			"Short": "Ostscout Targeting",
-			"Long": "Ostscout Targeting provides {0} accuracy within 150 meters.",
-			"Full": "The Ostscout's targeting systems are so good that they provide {0} accuracy against enemies within a 150 meter radius of the Ostscout."
+			"Bonus": "SuperSensors",
+			"Short": "Advanced Targeting",
+			"Long": "Advanced Targeting provides {0} accuracy within 150 meters.",
+			"Full": "This 'Mechs targeting systems are so good that they provide {0} accuracy against enemies within a 150 meter radius of the 'Mech."
 		},
 		{
 			"Bonus": "BoostedMissileDamage",

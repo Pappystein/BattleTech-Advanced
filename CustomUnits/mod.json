@@ -260,6 +260,10 @@
 		"MaxVehicleRandomPilots": 4,
 		"ShowVehicleBays": true,
 		"AllowVehiclesEdit": false,
+		"VehcilesPartialEditable": false,
+		"VehicleComponentOneAllowed": "VehicleLimited",
+		"VehicleComponentForbiddenTag": "VehicleForbidden",
+		"VehicleComponentCategoryTagPrefix": "VehicleComponentFamily-",
 		"MechBaySwitchIconMech": "mech",
 		"MechBaySwitchIconVehicle": "vehicle",
 		"MechBaySwitchIconUp": "weapon_up",
@@ -269,10 +273,13 @@
 		"CountContractMaxUnits4AsUnlimited": true,
 		"CanPilotVehicleProbability": 0.5,
 		"CanPilotAlsoMechProbability": 0.0,
+		"GenerateExtraPilotingClassesForRonin": false,
 		"SquadStructureIcon": "ba_structure",
 		"SquadArmorOutlineIcon": "ba_armor_outline",
 		"SquadArmorIcon": "ba_armor",
-		"squadForcedTags": ["battle_armor_bays"],
+		"squadForcedTags": [
+			"battle_armor_bays"
+		],
 		"LancesIcons": [
 			"one",
 			"two",

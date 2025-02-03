@@ -197,6 +197,7 @@
 	"VariantName": "MBSDR-1",
 	"ChassisTags": {
 		"items": [
+			"mr-resize-0.85-0.85-0.85",
 			"ArmLimitUpperRight",
 			"ArmLimitUpperLeft",
 			"IgnoreEngineLimit",

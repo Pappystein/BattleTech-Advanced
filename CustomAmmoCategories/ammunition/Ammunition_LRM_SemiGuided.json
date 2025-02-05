@@ -12,11 +12,12 @@
 	"Type": "Normal",
 	"Category": "LRM",
 	"HeatGenerated": 0,
+	"AccuracyModifier": 2,
 	"HeatGeneratedModifier": 1,
 	"ArmorDamageModifier": 1,
 	"ISDamageModifier": 1,
 	"CriticalDamageModifier": 1,
 	"ChassisTagsAccuracyModifiers":{
-		"TargetAcquired": -20
+		"TargetAcquired": -5
 	}
 }

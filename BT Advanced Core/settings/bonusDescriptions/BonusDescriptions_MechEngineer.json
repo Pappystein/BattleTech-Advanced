@@ -5512,6 +5512,12 @@
 			"Short": "Viral Jammer Range",
 			"Long": "Viral Jammer Range",
 			"Full": "The Viral Jammer's range of effect is {0} meters."
+		},
+		{
+			"Bonus": "SemiGuidedLRM",
+			"Short": "Semi-Guided LRM",
+			"Long": "Semi-Guided LRM",
+			"Full": "Semi-Guided LRMs gain a {0} accuracy bonus against designated targets, such as those painted by TAG weapons."
 		}
 	]
 }

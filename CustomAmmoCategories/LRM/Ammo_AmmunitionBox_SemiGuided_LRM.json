@@ -16,11 +16,13 @@
 			"StabilityDamagePerAmmo": 1
 		},
 		"BonusDescriptions": [
-			"CostPerShot: 60",
+			"WpnAccuracy: -2",
+			"SemiGuidedLRM: +5",
+			"CostPerShot: 90",
 			"AmmoCount: 120"
 		],
 		"AmmoCost": {
-			"PerUnitCost": 60
+			"PerUnitCost": 90
 		}
 	},
 	"AmmoID": "Ammunition_LRM_SemiGuided",

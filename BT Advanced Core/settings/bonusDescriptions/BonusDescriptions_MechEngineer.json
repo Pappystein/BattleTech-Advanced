@@ -2304,6 +2304,12 @@
 			"Full": "TAG, or Target Acquisition Gear, grants a {0} bonus to AoE damage against the TAG'd unit."
 		},
 		{
+			"Bonus": "TAGSemiGuided",
+			"Short": "TAG Guidance",
+			"Long": "Target Acquisition Gear Guidance",
+			"Full": "TAG, or Target Acquisition Gear, marks the target as an appropriate target for specialized ammunition such as Semi-Guided LRM ammo, increasing that ammunition's accuracy against the TAG'd unit."
+		},
+		{
 			"Bonus": "C3TAG",
 			"Short": "C3 Master Accuracy {0}",
 			"Long": "C3 Master Accuracy {0}",
@@ -2314,6 +2320,12 @@
 			"Short": "TAG Acc {0}",
 			"Long": "Target Acquisition Gear",
 			"Full": "TAG, or Target Acquisition Gear, grants a {0} bonus to AoE damage against the TAG'd unit. Clan TAG fires two shots and can stack with itself up to a total of two stacks of the effect."
+		},
+		{
+			"Bonus": "BATAG",
+			"Short": "TAG Acc {0}",
+			"Long": "Target Acquisition Gear",
+			"Full": "TAG, or Target Acquisition Gear, grants a {0} bonus to AoE damage against the TAG'd unit. BA TAG fires one shot but can stack with itself up to a total of four stacks of the effect."
 		},
 		{
 			"Bonus": "LBX",

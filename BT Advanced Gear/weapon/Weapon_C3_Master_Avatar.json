@@ -34,7 +34,7 @@
 				"C3TAG: +2",
 				"EvasionIgnored: 3",
 				"WeaponAttachmentCompatible: TAG FCS",
-				"ReservedSlots: 1"
+				"C3MasterReserved: 1"
 		],
 		"Flags": [
 			"no_salvage"

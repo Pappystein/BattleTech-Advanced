@@ -5136,6 +5136,12 @@
 			"Full": "This piece of equipment occupies {0} additional slots in a mech's critical locations."
 		},
 		{
+			"Bonus": "C3MasterReserved",
+			"Short": "Reserved Slots {0}",
+			"Long": "Reserved Critical Slots {0}",
+			"Full": "This piece of equipment occupies {0} additional slots in a mech's Center Torso."
+		},
+		{
 			"Bonus": "Knockdown",
 			"Short": "Self-Knockdown",
 			"Long": "Self-Knockdown",

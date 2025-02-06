@@ -35,7 +35,6 @@ Weapon_Laser_TAGLight,Weapon,0,1
 Ammo_AmmunitionBox_ER_ATM,AmmunitionBox,0,1
 Ammo_AmmunitionBox_Generic_ATM,AmmunitionBox,0,1
 Ammo_AmmunitionBox_HE_ATM,AmmunitionBox,0,1
-Ammo_AmmunitionBox_SemiGuided_LRM,AmmunitionBox,0,1
 Gear_Attachment_TAGFCS,Upgrade,0,1
 Gear_Contract_Mech_Merlin_Outworlds,Upgrade,0,1
 Gear_Contract_Tank_Carrier_Rifle_Outworlds,Upgrade,0,1

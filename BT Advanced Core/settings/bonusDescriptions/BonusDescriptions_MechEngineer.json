@@ -2076,6 +2076,12 @@
 			"Full": "True artillery weapons have a unique attack sequence. When a target is selected, the attack is programmed in targeting that location (not a unit but the place the unit is standing) and the artillery unit enters an artillery stance and ends its turn. On the artillery unit's next turn, it can either brace (exiting the artillery stance and canceling the attack) or it can fire, completing the attack against the targeted location. Artillery weapons target the ground, not individual units, and do not track if units move out of the blast radius."
 		},
 		{
+			"Bonus": "GuidedArtilleryAttack",
+			"Short": "Guided Artillery Attack",
+			"Long": "Guided Artillery Attack",
+			"Full": "True artillery weapons have a secondary attack sequence, called a guided attack. This attack mode only works with specialized ammunition (such as Homing Arrow IV ammo or Copperhead ammo for the tube artillery). A guided artillery attack works like normal weapons, firing immediately without delay, but can only be effectively performed against targets painted by TAG, as otherwise the ammunition cannot get a lock on the target and thus will miss harmlessly."
+		},
+		{
 			"Bonus": "ArtilleryDetails",
 			"Short": "Artillery Details",
 			"Long": "Artillery Details",
@@ -5518,6 +5524,12 @@
 			"Short": "Semi-Guided LRM",
 			"Long": "Semi-Guided LRM",
 			"Full": "Semi-Guided LRMs gain a {0} accuracy bonus against designated targets, such as those painted by TAG weapons."
+		},
+		{
+			"Bonus": "GuidedArtillery",
+			"Short": "Guided Artillery",
+			"Long": "Guided Artillery",
+			"Full": "Guided artillery ammunition gains a {0} accuracy bonus against designated targets, such as those painted by TAG weapons."
 		}
 	]
 }

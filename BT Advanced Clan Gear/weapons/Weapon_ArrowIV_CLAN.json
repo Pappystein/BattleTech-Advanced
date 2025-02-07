@@ -46,7 +46,7 @@
 	"AttackRecoil": 1,
 	"Instability": 35,
 	"AMSImmune": true,
-	"FireTerrainChance": 0.075
+	"FireTerrainChance": 0.075,
 	"WeaponEffectID": "WeaponEffect-Weapon_LRM20",
 	"Description": {
 		"Cost": 1152000,

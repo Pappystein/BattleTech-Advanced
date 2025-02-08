@@ -7,7 +7,9 @@
 	"DLL": "WarTechIIC.dll",
 	"DependsOn": [],
 	"CustomResourceTypes": [
-		"ExtendedContractType"
+		"ExtendedContractType",
+		"ExtendedConversation",
+		"Campaign"
 	],
 	"Manifest": [
 		{
@@ -21,6 +23,10 @@
 		{
 			"Type": "ExtendedContractType",
 			"Path": "extendedContracts"
+		},
+		{
+			"Type": "Campaign",
+			"Path": "campaigns"
 		}
 	],
 	"Logs": {

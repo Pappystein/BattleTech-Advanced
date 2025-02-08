@@ -46,11 +46,6 @@
     "ClanWolfInExile",
     "Wolfs_Dragoons"
   ],
-  "neverBlockContractsOfferedBy": [
-    "SelfEmployed",
-    "SelfEmployed_Yang",
-    "SelfEmployed_Farah"
-  ],
   "maxAttackRaidDistance": 300,
   "dailyAttackChance": 0.15,
   "dailyRaidChance": 0.15,
@@ -146,7 +141,6 @@
   },
   "raidStrengthMultiplier": 0.75,
   "minReputationToHelpAttack": "DISLIKED",
-  "minReputationToHelpRaid": "DISLIKED",
   "wontHirePlayer": [
     "ClanWolf",
     "ClanJadeFalcon",
@@ -154,6 +148,9 @@
     "ClanDiamondShark",
     "SanctuaryAlliance",
     "AuriganDirectorate"
+  ],
+  "neverBlockContractsOfferedBy": [
+    "SelfEmployed"
   ],
   "combatForceLossMin": 2,
   "combatForceLossMax": 5,

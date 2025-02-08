@@ -9,12 +9,8 @@
 			"Includes_Description": "If set, matching log statements matching are written to the log. Exclusion has precedence over inclusion.",
 			"Includes": null,
 			"Excludes_Description": "If set, matching log statements are ignored. Exclusion has precedence over inclusion.",
-			"Excludes": [
-				{
-					"LoggerNames": [
-						"ModTek"
-					]
-				}
+			"Exclude": [
+				"ModTek"
 			],
 			"AbsoluteTimeEnabled": true,
 			"AbsoluteTimeUseUtc": true

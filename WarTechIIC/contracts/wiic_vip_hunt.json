@@ -1,8 +1,8 @@
 {
   "ID": "wiic_vip_hunt",
   "contractName": "VIP Hunt",
-  "difficulty": 6,
-  "finalDifficulty": 6,
+  "difficulty": 1000,
+  "finalDifficulty": 1000,
   "shortDescription": "We've been contacted by {TEAM_EMP.FactionDef.Name}. They want us to travel to {TGT_SYSTEM.name} and engage in a series of rapid-fire hunts for local {TEAM_TAR.FactionDef.Demonym} VIPs and take them out. Not going to lie, Commander, this is a contract killing job, but the employer is offering great payment terms (even though there will be no salvage due to the speed of the contract). Sounds like it could be a great money-making opportunity.\n\nThis is an extended contract, will last 4 days, and will prevent us from taking other contracts for the duration.",
   "longDescription": "If we accept this contract we'll be in for the duration, Commander. It'll be very brief though, so that shouldn't be an impediment. Do remember though, there won't be any salvage opportunities during this hunt.",
   "salvagePotential": 0,

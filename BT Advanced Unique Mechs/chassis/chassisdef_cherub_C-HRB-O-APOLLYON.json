@@ -12,10 +12,10 @@
 		"Purchasable": true,
 		"Manufacturer": "",
 		"Model": "",
-		"UIName": "Cherub",
-		"Id": "chassisdef_cherub_C-HRB-O-DEICIO",
-		"Name": "Cherub",
-		"Details": "Clearly related to but not directly a member of the Word of Blake Celestial OmniMech family, the Cherub is a Word of Blake ultralight BattleMech that makes use of the lightness of battle armor weaponry to carry much more firepower than would otherwise be expected at its weight-class. Built on a 105-rated standard fusion engine with 10 standard heat sinks and basic Ferro-Fibrous armor, the Cherub is cheap to produce. The Deicio is a secondary variant and is armed with 6 BA Support PPCs, a Mech-scale ER Medium Laser, and a Mech-scale Rocket Launcher 10.",
+		"UIName": "Apollyon",
+		"Id": "chassisdef_cherub_C-HRB-O-APOLLYON",
+		"Name": "Apollyon",
+		"Details": "Named after an ancient term for 'destroyer', the Cherub Apollyon is certainly that in the ultralight arenas of the gameworlds. When Apollyon appears in the arenas, many believe it to be unbeatable thanks to its devastating loadout of armor-piercing weaponry. For primary threat, Apollyon carries six Heavy Sniper Autocannons which have excellent range and deal enough piercing damage to cripple other ultralight opponents. For close-range firepower Apollyon carries four Clantech Bearhunter Superheavy Autocannons to decimate anything that gets too close. Thanks to this awesome firepower, Apollyon's record is spotless and is expected to remain as such for the foreseeable future.",
 		"Icon": "uixTxrIcon_cherub"
 	},
 	"MovementCapDefID": "movedef_flea_FLE-15",
@@ -138,8 +138,28 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Missile",
-					"Omni": true
+					"WeaponMountID": "BattleArmor",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "BattleArmor",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "BattleArmor",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "BattleArmor",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "BattleArmor",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "BattleArmor",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -211,18 +231,19 @@
 			"z": 0
 		}
 	],
-	"VariantName": "C-HRB-O-DEICIO",
+	"VariantName": "C-HRB-O-APOLLYON",
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
 			"ArmLimitUpperRight",
 			"ArmLimitUpperLeft",
-			"LightMech"
+			"LightMech",
+			"HeroMech"
 		],
 		"tagSetSourceFile": ""
 	},
-	"StockRole": "Experimental Ultralight",
-	"YangsThoughts": "Clearly related to but not directly a member of the Word of Blake Celestial OmniMech family, the Cherub is a Word of Blake ultralight BattleMech that makes use of the lightness of battle armor weaponry to carry much more firepower than would otherwise be expected at its weight-class. Built on a 105-rated standard fusion engine with 10 standard heat sinks and basic Ferro-Fibrous armor, the Cherub is cheap to produce. The Deicio is a secondary variant and is armed with 6 BA Support PPCs, a Mech-scale ER Medium Laser, and a Mech-scale Rocket Launcher 10.",
+	"StockRole": "Ultralight Gladiator",
+	"YangsThoughts": "Named after an ancient term for 'destroyer', the Cherub Apollyon is certainly that in the ultralight arenas of the gameworlds. When Apollyon appears in the arenas, many believe it to be unbeatable thanks to its devastating loadout of armor-piercing weaponry. For primary threat, Apollyon carries six Heavy Sniper Autocannons which have excellent range and deal enough piercing damage to cripple other ultralight opponents. For close-range firepower Apollyon carries four Clantech Bearhunter Superheavy Autocannons to decimate anything that gets too close. Thanks to this awesome firepower, Apollyon's record is spotless and is expected to remain as such for the foreseeable future.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",

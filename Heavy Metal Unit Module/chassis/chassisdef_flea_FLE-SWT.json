@@ -1,7 +1,7 @@
 {
 	"Custom": {
 		"AssemblyVariant": {
-			"PrefabID": "Junior",
+			"PrefabID": "Flea",
 			"Exclude": false,
 			"Include": true
 		}
@@ -12,19 +12,19 @@
 		"Purchasable": true,
 		"Manufacturer": "",
 		"Model": "",
-		"UIName": "Junior",
-		"Id": "chassisdef_junior_JNR-8S",
-		"Name": "Junior",
-		"Details": "One of the earliest ultralight BattleMechs, the Junior was develpoed by House Davion during the Age of War as a cheap weapon testing platform but quickly found a use as a light trooper design for militias. During the 3040s, as the Helm Core was being spread throughout the Inner Sphere, the Federated Suns returned to the Junior and upgraded it for the modern era. The engine was improved to an XL, the structure was given the Endo-Steel treatment, the armor was upgraded to Ferro-Fibrous, and the weight saved was used to upgrade the weapons to a trio of Magshot Rifles (sourced from the Federated Sun's allies in the Lyran Commonwealth) and an ER Small Laser.",
-		"Icon": "uixTxrIcon_junior"
+		"UIName": "Flyswatter",
+		"Id": "chassisdef_flea_FLE-SWT",
+		"Name": "Flyswatter",
+		"Details": "One of the earliest ultralight BattleMechs, the Flea FLE-14 was mostly seen as a failure. However, the gameworld arenas love strange dead-end technologies and what failed on the battlefield can live once more in the arenas and so Flyswatter came to be. Flyswatter pushes the Flea's chassis as hard as it can, with a 120-rated XL engine and Heavy Ferro-Fibrous armor plus a Small Cockpit to free up weight. With that weight Flyswatter equips a full suite of 8 ultralight jumpjets as well as a trio of Clantech lasers, one ER Medium and two ER Smalls. While not the heftiest punch ever, Flyswatter does a good enough job to see regular success in the arenas.",
+		"Icon": "uixTxrIcon_flea"
 	},
 	"MovementCapDefID": "movedef_flea_FLE-15",
 	"PathingCapDefID": "pathingdef_light",
-	"HardpointDataDefID": "hardpointdatadef_junior",
-	"PrefabIdentifier": "chrprfmech_juniorbase-001",
-	"PrefabBase": "junior",
-	"Tonnage": 10,
-	"InitialTonnage": 1,
+	"HardpointDataDefID": "hardpointdatadef_flea",
+	"PrefabIdentifier": "chrPrfMech_fleaBase-001",
+	"PrefabBase": "flea",
+	"Tonnage": 15,
+	"InitialTonnage": 1.5,
 	"weightClass": "LIGHT",
 	"BattleValue": 1642000,
 	"Heatsinks": 0,
@@ -56,12 +56,7 @@
 	"Locations": [
 		{
 			"Location": "Head",
-			"Hardpoints": [
-				{
-					"WeaponMountID": "AntiPersonnel",
-					"Omni": false
-				}
-			],
+			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 6,
 			"MaxArmor": 45,
@@ -70,12 +65,21 @@
 		},
 		{
 			"Location": "LeftArm",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Energy",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 10,
+			"MaxArmor": 20,
 			"MaxRearArmor": -1,
-			"InternalStructure": 5
+			"InternalStructure": 10
 		},
 		{
 			"Location": "LeftTorso",
@@ -85,29 +89,29 @@
 					"Omni": false
 				},
 				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 30,
-			"MaxRearArmor": 25,
-			"InternalStructure": 15
+			"MaxArmor": 40,
+			"MaxRearArmor": 20,
+			"InternalStructure": 20
 		},
 		{
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
 			"InventorySlots": 15,
-			"MaxArmor": 40,
-			"MaxRearArmor": 30,
-			"InternalStructure": 20
+			"MaxArmor": 50,
+			"MaxRearArmor": 25,
+			"InternalStructure": 25
 		},
 		{
 			"Location": "RightTorso",
@@ -117,24 +121,33 @@
 					"Omni": false
 				},
 				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 30,
-			"MaxRearArmor": 25,
-			"InternalStructure": 15
+			"MaxArmor": 40,
+			"MaxRearArmor": 20,
+			"InternalStructure": 20
 		},
 		{
 			"Location": "RightArm",
-			"Hardpoints": [],
+			"Hardpoints": [
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Energy",
+					"Omni": false
+				}
+			],
 			"Tonnage": 0,
 			"InventorySlots": 12,
-			"MaxArmor": 10,
+			"MaxArmor": 20,
 			"MaxRearArmor": -1,
-			"InternalStructure": 5
+			"InternalStructure": 10
 		},
 		{
 			"Location": "LeftLeg",
@@ -143,7 +156,7 @@
 			"InventorySlots": 6,
 			"MaxArmor": 30,
 			"MaxRearArmor": -1,
-			"InternalStructure": 10
+			"InternalStructure": 15
 		},
 		{
 			"Location": "RightLeg",
@@ -152,7 +165,7 @@
 			"InventorySlots": 6,
 			"MaxArmor": 30,
 			"MaxRearArmor": -1,
-			"InternalStructure": 10
+			"InternalStructure": 15
 		}
 	],
 	"LOSSourcePositions": [
@@ -199,22 +212,22 @@
 			"z": 0
 		}
 	],
-	"VariantName": "JNR-8S",
+	"VariantName": "FLE-SWT",
 	"ChassisTags": {
 		"items": [
 			"ArmLimitUpperRight",
 			"ArmLimitUpperLeft",
-			"OmniMech",
-			"LightMech"
+			"LightMech",
+			"HeroMech"
 		],
 		"tagSetSourceFile": ""
 	},
-	"StockRole": "Ultralight Trooper",
-	"YangsThoughts": "One of the earliest ultralight BattleMechs, the Junior was develpoed by House Davion during the Age of War as a cheap weapon testing platform but quickly found a use as a light trooper design for militias. During the 3040s, as the Helm Core was being spread throughout the Inner Sphere, the Federated Suns returned to the Junior and upgraded it for the modern era. The engine was improved to an XL, the structure was given the Endo-Steel treatment, the armor was upgraded to Ferro-Fibrous, and the weight saved was used to upgrade the weapons to a trio of Magshot Rifles (sourced from the Federated Sun's allies in the Lyran Commonwealth) and an ER Small Laser.",
+	"StockRole": "Ultralight Gladiator",
+	"YangsThoughts": "One of the earliest ultralight BattleMechs, the Flea FLE-14 was mostly seen as a failure. However, the gameworld arenas love strange dead-end technologies and what failed on the battlefield can live once more in the arenas and so Flyswatter came to be. Flyswatter pushes the Flea's chassis as hard as it can, with a 120-rated XL engine and Heavy Ferro-Fibrous armor plus a Small Cockpit to free up weight. With that weight Flyswatter equips a full suite of 8 ultralight jumpjets as well as a trio of Clantech lasers, one ER Medium and two ER Smalls. While not the heftiest punch ever, Flyswatter does a good enough job to see regular success in the arenas.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_Quirk_Ultralight_Junior",
+			"ComponentDefID": "Gear_Quirk_Ultralight_Flea",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
@@ -225,7 +238,7 @@
 		},
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_structureslots_endosteel",
+			"ComponentDefID": "emod_structureslots_standard",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,

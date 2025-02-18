@@ -1,7 +1,7 @@
 {
 	"Description": {
-		"Id": "lancedef_mech_d4_gladiator_light",
-		"Name": "Dif 4 Gladiator Light",
+		"Id": "lancedef_mech_d3_gladiator_ultralight",
+		"Name": "Dif 3 Gladiator Ultralight",
 		"Details": "",
 		"Icon": "",
 		"Cost": 0,
@@ -12,7 +12,7 @@
 	"LanceTags": {
 		"items": [
 			"lance_type_gladiator",
-			"lance_type_light",
+			"lance_type_ultralight",
 			"lance_type_mech"
 		],
 		"tagSetSourceFile": "Tags/LanceTags"
@@ -25,17 +25,15 @@
 			"unitTagSet": {
 				"items": [
 					"unit_mech",
-					"unit_light",
-					"unit_legal",
-					"unit_gladiator"
+					"unit_ultralight",
+					"unit_legal"
 				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
 				"items": [
 					"unit_noncombatant",
-					"unit_urbie",
-					"unit_ultralight"
+					"unit_urbie"
 				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
@@ -57,17 +55,15 @@
 			"unitTagSet": {
 				"items": [
 					"unit_mech",
-					"unit_light",
-					"unit_legal",
-					"unit_gladiator"
+					"unit_ultralight",
+					"unit_legal"
 				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},
 			"excludedUnitTagSet": {
 				"items": [
 					"unit_noncombatant",
-					"unit_urbie",
-					"unit_ultralight"
+					"unit_urbie"
 				],
 				"tagSetSourceFile": "Tags/UnitTags"
 			},

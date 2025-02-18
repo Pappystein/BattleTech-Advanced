@@ -12,10 +12,10 @@
 		"Purchasable": true,
 		"Manufacturer": "",
 		"Model": "",
-		"UIName": "Ambassador",
-		"Id": "chassisdef_ambassador_MBSDR-1",
-		"Name": "Ambassador",
-		"Details": "Designed by the First Star League using the very finest materials money could buy or even invent, the Ambassador was the pinnacle of BattleMech construction in an era of unparalleled technological achievement. Given out by the Star League to any diplomat who asked for one, the Ambassador was intended to be used to conduct sensitive diplomatic meetings in person. With its blisteringly high ground speed of over 170 kph and uncharateristically solid armor it kept its pilot safe from all dangers while the best communications and force management suite ever designed allowed for perfect communications and control in the battlespace. Though the Ambassador fell out of production with the Star League's fall, ComStar (and then the Word of Blake) put it back into limited production at Terra and share it with any notable political entities who ask for one, just like the old Star League did.",
+		"UIName": "Rising Star of Terra",
+		"Id": "chassisdef_ambassador_MBSDR-RST",
+		"Name": "Rising Star of Terra",
+		"Details": "The Ambassador is not a combat design and never was. Still, when First Lord of the Star League Michael Cameron set out for diplomatic talks, he wanted to be certain he was armed in case it all went wrong and so he ordered his technicians to ensure his Ambassador, the Rising Star of Terra, was never without weaponry. The technicians, given the endless resources of the first Star League, went far and above in their task. The Rising Star of Terra is equipped with all the finest Ambassador trimmings as well as a powerful 165-rated XL engine, which allows it to carry a battery of Haywire Medium and Small Lasers, ensuring that should the First Lord encounter danger he could disable it before making a safe getaway. Now, somehow, the Rising Star of Terra has found its way into the gameworld's arenas where the lasers continue to prove their great worth.",
 		"Icon": "uixTxrIcon_ambassador"
 	},
 	"MovementCapDefID": "movedef_flea_FLE-15",
@@ -100,7 +100,7 @@
 			"Location": "CenterTorso",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "AntiPersonnel",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -201,19 +201,20 @@
 			"z": 0
 		}
 	],
-	"VariantName": "MBSDR-1",
+	"VariantName": "MBSDR-RST",
 	"ChassisTags": {
 		"items": [
 			"mr-resize-0.85-0.85-0.85",
 			"ArmLimitUpperRight",
 			"ArmLimitUpperLeft",
 			"IgnoreEngineLimit",
-			"LightMech"
+			"LightMech",
+			"HeroMech"
 		],
 		"tagSetSourceFile": ""
 	},
-	"StockRole": "Ultralight Diplomat",
-	"YangsThoughts": "Designed by the First Star League using the very finest materials money could buy or even invent, the Ambassador was the pinnacle of BattleMech construction in an era of unparalleled technological achievement. Given out by the Star League to any diplomat who asked for one, the Ambassador was intended to be used to conduct sensitive diplomatic meetings in person. With its blisteringly high ground speed of over 170 kph and uncharateristically solid armor it kept its pilot safe from all dangers while the best communications and force management suite ever designed allowed for perfect communications and control in the battlespace. Though the Ambassador fell out of production with the Star League's fall, ComStar (and then the Word of Blake) put it back into limited production at Terra and share it with any notable political entities who ask for one, just like the old Star League did.",
+	"StockRole": "Diplomatic... Gladiator??",
+	"YangsThoughts": "The Ambassador is not a combat design and never was. Still, when First Lord of the Star League Michael Cameron set out for diplomatic talks, he wanted to be certain he was armed in case it all went wrong and so he ordered his technicians to ensure his Ambassador, the Rising Star of Terra, was never without weaponry. The technicians, given the endless resources of the first Star League, went far and above in their task. The Rising Star of Terra is equipped with all the finest Ambassador trimmings as well as a powerful 165-rated XL engine, which allows it to carry a battery of Haywire Medium and Small Lasers, ensuring that should the First Lord encounter danger he could disable it before making a safe getaway. Now, somehow, the Rising Star of Terra has found its way into the gameworld's arenas where the lasers continue to prove their great worth.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",

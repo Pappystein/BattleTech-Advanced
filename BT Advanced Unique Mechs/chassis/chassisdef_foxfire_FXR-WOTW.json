@@ -1,7 +1,7 @@
 {
 	"Custom": {
 		"AssemblyVariant": {
-			"PrefabID": "Ambassador",
+			"PrefabID": "Foxfire",
 			"Exclude": false,
 			"Include": true
 		}
@@ -12,17 +12,17 @@
 		"Purchasable": true,
 		"Manufacturer": "",
 		"Model": "",
-		"UIName": "Ambassador",
-		"Id": "chassisdef_ambassador_MBSDR-1",
-		"Name": "Ambassador",
-		"Details": "Designed by the First Star League using the very finest materials money could buy or even invent, the Ambassador was the pinnacle of BattleMech construction in an era of unparalleled technological achievement. Given out by the Star League to any diplomat who asked for one, the Ambassador was intended to be used to conduct sensitive diplomatic meetings in person. With its blisteringly high ground speed of over 170 kph and uncharateristically solid armor it kept its pilot safe from all dangers while the best communications and force management suite ever designed allowed for perfect communications and control in the battlespace. Though the Ambassador fell out of production with the Star League's fall, ComStar (and then the Word of Blake) put it back into limited production at Terra and share it with any notable political entities who ask for one, just like the old Star League did.",
-		"Icon": "uixTxrIcon_ambassador"
+		"UIName": "Will-o'-the-Whisper",
+		"Id": "chassisdef_foxfire_FXR-WOTW",
+		"Name": "Will-o'-the-Whisper",
+		"Details": "Originally driven by famed poet Alexander Conorrbin (also known as the Laureate of Lancaster), Will-o'-the-Whisper is a highly specialized gladiatorial design. The Foxfire is famous for its Firestorm Flamer, the weapon the entire chassis is built around, and Will-o'-the-Whisper takes that to another level by hard-wiring two more of them to the frame (bringing the count to three, with one in each side torso and the center torso). Of course, this means that Will-o'-the-Whisper has little in the way of conventional firepower, just an exotic Medium Laser to support the flamers. Of course, they deal so much heat damage that it's largely unnecessary. Will-o'-the-Whisper found great success in the arenas and proved highly popular.",
+		"Icon": "uixTxrIcon_foxfire"
 	},
 	"MovementCapDefID": "movedef_flea_FLE-15",
 	"PathingCapDefID": "pathingdef_light",
-	"HardpointDataDefID": "hardpointdatadef_cuambassador",
-	"PrefabIdentifier": "chrprfmech_cuambassadorbase-001",
-	"PrefabBase": "cuambassador",
+	"HardpointDataDefID": "hardpointdatadef_foxfire",
+	"PrefabIdentifier": "chrprfmech_foxfirebase-001",
+	"PrefabBase": "foxfire",
 	"Tonnage": 15,
 	"InitialTonnage": 1.5,
 	"weightClass": "LIGHT",
@@ -58,7 +58,7 @@
 			"Location": "Head",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Superweapon",
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -70,12 +70,7 @@
 		},
 		{
 			"Location": "LeftArm",
-			"Hardpoints": [
-				{
-					"WeaponMountID": "AntiPersonnel",
-					"Omni": false
-				}
-			],
+			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 20,
@@ -87,6 +82,14 @@
 			"Hardpoints": [
 				{
 					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Energy",
 					"Omni": false
 				}
 			],
@@ -116,6 +119,14 @@
 				{
 					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
+				},
+				{
+					"WeaponMountID": "AntiPersonnel",
+					"Omni": false
+				},
+				{
+					"WeaponMountID": "Energy",
+					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -126,12 +137,7 @@
 		},
 		{
 			"Location": "RightArm",
-			"Hardpoints": [
-				{
-					"WeaponMountID": "AntiPersonnel",
-					"Omni": false
-				}
-			],
+			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 12,
 			"MaxArmor": 20,
@@ -201,23 +207,23 @@
 			"z": 0
 		}
 	],
-	"VariantName": "MBSDR-1",
+	"VariantName": "FXR-WOTW",
 	"ChassisTags": {
 		"items": [
-			"mr-resize-0.85-0.85-0.85",
+			"OmniMech",
 			"ArmLimitUpperRight",
 			"ArmLimitUpperLeft",
-			"IgnoreEngineLimit",
-			"LightMech"
+			"LightMech",
+			"HeroMech"
 		],
 		"tagSetSourceFile": ""
 	},
-	"StockRole": "Ultralight Diplomat",
-	"YangsThoughts": "Designed by the First Star League using the very finest materials money could buy or even invent, the Ambassador was the pinnacle of BattleMech construction in an era of unparalleled technological achievement. Given out by the Star League to any diplomat who asked for one, the Ambassador was intended to be used to conduct sensitive diplomatic meetings in person. With its blisteringly high ground speed of over 170 kph and uncharateristically solid armor it kept its pilot safe from all dangers while the best communications and force management suite ever designed allowed for perfect communications and control in the battlespace. Though the Ambassador fell out of production with the Star League's fall, ComStar (and then the Word of Blake) put it back into limited production at Terra and share it with any notable political entities who ask for one, just like the old Star League did.",
+	"StockRole": "Ultralight Gladiator",
+	"YangsThoughts": "Originally driven by famed poet Alexander Conorrbin (also known as the Laureate of Lancaster), Will-o'-the-Whisper is a highly specialized gladiatorial design. The Foxfire is famous for its Firestorm Flamer, the weapon the entire chassis is built around, and Will-o'-the-Whisper takes that to another level by hard-wiring two more of them to the frame (bringing the count to three, with one in each side torso and the center torso). Of course, this means that Will-o'-the-Whisper has little in the way of conventional firepower, just an exotic Medium Laser to support the flamers. Of course, they deal so much heat damage that it's largely unnecessary. Will-o'-the-Whisper found great success in the arenas and proved highly popular.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_Quirk_MasterCrafted_Ambassador",
+			"ComponentDefID": "Gear_Quirk_Ultralight_Foxfire",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
@@ -227,22 +233,22 @@
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Gear_Quirk_DiplomaticImmunity_Ambassador",
+			"MountedLocation": "CenterTorso",
+			"ComponentDefID": "emod_structureslots_endosteel",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,
 			"GUID": null,
 			"DamageLevel": "Functional",
-			"prefabName": null,
+			"prefabName": "",
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "Head",
-			"ComponentDefID": "Weapon_Will_of_the_Star_League",
+			"MountedLocation": "RightTorso",
+			"ComponentDefID": "Weapon_Flamer_Firestorm_0-STOCK",
 			"SimGameUID": null,
 			"ComponentDefType": "Weapon",
-			"HardpointSlot": -1,
+			"HardpointSlot": 0,
 			"GUID": null,
 			"DamageLevel": "Functional",
 			"prefabName": null,
@@ -250,44 +256,24 @@
 		},
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_armorslots_ferrofibrous_starleague",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
-			"DamageLevel": "Functional",
-			"prefabName": "",
-			"hasPrefabName": true
-		},
-		{
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_structureslots_endosteel_starleague",
-			"SimGameUID": "",
-			"ComponentDefType": "Upgrade",
-			"HardpointSlot": -1,
+			"ComponentDefID": "Weapon_Flamer_Firestorm_0-STOCK",
+			"SimGameUID": null,
+			"ComponentDefType": "Weapon",
+			"HardpointSlot": 0,
 			"GUID": null,
 			"DamageLevel": "Functional",
-			"prefabName": "",
+			"prefabName": null,
 			"hasPrefabName": false
 		},
 		{
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_JumpJet_Ambassador_Ultralight",
-			"SimGameUID": "",
-			"ComponentDefType": "JumpJet",
-			"HardpointSlot": -1,
+			"MountedLocation": "LeftTorso",
+			"ComponentDefID": "Weapon_Flamer_Firestorm_0-STOCK",
+			"SimGameUID": null,
+			"ComponentDefType": "Weapon",
+			"HardpointSlot": 0,
 			"GUID": null,
 			"DamageLevel": "Functional",
-			"prefabName": "",
-			"hasPrefabName": false
-		},
-		{
-			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "Gear_JumpJet_Ambassador_Ultralight",
-			"SimGameUID": "",
-			"ComponentDefType": "JumpJet",
-			"HardpointSlot": -1,
-			"GUID": null,
-			"DamageLevel": "Functional",
-			"prefabName": "",
+			"prefabName": null,
 			"hasPrefabName": false
 		}
 	],

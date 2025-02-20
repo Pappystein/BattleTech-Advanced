@@ -86,7 +86,7 @@
 		},
 		{
 			"Id": "Guided",
-			"UIName": "Copperhead",
+			"UIName": "Guided",
 			"isBaseMode": false,
 			"AmmoCategory": "SniperCopperhead"
 		}

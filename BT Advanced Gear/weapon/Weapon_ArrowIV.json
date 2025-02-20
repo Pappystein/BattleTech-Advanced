@@ -84,7 +84,7 @@
 		},
 		{
 			"Id": "Guided",
-			"UIName": "Homing",
+			"UIName": "Guided",
 			"isBaseMode": false,
 			"AmmoCategory": "ArrowIVHoming"
 		}

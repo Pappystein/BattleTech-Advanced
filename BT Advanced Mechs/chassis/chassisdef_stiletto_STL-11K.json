@@ -13,9 +13,9 @@
 		"Manufacturer": "",
 		"Model": "",
 		"UIName": "Stiletto",
-		"Id": "chassisdef_stiletto_STL-7P",
+		"Id": "chassisdef_stiletto_STL-11K",
 		"Name": "Stiletto",
-		"Details": "Given its extensive service to the Draconis Combine, the Stiletto found its way into various pirate hands after raids and thefts, many of which went unpunished due to the relatively low value of the chassis in question and the ease of just replacing them outright. Generally, the pirates slapped whatever they could onto the chassis but a popular refit began appearing frequently enough to be given its own designation, the STL-7P. Armed with twin Inferno RL-15s and twin Machine Guns, the 'Mech has almost no endurance but has a surprising bite if enemies disrespect it.",
+		"Details": "Though an early ultra-light design, the Stiletto proved to have unexpectedly good staying power in the DCMS where it proved popular for garrisons and light scout work. After the runaway success that was the Stiletto STL-9K, several more refit packages were authorized by DCMS brass, including the -11K. This variant uses the Endo-Steel and XL engine of the -9K but upgrades the core to a 105-rated one. It also uses Heavy Ferro-Fibrous armor and a Small Cockpit which free up enough weight to fit a Large Laser and SRM-4 to the design, leading some to dub the -11K a \"mini-Panther\". The STL-11K was well-received and has served with distinction since its introduction.",
 		"Icon": "uixTxrIcon_stardrivestiletto"
 	},
 	"MovementCapDefID": "movedef_flea_FLE-15",
@@ -66,6 +66,10 @@
 		{
 			"Location": "LeftArm",
 			"Hardpoints": [
+				{
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
 				{
 					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
@@ -120,6 +124,10 @@
 		{
 			"Location": "RightArm",
 			"Hardpoints": [
+				{
+					"WeaponMountID": "Energy",
+					"Omni": false
+				},
 				{
 					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
@@ -198,7 +206,7 @@
 			"z": 0
 		}
 	],
-	"VariantName": "STL-7P",
+	"VariantName": "STL-11K",
 	"ChassisTags": {
 		"items": [
 			"OmniMech",
@@ -209,7 +217,7 @@
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Ultralight Recon",
-	"YangsThoughts": "Given its extensive service to the Draconis Combine, the Stiletto found its way into various pirate hands after raids and thefts, many of which went unpunished due to the relatively low value of the chassis in question and the ease of just replacing them outright. Generally, the pirates slapped whatever they could onto the chassis but a popular refit began appearing frequently enough to be given its own designation, the STL-7P. Armed with twin Inferno RL-15s and twin Machine Guns, the 'Mech has almost no endurance but has a surprising bite if enemies disrespect it.",
+	"YangsThoughts": "Though an early ultra-light design, the Stiletto proved to have unexpectedly good staying power in the DCMS where it proved popular for garrisons and light scout work. After the runaway success that was the Stiletto STL-9K, several more refit packages were authorized by DCMS brass, including the -11K. This variant uses the Endo-Steel and XL engine of the -9K but upgrades the core to a 105-rated one. It also uses Heavy Ferro-Fibrous armor and a Small Cockpit which free up enough weight to fit a Large Laser and SRM-4 to the design, leading some to dub the -11K a \"mini-Panther\". The STL-11K was well-received and has served with distinction since its introduction.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
@@ -224,7 +232,7 @@
 		},
 		{
 			"MountedLocation": "CenterTorso",
-			"ComponentDefID": "emod_structureslots_standard",
+			"ComponentDefID": "emod_structureslots_endosteel",
 			"SimGameUID": "",
 			"ComponentDefType": "Upgrade",
 			"HardpointSlot": -1,

@@ -57,12 +57,10 @@
         "UnityConsoleAppender": {
             "LogRotationCount_Description": "How many log file to backups between application starts.",
             "LogRotationCount": 1,
-            "Includes_Description": "If set, matching log statements matching are written to the log. Exclusion has precedence over inclusion.",
-            "Includes": null,
-            "Excludes_Description": "If set, matching log statements are ignored. Exclusion has precedence over inclusion.",
-            "Excludes": null,
-            "PrefixesToIgnore_Description": "Ignore any lines starting with any of the listed prefixes, internally will be converted to Excludes.",
-            "PrefixesToIgnore": null,
+            "Include_Description": "If set, matching log statements by prefix are written to the log. Exclusion has precedence over inclusion.",
+            "Include": null,
+            "Exclude_Description": "If set, matching log statements by prefix are ignored. Exclusion has precedence over inclusion.",
+            "Exclude": null,
             "AbsoluteTimeEnabled_Description": "Adds the clock time.",
             "AbsoluteTimeEnabled": false,
             "AbsoluteTimeUseUtc_Description": "Use UTC instead of local time.",
@@ -78,12 +76,10 @@
         "MainLog": {
             "LogRotationCount_Description": "How many log file to backups between application starts.",
             "LogRotationCount": 1,
-            "Includes_Description": "If set, matching log statements matching are written to the log. Exclusion has precedence over inclusion.",
-            "Includes": null,
-            "Excludes_Description": "If set, matching log statements are ignored. Exclusion has precedence over inclusion.",
-            "Excludes": null,
-            "PrefixesToIgnore_Description": "Ignore any lines starting with any of the listed prefixes, internally will be converted to Excludes.",
-            "PrefixesToIgnore": null,
+            "Include_Description": "If set, matching log statements by prefix are written to the log. Exclusion has precedence over inclusion.",
+            "Include": null,
+            "Exclude_Description": "If set, matching log statements by prefix are ignored. Exclusion has precedence over inclusion.",
+            "Exclude": null,
             "AbsoluteTimeEnabled_Description": "Adds the clock time.",
             "AbsoluteTimeEnabled": true,
             "AbsoluteTimeUseUtc_Description": "Use UTC instead of local time.",
@@ -97,24 +93,12 @@
             "ModTek.log": {
                 "LogRotationCount_Description": "How many log file to backups between application starts.",
                 "LogRotationCount": 1,
-                "Includes_Description": "If set, matching log statements matching are written to the log. Exclusion has precedence over inclusion.",
-                "Includes": [
-                    {
-                        "_Description": "The filter matches if all subfiles accept the message.",
-                        "LogLevels_Description": "If set, this subfilter rejects the message if no value matches.",
-                        "LogLevels": null,
-                        "LoggerNames_Description": "If set, this subfilter rejects the message if no value matches.",
-                        "LoggerNames": [
-                            "ModTek"
-                        ],
-                        "MessagePrefixes_Description": "If set, this subfilter rejects the message if no value matches.",
-                        "MessagePrefixes": null
-                    }
+                "Include_Description": "If set, matching log statements by prefix are written to the log. Exclusion has precedence over inclusion.",
+                "Include": [
+                    "ModTek"
                 ],
-                "Excludes_Description": "If set, matching log statements are ignored. Exclusion has precedence over inclusion.",
-                "Excludes": null,
-                "PrefixesToIgnore_Description": "Ignore any lines starting with any of the listed prefixes, internally will be converted to Excludes.",
-                "PrefixesToIgnore": null,
+                "Exclude_Description": "If set, matching log statements by prefix are ignored. Exclusion has precedence over inclusion.",
+                "Exclude": null,
                 "AbsoluteTimeEnabled_Description": "Adds the clock time.",
                 "AbsoluteTimeEnabled": true,
                 "AbsoluteTimeUseUtc_Description": "Use UTC instead of local time.",

@@ -9,5 +9,12 @@
 	"DependsOn": [],
 	"ConflictsWith": [],
 	"CustomResourceTypes": [],
-	"Manifest": []
+	"Manifest": [],
+	"Logs": {
+		"LostInSpace.log": {
+			"Include": [
+				"LostInSpace"
+			]
+		}
+	}
 }

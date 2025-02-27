@@ -13,9 +13,9 @@
 		"Manufacturer": "",
 		"Model": "",
 		"UIName": "Flea",
-		"Id": "chassisdef_flea_FLE-18",
+		"Id": "chassisdef_flea_FLE-22",
 		"Name": "Flea",
-		"Details": "The FLE-14, the first ultra-light BattleMech ever produced, was largely regarded as a colossal failure. However, in the 3060s, House Marik returned to the design and updated it for the modern battlefield with the FLE-18. The -18 keeps the -14's high ground speed but uses an XL engine, a Small Cockpit, and Endo-Steel to save weight. That weight is put towards a quartet of ER Medium Lasers for firepower with any leftover tonnage being put directly into armor. 10 DHS keeps the mech nicely chilled. The FLE-18 proved a moderate success and went on to serve with distinction.",
+		"Details": "The Flea FLE-14 was one of the earliest ultralight BattleMechs but was functionally a failure. It was too poorly armored and armed and attempted to use jump jets on the design despite the lack of need for them. However, the idea of an ultralight Flea was not without merit and the Free Worlds League would resurrect the idea in the 3060s. Among the updated designs was the FLE-22 which used the most weight-saving technology available (Endo-Steel, Heavy Ferro-Fibrous, XL engine, and a Small Cockpit) in order to mount a Snub-Nose PPC, giving it a powerful knockout punch for its weight class. The FLE-22 was a success and saw limited deployment with elite Marik units.",
 		"Icon": "uixTxrIcon_flea"
 	},
 	"MovementCapDefID": "movedef_flea_FLE-15",
@@ -56,12 +56,7 @@
 	"Locations": [
 		{
 			"Location": "Head",
-			"Hardpoints": [
-				{
-					"WeaponMountID": "AntiPersonnel",
-					"Omni": false
-				}
-			],
+			"Hardpoints": [],
 			"Tonnage": 0,
 			"InventorySlots": 6,
 			"MaxArmor": 45,
@@ -72,7 +67,7 @@
 			"Location": "LeftArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Energy",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
@@ -106,10 +101,6 @@
 				{
 					"WeaponMountID": "Energy",
 					"Omni": false
-				},
-				{
-					"WeaponMountID": "AntiPersonnel",
-					"Omni": false
 				}
 			],
 			"Tonnage": 0,
@@ -136,7 +127,7 @@
 			"Location": "RightArm",
 			"Hardpoints": [
 				{
-					"WeaponMountID": "Energy",
+					"WeaponMountID": "AntiPersonnel",
 					"Omni": false
 				},
 				{
@@ -213,7 +204,7 @@
 			"z": 0
 		}
 	],
-	"VariantName": "FLE-18",
+	"VariantName": "FLE-22",
 	"ChassisTags": {
 		"items": [
 			"ArmLimitUpperRight",
@@ -224,7 +215,7 @@
 		"tagSetSourceFile": ""
 	},
 	"StockRole": "Ultralight Recon",
-	"YangsThoughts": "The FLE-14, the first ultra-light BattleMech ever produced, was largely regarded as a colossal failure. However, in the 3060s, House Marik returned to the design and updated it for the modern battlefield with the FLE-18. The -18 keeps the -14's high ground speed but uses an XL engine, a Small Cockpit, and Endo-Steel to save weight. That weight is put towards a quartet of ER Medium Lasers for firepower with any leftover tonnage being put directly into armor. 10 DHS keeps the mech nicely chilled. The FLE-18 proved a moderate success and went on to serve with distinction.",
+	"YangsThoughts": "The Flea FLE-14 was one of the earliest ultralight BattleMechs but was functionally a failure. It was too poorly armored and armed and attempted to use jump jets on the design despite the lack of need for them. However, the idea of an ultralight Flea was not without merit and the Free Worlds League would resurrect the idea in the 3060s. Among the updated designs was the FLE-22 which used the most weight-saving technology available (Endo-Steel, Heavy Ferro-Fibrous, XL engine, and a Small Cockpit) in order to mount a Snub-Nose PPC, giving it a powerful knockout punch for its weight class. The FLE-22 was a success and saw limited deployment with elite Marik units.",
 	"FixedEquipment": [
 		{
 			"MountedLocation": "CenterTorso",
